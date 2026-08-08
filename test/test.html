@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIQA 網站測試頁面</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background: #ffffff;
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+        }
+        .status-badge {
+            display: inline-block;
+            background-color: #e6f4ea;
+            color: #137333;
+            font-size: 0.875rem;
+            font-weight: 600;
+            padding: 0.25rem 0.75rem;
+            border-radius: 50px;
+            margin-bottom: 1rem;
+        }
+        h1 {
+            font-size: 1.75rem;
+            margin-bottom: 0.5rem;
+            color: #1a73e8;
+        }
+        p {
+            color: #5f6368;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        .info-box {
+            background: #f8f9fa;
+            border-left: 4px solid #1a73e8;
+            padding: 1rem;
+            text-align: left;
+            border-radius: 0 8px 8px 0;
+            font-size: 0.9rem;
+            color: #475569;
+        }
+        .info-box ul {
+            list-style-type: square;
+            padding-left: 1.2rem;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <span class="status-badge">● 系統運作正常</span>
+        <h1>TIQA Website</h1>
+        <p>這是一個用於測試 GitHub 與 Cloudflare Pages 自動部署的靜態首頁。</p>
+        
+        <div class="info-box">
+            <strong>部署測試項目：</strong>
+            <ul>
+                <li>GitHub Repository 連接</li>
+                <li>Cloudflare Pages 自動建置</li>
+                <li>SSL / HTTPS 加密服務</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
