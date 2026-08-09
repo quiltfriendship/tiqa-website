@@ -197,8 +197,6 @@ a {
 }
 
 
-/* Desktop hover */
-
 @media (min-width: 901px) {
 
     .has-submenu:hover > .submenu {
@@ -256,8 +254,6 @@ a {
 }
 
 
-/* 開啟狀態 */
-
 .menu-button.is-open span:nth-child(1) {
     transform:
         translateY(8px)
@@ -282,6 +278,7 @@ a {
 .hero {
     width: min(100% - 48px, 1180px);
     margin: 0 auto;
+
     padding: 45px 0 35px;
 }
 
@@ -289,12 +286,11 @@ a {
     position: relative;
 
     width: 100%;
-    height: 300px;
+    height: 260px;
 
     overflow: hidden;
 }
 
-/* Hero 圖片 */
 .hero-image {
     display: block;
 
@@ -304,27 +300,21 @@ a {
     object-fit: cover;
     object-position: center;
 
-    /*
-       稍微放大圖片，
-       避免 blur 之後四周出現白邊
-    */
-    transform: scale(1.04);
+    transform: scale(1.05);
 
-    /* 模糊效果 */
-    filter: blur(4px);
+    filter: blur(6px);
 }
 
-/* 淡淡的暗色遮罩，讓白字比較清楚 */
 .hero-overlay {
     position: absolute;
+
     inset: 0;
 
-    background: rgba(0, 0, 0, 0.16);
+    background: rgba(0, 0, 0, 0.18);
 
     z-index: 1;
 }
 
-/* 疊在圖片中央的文字 */
 .hero-title {
     position: absolute;
 
@@ -333,9 +323,10 @@ a {
 
     width: 90%;
 
-    padding: 0;
-
     transform: translate(-50%, -50%);
+
+    padding: 0;
+    margin: 0;
 
     text-align: center;
 
@@ -347,27 +338,30 @@ a {
 
     color: #fff;
 
-    font-size: clamp(25px, 2.5vw, 34px);
+    font-size: clamp(24px, 2.4vw, 32px);
     font-weight: 400;
 
     line-height: 1.5;
 
     letter-spacing: 0.25em;
 
-    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.45);
+    text-shadow:
+        0 1px 5px rgba(0, 0, 0, 0.45);
 }
 
 .english-name {
-    margin: 10px 0 0;
+    margin: 8px 0 0;
 
-    color: rgba(255, 255, 255, 0.92);
+    color: rgba(255, 255, 255, 0.95);
 
-    font-size: 16px;
+    font-size: 15px;
 
-    letter-spacing: 0.06em;
+    letter-spacing: 0.05em;
 
-    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
+    text-shadow:
+        0 1px 4px rgba(0, 0, 0, 0.45);
 }
+
 
 /* =========================
    Quick links
@@ -449,6 +443,7 @@ a {
 .contact-button:hover,
 .contact-button:focus-visible {
     color: #fff;
+
     background: #444;
 }
 
@@ -469,6 +464,7 @@ a {
 
 .footer-inner {
     max-width: 900px;
+
     margin: 0 auto;
 }
 
@@ -478,6 +474,7 @@ a {
 
 .footer-name {
     color: #555;
+
     font-size: 16px;
 }
 
@@ -505,7 +502,6 @@ a {
         gap: 0;
     }
 
-    /* Logo */
 
     .site-logo img {
         max-width: 180px;
@@ -513,16 +509,12 @@ a {
     }
 
 
-    /* Hamburger */
-
     .menu-button {
         display: block;
 
         margin-left: auto;
     }
 
-
-    /* Navigation */
 
     .main-nav {
         display: none;
@@ -535,6 +527,7 @@ a {
     .main-nav.is-open {
         display: block;
     }
+
 
     .menu {
         display: block;
@@ -550,6 +543,7 @@ a {
         border-bottom: 1px solid #eee;
     }
 
+
     .menu-parent {
         width: 100%;
     }
@@ -558,14 +552,13 @@ a {
         flex: 1;
     }
 
+
     .main-nav a {
         padding: 12px 8px;
 
         white-space: normal;
     }
 
-
-    /* 子選單按鈕 */
 
     .submenu-button {
         display: block;
@@ -587,8 +580,6 @@ a {
     }
 
 
-    /* Mobile submenu */
-
     .submenu {
         display: none;
 
@@ -600,7 +591,6 @@ a {
         padding: 0 0 5px 18px !important;
 
         border: 0;
-
         border-top: 1px solid #f0f0f0;
 
         box-shadow: none;
@@ -608,9 +598,11 @@ a {
         background: #fafafa;
     }
 
+
     .has-submenu.submenu-open > .submenu {
         display: block;
     }
+
 
     .submenu-level3 {
         padding-left: 20px !important;
@@ -619,30 +611,26 @@ a {
     }
 
 
-    /* Hero */
-
     .hero {
         width: 100%;
 
         padding: 20px 0 30px;
     }
 
-    .hero-title {
-        padding: 30px 20px 5px;
+    .hero-image-wrap {
+        height: 220px;
     }
 
     .hero h1 {
-        font-size: 26px;
+        font-size: 24px;
 
         letter-spacing: 0.15em;
     }
 
     .english-name {
-        font-size: 16px;
+        font-size: 14px;
     }
 
-
-    /* Quick links */
 
     .quick-links {
         width: 100%;
@@ -659,18 +647,6 @@ a {
 
         margin: 8px 0;
     }
-	.hero-image-wrap {
-        height: 260px;
-    }
-
-    .hero h1 {
-        font-size: 25px;
-        letter-spacing: 0.15em;
-    }
-
-    .english-name {
-        font-size: 14px;
-    }
 
 }
 
@@ -686,28 +662,26 @@ a {
         padding-right: 14px;
     }
 
+
     .site-logo img {
         max-width: 150px;
     }
 
-    .hero h1 {
-        font-size: 23px;
-        letter-spacing: 0.1em;
-    }
 
-    .english-name {
-        font-size: 14px;
-    }
     .hero-image-wrap {
-        height: 220px;
+        height: 190px;
     }
 
+
     .hero h1 {
-        font-size: 21px;
-        letter-spacing: 0.1em;
+        font-size: 20px;
+
+        letter-spacing: 0.08em;
     }
+
 
     .english-name {
         font-size: 13px;
     }
+
 }
