@@ -4,9 +4,9 @@
    ========================================================= */
 
 
-/* =========================
+/* =========================================================
    Reset
-========================= */
+========================================================= */
 
 * {
     box-sizing: border-box;
@@ -47,22 +47,24 @@ a {
 }
 
 
-/* =========================
+/* =========================================================
    共用
-========================= */
+========================================================= */
 
 .content-container {
     width: min(100% - 48px, 1180px);
+
     margin: 0 auto;
 }
 
 
 /* =========================================================
    Header
-   ========================================================= */
+========================================================= */
 
 .site-header {
     position: relative;
+
     z-index: 1000;
 
     width: 100%;
@@ -74,21 +76,24 @@ a {
 
 .header-inner {
     width: min(100% - 48px, 1280px);
+
     min-height: 100px;
 
     margin: 0 auto;
 
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
 
     gap: 30px;
 }
 
 
-/* =========================
+/* =========================================================
    Logo
-========================= */
+========================================================= */
 
 .site-logo {
     display: block;
@@ -102,14 +107,16 @@ a {
     display: block;
 
     width: auto;
+
     max-width: 220px;
+
     max-height: 72px;
 }
 
 
 /* =========================================================
    Main Navigation
-   ========================================================= */
+========================================================= */
 
 .main-nav {
     margin-left: auto;
@@ -117,6 +124,7 @@ a {
 
 .main-nav ul {
     margin: 0;
+
     padding: 0;
 
     list-style: none;
@@ -124,6 +132,7 @@ a {
 
 .menu {
     display: flex;
+
     align-items: center;
 
     gap: 2px;
@@ -135,6 +144,7 @@ a {
 
 .menu-parent {
     display: flex;
+
     align-items: center;
 }
 
@@ -164,7 +174,7 @@ a {
 
 /* =========================================================
    Submenu
-   ========================================================= */
+========================================================= */
 
 .submenu {
     display: none;
@@ -172,6 +182,7 @@ a {
     position: absolute;
 
     top: 100%;
+
     left: 0;
 
     min-width: 210px;
@@ -203,13 +214,14 @@ a {
 
 .submenu-level3 {
     top: 0;
+
     left: 100%;
 }
 
 
-/* =========================
-   Desktop submenu
-========================= */
+/* =========================================================
+   桌機版下拉選單
+========================================================= */
 
 @media (min-width: 901px) {
 
@@ -225,9 +237,8 @@ a {
 
 
 /* =========================================================
-   Submenu Button
-   手機版才顯示
-   ========================================================= */
+   手機子選單按鈕
+========================================================= */
 
 .submenu-button {
     display: none;
@@ -236,12 +247,13 @@ a {
 
 /* =========================================================
    Hamburger Menu
-   ========================================================= */
+========================================================= */
 
 .menu-button {
     display: none;
 
     width: 44px;
+
     height: 44px;
 
     padding: 8px;
@@ -257,6 +269,7 @@ a {
     display: block;
 
     width: 26px;
+
     height: 2px;
 
     margin: 6px auto;
@@ -269,7 +282,7 @@ a {
 }
 
 
-/* 漢堡選單開啟後變 X */
+/* 漢堡選單開啟 */
 
 .menu-button.is-open span:nth-child(1) {
     transform:
@@ -290,25 +303,26 @@ a {
 
 /* =========================================================
    Hero
-   ========================================================= */
+========================================================= */
 
 .hero {
     width: min(100% - 48px, 1180px);
 
     margin: 0 auto;
 
-    padding: 45px 0 35px;
+    padding: 45px 0 50px;
 }
 
 
-/* =========================
+/* =========================================================
    Hero Image
-========================= */
+========================================================= */
 
 .hero-image-wrap {
     position: relative;
 
     width: 100%;
+
     height: 260px;
 
     overflow: hidden;
@@ -318,27 +332,29 @@ a {
     display: block;
 
     width: 100%;
+
     height: 100%;
 
     object-fit: cover;
+
     object-position: center;
 
     /*
        稍微放大圖片，
-       避免 blur 後邊緣出現白邊
+       避免模糊後四周出現空白
     */
     transform: scale(1.05);
 
     /*
-       主視覺模糊效果
+       主視覺模糊
     */
     filter: blur(6px);
 }
 
 
-/* =========================
+/* =========================================================
    Hero Overlay
-========================= */
+========================================================= */
 
 .hero-overlay {
     position: absolute;
@@ -351,22 +367,25 @@ a {
 }
 
 
-/* =========================
+/* =========================================================
    Hero Title
-========================= */
+========================================================= */
 
 .hero-title {
     position: absolute;
 
     top: 50%;
+
     left: 50%;
 
     width: 90%;
 
-    transform: translate(-50%, -50%);
+    transform:
+        translate(-50%, -50%);
+
+    margin: 0;
 
     padding: 0;
-    margin: 0;
 
     text-align: center;
 
@@ -378,7 +397,9 @@ a {
 
     color: #fff;
 
-    font-size: clamp(24px, 2.4vw, 32px);
+    font-size:
+        clamp(24px, 2.4vw, 32px);
+
     font-weight: 400;
 
     line-height: 1.5;
@@ -386,62 +407,29 @@ a {
     letter-spacing: 0.25em;
 
     text-shadow:
-        0 1px 5px rgba(0, 0, 0, 0.45);
+        0 1px 5px
+        rgba(0, 0, 0, 0.45);
 }
 
 .english-name {
     margin: 8px 0 0;
 
-    color: rgba(255, 255, 255, 0.95);
+    color:
+        rgba(255, 255, 255, 0.95);
 
     font-size: 15px;
 
     letter-spacing: 0.05em;
 
     text-shadow:
-        0 1px 4px rgba(0, 0, 0, 0.45);
-}
-
-
-/* =========================================================
-   Quick Links
-   ========================================================= */
-
-.quick-links {
-    width: min(100% - 48px, 900px);
-
-    margin: 0 auto;
-
-    padding: 20px 0 70px;
-
-    text-align: center;
-}
-
-.quick-links a {
-    display: inline-block;
-
-    margin: 5px 10px;
-
-    color: #555;
-
-    text-decoration: none;
-}
-
-.quick-links a:hover,
-.quick-links a:focus-visible {
-    color: #222;
-
-    text-decoration: underline;
-}
-
-.quick-links span {
-    color: #bbb;
+        0 1px 4px
+        rgba(0, 0, 0, 0.45);
 }
 
 
 /* =========================================================
    Contact
-   ========================================================= */
+========================================================= */
 
 .contact-section {
     padding: 60px 0 70px;
@@ -454,7 +442,10 @@ a {
 .contact-section h2 {
     margin: 0 0 15px;
 
+    color: #444;
+
     font-size: 28px;
+
     font-weight: 400;
 
     letter-spacing: 0.15em;
@@ -467,9 +458,9 @@ a {
 }
 
 
-/* =========================
+/* =========================================================
    Contact Button
-========================= */
+========================================================= */
 
 .contact-button {
     display: inline-block;
@@ -499,10 +490,10 @@ a {
 
 /* =========================================================
    Footer
-   ========================================================= */
+========================================================= */
 
 .site-footer {
-    padding: 50px 20px;
+    padding: 45px 20px;
 
     color: #777;
 
@@ -518,12 +509,12 @@ a {
 }
 
 
-/* =========================
+/* =========================================================
    Footer Navigation
-========================= */
+========================================================= */
 
 .footer-nav {
-    margin-bottom: 25px;
+    margin-bottom: 24px;
 
     text-align: center;
 }
@@ -537,7 +528,8 @@ a {
 
     text-decoration: none;
 
-    transition: color 0.2s ease;
+    transition:
+        color 0.2s ease;
 }
 
 .footer-nav a:hover,
@@ -552,9 +544,9 @@ a {
 }
 
 
-/* =========================
-   Footer Text
-========================= */
+/* =========================================================
+   Footer Information
+========================================================= */
 
 .site-footer p {
     margin: 3px 0;
@@ -566,8 +558,16 @@ a {
     font-size: 16px;
 }
 
+.footer-english {
+    color: #777;
+
+    font-size: 14px;
+}
+
 .copyright {
-    margin-top: 18px !important;
+    margin-top: 16px !important;
+
+    color: #999;
 
     font-size: 12px;
 }
@@ -575,9 +575,10 @@ a {
 
 /* =========================================================
    Tablet / Mobile
-   ========================================================= */
+========================================================= */
 
 @media (max-width: 900px) {
+
 
     /* =========================
        Header
@@ -585,6 +586,7 @@ a {
 
     .header-inner {
         width: 100%;
+
         min-height: 78px;
 
         padding: 10px 20px;
@@ -601,6 +603,7 @@ a {
 
     .site-logo img {
         max-width: 180px;
+
         max-height: 58px;
     }
 
@@ -637,13 +640,15 @@ a {
 
         width: 100%;
 
-        border-top: 1px solid #eee;
+        border-top:
+            1px solid #eee;
     }
 
     .menu > li {
         width: 100%;
 
-        border-bottom: 1px solid #eee;
+        border-bottom:
+            1px solid #eee;
     }
 
     .menu-parent {
@@ -669,6 +674,7 @@ a {
         display: block;
 
         width: 46px;
+
         height: 46px;
 
         flex-shrink: 0;
@@ -695,25 +701,34 @@ a {
         position: static;
 
         width: 100%;
+
         min-width: 0;
 
-        padding: 0 0 5px 18px !important;
+        padding:
+            0 0 5px 18px !important;
 
         border: 0;
 
-        border-top: 1px solid #f0f0f0;
+        border-top:
+            1px solid #f0f0f0;
 
         box-shadow: none;
 
         background: #fafafa;
     }
 
-    .has-submenu.submenu-open > .submenu {
+    .has-submenu.submenu-open
+    > .submenu {
+
         display: block;
     }
 
+
+    /* 第三級 */
+
     .submenu-level3 {
-        padding-left: 20px !important;
+        padding-left:
+            20px !important;
 
         background: #f5f5f5;
     }
@@ -726,7 +741,8 @@ a {
     .hero {
         width: 100%;
 
-        padding: 20px 0 30px;
+        padding:
+            20px 0 35px;
     }
 
     .hero-image-wrap {
@@ -745,32 +761,12 @@ a {
 
 
     /* =========================
-       Quick Links
-    ========================= */
-
-    .quick-links {
-        width: 100%;
-
-        padding: 20px 20px 50px;
-    }
-
-    .quick-links span {
-        display: none;
-    }
-
-    .quick-links a {
-        display: block;
-
-        margin: 8px 0;
-    }
-
-
-    /* =========================
        Contact
     ========================= */
 
     .contact-section {
-        padding: 45px 20px 55px;
+        padding:
+            45px 20px 55px;
     }
 
     .contact-section h2 {
@@ -782,11 +778,12 @@ a {
 
 /* =========================================================
    Small Mobile
-   ========================================================= */
+========================================================= */
 
 @media (max-width: 600px) {
 
-    /* Footer 選單改為直向 */
+
+    /* Footer 導覽改成直向 */
 
     .footer-nav span {
         display: none;
@@ -803,9 +800,10 @@ a {
 
 /* =========================================================
    Very Small Mobile
-   ========================================================= */
+========================================================= */
 
 @media (max-width: 480px) {
+
 
     /* =========================
        Header
@@ -813,6 +811,7 @@ a {
 
     .header-inner {
         padding-left: 14px;
+
         padding-right: 14px;
     }
 
@@ -846,11 +845,22 @@ a {
 
 
     /* =========================
+       Contact
+    ========================= */
+
+    .contact-section {
+        padding:
+            40px 16px 48px;
+    }
+
+
+    /* =========================
        Footer
     ========================= */
 
     .site-footer {
-        padding: 40px 15px;
+        padding:
+            38px 15px;
     }
 
 }
