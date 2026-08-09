@@ -1,0 +1,481 @@
+/* =========================================================
+   TIQA 聯絡我們
+========================================================= */
+
+
+/* =========================================================
+   頁面標題
+========================================================= */
+
+.contact-hero {
+    padding: 55px 20px;
+
+    background: #f7f3f4;
+
+    text-align: center;
+}
+
+
+.contact-hero h1 {
+    margin: 0;
+
+    color: #444;
+
+    font-size: 32px;
+    font-weight: 400;
+
+    letter-spacing: 0.18em;
+}
+
+
+.contact-hero p {
+    margin: 6px 0 0;
+
+    color: #999;
+
+    font-size: 14px;
+
+    letter-spacing: 0.08em;
+}
+
+
+
+/* =========================================================
+   聯絡頁面
+========================================================= */
+
+.contact-page {
+    padding: 70px 0 90px;
+
+    background: #fff;
+}
+
+
+.contact-layout {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 0.8fr)
+        minmax(0, 1.2fr);
+
+    gap: 70px;
+
+    align-items: start;
+}
+
+
+
+/* =========================================================
+   左側聯絡資訊
+========================================================= */
+
+.contact-info {
+    padding: 10px 0;
+}
+
+
+.contact-info h2 {
+    margin: 0;
+
+    color: #333;
+
+    font-size: 27px;
+    font-weight: 400;
+
+    line-height: 1.5;
+
+    letter-spacing: 0.08em;
+}
+
+
+.contact-info-en {
+    margin: 7px 0 35px;
+
+    color: #999;
+
+    font-size: 14px;
+
+    letter-spacing: 0.04em;
+}
+
+
+.contact-info-list {
+    border-top: 1px solid #e7e7e7;
+}
+
+
+.contact-info-item {
+    padding: 24px 0;
+
+    border-bottom: 1px solid #e7e7e7;
+}
+
+
+.contact-info-item h3 {
+    margin: 0 0 6px;
+
+    color: #777;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    letter-spacing: 0.05em;
+}
+
+
+.contact-info-item p {
+    margin: 0;
+
+    color: #555;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+.contact-info-item a {
+    color: #555;
+
+    text-decoration: underline;
+
+    text-underline-offset: 3px;
+}
+
+
+.contact-info-item a:hover,
+.contact-info-item a:focus-visible {
+    color: #111;
+}
+
+
+
+/* =========================================================
+   右側表單
+========================================================= */
+
+.contact-form-section {
+    padding: 38px 42px;
+
+    background: #fafafa;
+
+    border: 1px solid #ececec;
+}
+
+
+.contact-form-section h2 {
+    margin: 0 0 5px;
+
+    color: #333;
+
+    font-size: 25px;
+    font-weight: 400;
+
+    letter-spacing: 0.1em;
+}
+
+
+.form-note {
+    margin: 0 0 30px;
+
+    color: #777;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+
+/* =========================================================
+   Form
+========================================================= */
+
+.contact-form {
+    width: 100%;
+}
+
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #555;
+
+    font-size: 14px;
+
+    font-weight: 500;
+}
+
+
+.required {
+    color: #a55362;
+}
+
+
+
+/* =========================================================
+   Input
+========================================================= */
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    display: block;
+
+    width: 100%;
+
+    padding: 11px 12px;
+
+    color: #444;
+
+    background: #fff;
+
+    border: 1px solid #d8d8d8;
+
+    border-radius: 0;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.contact-form textarea {
+    min-height: 180px;
+
+    resize: vertical;
+}
+
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+
+    border-color: #9b6f78;
+
+    box-shadow:
+        0 0 0 2px
+        rgba(155, 111, 120, 0.10);
+}
+
+
+
+/* =========================================================
+   Checkbox
+========================================================= */
+
+.form-check {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 9px;
+}
+
+
+.form-check input {
+    width: 16px;
+    height: 16px;
+
+    margin-top: 6px;
+
+    flex-shrink: 0;
+}
+
+
+.form-check label {
+    margin: 0;
+
+    color: #666;
+
+    font-weight: 400;
+
+    line-height: 1.7;
+}
+
+
+
+/* =========================================================
+   Error
+========================================================= */
+
+.form-error {
+    min-height: 18px;
+
+    margin: 5px 0 0;
+
+    color: #a13f50;
+
+    font-size: 12px;
+}
+
+
+
+/* =========================================================
+   Submit
+========================================================= */
+
+.form-actions {
+    margin-top: 10px;
+}
+
+
+.contact-submit {
+    min-width: 120px;
+
+    padding: 10px 30px;
+
+    border: 1px solid #555;
+
+    color: #444;
+
+    background: #fff;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition:
+        color 0.2s ease,
+        background-color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+.contact-submit:hover,
+.contact-submit:focus-visible {
+    color: #fff;
+
+    background: #444;
+
+    border-color: #444;
+}
+
+
+
+/* =========================================================
+   Form Message
+========================================================= */
+
+.contact-form-message {
+    display: none;
+
+    margin-top: 22px;
+
+    padding: 14px 16px;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+.contact-form-message.is-visible {
+    display: block;
+}
+
+
+.contact-form-message.is-info {
+    color: #555;
+
+    background: #f4f1f2;
+
+    border-left: 3px solid #9b6f78;
+}
+
+
+
+/* =========================================================
+   Tablet
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .contact-layout {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+
+    .contact-page {
+        padding:
+            55px 0 70px;
+    }
+
+
+    .contact-form-section {
+        padding:
+            32px 32px;
+    }
+
+}
+
+
+
+/* =========================================================
+   Mobile
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .contact-hero {
+        padding:
+            40px 18px;
+    }
+
+
+    .contact-hero h1 {
+        font-size: 27px;
+
+        letter-spacing: 0.14em;
+    }
+
+
+    .contact-page {
+        padding:
+            40px 0 55px;
+    }
+
+
+    .contact-layout {
+        gap: 35px;
+    }
+
+
+    .contact-info h2 {
+        font-size: 23px;
+    }
+
+
+    .contact-form-section {
+        padding:
+            26px 20px;
+    }
+
+
+    .contact-form-section h2 {
+        font-size: 22px;
+    }
+
+
+    .contact-submit {
+        width: 100%;
+    }
+
+}
