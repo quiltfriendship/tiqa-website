@@ -4,33 +4,121 @@
 
 
 /* =========================================================
-   Page Header
+   推薦教室主視覺
 ========================================================= */
 
-.page-header {
-    padding: 55px 20px;
+.classroom-hero {
+    width: 100%;
 
-    background: #f7f3f4;
+    padding: 35px 20px 0;
+
+    background: #fff;
+}
+
+
+.classroom-hero-inner {
+    position: relative;
+
+    width: 100%;
+    max-width: 1200px;
+
+    height: 260px;
+
+    margin: 0 auto;
+
+    overflow: hidden;
+
+    background: #eee;
+}
+
+
+/* =========================================================
+   主視覺圖片
+========================================================= */
+
+.classroom-hero-image {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    /*
+       圖片焦點偏右。
+       保留人物、縫紉機、鳥，
+       同時裁掉大部分左側活動資訊。
+    */
+    object-position: 62% 50%;
+}
+
+
+/* =========================================================
+   主視覺標題
+========================================================= */
+
+.classroom-hero-title {
+    position: absolute;
+
+    top: 38px;
+    left: 42px;
+
+    padding: 4px 12px 6px;
+
+    color: #fff;
+
+    background: #000;
+
+    font-size: 38px;
+    font-weight: 700;
+
+    line-height: 1.25;
+
+    letter-spacing: 0.03em;
+
+    z-index: 2;
+}
+
+
+
+/* =========================================================
+   推薦教室內容區
+========================================================= */
+
+.classroom-section {
+    padding: 55px 0 85px;
+
+    background: #fff;
+}
+
+
+/* =========================================================
+   頁面標題
+========================================================= */
+
+.classroom-heading {
+    margin-bottom: 40px;
 
     text-align: center;
 }
 
-.page-header h1 {
+
+.classroom-heading h1 {
     margin: 0;
 
     color: #444;
 
     font-size: 32px;
-
     font-weight: 400;
 
-    letter-spacing: 0.15em;
+    letter-spacing: 0.18em;
 }
 
-.page-header p {
-    margin: 5px 0 0;
 
-    color: #888;
+.classroom-heading-en {
+    margin: 7px 0 0;
+
+    color: #999;
 
     font-size: 14px;
 
@@ -38,13 +126,32 @@
 }
 
 
-/* =========================================================
-   Classroom Section
-========================================================= */
+.classroom-heading-line {
+    width: 45px;
+    height: 1px;
 
-.classroom-section {
-    padding: 65px 0 85px;
+    margin: 20px auto;
+
+    background: #bbb;
 }
+
+
+.classroom-intro {
+    max-width: 680px;
+
+    margin: 0 auto;
+
+    color: #777;
+
+    font-size: 15px;
+
+    line-height: 1.9;
+}
+
+
+/* =========================================================
+   排序說明
+========================================================= */
 
 .classroom-note {
     margin: 0 0 25px;
@@ -53,6 +160,7 @@
 
     font-size: 14px;
 }
+
 
 
 /* =========================================================
@@ -69,6 +177,7 @@
 
     align-items: stretch;
 }
+
 
 
 /* =========================================================
@@ -97,9 +206,9 @@
         box-shadow 0.25s ease;
 }
 
+
 .classroom-card:hover {
-    transform:
-        translateY(-3px);
+    transform: translateY(-3px);
 
     box-shadow:
         0 8px 22px
@@ -107,8 +216,9 @@
 }
 
 
+
 /* =========================================================
-   圖片
+   教室圖片
 ========================================================= */
 
 .classroom-image {
@@ -123,31 +233,31 @@
     background: #f3f3f3;
 }
 
+
 .classroom-image img {
     display: block;
 
     width: 100%;
-
     height: 100%;
 
     object-fit: cover;
-
     object-position: center;
 
     transition:
         transform 0.35s ease;
 }
 
+
 .classroom-card:hover
 .classroom-image img {
 
-    transform:
-        scale(1.03);
+    transform: scale(1.03);
 }
 
 
+
 /* =========================================================
-   Body
+   卡片內容
 ========================================================= */
 
 .classroom-body {
@@ -157,20 +267,20 @@
 
     flex-direction: column;
 
-    padding:
-        24px 24px 26px;
+    padding: 24px 24px 26px;
 }
 
 
 /*
-   同列卡片自動等高。
-   classroom-main 用 flex:1，
-   讓主要教學內容盡量對齊底部。
+   classroom-main 使用 flex:1，
+   讓同一列卡片的「主要教學內容」
+   盡量排列在接近的位置。
 */
 
 .classroom-main {
     flex: 1;
 }
+
 
 
 /* =========================================================
@@ -183,11 +293,11 @@
     color: #333;
 
     font-size: 21px;
-
     font-weight: 500;
 
     line-height: 1.5;
 }
+
 
 
 /* =========================================================
@@ -202,17 +312,18 @@
     color: #9b6f78;
 
     font-size: 16px;
-
     font-weight: 500;
 }
+
 
 .classroom-name-empty {
     visibility: hidden;
 }
 
 
+
 /* =========================================================
-   描述
+   教室說明
 ========================================================= */
 
 .classroom-description {
@@ -226,6 +337,7 @@
 }
 
 
+
 /* =========================================================
    基本資訊
 ========================================================= */
@@ -233,6 +345,7 @@
 .classroom-info {
     margin: 15px 0 0;
 }
+
 
 .classroom-info div {
     display: grid;
@@ -245,11 +358,13 @@
     margin-bottom: 7px;
 }
 
+
 .classroom-info dt {
     color: #888;
 
     font-size: 14px;
 }
+
 
 .classroom-info dd {
     margin: 0;
@@ -258,8 +373,11 @@
 
     font-size: 14px;
 
+    line-height: 1.7;
+
     overflow-wrap: anywhere;
 }
+
 
 .classroom-info a {
     color: #555;
@@ -269,14 +387,16 @@
     text-underline-offset: 3px;
 }
 
+
 .classroom-info a:hover,
 .classroom-info a:focus-visible {
     color: #111;
 }
 
 
+
 /* =========================================================
-   教學內容
+   主要教學內容
 ========================================================= */
 
 .classroom-teaching {
@@ -288,15 +408,16 @@
         1px solid #ececec;
 }
 
+
 .classroom-teaching h3 {
     margin: 0 0 8px;
 
     color: #555;
 
     font-size: 15px;
-
     font-weight: 500;
 }
+
 
 .classroom-teaching p {
     margin: 0;
@@ -309,11 +430,31 @@
 }
 
 
+
 /* =========================================================
    Tablet
 ========================================================= */
 
 @media (max-width: 1000px) {
+
+    .classroom-hero {
+        padding:
+            25px 20px 0;
+    }
+
+
+    .classroom-hero-inner {
+        height: 230px;
+    }
+
+
+    .classroom-hero-title {
+        top: 32px;
+        left: 34px;
+
+        font-size: 34px;
+    }
+
 
     .classroom-grid {
         grid-template-columns:
@@ -323,27 +464,93 @@
 }
 
 
+
 /* =========================================================
    Mobile
 ========================================================= */
 
 @media (max-width: 650px) {
 
-    .page-header {
+
+    /* =========================
+       Hero
+    ========================= */
+
+    .classroom-hero {
         padding:
-            40px 18px;
+            15px 12px 0;
     }
 
-    .page-header h1 {
+
+    .classroom-hero-inner {
+        height: 190px;
+    }
+
+
+    .classroom-hero-image {
+        object-position: 65% 50%;
+    }
+
+
+    .classroom-hero-title {
+        top: 24px;
+        left: 22px;
+
+        padding:
+            3px 9px 4px;
+
         font-size: 27px;
     }
 
 
+
+    /* =========================
+       標題
+    ========================= */
+
     .classroom-section {
         padding:
-            45px 0 60px;
+            40px 0 60px;
     }
 
+
+    .classroom-heading {
+        margin-bottom: 30px;
+
+        padding:
+            0 18px;
+    }
+
+
+    .classroom-heading h1 {
+        font-size: 27px;
+
+        letter-spacing: 0.15em;
+    }
+
+
+    .classroom-heading-en {
+        font-size: 13px;
+    }
+
+
+    .classroom-heading-line {
+        margin:
+            18px auto;
+    }
+
+
+    .classroom-intro {
+        font-size: 14px;
+
+        line-height: 1.8;
+    }
+
+
+
+    /* =========================
+       卡片
+    ========================= */
 
     .classroom-grid {
         grid-template-columns:
@@ -366,6 +573,28 @@
 
     .classroom-main {
         flex: initial;
+    }
+
+}
+
+
+
+/* =========================================================
+   Very Small Mobile
+========================================================= */
+
+@media (max-width: 420px) {
+
+    .classroom-hero-inner {
+        height: 165px;
+    }
+
+
+    .classroom-hero-title {
+        top: 18px;
+        left: 16px;
+
+        font-size: 23px;
     }
 
 }

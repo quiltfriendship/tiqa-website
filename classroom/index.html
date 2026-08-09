@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
+
 <head>
     <meta charset="UTF-8">
 
@@ -11,20 +12,28 @@
     <meta name="description"
           content="台灣國際拼布友好會推薦拼布教室及老師資訊">
 
+    <!-- 全站共用 CSS -->
     <link rel="stylesheet"
           href="/assets/css/style.css">
 
+    <!-- 推薦教室專用 CSS -->
     <link rel="stylesheet"
           href="/assets/css/classroom.css">
 </head>
 
+
 <body>
 
+
+<!-- =====================================================
+     Header
+===================================================== -->
 
 <header class="site-header">
 
     <div class="header-inner">
 
+        <!-- Logo -->
         <a class="site-logo"
            href="/"
            aria-label="回到台灣國際拼布友好會首頁">
@@ -35,6 +44,7 @@
         </a>
 
 
+        <!-- 手機漢堡選單 -->
         <button class="menu-button"
                 type="button"
                 aria-expanded="false"
@@ -48,17 +58,22 @@
         </button>
 
 
+        <!-- 主選單 -->
         <nav id="main-navigation"
              class="main-nav"
              aria-label="主要選單">
 
             <ul class="menu">
 
+                <!-- 首頁 -->
                 <li>
-                    <a href="/">首頁</a>
+                    <a href="/">
+                        首頁
+                    </a>
                 </li>
 
 
+                <!-- 關於我們 -->
                 <li class="has-submenu">
 
                     <div class="menu-parent">
@@ -134,6 +149,7 @@
                 </li>
 
 
+                <!-- 最新消息 -->
                 <li>
                     <a href="/news/">
                         最新消息
@@ -141,6 +157,7 @@
                 </li>
 
 
+                <!-- 公益活動 -->
                 <li>
                     <a href="/charity/">
                         公益活動
@@ -148,6 +165,7 @@
                 </li>
 
 
+                <!-- 歷年活動 -->
                 <li class="has-submenu">
 
                     <div class="menu-parent">
@@ -168,17 +186,42 @@
 
                     <ul class="submenu">
 
-                        <li><a href="/events/2025/">2025</a></li>
-                        <li><a href="/events/2023/">2023</a></li>
-                        <li><a href="/events/2021/">2021</a></li>
-                        <li><a href="/events/2019/">2019</a></li>
-                        <li><a href="/events/2016/">2016</a></li>
+                        <li>
+                            <a href="/events/2025/">
+                                2025
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="/events/2023/">
+                                2023
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="/events/2021/">
+                                2021
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="/events/2019/">
+                                2019
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="/events/2016/">
+                                2016
+                            </a>
+                        </li>
 
                     </ul>
 
                 </li>
 
 
+                <!-- 出版訊息 -->
                 <li>
                     <a href="/publications/">
                         出版訊息
@@ -186,6 +229,7 @@
                 </li>
 
 
+                <!-- 加入會員 -->
                 <li>
                     <a href="/membership/">
                         加入會員
@@ -193,6 +237,7 @@
                 </li>
 
 
+                <!-- 推薦教室 -->
                 <li>
                     <a href="/classroom/"
                        aria-current="page">
@@ -209,31 +254,77 @@
 </header>
 
 
+
+<!-- =====================================================
+     Main
+===================================================== -->
+
 <main>
 
-    <section class="page-header">
 
-        <div class="content-container">
+    <!-- =================================================
+         推薦教室主視覺
+    ================================================= -->
 
-            <h1>推薦教室</h1>
+    <section class="classroom-hero">
 
-            <p>
-                Recommended Classrooms
-            </p>
+        <div class="classroom-hero-inner">
+
+            <img
+                src="/assets/images/classroom/classroom-hero.jpg"
+                alt=""
+                class="classroom-hero-image"
+            >
+
+            <div class="classroom-hero-title">
+                推薦教室
+            </div>
 
         </div>
 
     </section>
 
 
+
+    <!-- =================================================
+         推薦教室列表
+    ================================================= -->
+
     <section class="classroom-section">
 
         <div class="content-container">
+
+            <div class="classroom-heading">
+
+                <h1>
+                    推薦教室
+                </h1>
+
+                <p class="classroom-heading-en">
+                    Recommended Classrooms
+                </p>
+
+                <div class="classroom-heading-line"
+                     aria-hidden="true">
+                </div>
+
+                <p class="classroom-intro">
+                    台灣國際拼布友好會推薦拼布教室及老師資訊，
+                    歡迎喜愛拼布與手作的朋友參考。
+                </p>
+
+            </div>
+
 
             <p class="classroom-note">
                 依老師姓氏排列
             </p>
 
+
+            <!--
+                classroom.js 會自動將 classroom-data.js
+                內的老師資料產生在這裡
+            -->
 
             <div id="classroom-list"
                  class="classroom-grid">
@@ -243,8 +334,14 @@
 
     </section>
 
+
 </main>
 
+
+
+<!-- =====================================================
+     Footer
+===================================================== -->
 
 <footer class="site-footer">
 
@@ -253,25 +350,51 @@
         <nav class="footer-nav"
              aria-label="頁尾選單">
 
-            <a href="/about/">關於我們</a>
+            <a href="/about/">
+                關於我們
+            </a>
+
             <span aria-hidden="true">|</span>
 
-            <a href="/news/">最新消息</a>
+
+            <a href="/news/">
+                最新消息
+            </a>
+
             <span aria-hidden="true">|</span>
 
-            <a href="/charity/">公益活動</a>
+
+            <a href="/charity/">
+                公益活動
+            </a>
+
             <span aria-hidden="true">|</span>
 
-            <a href="/events/">歷年活動</a>
+
+            <a href="/events/">
+                歷年活動
+            </a>
+
             <span aria-hidden="true">|</span>
 
-            <a href="/publications/">出版訊息</a>
+
+            <a href="/publications/">
+                出版訊息
+            </a>
+
             <span aria-hidden="true">|</span>
 
-            <a href="/membership/">加入會員</a>
+
+            <a href="/membership/">
+                加入會員
+            </a>
+
             <span aria-hidden="true">|</span>
 
-            <a href="/classroom/">推薦教室</a>
+
+            <a href="/classroom/">
+                推薦教室
+            </a>
 
         </nav>
 
@@ -293,9 +416,17 @@
 </footer>
 
 
+
+<!-- =====================================================
+     JavaScript
+===================================================== -->
+
 <script src="/assets/js/main.js"></script>
+
 <script src="/classroom/classroom-data.js"></script>
+
 <script src="/classroom/classroom.js"></script>
+
 
 </body>
 </html>
