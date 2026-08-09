@@ -9,9 +9,7 @@
 
 .classroom-hero {
     width: 100%;
-
-    padding: 35px 20px 0;
-
+    padding: 28px 20px 0;
     background: #fff;
 }
 
@@ -22,7 +20,7 @@
     width: 100%;
     max-width: 1200px;
 
-    height: 260px;
+    height: 180px;
 
     margin: 0 auto;
 
@@ -45,11 +43,10 @@
     object-fit: cover;
 
     /*
-       圖片焦點偏右。
-       保留人物、縫紉機、鳥，
-       同時裁掉大部分左側活動資訊。
+       舊版為橫幅裁切效果。
+       焦點略偏右，保留人物、縫紉機及鳥。
     */
-    object-position: 62% 50%;
+    object-position: 62% 48%;
 }
 
 
@@ -60,20 +57,18 @@
 .classroom-hero-title {
     position: absolute;
 
-    top: 38px;
-    left: 42px;
+    top: 28px;
+    left: 34px;
 
-    padding: 4px 12px 6px;
+    padding: 3px 10px 5px;
 
     color: #fff;
-
     background: #000;
 
-    font-size: 38px;
+    font-size: 32px;
     font-weight: 700;
 
     line-height: 1.25;
-
     letter-spacing: 0.03em;
 
     z-index: 2;
@@ -250,7 +245,6 @@
 
 .classroom-card:hover
 .classroom-image img {
-
     transform: scale(1.03);
 }
 
@@ -272,9 +266,9 @@
 
 
 /*
+   同一列卡片高度會一致。
    classroom-main 使用 flex:1，
-   讓同一列卡片的「主要教學內容」
-   盡量排列在接近的位置。
+   讓「主要教學內容」盡量對齊。
 */
 
 .classroom-main {
@@ -437,24 +431,34 @@
 
 @media (max-width: 1000px) {
 
+    /* Hero */
+
     .classroom-hero {
-        padding:
-            25px 20px 0;
+        padding: 22px 18px 0;
     }
 
 
     .classroom-hero-inner {
-        height: 230px;
+        height: 160px;
+    }
+
+
+    .classroom-hero-image {
+        object-position: 63% 50%;
     }
 
 
     .classroom-hero-title {
-        top: 32px;
-        left: 34px;
+        top: 25px;
+        left: 28px;
 
-        font-size: 34px;
+        padding: 3px 9px 4px;
+
+        font-size: 29px;
     }
 
+
+    /* Grid */
 
     .classroom-grid {
         grid-template-columns:
@@ -472,18 +476,17 @@
 @media (max-width: 650px) {
 
 
-    /* =========================
+    /* =====================================================
        Hero
-    ========================= */
+    ===================================================== */
 
     .classroom-hero {
-        padding:
-            15px 12px 0;
+        padding: 15px 12px 0;
     }
 
 
     .classroom-hero-inner {
-        height: 190px;
+        height: 135px;
     }
 
 
@@ -493,26 +496,30 @@
 
 
     .classroom-hero-title {
-        top: 24px;
-        left: 22px;
+        top: 18px;
+        left: 18px;
 
-        padding:
-            3px 9px 4px;
+        padding: 3px 8px 4px;
 
-        font-size: 27px;
+        font-size: 24px;
     }
 
 
 
-    /* =========================
-       標題
-    ========================= */
+    /* =====================================================
+       內容區
+    ===================================================== */
 
     .classroom-section {
         padding:
             40px 0 60px;
     }
 
+
+
+    /* =====================================================
+       標題
+    ===================================================== */
 
     .classroom-heading {
         margin-bottom: 30px;
@@ -548,9 +555,20 @@
 
 
 
-    /* =========================
-       卡片
-    ========================= */
+    /* =====================================================
+       排序說明
+    ===================================================== */
+
+    .classroom-note {
+        padding:
+            0 4px;
+    }
+
+
+
+    /* =====================================================
+       Grid
+    ===================================================== */
 
     .classroom-grid {
         grid-template-columns:
@@ -559,6 +577,11 @@
         gap: 24px;
     }
 
+
+
+    /* =====================================================
+       Card
+    ===================================================== */
 
     .classroom-image {
         height: 240px;
@@ -570,6 +593,11 @@
             20px 20px 22px;
     }
 
+
+    /*
+       手機只有單欄，
+       不需要刻意讓內容區等高。
+    */
 
     .classroom-main {
         flex: initial;
@@ -585,16 +613,46 @@
 
 @media (max-width: 420px) {
 
+    /* Hero */
+
+    .classroom-hero {
+        padding:
+            12px 10px 0;
+    }
+
+
     .classroom-hero-inner {
-        height: 165px;
+        height: 120px;
+    }
+
+
+    .classroom-hero-image {
+        object-position: 67% 50%;
     }
 
 
     .classroom-hero-title {
-        top: 18px;
-        left: 16px;
+        top: 15px;
+        left: 14px;
 
-        font-size: 23px;
+        padding:
+            2px 7px 3px;
+
+        font-size: 21px;
+    }
+
+
+    /* 標題 */
+
+    .classroom-heading h1 {
+        font-size: 24px;
+    }
+
+
+    /* 卡片圖片 */
+
+    .classroom-image {
+        height: 220px;
     }
 
 }
