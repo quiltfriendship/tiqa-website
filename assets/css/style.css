@@ -281,55 +281,93 @@ a {
 
 .hero {
     width: min(100% - 48px, 1180px);
-
     margin: 0 auto;
-
-    padding: 50px 0 35px;
+    padding: 45px 0 35px;
 }
 
 .hero-image-wrap {
+    position: relative;
+
     width: 100%;
-    height: 520px;
+    height: 300px;
+
     overflow: hidden;
 }
 
+/* Hero 圖片 */
 .hero-image {
     display: block;
+
     width: 100%;
     height: 100%;
+
     object-fit: cover;
     object-position: center;
+
+    /*
+       稍微放大圖片，
+       避免 blur 之後四周出現白邊
+    */
+    transform: scale(1.04);
+
+    /* 模糊效果 */
+    filter: blur(4px);
 }
 
+/* 淡淡的暗色遮罩，讓白字比較清楚 */
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.16);
+
+    z-index: 1;
+}
+
+/* 疊在圖片中央的文字 */
 .hero-title {
-    padding: 40px 20px 10px;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    width: 90%;
+
+    padding: 0;
+
+    transform: translate(-50%, -50%);
 
     text-align: center;
+
+    z-index: 2;
 }
 
 .hero h1 {
     margin: 0;
 
-    color: #444;
+    color: #fff;
 
-    font-size: clamp(26px, 3vw, 38px);
+    font-size: clamp(25px, 2.5vw, 34px);
     font-weight: 400;
 
     line-height: 1.5;
 
-    letter-spacing: 0.28em;
+    letter-spacing: 0.25em;
+
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.45);
 }
 
 .english-name {
-    margin: 12px 0 0;
+    margin: 10px 0 0;
 
-    color: #777;
+    color: rgba(255, 255, 255, 0.92);
 
-    font-size: 18px;
+    font-size: 16px;
 
     letter-spacing: 0.06em;
-}
 
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
+}
 
 /* =========================
    Quick links
@@ -622,7 +660,16 @@ a {
         margin: 8px 0;
     }
 	.hero-image-wrap {
-        height: 420px;
+        height: 260px;
+    }
+
+    .hero h1 {
+        font-size: 25px;
+        letter-spacing: 0.15em;
+    }
+
+    .english-name {
+        font-size: 14px;
     }
 
 }
@@ -652,6 +699,15 @@ a {
         font-size: 14px;
     }
     .hero-image-wrap {
-        height: 320px;
+        height: 220px;
+    }
+
+    .hero h1 {
+        font-size: 21px;
+        letter-spacing: 0.1em;
+    }
+
+    .english-name {
+        font-size: 13px;
     }
 }
