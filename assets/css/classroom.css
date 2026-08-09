@@ -9,7 +9,9 @@
 
 .classroom-hero {
     width: 100%;
+
     padding: 28px 20px 0;
+
     background: #fff;
 }
 
@@ -43,35 +45,107 @@
     object-fit: cover;
 
     /*
-       舊版為橫幅裁切效果。
-       焦點略偏右，保留人物、縫紉機及鳥。
+       焦點偏右：
+       保留人物、縫紉機及右側鳥。
     */
-    object-position: 68% 50%;
+    object-position: 62% 48%;
+}
+
+
+/* =========================================================
+   主視覺淡淡的漸層
+
+   不是黑底。
+   目的只是讓左側白色文字更清楚。
+========================================================= */
+
+.classroom-hero-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(90, 30, 30, 0.20) 0%,
+            rgba(90, 30, 30, 0.08) 38%,
+            rgba(90, 30, 30, 0) 65%
+        );
+
+    z-index: 1;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   主視覺文字區
+========================================================= */
+
+.classroom-hero-content {
+    position: absolute;
+
+    top: 50%;
+    left: 38px;
+
+    width: 47%;
+
+    transform: translateY(-50%);
+
+    z-index: 2;
 }
 
 
 /* =========================================================
    主視覺標題
+   不使用黑底
 ========================================================= */
 
 .classroom-hero-title {
-    position: absolute;
+    margin: 0 0 12px;
 
-    top: 28px;
-    left: 34px;
-
-    padding: 3px 10px 5px;
+    padding: 0;
 
     color: #fff;
-    background: #000;
 
-    font-size: 32px;
+    background: transparent;
+
+    font-size: 34px;
     font-weight: 700;
 
-    line-height: 1.25;
+    line-height: 1.3;
+
+    letter-spacing: 0.08em;
+
+    /*
+       加很淡的文字陰影，
+       避免白字吃進背景。
+    */
+    text-shadow:
+        0 1px 4px
+        rgba(0, 0, 0, 0.28);
+}
+
+
+/* =========================================================
+   主視覺說明文字
+========================================================= */
+
+.classroom-hero-description {
+    margin: 0;
+
+    color: #fff;
+
+    font-size: 15px;
+    font-weight: 400;
+
+    line-height: 1.9;
+
     letter-spacing: 0.03em;
 
-    z-index: 2;
+    text-shadow:
+        0 1px 4px
+        rgba(0, 0, 0, 0.30);
 }
 
 
@@ -81,66 +155,9 @@
 ========================================================= */
 
 .classroom-section {
-    padding: 55px 0 85px;
+    padding: 38px 0 85px;
 
     background: #fff;
-}
-
-
-/* =========================================================
-   頁面標題
-========================================================= */
-
-.classroom-heading {
-    margin-bottom: 40px;
-
-    text-align: center;
-}
-
-
-.classroom-heading h1 {
-    margin: 0;
-
-    color: #444;
-
-    font-size: 32px;
-    font-weight: 400;
-
-    letter-spacing: 0.18em;
-}
-
-
-.classroom-heading-en {
-    margin: 7px 0 0;
-
-    color: #999;
-
-    font-size: 14px;
-
-    letter-spacing: 0.08em;
-}
-
-
-.classroom-heading-line {
-    width: 45px;
-    height: 1px;
-
-    margin: 20px auto;
-
-    background: #bbb;
-}
-
-
-.classroom-intro {
-    max-width: 680px;
-
-    margin: 0 auto;
-
-    color: #777;
-
-    font-size: 15px;
-
-    line-height: 1.9;
 }
 
 
@@ -266,9 +283,7 @@
 
 
 /*
-   同一列卡片高度會一致。
-   classroom-main 使用 flex:1，
-   讓「主要教學內容」盡量對齊。
+   讓同一列卡片內容保持整齊
 */
 
 .classroom-main {
@@ -448,13 +463,24 @@
     }
 
 
-    .classroom-hero-title {
-        top: 25px;
-        left: 28px;
+    .classroom-hero-content {
+        left: 30px;
 
-        padding: 3px 9px 4px;
+        width: 52%;
+    }
+
+
+    .classroom-hero-title {
+        margin-bottom: 9px;
 
         font-size: 29px;
+    }
+
+
+    .classroom-hero-description {
+        font-size: 14px;
+
+        line-height: 1.7;
     }
 
 
@@ -486,22 +512,53 @@
 
 
     .classroom-hero-inner {
-        height: 135px;
+        height: 150px;
     }
 
 
     .classroom-hero-image {
-        object-position: 65% 50%;
+        object-position: 67% 50%;
+    }
+
+
+    /*
+       手機左側文字需要更多可讀性，
+       但仍然不是黑色底框。
+    */
+
+    .classroom-hero-overlay {
+        background:
+            linear-gradient(
+                90deg,
+                rgba(80, 25, 25, 0.28) 0%,
+                rgba(80, 25, 25, 0.13) 55%,
+                rgba(80, 25, 25, 0) 90%
+            );
+    }
+
+
+    .classroom-hero-content {
+        left: 20px;
+
+        width: 62%;
     }
 
 
     .classroom-hero-title {
-        top: 18px;
-        left: 18px;
-
-        padding: 3px 8px 4px;
+        margin-bottom: 7px;
 
         font-size: 24px;
+
+        letter-spacing: 0.05em;
+    }
+
+
+    .classroom-hero-description {
+        font-size: 12px;
+
+        line-height: 1.65;
+
+        letter-spacing: 0;
     }
 
 
@@ -512,45 +569,7 @@
 
     .classroom-section {
         padding:
-            40px 0 60px;
-    }
-
-
-
-    /* =====================================================
-       標題
-    ===================================================== */
-
-    .classroom-heading {
-        margin-bottom: 30px;
-
-        padding:
-            0 18px;
-    }
-
-
-    .classroom-heading h1 {
-        font-size: 27px;
-
-        letter-spacing: 0.15em;
-    }
-
-
-    .classroom-heading-en {
-        font-size: 13px;
-    }
-
-
-    .classroom-heading-line {
-        margin:
-            18px auto;
-    }
-
-
-    .classroom-intro {
-        font-size: 14px;
-
-        line-height: 1.8;
+            30px 0 60px;
     }
 
 
@@ -594,11 +613,6 @@
     }
 
 
-    /*
-       手機只有單欄，
-       不需要刻意讓內容區等高。
-    */
-
     .classroom-main {
         flex: initial;
     }
@@ -613,8 +627,6 @@
 
 @media (max-width: 420px) {
 
-    /* Hero */
-
     .classroom-hero {
         padding:
             12px 10px 0;
@@ -622,34 +634,35 @@
 
 
     .classroom-hero-inner {
-        height: 120px;
+        height: 135px;
     }
 
 
     .classroom-hero-image {
-        object-position: 67% 50%;
+        object-position: 69% 50%;
+    }
+
+
+    .classroom-hero-content {
+        left: 16px;
+
+        width: 67%;
     }
 
 
     .classroom-hero-title {
-        top: 15px;
-        left: 14px;
-
-        padding:
-            2px 7px 3px;
+        margin-bottom: 6px;
 
         font-size: 21px;
     }
 
 
-    /* 標題 */
+    .classroom-hero-description {
+        font-size: 11px;
 
-    .classroom-heading h1 {
-        font-size: 24px;
+        line-height: 1.55;
     }
 
-
-    /* 卡片圖片 */
 
     .classroom-image {
         height: 220px;
