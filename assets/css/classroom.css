@@ -1,0 +1,371 @@
+/* =========================================================
+   TIQA 推薦教室
+========================================================= */
+
+
+/* =========================================================
+   Page Header
+========================================================= */
+
+.page-header {
+    padding: 55px 20px;
+
+    background: #f7f3f4;
+
+    text-align: center;
+}
+
+.page-header h1 {
+    margin: 0;
+
+    color: #444;
+
+    font-size: 32px;
+
+    font-weight: 400;
+
+    letter-spacing: 0.15em;
+}
+
+.page-header p {
+    margin: 5px 0 0;
+
+    color: #888;
+
+    font-size: 14px;
+
+    letter-spacing: 0.08em;
+}
+
+
+/* =========================================================
+   Classroom Section
+========================================================= */
+
+.classroom-section {
+    padding: 65px 0 85px;
+}
+
+.classroom-note {
+    margin: 0 0 25px;
+
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   Grid
+========================================================= */
+
+.classroom-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 30px;
+
+    align-items: stretch;
+}
+
+
+/* =========================================================
+   Card
+========================================================= */
+
+.classroom-card {
+    display: flex;
+
+    flex-direction: column;
+
+    height: 100%;
+
+    overflow: hidden;
+
+    background: #fff;
+
+    border: 1px solid #e7e7e7;
+
+    box-shadow:
+        0 4px 14px
+        rgba(0, 0, 0, 0.05);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.classroom-card:hover {
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 8px 22px
+        rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================================
+   圖片
+========================================================= */
+
+.classroom-image {
+    width: 100%;
+
+    height: 260px;
+
+    flex-shrink: 0;
+
+    overflow: hidden;
+
+    background: #f3f3f3;
+}
+
+.classroom-image img {
+    display: block;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    transition:
+        transform 0.35s ease;
+}
+
+.classroom-card:hover
+.classroom-image img {
+
+    transform:
+        scale(1.03);
+}
+
+
+/* =========================================================
+   Body
+========================================================= */
+
+.classroom-body {
+    display: flex;
+
+    flex: 1;
+
+    flex-direction: column;
+
+    padding:
+        24px 24px 26px;
+}
+
+
+/*
+   同列卡片自動等高。
+   classroom-main 用 flex:1，
+   讓主要教學內容盡量對齊底部。
+*/
+
+.classroom-main {
+    flex: 1;
+}
+
+
+/* =========================================================
+   老師姓名
+========================================================= */
+
+.classroom-card h2 {
+    margin: 0 0 4px;
+
+    color: #333;
+
+    font-size: 21px;
+
+    font-weight: 500;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   教室名稱
+========================================================= */
+
+.classroom-name {
+    min-height: 30px;
+
+    margin: 0 0 15px;
+
+    color: #9b6f78;
+
+    font-size: 16px;
+
+    font-weight: 500;
+}
+
+.classroom-name-empty {
+    visibility: hidden;
+}
+
+
+/* =========================================================
+   描述
+========================================================= */
+
+.classroom-description {
+    margin: 0 0 16px;
+
+    color: #666;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   基本資訊
+========================================================= */
+
+.classroom-info {
+    margin: 15px 0 0;
+}
+
+.classroom-info div {
+    display: grid;
+
+    grid-template-columns:
+        70px 1fr;
+
+    gap: 8px;
+
+    margin-bottom: 7px;
+}
+
+.classroom-info dt {
+    color: #888;
+
+    font-size: 14px;
+}
+
+.classroom-info dd {
+    margin: 0;
+
+    color: #555;
+
+    font-size: 14px;
+
+    overflow-wrap: anywhere;
+}
+
+.classroom-info a {
+    color: #555;
+
+    text-decoration: underline;
+
+    text-underline-offset: 3px;
+}
+
+.classroom-info a:hover,
+.classroom-info a:focus-visible {
+    color: #111;
+}
+
+
+/* =========================================================
+   教學內容
+========================================================= */
+
+.classroom-teaching {
+    margin-top: 22px;
+
+    padding-top: 18px;
+
+    border-top:
+        1px solid #ececec;
+}
+
+.classroom-teaching h3 {
+    margin: 0 0 8px;
+
+    color: #555;
+
+    font-size: 15px;
+
+    font-weight: 500;
+}
+
+.classroom-teaching p {
+    margin: 0;
+
+    color: #666;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   Tablet
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .classroom-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* =========================================================
+   Mobile
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .page-header {
+        padding:
+            40px 18px;
+    }
+
+    .page-header h1 {
+        font-size: 27px;
+    }
+
+
+    .classroom-section {
+        padding:
+            45px 0 60px;
+    }
+
+
+    .classroom-grid {
+        grid-template-columns:
+            1fr;
+
+        gap: 24px;
+    }
+
+
+    .classroom-image {
+        height: 240px;
+    }
+
+
+    .classroom-body {
+        padding:
+            20px 20px 22px;
+    }
+
+
+    .classroom-main {
+        flex: initial;
+    }
+
+}
