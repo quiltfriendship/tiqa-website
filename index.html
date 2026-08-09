@@ -2,95 +2,241 @@
 <html lang="zh-Hant-TW">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <title>台灣國際拼布友好會 TIQA</title>
 
     <meta name="description"
           content="台灣國際拼布友好會 Taiwan International Quilt Association 官方網站">
 
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet"
+          href="/assets/css/style.css">
 </head>
 
 <body>
+
+
+<!-- =========================
+     Header
+========================= -->
 
 <header class="site-header">
 
     <div class="header-inner">
 
-        <a class="site-name" href="/">
-            TIQA
+        <!-- Logo -->
+        <a class="site-logo"
+           href="/"
+           aria-label="回到台灣國際拼布友好會首頁">
+
+            <img src="/assets/images/logo.png"
+                 alt="台灣國際拼布友好會 TIQA">
+
         </a>
 
+
+        <!-- 手機選單按鈕 -->
         <button class="menu-button"
                 type="button"
-                aria-label="開啟選單">
-            ☰
+                aria-expanded="false"
+                aria-controls="main-navigation"
+                aria-label="開啟主選單">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
         </button>
 
-        <nav class="main-nav" aria-label="主要選單">
 
-            <ul>
+        <!-- 主選單 -->
+        <nav id="main-navigation"
+             class="main-nav"
+             aria-label="主要選單">
 
+            <ul class="menu">
+
+
+                <!-- 首頁 -->
                 <li>
                     <a href="/">首頁</a>
                 </li>
 
+
+                <!-- 關於我們 -->
                 <li class="has-submenu">
-                    <a href="/about/">關於我們</a>
+
+                    <div class="menu-parent">
+
+                        <a href="/about/">
+                            關於我們
+                        </a>
+
+                        <button class="submenu-button"
+                                type="button"
+                                aria-expanded="false"
+                                aria-label="展開關於我們子選單">
+                            +
+                        </button>
+
+                    </div>
+
 
                     <ul class="submenu">
-                        <li><a href="/about/">協會簡介</a></li>
-                        <li><a href="/about/organization/">組織架構</a></li>
 
+                        <li>
+                            <a href="/about/">
+                                協會簡介
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="/about/organization/">
+                                組織架構
+                            </a>
+                        </li>
+
+
+                        <!-- 理監事會 -->
                         <li class="has-submenu">
-                            <a href="/about/directors/">理監事會</a>
+
+                            <div class="menu-parent">
+
+                                <a href="/about/directors/">
+                                    理監事會
+                                </a>
+
+                                <button class="submenu-button"
+                                        type="button"
+                                        aria-expanded="false"
+                                        aria-label="展開理監事會子選單">
+                                    +
+                                </button>
+
+                            </div>
+
+
                             <ul class="submenu submenu-level3">
+
                                 <li>
                                     <a href="/about/directors/history/">
                                         歷屆理監事
                                     </a>
                                 </li>
+
                             </ul>
+
+                        </li>
+
+
+                        <li>
+                            <a href="/about/contact/">
+                                聯絡我們
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+
+
+                <!-- 最新消息 -->
+                <li>
+                    <a href="/news/">
+                        最新消息
+                    </a>
+                </li>
+
+
+                <!-- 公益活動 -->
+                <li>
+                    <a href="/charity/">
+                        公益活動
+                    </a>
+                </li>
+
+
+                <!-- 歷年活動 -->
+                <li class="has-submenu">
+
+                    <div class="menu-parent">
+
+                        <a href="/events/">
+                            歷年活動
+                        </a>
+
+                        <button class="submenu-button"
+                                type="button"
+                                aria-expanded="false"
+                                aria-label="展開歷年活動子選單">
+                            +
+                        </button>
+
+                    </div>
+
+
+                    <ul class="submenu">
+
+                        <li>
+                            <a href="/events/2025/">
+                                2025
+                            </a>
                         </li>
 
                         <li>
-                            <a href="/about/contact/">聯絡我們</a>
+                            <a href="/events/2023/">
+                                2023
+                            </a>
                         </li>
+
+                        <li>
+                            <a href="/events/2021/">
+                                2021
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="/events/2019/">
+                                2019
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="/events/2016/">
+                                2016
+                            </a>
+                        </li>
+
                     </ul>
+
                 </li>
 
+
+                <!-- 出版訊息 -->
                 <li>
-                    <a href="/news/">最新消息</a>
+                    <a href="/publications/">
+                        出版訊息
+                    </a>
                 </li>
 
+
+                <!-- 加入會員 -->
                 <li>
-                    <a href="/charity/">公益活動</a>
+                    <a href="/membership/">
+                        加入會員
+                    </a>
                 </li>
 
-                <li class="has-submenu">
-                    <a href="/events/">歷年活動</a>
 
-                    <ul class="submenu">
-                        <li><a href="/events/2025/">2025</a></li>
-                        <li><a href="/events/2023/">2023</a></li>
-                        <li><a href="/events/2021/">2021</a></li>
-                        <li><a href="/events/2019/">2019</a></li>
-                        <li><a href="/events/2016/">2016</a></li>
-                    </ul>
-                </li>
-
+                <!-- 推薦教室 -->
                 <li>
-                    <a href="/publications/">出版訊息</a>
+                    <a href="/classes/">
+                        推薦教室
+                    </a>
                 </li>
 
-                <li>
-                    <a href="/membership/">加入會員</a>
-                </li>
-
-                <li>
-                    <a href="/classes/">推薦教室</a>
-                </li>
 
             </ul>
 
@@ -101,50 +247,75 @@
 </header>
 
 
+
+<!-- =========================
+     Main
+========================= -->
+
 <main>
 
+
+    <!-- Hero -->
     <section class="hero">
 
-        <h1>台 灣 國 際 拼 布 友 好 會</h1>
+        <div class="hero-image-wrap">
 
-        <p class="english-name">
-            Taiwan International Quilt Association
-        </p>
+            <img class="hero-image"
+                 src="/assets/images/hero.jpg"
+                 alt="台灣國際拼布友好會">
+
+        </div>
+
+
+        <div class="hero-title">
+
+            <h1>
+                台 灣 國 際 拼 布 友 好 會
+            </h1>
+
+            <p class="english-name">
+                Taiwan International Quilt Association
+            </p>
+
+        </div>
 
     </section>
 
 
-    <section class="quick-links">
+
+    <!-- 快速連結 -->
+    <section class="quick-links"
+             aria-label="快速連結">
 
         <a href="/about/">
             關於我們
         </a>
 
-        <span>|</span>
+        <span aria-hidden="true">|</span>
 
         <a href="/news/">
             最新消息
         </a>
 
-        <span>|</span>
+        <span aria-hidden="true">|</span>
 
         <a href="/events/">
             歷年活動
         </a>
 
-        <span>|</span>
+        <span aria-hidden="true">|</span>
 
         <a href="/publications/">
             出版訊息
         </a>
 
-        <span>|</span>
+        <span aria-hidden="true">|</span>
 
         <a href="/membership/">
             加入會員
         </a>
 
-        <span>|</span>
+        <span aria-hidden="true">|</span>
 
         <a href="/about/directors/">
             理監事會
@@ -153,39 +324,63 @@
     </section>
 
 
-    <section class="contact">
 
-        <h2>聯絡我們</h2>
+    <!-- 聯絡 -->
+    <section class="contact-section">
 
-        <p>
-            如有相關問題，歡迎與台灣國際拼布友好會聯絡。
-        </p>
+        <div class="content-container">
 
-        <a class="contact-button"
-           href="/about/contact/">
-            聯絡 TIQA
-        </a>
+            <h2>
+                聯絡我們
+            </h2>
+
+            <p>
+                如有相關問題，歡迎與台灣國際拼布友好會聯絡。
+            </p>
+
+            <a class="contact-button"
+               href="/about/contact/">
+
+                聯絡 TIQA
+
+            </a>
+
+        </div>
 
     </section>
+
 
 </main>
 
 
+
+<!-- =========================
+     Footer
+========================= -->
+
 <footer class="site-footer">
 
-    <p>
-        台灣國際拼布友好會
-    </p>
+    <div class="footer-inner">
 
-    <p>
-        Taiwan International Quilt Association
-    </p>
+        <p class="footer-name">
+            台灣國際拼布友好會
+        </p>
 
-    <p class="copyright">
-        © Taiwan International Quilt Association
-    </p>
+        <p>
+            Taiwan International Quilt Association
+        </p>
+
+        <p class="copyright">
+            © Taiwan International Quilt Association
+        </p>
+
+    </div>
 
 </footer>
+
+
+
+<script src="/assets/js/main.js"></script>
 
 </body>
 </html>

@@ -1,5 +1,13 @@
+/* =========================
+   Reset
+========================= */
+
 * {
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 html,
@@ -11,104 +19,176 @@ body {
 body {
     color: #444;
     background: #fff;
+
     font-family:
         "Noto Sans TC",
         "Microsoft JhengHei",
+        "PingFang TC",
         Arial,
         sans-serif;
+
+    font-size: 16px;
     line-height: 1.8;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: inherit;
+}
+
+
+/* =========================
+   共用
+========================= */
+
+.content-container {
+    width: min(100% - 48px, 1180px);
+    margin: 0 auto;
 }
 
 
 /* =========================
    Header
-   ========================= */
+========================= */
 
 .site-header {
-    border-bottom: 1px solid #e5e5e5;
+    position: relative;
+    z-index: 1000;
+
+    width: 100%;
+
     background: #fff;
+
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .header-inner {
-    max-width: 1180px;
+    width: min(100% - 48px, 1280px);
+    min-height: 100px;
+
     margin: 0 auto;
-    padding: 20px 24px;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    gap: 30px;
 }
 
-.site-name {
-    color: #333;
-    font-size: 24px;
-    font-weight: 600;
+
+/* =========================
+   Logo
+========================= */
+
+.site-logo {
+    display: block;
+
+    flex-shrink: 0;
+
     text-decoration: none;
+}
+
+.site-logo img {
+    display: block;
+
+    width: auto;
+    max-width: 220px;
+    max-height: 72px;
 }
 
 
 /* =========================
    Navigation
-   ========================= */
+========================= */
 
-.main-nav > ul {
-    display: flex;
-    align-items: center;
+.main-nav {
+    margin-left: auto;
+}
 
+.main-nav ul {
     margin: 0;
     padding: 0;
 
     list-style: none;
 }
 
-.main-nav li {
+.menu {
+    display: flex;
+    align-items: center;
+
+    gap: 2px;
+}
+
+.menu > li {
     position: relative;
+}
+
+.menu-parent {
+    display: flex;
+    align-items: center;
 }
 
 .main-nav a {
     display: block;
 
-    padding: 12px 13px;
+    padding: 15px 12px;
 
     color: #555;
+
     text-decoration: none;
 
     white-space: nowrap;
+
+    transition:
+        color 0.2s ease,
+        background-color 0.2s ease;
 }
 
-.main-nav a:hover {
-    color: #000;
+.main-nav a:hover,
+.main-nav a:focus-visible {
+    color: #111;
+    background: #f7f7f7;
 }
 
 
-/* 下拉選單 */
+/* =========================
+   Submenu
+========================= */
 
 .submenu {
     display: none;
 
     position: absolute;
+
     top: 100%;
     left: 0;
 
-    min-width: 180px;
+    min-width: 210px;
 
-    margin: 0;
-    padding: 8px 0;
+    padding: 8px 0 !important;
 
     background: #fff;
+
     border: 1px solid #e5e5e5;
 
-    list-style: none;
+    box-shadow:
+        0 6px 18px rgba(0, 0, 0, 0.08);
 
-    z-index: 100;
+    z-index: 1100;
 }
 
-.has-submenu:hover > .submenu {
-    display: block;
+.submenu li {
+    position: relative;
 }
 
 .submenu a {
-    padding: 8px 18px;
+    padding: 10px 18px;
+
+    font-size: 15px;
 }
 
 .submenu-level3 {
@@ -117,31 +197,111 @@ body {
 }
 
 
+/* Desktop hover */
+
+@media (min-width: 901px) {
+
+    .has-submenu:hover > .submenu {
+        display: block;
+    }
+
+    .has-submenu:focus-within > .submenu {
+        display: block;
+    }
+
+}
+
+
 /* =========================
-   Mobile menu button
-   ========================= */
+   Submenu button
+========================= */
+
+.submenu-button {
+    display: none;
+}
+
+
+/* =========================
+   Hamburger
+========================= */
 
 .menu-button {
     display: none;
 
+    width: 44px;
+    height: 44px;
+
+    padding: 8px;
+
     border: 0;
+
     background: transparent;
 
-    font-size: 26px;
     cursor: pointer;
+}
+
+.menu-button span {
+    display: block;
+
+    width: 26px;
+    height: 2px;
+
+    margin: 6px auto;
+
+    background: #444;
+
+    transition:
+        transform 0.25s ease,
+        opacity 0.25s ease;
+}
+
+
+/* 開啟狀態 */
+
+.menu-button.is-open span:nth-child(1) {
+    transform:
+        translateY(8px)
+        rotate(45deg);
+}
+
+.menu-button.is-open span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-button.is-open span:nth-child(3) {
+    transform:
+        translateY(-8px)
+        rotate(-45deg);
 }
 
 
 /* =========================
    Hero
-   ========================= */
+========================= */
 
 .hero {
-    max-width: 1000px;
+    width: min(100% - 48px, 1180px);
 
     margin: 0 auto;
 
-    padding: 110px 24px 55px;
+    padding: 50px 0 35px;
+}
+
+.hero-image-wrap {
+    width: 100%;
+
+    overflow: hidden;
+}
+
+.hero-image {
+    display: block;
+
+    width: 100%;
+    height: auto;
+}
+
+.hero-title {
+    padding: 40px 20px 10px;
 
     text-align: center;
 }
@@ -149,43 +309,53 @@ body {
 .hero h1 {
     margin: 0;
 
-    font-size: 34px;
+    color: #444;
+
+    font-size: clamp(26px, 3vw, 38px);
     font-weight: 400;
 
-    letter-spacing: 0.3em;
+    line-height: 1.5;
+
+    letter-spacing: 0.28em;
 }
 
 .english-name {
-    margin-top: 16px;
-
-    font-size: 18px;
-    letter-spacing: 0.08em;
+    margin: 12px 0 0;
 
     color: #777;
+
+    font-size: 18px;
+
+    letter-spacing: 0.06em;
 }
 
 
 /* =========================
    Quick links
-   ========================= */
+========================= */
 
 .quick-links {
-    max-width: 900px;
+    width: min(100% - 48px, 900px);
 
     margin: 0 auto;
-    padding: 30px 20px 70px;
+
+    padding: 20px 0 70px;
 
     text-align: center;
 }
 
 .quick-links a {
-    margin: 0 10px;
+    display: inline-block;
+
+    margin: 5px 10px;
 
     color: #555;
+
     text-decoration: none;
 }
 
-.quick-links a:hover {
+.quick-links a:hover,
+.quick-links a:focus-visible {
     text-decoration: underline;
 }
 
@@ -196,97 +366,250 @@ body {
 
 /* =========================
    Contact
-   ========================= */
+========================= */
 
-.contact {
-    max-width: 900px;
+.contact-section {
+    padding: 60px 0 70px;
 
-    margin: 0 auto 80px;
-    padding: 50px 30px;
-
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #e5e5e5;
 
     text-align: center;
 }
 
-.contact h2 {
+.contact-section h2 {
+    margin: 0 0 15px;
+
+    font-size: 28px;
     font-weight: 400;
+
     letter-spacing: 0.15em;
+}
+
+.contact-section p {
+    margin: 0 0 25px;
+
+    color: #666;
 }
 
 .contact-button {
     display: inline-block;
 
-    margin-top: 15px;
     padding: 10px 28px;
 
     border: 1px solid #555;
 
     color: #444;
+
     text-decoration: none;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
 }
 
-.contact-button:hover {
-    background: #444;
+.contact-button:hover,
+.contact-button:focus-visible {
     color: #fff;
+    background: #444;
 }
 
 
 /* =========================
    Footer
-   ========================= */
+========================= */
 
 .site-footer {
-    padding: 45px 20px;
+    padding: 50px 20px;
+
+    color: #777;
 
     background: #f5f5f5;
 
     text-align: center;
-    color: #777;
+}
 
-    font-size: 14px;
+.footer-inner {
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .site-footer p {
     margin: 3px 0;
 }
 
+.footer-name {
+    color: #555;
+    font-size: 16px;
+}
+
 .copyright {
-    margin-top: 15px !important;
+    margin-top: 18px !important;
+
     font-size: 12px;
 }
 
 
 /* =========================
-   Mobile
-   ========================= */
+   Tablet / Mobile
+========================= */
 
 @media (max-width: 900px) {
 
     .header-inner {
-        display: block;
-    }
+        width: 100%;
+        min-height: 78px;
 
-    .site-name {
-        display: block;
-        margin-bottom: 10px;
-    }
+        padding: 10px 20px;
 
-    .main-nav > ul {
         flex-wrap: wrap;
+
+        gap: 0;
+    }
+
+
+    /* Logo */
+
+    .site-logo img {
+        max-width: 180px;
+        max-height: 58px;
+    }
+
+
+    /* Hamburger */
+
+    .menu-button {
+        display: block;
+
+        margin-left: auto;
+    }
+
+
+    /* Navigation */
+
+    .main-nav {
+        display: none;
+
+        width: 100%;
+
+        margin: 10px 0 0;
+    }
+
+    .main-nav.is-open {
+        display: block;
+    }
+
+    .menu {
+        display: block;
+
+        width: 100%;
+
+        border-top: 1px solid #eee;
+    }
+
+    .menu > li {
+        width: 100%;
+
+        border-bottom: 1px solid #eee;
+    }
+
+    .menu-parent {
+        width: 100%;
+    }
+
+    .menu-parent > a {
+        flex: 1;
     }
 
     .main-nav a {
-        padding: 8px 10px;
+        padding: 12px 8px;
+
+        white-space: normal;
     }
 
+
+    /* 子選單按鈕 */
+
+    .submenu-button {
+        display: block;
+
+        width: 46px;
+        height: 46px;
+
+        flex-shrink: 0;
+
+        border: 0;
+
+        background: transparent;
+
+        color: #555;
+
+        font-size: 22px;
+
+        cursor: pointer;
+    }
+
+
+    /* Mobile submenu */
+
+    .submenu {
+        display: none;
+
+        position: static;
+
+        width: 100%;
+        min-width: 0;
+
+        padding: 0 0 5px 18px !important;
+
+        border: 0;
+
+        border-top: 1px solid #f0f0f0;
+
+        box-shadow: none;
+
+        background: #fafafa;
+    }
+
+    .has-submenu.submenu-open > .submenu {
+        display: block;
+    }
+
+    .submenu-level3 {
+        padding-left: 20px !important;
+
+        background: #f5f5f5;
+    }
+
+
+    /* Hero */
+
     .hero {
-        padding-top: 70px;
+        width: 100%;
+
+        padding: 20px 0 30px;
+    }
+
+    .hero-title {
+        padding: 30px 20px 5px;
     }
 
     .hero h1 {
         font-size: 26px;
+
         letter-spacing: 0.15em;
+    }
+
+    .english-name {
+        font-size: 16px;
+    }
+
+
+    /* Quick links */
+
+    .quick-links {
+        width: 100%;
+
+        padding: 20px 20px 50px;
     }
 
     .quick-links span {
@@ -295,7 +618,35 @@ body {
 
     .quick-links a {
         display: block;
-        margin: 10px 0;
+
+        margin: 8px 0;
+    }
+
+}
+
+
+/* =========================
+   Small mobile
+========================= */
+
+@media (max-width: 480px) {
+
+    .header-inner {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .site-logo img {
+        max-width: 150px;
+    }
+
+    .hero h1 {
+        font-size: 23px;
+        letter-spacing: 0.1em;
+    }
+
+    .english-name {
+        font-size: 14px;
     }
 
 }
