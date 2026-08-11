@@ -32,6 +32,11 @@ document.addEventListener(
                 "contact-consent"
             );
 
+        const submitButton =
+            document.getElementById(
+                "contact-submit"
+            );
+
         const formMessage =
             document.getElementById(
                 "contact-form-message"
@@ -40,24 +45,26 @@ document.addEventListener(
 
         form.addEventListener(
             "submit",
-            function (event) {
+            async function (event) {
 
                 event.preventDefault();
 
 
+                /* =========================
+                   清除舊訊息
+                ========================= */
+
                 clearErrors();
 
+
+                /* =========================
+                   前端驗證
+                ========================= */
 
                 let valid = true;
 
 
-                /* =========================
-                   姓名
-                ========================= */
-
-                if (
-                    !name.value.trim()
-                ) {
+                if (!name.value.trim()) {
 
                     showError(
                         "contact-name-error",
@@ -68,13 +75,7 @@ document.addEventListener(
                 }
 
 
-                /* =========================
-                   Email
-                ========================= */
-
-                if (
-                    !email.value.trim()
-                ) {
+                if (!email.value.trim()) {
 
                     showError(
                         "contact-email-error",
@@ -82,6 +83,7 @@ document.addEventListener(
                     );
 
                     valid = false;
+
                 }
                 else if (
                     !isValidEmail(
@@ -98,13 +100,7 @@ document.addEventListener(
                 }
 
 
-                /* =========================
-                   聯絡事項
-                ========================= */
-
-                if (
-                    !message.value.trim()
-                ) {
+                if (!message.value.trim()) {
 
                     showError(
                         "contact-message-error",
@@ -112,16 +108,22 @@ document.addEventListener(
                     );
 
                     valid = false;
+
+                }
+                else if (
+                    message.value.trim().length > 3000
+                ) {
+
+                    showError(
+                        "contact-message-error",
+                        "聯絡事項不可超過 3000 字。"
+                    );
+
+                    valid = false;
                 }
 
 
-                /* =========================
-                   同意
-                ========================= */
-
-                if (
-                    !consent.checked
-                ) {
+                if (!consent.checked) {
 
                     showError(
                         "contact-consent-error",
@@ -137,19 +139,155 @@ document.addEventListener(
                 }
 
 
+
                 /* =========================
-                   第一階段尚未接後端
+                   防止重複送出
                 ========================= */
 
+                submitButton.disabled = true;
+
+                submitButton.textContent =
+                    "傳送中...";
+
+
                 formMessage.textContent =
-                    "聯絡表單目前尚未啟用線上寄送功能，請先寄信至 quiltfriendship@gmail.com 與我們聯絡。";
+                    "資料傳送中，請稍候。";
 
                 formMessage.className =
                     "contact-form-message is-visible is-info";
 
+
+                try {
+
+
+                    /* =========================
+                       建立 FormData
+                    ========================= */
+
+                    const formData =
+                        new FormData(form);
+
+
+
+                    /* =========================
+                       呼叫 Web3Forms
+                    ========================= */
+
+                    const response =
+                        await fetch(
+                            "https://api.web3forms.com/submit",
+                            {
+                                method: "POST",
+                                body: formData
+                            }
+                        );
+
+
+                    const result =
+                        await response.json();
+
+
+
+                    /* =========================
+                       成功
+                    ========================= */
+
+                    if (
+                        response.ok &&
+                        result.success
+                    ) {
+
+                        formMessage.textContent =
+                            "您的訊息已成功送出，謝謝您的聯絡。";
+
+                        formMessage.className =
+                            "contact-form-message is-visible is-success";
+
+
+                        form.reset();
+
+
+                        /*
+                         * 成功後把焦點放到訊息區，
+                         * 讓鍵盤與輔助科技使用者
+                         * 可以知道結果。
+                         */
+
+                        formMessage.setAttribute(
+                            "tabindex",
+                            "-1"
+                        );
+
+                        formMessage.focus();
+
+                    }
+
+
+                    /* =========================
+                       Web3Forms 回傳失敗
+                    ========================= */
+
+                    else {
+
+                        const errorMessage =
+                            result.message ||
+                            "目前無法送出訊息，請稍後再試。";
+
+
+                        formMessage.textContent =
+                            errorMessage;
+
+                        formMessage.className =
+                            "contact-form-message is-visible is-error";
+
+                    }
+
+                }
+
+
+                /* =========================
+                   網路或其他錯誤
+                ========================= */
+
+                catch (error) {
+
+                    console.error(
+                        "Contact form error:",
+                        error
+                    );
+
+
+                    formMessage.textContent =
+                        "目前無法連線至寄信服務，請稍後再試，或直接寄信至 quiltfriendship@gmail.com。";
+
+                    formMessage.className =
+                        "contact-form-message is-visible is-error";
+
+                }
+
+
+                /* =========================
+                   恢復按鈕
+                ========================= */
+
+                finally {
+
+                    submitButton.disabled =
+                        false;
+
+                    submitButton.textContent =
+                        "送出";
+
+                }
+
             }
         );
 
+
+
+        /* =================================================
+           清除錯誤
+        ================================================= */
 
         function clearErrors() {
 
@@ -171,8 +309,18 @@ document.addEventListener(
 
             formMessage.className =
                 "contact-form-message";
+
+            formMessage.removeAttribute(
+                "tabindex"
+            );
+
         }
 
+
+
+        /* =================================================
+           顯示錯誤
+        ================================================= */
 
         function showError(
             id,
@@ -183,11 +331,19 @@ document.addEventListener(
                 document.getElementById(id);
 
             if (element) {
-                element.textContent = text;
+
+                element.textContent =
+                    text;
+
             }
 
         }
 
+
+
+        /* =================================================
+           Email 格式
+        ================================================= */
 
         function isValidEmail(value) {
 

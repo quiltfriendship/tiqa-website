@@ -274,6 +274,20 @@
 
 
 /* =========================================================
+   欄位說明
+========================================================= */
+
+.form-help {
+    margin: 5px 0 0;
+
+    color: #999;
+
+    font-size: 12px;
+}
+
+
+
+/* =========================================================
    Checkbox
 ========================================================= */
 
@@ -304,6 +318,30 @@
     font-weight: 400;
 
     line-height: 1.7;
+}
+
+
+
+/* =========================================================
+   Botcheck
+
+   Web3Forms Honeypot。
+   一般使用者看不到。
+========================================================= */
+
+.botcheck {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+
+    overflow: hidden;
+
+    clip: rect(0 0 0 0);
+
+    clip-path: inset(50%);
+
+    white-space: nowrap;
 }
 
 
@@ -353,7 +391,8 @@
     transition:
         color 0.2s ease,
         background-color 0.2s ease,
-        border-color 0.2s ease;
+        border-color 0.2s ease,
+        opacity 0.2s ease;
 }
 
 
@@ -364,6 +403,13 @@
     background: #444;
 
     border-color: #444;
+}
+
+
+.contact-submit:disabled {
+    opacity: 0.55;
+
+    cursor: wait;
 }
 
 
@@ -390,12 +436,36 @@
 }
 
 
+/* 傳送中 */
+
 .contact-form-message.is-info {
     color: #555;
 
     background: #f4f1f2;
 
     border-left: 3px solid #9b6f78;
+}
+
+
+/* 成功 */
+
+.contact-form-message.is-success {
+    color: #365a40;
+
+    background: #f1f7f2;
+
+    border-left: 3px solid #5d8665;
+}
+
+
+/* 失敗 */
+
+.contact-form-message.is-error {
+    color: #8b3445;
+
+    background: #faf1f3;
+
+    border-left: 3px solid #a55362;
 }
 
 
@@ -407,7 +477,8 @@
 @media (max-width: 900px) {
 
     .contact-layout {
-        grid-template-columns: 1fr;
+        grid-template-columns:
+            1fr;
 
         gap: 45px;
     }
