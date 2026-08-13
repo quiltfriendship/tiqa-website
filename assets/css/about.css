@@ -1,5 +1,6 @@
 /* =========================================================
-   TIQA 關於我們
+   TIQA
+   About / Profile
 ========================================================= */
 
 
@@ -41,135 +42,28 @@
 
 
 /* =========================================================
-   Intro
+   共用標題
 ========================================================= */
 
-.about-intro {
-    padding: 75px 0 70px;
-
-    background: #fff;
-}
-
-
-.about-intro-layout {
-    display: grid;
-
-    grid-template-columns:
-        minmax(0, 1fr)
-        minmax(0, 1fr);
-
-    gap: 80px;
-
-    align-items: center;
-}
-
-
-.about-label {
-    margin: 0 0 8px;
+.about-section-label {
+    margin: 0 0 7px;
 
     color: #a46f7a;
 
     font-size: 13px;
 
-    text-transform: uppercase;
-
     letter-spacing: 0.12em;
 }
 
 
-.about-intro-title h2 {
-    margin: 0;
-
-    color: #333;
-
-    font-size: 31px;
-    font-weight: 400;
-
-    line-height: 1.5;
-
-    letter-spacing: 0.08em;
-}
-
-
-.about-name-en {
-    margin: 8px 0 0;
-
-    color: #999;
-
-    font-size: 15px;
-
-    letter-spacing: 0.04em;
-}
-
-
-
-/* =========================================================
-   Basic Info
-========================================================= */
-
-.about-basic-info dl {
-    margin: 0;
-
-    border-top: 1px solid #e5e5e5;
-}
-
-
-.about-basic-info dl > div {
-    display: grid;
-
-    grid-template-columns:
-        95px 1fr;
-
-    gap: 20px;
-
-    padding: 18px 0;
-
-    border-bottom: 1px solid #e5e5e5;
-}
-
-
-.about-basic-info dt {
-    color: #888;
-
-    font-size: 14px;
-}
-
-
-.about-basic-info dd {
-    margin: 0;
-
-    color: #555;
-
-    font-size: 15px;
-
-    line-height: 1.7;
-}
-
-
-
-/* =========================================================
-   Section Heading
-========================================================= */
-
-.section-heading {
-    margin-bottom: 35px;
+.about-section-heading {
+    margin-bottom: 38px;
 
     text-align: center;
 }
 
 
-.section-label {
-    margin: 0 0 5px;
-
-    color: #a46f7a;
-
-    font-size: 13px;
-
-    letter-spacing: 0.12em;
-}
-
-
-.section-heading h2 {
+.about-section-heading h2 {
     margin: 0;
 
     color: #3f3f3f;
@@ -183,18 +77,267 @@
 
 
 /* =========================================================
-   Purpose
+   關於我們首頁
+   Introduction
 ========================================================= */
 
-.about-purpose {
-    padding: 65px 0;
+.about-home-intro {
+    padding: 70px 0 45px;
+
+    background: #fff;
+
+    text-align: center;
+}
+
+
+.about-home-intro h2 {
+    margin: 0;
+
+    color: #3f3f3f;
+
+    font-size: 30px;
+    font-weight: 400;
+
+    letter-spacing: 0.08em;
+}
+
+
+.about-home-description {
+    max-width: 650px;
+
+    margin: 16px auto 0;
+
+    color: #666;
+
+    font-size: 16px;
+
+    line-height: 1.9;
+}
+
+
+
+/* =========================================================
+   關於我們首頁
+   Navigation Cards
+========================================================= */
+
+.about-navigation {
+    padding: 20px 0 90px;
+
+    background: #fff;
+}
+
+
+.about-nav-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 24px;
+}
+
+
+.about-nav-card {
+    display: flex;
+
+    min-height: 230px;
+
+    padding: 32px;
+
+    border: 1px solid #e5e5e5;
+
+    color: inherit;
+
+    background: #fff;
+
+    text-decoration: none;
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.about-nav-card:hover,
+.about-nav-card:focus-visible {
+    transform: translateY(-4px);
+
+    border-color: #d1b9be;
+
+    box-shadow:
+        0 10px 25px
+        rgba(0, 0, 0, 0.07);
+}
+
+
+.about-nav-number {
+    width: 65px;
+
+    flex-shrink: 0;
+
+    color: #c5a3aa;
+
+    font-size: 31px;
+    font-weight: 300;
+
+    line-height: 1.2;
+}
+
+
+.about-nav-content {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+}
+
+
+.about-nav-content h2 {
+    margin: 0 0 12px;
+
+    color: #444;
+
+    font-size: 22px;
+    font-weight: 400;
+
+    letter-spacing: 0.08em;
+}
+
+
+.about-nav-content p {
+    margin: 0 0 25px;
+
+    color: #666;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+.about-nav-more {
+    margin-top: auto;
+
+    color: #9a6973;
+
+    font-size: 14px;
+
+    letter-spacing: 0.04em;
+}
+
+
+
+/* =========================================================
+   協會簡介
+   Intro
+========================================================= */
+
+.profile-intro {
+    padding: 75px 0 70px;
+
+    background: #fff;
+}
+
+
+.profile-intro-layout {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(0, 1fr);
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+
+.profile-title h2 {
+    margin: 0;
+
+    color: #333;
+
+    font-size: 31px;
+    font-weight: 400;
+
+    line-height: 1.5;
+
+    letter-spacing: 0.08em;
+}
+
+
+.profile-name-en {
+    margin: 8px 0 0;
+
+    color: #999;
+
+    font-size: 15px;
+
+    letter-spacing: 0.04em;
+}
+
+
+
+/* =========================================================
+   基本資料
+========================================================= */
+
+.profile-basic-info dl {
+    margin: 0;
+
+    border-top: 1px solid #e5e5e5;
+}
+
+
+.profile-basic-info dl > div {
+    display: grid;
+
+    grid-template-columns:
+        95px 1fr;
+
+    gap: 20px;
+
+    padding: 18px 0;
+
+    border-bottom: 1px solid #e5e5e5;
+}
+
+
+.profile-basic-info dt {
+    color: #888;
+
+    font-size: 14px;
+}
+
+
+.profile-basic-info dd {
+    margin: 0;
+
+    color: #555;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+
+/* =========================================================
+   成立宗旨
+========================================================= */
+
+.profile-purpose {
+    padding: 70px 0;
 
     background: #faf8f8;
 }
 
 
 .purpose-content {
-    max-width: 800px;
+    max-width: 820px;
 
     margin: 0 auto;
 
@@ -215,10 +358,10 @@
 
 
 /* =========================================================
-   Mission
+   本會任務
 ========================================================= */
 
-.about-mission {
+.profile-mission {
     padding: 75px 0 90px;
 
     background: #fff;
@@ -236,8 +379,6 @@
 
 
 .mission-card {
-    position: relative;
-
     min-height: 220px;
 
     padding: 28px 26px;
@@ -253,7 +394,9 @@
 
 
 .mission-number {
-    margin: 0 0 22px;
+    display: block;
+
+    margin-bottom: 22px;
 
     color: #c8aab0;
 
@@ -274,7 +417,7 @@
 }
 
 
-.mission-card p:last-child {
+.mission-card p {
     margin: 0;
 
     color: #666;
@@ -287,10 +430,10 @@
 
 
 /* =========================================================
-   Activities
+   常態活動
 ========================================================= */
 
-.about-activities {
+.profile-activities {
     padding: 75px 0 90px;
 
     background: #faf8f8;
@@ -329,7 +472,7 @@
 }
 
 
-.activity-content h3 {
+.activity-item h3 {
     margin: 0 0 5px;
 
     color: #444;
@@ -339,7 +482,7 @@
 }
 
 
-.activity-content p {
+.activity-item p {
     margin: 0;
 
     color: #666;
@@ -352,17 +495,17 @@
 
 
 /* =========================================================
-   Join
+   加入會員
 ========================================================= */
 
-.about-join {
+.profile-join {
     padding: 65px 0;
 
     background: #fff;
 }
 
 
-.about-join-inner {
+.profile-join-inner {
     display: flex;
 
     align-items: center;
@@ -377,18 +520,7 @@
 }
 
 
-.join-label {
-    margin: 0 0 6px;
-
-    color: #a46f7a;
-
-    font-size: 13px;
-
-    letter-spacing: 0.12em;
-}
-
-
-.about-join h2 {
+.profile-join h2 {
     margin: 0 0 8px;
 
     color: #444;
@@ -400,7 +532,7 @@
 }
 
 
-.about-join p {
+.profile-join p:not(.about-section-label) {
     margin: 0;
 
     color: #666;
@@ -411,7 +543,7 @@
 }
 
 
-.about-join-button {
+.profile-join-button {
     display: inline-block;
 
     flex-shrink: 0;
@@ -428,15 +560,18 @@
 
     transition:
         color 0.2s ease,
-        background-color 0.2s ease;
+        background-color 0.2s ease,
+        border-color 0.2s ease;
 }
 
 
-.about-join-button:hover,
-.about-join-button:focus-visible {
+.profile-join-button:hover,
+.profile-join-button:focus-visible {
     color: #fff;
 
     background: #444;
+
+    border-color: #444;
 }
 
 
@@ -447,7 +582,17 @@
 
 @media (max-width: 900px) {
 
-    .about-intro-layout {
+    .about-nav-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .about-nav-card {
+        min-height: 200px;
+    }
+
+
+    .profile-intro-layout {
         grid-template-columns: 1fr;
 
         gap: 40px;
@@ -460,7 +605,7 @@
     }
 
 
-    .about-join-inner {
+    .profile-join-inner {
         align-items: flex-start;
 
         flex-direction: column;
@@ -476,6 +621,8 @@
 
 @media (max-width: 600px) {
 
+    /* Page Hero */
+
     .about-hero {
         padding:
             40px 18px;
@@ -489,53 +636,121 @@
     }
 
 
-    .about-intro {
+    /* About Home */
+
+    .about-home-intro {
         padding:
-            50px 0;
+            50px 0 30px;
     }
 
 
-    .about-intro-title h2 {
-        font-size: 25px;
-    }
-
-
-    .about-basic-info dl > div {
-        grid-template-columns:
-            1fr;
-
-        gap: 4px;
-    }
-
-
-    .about-purpose,
-    .about-mission,
-    .about-activities {
-        padding:
-            55px 0;
-    }
-
-
-    .section-heading h2 {
+    .about-home-intro h2 {
         font-size: 24px;
+
+        line-height: 1.6;
     }
 
 
-    .purpose-content p {
+    .about-home-description {
         font-size: 15px;
 
         text-align: left;
     }
 
 
+    .about-navigation {
+        padding:
+            15px 0 60px;
+    }
+
+
+    .about-nav-card {
+        min-height: 0;
+
+        padding: 25px 22px;
+    }
+
+
+    .about-nav-number {
+        width: 50px;
+
+        font-size: 25px;
+    }
+
+
+    .about-nav-content h2 {
+        font-size: 20px;
+    }
+
+
+    /* Profile */
+
+    .profile-intro {
+        padding:
+            50px 0;
+    }
+
+
+    .profile-title h2 {
+        font-size: 25px;
+    }
+
+
+    .profile-basic-info dl > div {
+        grid-template-columns: 1fr;
+
+        gap: 4px;
+    }
+
+
+    /* Section */
+
+    .about-section-heading h2 {
+        font-size: 24px;
+    }
+
+
+    /* Purpose */
+
+    .profile-purpose {
+        padding:
+            55px 0;
+    }
+
+
+    .purpose-content {
+        text-align: left;
+    }
+
+
+    .purpose-content p {
+        font-size: 15px;
+    }
+
+
+    /* Mission */
+
+    .profile-mission {
+        padding:
+            55px 0;
+    }
+
+
     .mission-grid {
-        grid-template-columns:
-            1fr;
+        grid-template-columns: 1fr;
     }
 
 
     .mission-card {
         min-height: 0;
+    }
+
+
+    /* Activities */
+
+    .profile-activities {
+        padding:
+            55px 0;
     }
 
 
@@ -547,19 +762,28 @@
     }
 
 
-    .about-join {
+    /* Join */
+
+    .profile-join {
         padding:
             45px 0;
     }
 
 
-    .about-join-inner {
+    .profile-join-inner {
         padding:
             30px 24px;
     }
 
 
-    .about-join-button {
+    .profile-join h2 {
+        font-size: 21px;
+
+        line-height: 1.6;
+    }
+
+
+    .profile-join-button {
         width: 100%;
 
         text-align: center;
