@@ -1,11 +1,5 @@
 /* =========================================================
-   TIQA - 台灣國際拼布友好會
-   Main Stylesheet
-========================================================= */
-
-
-/* =========================================================
-   Reset
+   Base
 ========================================================= */
 
 * {
@@ -16,44 +10,31 @@ html {
     scroll-behavior: smooth;
 }
 
-html,
 body {
     margin: 0;
     padding: 0;
-}
-
-body {
-    color: #444;
-    background: #fff;
-
     font-family:
         "Noto Sans TC",
         "Microsoft JhengHei",
-        "PingFang TC",
         Arial,
         sans-serif;
-
-    font-size: 16px;
-    line-height: 1.8;
+    color: #444;
+    background: #fff;
+    line-height: 1.7;
 }
 
 img {
     max-width: 100%;
-    height: auto;
+    display: block;
 }
 
 a {
     color: inherit;
+    text-decoration: none;
 }
 
-
-/* =========================================================
-   共用
-========================================================= */
-
-.content-container {
-    width: min(100% - 48px, 1180px);
-    margin: 0 auto;
+button {
+    font: inherit;
 }
 
 
@@ -64,35 +45,129 @@ a {
 .site-header {
     position: sticky;
     top: 0;
-
     z-index: 1000;
-
     width: 100%;
-
     background: #fff;
-
-    border-bottom: 1px solid #e5e5e5;
-
-    box-shadow:
-        0 2px 10px
-        rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid #e8e8e8;
 }
 
 
-.header-inner {
-    width: min(100% - 48px, 1280px);
+/* =========================================================
+   Header Tools
+   Facebook / YouTube / Contact
+========================================================= */
 
-    min-height: 100px;
+.header-tools {
+    width: 100%;
+    background: #fff;
+}
 
+.header-tools-inner {
+    max-width: 1200px;
+    height: 42px;
     margin: 0 auto;
+    padding: 0 24px;
 
     display: flex;
-
     align-items: center;
+    justify-content: flex-end;
+}
 
+
+/* Social icon group */
+
+.social-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 9px;
+}
+
+
+/* Icon */
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    transition:
+        transform 0.2s ease,
+        opacity 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+/* SVG */
+
+.social-icon svg {
+    width: 17px;
+    height: 17px;
+    fill: #fff;
+}
+
+
+/* Facebook */
+
+.social-facebook {
+    background: #4267b2;
+}
+
+
+/* YouTube */
+
+.social-youtube {
+    background: #d83933;
+}
+
+
+/* Contact */
+
+.social-contact {
+    background: #567d73;
+}
+
+
+/* Hover */
+
+.social-icon:hover {
+    transform: translateY(-2px);
+    opacity: 0.88;
+}
+
+
+/* Keyboard focus */
+
+.social-icon:focus-visible {
+    outline: 3px solid #333;
+    outline-offset: 3px;
+}
+
+
+/* =========================================================
+   Header Main
+========================================================= */
+
+.header-main {
+    width: 100%;
+    background: #fff;
+}
+
+.header-inner {
+    max-width: 1200px;
+    min-height: 88px;
+
+    margin: 0 auto;
+    padding: 0 24px;
+
+    display: flex;
+    align-items: center;
     justify-content: space-between;
-
-    gap: 30px;
 }
 
 
@@ -101,21 +176,12 @@ a {
 ========================================================= */
 
 .site-logo {
-    display: block;
-
     flex-shrink: 0;
-
-    text-decoration: none;
 }
 
 .site-logo img {
-    display: block;
-
-    width: auto;
-
-    max-width: 220px;
-
-    max-height: 72px;
+    width: 150px;
+    height: auto;
 }
 
 
@@ -127,80 +193,114 @@ a {
     margin-left: auto;
 }
 
-.main-nav ul {
+.menu {
     margin: 0;
     padding: 0;
 
-    list-style: none;
-}
-
-.menu {
     display: flex;
-
     align-items: center;
 
-    gap: 2px;
+    list-style: none;
 }
 
 .menu > li {
     position: relative;
 }
 
-.menu-parent {
-    display: flex;
-
-    align-items: center;
-}
-
-.main-nav a {
+.menu > li > a,
+.menu-parent > a {
     display: block;
+    padding: 31px 15px;
 
-    padding: 15px 12px;
-
-    color: #555;
-
-    text-decoration: none;
-
+    color: #444;
+    font-size: 15px;
     white-space: nowrap;
 
-    transition:
-        color 0.2s ease,
-        background-color 0.2s ease;
+    transition: color 0.2s ease;
 }
 
-.main-nav a:hover,
-.main-nav a:focus-visible {
-    color: #111;
+.menu > li > a:hover,
+.menu-parent > a:hover {
+    color: #9c6577;
+}
 
-    background: #f7f7f7;
+
+/* Current */
+
+.menu a[aria-current="page"] {
+    color: #9c6577;
 }
 
 
 /* =========================================================
-   Submenu
+   Parent Menu
+========================================================= */
+
+.menu-parent {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Desktop submenu button */
+
+.submenu-button {
+    width: 26px;
+    height: 26px;
+
+    margin-left: -10px;
+    padding: 0;
+
+    border: 0;
+    background: transparent;
+
+    color: #777;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   Dropdown
 ========================================================= */
 
 .submenu {
-    display: none;
-
     position: absolute;
-
     top: 100%;
     left: 0;
 
-    min-width: 210px;
+    min-width: 180px;
 
-    padding: 8px 0 !important;
+    margin: 0;
+    padding: 8px 0;
+
+    list-style: none;
 
     background: #fff;
 
-    border: 1px solid #e5e5e5;
+    border: 1px solid #eee;
 
     box-shadow:
-        0 6px 18px
-        rgba(0, 0, 0, 0.08);
+        0 8px 22px rgba(0, 0, 0, 0.08);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(8px);
+
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease,
+        visibility 0.2s ease;
 
     z-index: 1100;
+}
+
+.has-submenu:hover > .submenu,
+.has-submenu:focus-within > .submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
 }
 
 .submenu li {
@@ -208,61 +308,45 @@ a {
 }
 
 .submenu a {
+    display: block;
+
     padding: 10px 18px;
 
-    font-size: 15px;
+    color: #555;
+    font-size: 14px;
+
+    white-space: nowrap;
+}
+
+.submenu a:hover {
+    color: #9c6577;
+    background: #faf7f8;
 }
 
 
-/* 第三級選單 */
+/* =========================================================
+   Level 3
+========================================================= */
 
 .submenu-level3 {
     top: 0;
-
     left: 100%;
 }
 
 
 /* =========================================================
-   桌機版下拉選單
-========================================================= */
-
-@media (min-width: 901px) {
-
-    .has-submenu:hover > .submenu {
-        display: block;
-    }
-
-    .has-submenu:focus-within > .submenu {
-        display: block;
-    }
-
-}
-
-
-/* =========================================================
-   手機子選單按鈕
-========================================================= */
-
-.submenu-button {
-    display: none;
-}
-
-
-/* =========================================================
-   Hamburger Menu
+   Mobile Menu Button
 ========================================================= */
 
 .menu-button {
     display: none;
 
-    width: 44px;
-    height: 44px;
+    width: 42px;
+    height: 42px;
 
     padding: 8px;
 
     border: 0;
-
     background: transparent;
 
     cursor: pointer;
@@ -271,35 +355,12 @@ a {
 .menu-button span {
     display: block;
 
-    width: 26px;
+    width: 25px;
     height: 2px;
 
-    margin: 6px auto;
+    margin: 5px auto;
 
     background: #444;
-
-    transition:
-        transform 0.25s ease,
-        opacity 0.25s ease;
-}
-
-
-/* 漢堡選單開啟 */
-
-.menu-button.is-open span:nth-child(1) {
-    transform:
-        translateY(8px)
-        rotate(45deg);
-}
-
-.menu-button.is-open span:nth-child(2) {
-    opacity: 0;
-}
-
-.menu-button.is-open span:nth-child(3) {
-    transform:
-        translateY(-8px)
-        rotate(-45deg);
 }
 
 
@@ -308,70 +369,42 @@ a {
 ========================================================= */
 
 .hero {
-    width: min(100% - 48px, 1180px);
-
-    margin: 0 auto;
-
-    padding: 45px 0 50px;
+    width: 100%;
+    padding: 38px 24px 0;
 }
-
-
-/* =========================================================
-   Hero Image
-========================================================= */
 
 .hero-image-wrap {
     position: relative;
 
-    width: 100%;
+    max-width: 1100px;
+    height: 360px;
 
-    height: 260px;
+    margin: 0 auto;
 
     overflow: hidden;
 }
 
 .hero-image {
-    display: block;
-
     width: 100%;
-
     height: 100%;
 
     object-fit: cover;
 
-    object-position: center;
+    filter: blur(2.5px);
 
-    /*
-       稍微放大圖片，
-       避免模糊後四周出現空白
-    */
-    transform: scale(1.05);
-
-    /*
-       主視覺模糊
-    */
-    filter: blur(6px);
+    transform: scale(1.02);
 }
-
-
-/* =========================================================
-   Hero Overlay
-========================================================= */
 
 .hero-overlay {
     position: absolute;
-
     inset: 0;
 
-    background: rgba(0, 0, 0, 0.18);
-
-    z-index: 1;
+    background:
+        rgba(0, 0, 0, 0.12);
 }
 
 
-/* =========================================================
-   Hero Title
-========================================================= */
+/* Hero title */
 
 .hero-title {
     position: absolute;
@@ -381,111 +414,92 @@ a {
 
     width: 90%;
 
-    transform:
-        translate(-50%, -50%);
-
-    margin: 0;
-
-    padding: 0;
+    transform: translate(-50%, -50%);
 
     text-align: center;
-
-    z-index: 2;
-}
-
-.hero h1 {
-    margin: 0;
-
     color: #fff;
 
-    font-size:
-        clamp(24px, 2.4vw, 32px);
-
-    font-weight: 400;
-
-    line-height: 1.5;
-
-    letter-spacing: 0.25em;
-
     text-shadow:
-        0 1px 5px
-        rgba(0, 0, 0, 0.45);
+        0 2px 10px rgba(0, 0, 0, 0.45);
+}
+
+.hero-title h1 {
+    margin: 0 0 8px;
+
+    font-size: 30px;
+    font-weight: 500;
+
+    letter-spacing: 0.28em;
 }
 
 .english-name {
-    margin: 8px 0 0;
+    margin: 0;
 
-    color:
-        rgba(255, 255, 255, 0.95);
-
-    font-size: 15px;
-
-    letter-spacing: 0.05em;
-
-    text-shadow:
-        0 1px 4px
-        rgba(0, 0, 0, 0.45);
+    font-size: 14px;
+    letter-spacing: 0.08em;
 }
 
 
 /* =========================================================
-   Contact
+   Common Container
+========================================================= */
+
+.content-container {
+    max-width: 1100px;
+
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+
+/* =========================================================
+   Contact Section
 ========================================================= */
 
 .contact-section {
-    padding: 60px 0 70px;
-
-    border-top: 1px solid #e5e5e5;
+    padding: 70px 20px;
 
     text-align: center;
+
+    background: #fff;
 }
 
 .contact-section h2 {
-    margin: 0 0 15px;
+    margin: 0 0 18px;
 
-    color: #444;
+    font-size: 24px;
+    font-weight: 500;
 
-    font-size: 28px;
-
-    font-weight: 400;
-
-    letter-spacing: 0.15em;
+    letter-spacing: 0.16em;
 }
 
 .contact-section p {
     margin: 0 0 25px;
 
-    color: #666;
+    color: #777;
+    font-size: 14px;
 }
-
-
-/* =========================================================
-   Contact Button
-========================================================= */
 
 .contact-button {
     display: inline-block;
 
-    padding: 10px 28px;
+    padding: 10px 25px;
 
-    border: 1px solid #555;
+    border: 1px solid #aaa;
 
-    color: #444;
-
-    background: transparent;
-
-    text-decoration: none;
+    color: #555;
+    font-size: 14px;
 
     transition:
-        background-color 0.2s ease,
-        color 0.2s ease;
+        background 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease;
 }
 
-.contact-button:hover,
-.contact-button:focus-visible {
+.contact-button:hover {
+    background: #555;
+    border-color: #555;
     color: #fff;
-
-    background: #444;
 }
 
 
@@ -496,279 +510,287 @@ a {
 .site-footer {
     padding: 45px 20px;
 
-    color: #777;
-
     background: #f5f5f5;
 
     text-align: center;
 }
 
 .footer-inner {
-    max-width: 1000px;
-
+    max-width: 1100px;
     margin: 0 auto;
 }
 
-
-/* =========================================================
-   Footer Navigation
-========================================================= */
-
 .footer-nav {
-    margin-bottom: 24px;
+    margin-bottom: 28px;
 
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
 }
 
 .footer-nav a {
-    display: inline-block;
-
-    margin: 4px 9px;
-
     color: #666;
-
-    text-decoration: none;
-
-    transition:
-        color 0.2s ease;
+    font-size: 13px;
 }
 
-.footer-nav a:hover,
-.footer-nav a:focus-visible {
-    color: #222;
-
-    text-decoration: underline;
+.footer-nav a:hover {
+    color: #9c6577;
 }
 
 .footer-nav span {
     color: #bbb;
 }
 
-
-/* =========================================================
-   Footer Information
-========================================================= */
-
-.site-footer p {
-    margin: 3px 0;
-}
-
 .footer-name {
-    color: #555;
+    margin: 0 0 3px;
 
-    font-size: 16px;
+    font-size: 14px;
+    color: #666;
 }
 
 .footer-english {
-    color: #777;
+    margin: 0 0 15px;
 
-    font-size: 14px;
+    font-size: 12px;
+    color: #888;
 }
 
 .copyright {
-    margin-top: 16px !important;
+    margin: 0;
 
+    font-size: 11px;
     color: #999;
-
-    font-size: 12px;
 }
 
 
 /* =========================================================
-   Tablet / Mobile
+   Tablet
 ========================================================= */
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
 
-    /* =====================================================
-       Header
-    ===================================================== */
+    .header-tools-inner {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 
     .header-inner {
-        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 
-        min-height: 78px;
+    .menu > li > a,
+    .menu-parent > a {
+        padding-left: 9px;
+        padding-right: 9px;
 
-        padding: 10px 20px;
+        font-size: 14px;
+    }
 
-        flex-wrap: wrap;
+}
 
-        gap: 0;
+
+/* =========================================================
+   Mobile
+========================================================= */
+
+@media (max-width: 820px) {
+
+
+    /* Header tools */
+
+    .header-tools-inner {
+        height: 38px;
+
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .social-links {
+        gap: 7px;
+    }
+
+    .social-icon {
+        width: 28px;
+        height: 28px;
+    }
+
+    .social-icon svg {
+        width: 15px;
+        height: 15px;
     }
 
 
-    /* =====================================================
-       Logo
-    ===================================================== */
+    /* Header */
+
+    .header-inner {
+        min-height: 70px;
+
+        padding-left: 18px;
+        padding-right: 18px;
+    }
 
     .site-logo img {
-        max-width: 180px;
-
-        max-height: 58px;
+        width: 125px;
     }
 
 
-    /* =====================================================
-       Hamburger
-    ===================================================== */
+    /* Menu button */
 
     .menu-button {
         display: block;
-
-        margin-left: auto;
     }
 
 
-    /* =====================================================
-       Main Navigation
-    ===================================================== */
+    /* Main nav */
 
     .main-nav {
-        display: none;
+        position: absolute;
+
+        top: 100%;
+        left: 0;
 
         width: 100%;
 
-        margin: 10px 0 0;
+        margin: 0;
+
+        background: #fff;
+
+        border-top: 1px solid #eee;
+
+        display: none;
+
+        max-height: calc(100vh - 108px);
+
+        overflow-y: auto;
     }
 
     .main-nav.is-open {
         display: block;
     }
 
+
+    /* Menu */
+
     .menu {
         display: block;
-
-        width: 100%;
-
-        border-top:
-            1px solid #eee;
     }
 
     .menu > li {
-        width: 100%;
-
-        border-bottom:
-            1px solid #eee;
+        border-bottom: 1px solid #eee;
     }
 
+    .menu > li > a {
+        padding: 14px 22px;
+    }
+
+
+    /* Parent */
+
     .menu-parent {
-        width: 100%;
+        justify-content: space-between;
     }
 
     .menu-parent > a {
         flex: 1;
+
+        padding: 14px 22px;
     }
-
-    .main-nav a {
-        padding: 12px 8px;
-
-        white-space: normal;
-    }
-
-
-    /* =====================================================
-       Submenu Button
-    ===================================================== */
 
     .submenu-button {
-        display: block;
+        width: 50px;
+        height: 50px;
 
-        width: 46px;
+        margin: 0;
 
-        height: 46px;
-
-        flex-shrink: 0;
-
-        border: 0;
-
-        background: transparent;
-
-        color: #555;
-
-        font-size: 22px;
-
-        cursor: pointer;
+        font-size: 20px;
     }
 
 
-    /* =====================================================
-       Mobile Submenu
-    ===================================================== */
+    /* Mobile submenu */
 
     .submenu {
-        display: none;
-
         position: static;
 
-        width: 100%;
+        display: none;
 
         min-width: 0;
 
-        padding:
-            0 0 5px 18px !important;
+        padding: 0;
 
         border: 0;
-
-        border-top:
-            1px solid #f0f0f0;
+        border-top: 1px solid #eee;
 
         box-shadow: none;
+
+        opacity: 1;
+        visibility: visible;
+
+        transform: none;
 
         background: #fafafa;
     }
 
-    .has-submenu.submenu-open
-    > .submenu {
-
+    .has-submenu.is-open > .submenu {
         display: block;
     }
 
+    .submenu a {
+        padding: 12px 35px;
+    }
 
     .submenu-level3 {
-        padding-left:
-            20px !important;
+        background: #f4f4f4;
+    }
 
-        background: #f5f5f5;
+    .submenu-level3 a {
+        padding-left: 50px;
     }
 
 
-    /* =====================================================
-       Hero
-    ===================================================== */
+    /* Hero */
 
     .hero {
-        width: 100%;
-
         padding:
-            20px 0 35px;
+            24px
+            16px
+            0;
     }
 
     .hero-image-wrap {
-        height: 220px;
+        height: 270px;
     }
 
-    .hero h1 {
-        font-size: 24px;
+    .hero-title h1 {
+        font-size: 23px;
 
-        letter-spacing: 0.15em;
+        letter-spacing: 0.18em;
     }
 
     .english-name {
-        font-size: 14px;
+        font-size: 12px;
     }
 
 
-    /* =====================================================
-       Contact
-    ===================================================== */
+    /* Contact */
 
     .contact-section {
         padding:
-            45px 20px 55px;
+            55px
+            18px;
     }
 
-    .contact-section h2 {
-        font-size: 25px;
+
+    /* Footer */
+
+    .site-footer {
+        padding:
+            38px
+            18px;
     }
 
 }
@@ -778,83 +800,53 @@ a {
    Small Mobile
 ========================================================= */
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
 
-    .footer-nav span {
-        display: none;
+    .header-tools-inner {
+        height: 36px;
     }
 
-    .footer-nav a {
-        display: block;
+    .social-icon {
+        width: 27px;
+        height: 27px;
+    }
 
-        margin: 7px 0;
+    .site-logo img {
+        width: 115px;
+    }
+
+    .hero-image-wrap {
+        height: 220px;
+    }
+
+    .hero-title h1 {
+        font-size: 19px;
+
+        letter-spacing: 0.12em;
+    }
+
+    .english-name {
+        font-size: 11px;
+    }
+
+    .footer-nav {
+        gap: 6px;
     }
 
 }
 
 
 /* =========================================================
-   Very Small Mobile
+   Reduced Motion
 ========================================================= */
 
-@media (max-width: 480px) {
+@media (prefers-reduced-motion: reduce) {
 
-    /* =====================================================
-       Header
-    ===================================================== */
-
-    .header-inner {
-        padding-left: 14px;
-
-        padding-right: 14px;
-    }
-
-
-    /* =====================================================
-       Logo
-    ===================================================== */
-
-    .site-logo img {
-        max-width: 150px;
-    }
-
-
-    /* =====================================================
-       Hero
-    ===================================================== */
-
-    .hero-image-wrap {
-        height: 190px;
-    }
-
-    .hero h1 {
-        font-size: 20px;
-
-        letter-spacing: 0.08em;
-    }
-
-    .english-name {
-        font-size: 13px;
-    }
-
-
-    /* =====================================================
-       Contact
-    ===================================================== */
-
-    .contact-section {
-        padding:
-            40px 16px 48px;
-    }
-
-
-    /* =====================================================
-       Footer
-    ===================================================== */
-
-    .site-footer {
-        padding:
-            38px 15px;
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition: none !important;
     }
 
 }
