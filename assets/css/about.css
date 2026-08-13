@@ -1,0 +1,568 @@
+/* =========================================================
+   TIQA 關於我們
+========================================================= */
+
+
+/* =========================================================
+   Page Hero
+========================================================= */
+
+.about-hero {
+    padding: 55px 20px;
+
+    background: #f7f3f4;
+
+    text-align: center;
+}
+
+
+.about-hero h1 {
+    margin: 0;
+
+    color: #444;
+
+    font-size: 32px;
+    font-weight: 400;
+
+    letter-spacing: 0.18em;
+}
+
+
+.about-hero p {
+    margin: 6px 0 0;
+
+    color: #999;
+
+    font-size: 14px;
+
+    letter-spacing: 0.08em;
+}
+
+
+
+/* =========================================================
+   Intro
+========================================================= */
+
+.about-intro {
+    padding: 75px 0 70px;
+
+    background: #fff;
+}
+
+
+.about-intro-layout {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(0, 1fr);
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+
+.about-label {
+    margin: 0 0 8px;
+
+    color: #a46f7a;
+
+    font-size: 13px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.12em;
+}
+
+
+.about-intro-title h2 {
+    margin: 0;
+
+    color: #333;
+
+    font-size: 31px;
+    font-weight: 400;
+
+    line-height: 1.5;
+
+    letter-spacing: 0.08em;
+}
+
+
+.about-name-en {
+    margin: 8px 0 0;
+
+    color: #999;
+
+    font-size: 15px;
+
+    letter-spacing: 0.04em;
+}
+
+
+
+/* =========================================================
+   Basic Info
+========================================================= */
+
+.about-basic-info dl {
+    margin: 0;
+
+    border-top: 1px solid #e5e5e5;
+}
+
+
+.about-basic-info dl > div {
+    display: grid;
+
+    grid-template-columns:
+        95px 1fr;
+
+    gap: 20px;
+
+    padding: 18px 0;
+
+    border-bottom: 1px solid #e5e5e5;
+}
+
+
+.about-basic-info dt {
+    color: #888;
+
+    font-size: 14px;
+}
+
+
+.about-basic-info dd {
+    margin: 0;
+
+    color: #555;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+
+/* =========================================================
+   Section Heading
+========================================================= */
+
+.section-heading {
+    margin-bottom: 35px;
+
+    text-align: center;
+}
+
+
+.section-label {
+    margin: 0 0 5px;
+
+    color: #a46f7a;
+
+    font-size: 13px;
+
+    letter-spacing: 0.12em;
+}
+
+
+.section-heading h2 {
+    margin: 0;
+
+    color: #3f3f3f;
+
+    font-size: 28px;
+    font-weight: 400;
+
+    letter-spacing: 0.15em;
+}
+
+
+
+/* =========================================================
+   Purpose
+========================================================= */
+
+.about-purpose {
+    padding: 65px 0;
+
+    background: #faf8f8;
+}
+
+
+.purpose-content {
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+.purpose-content p {
+    margin: 0;
+
+    color: #555;
+
+    font-size: 17px;
+
+    line-height: 2;
+}
+
+
+
+/* =========================================================
+   Mission
+========================================================= */
+
+.about-mission {
+    padding: 75px 0 90px;
+
+    background: #fff;
+}
+
+
+.mission-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 24px;
+}
+
+
+.mission-card {
+    position: relative;
+
+    min-height: 220px;
+
+    padding: 28px 26px;
+
+    background: #fff;
+
+    border: 1px solid #e7e7e7;
+
+    box-shadow:
+        0 4px 14px
+        rgba(0, 0, 0, 0.04);
+}
+
+
+.mission-number {
+    margin: 0 0 22px;
+
+    color: #c8aab0;
+
+    font-size: 34px;
+    font-weight: 300;
+
+    line-height: 1;
+}
+
+
+.mission-card h3 {
+    margin: 0 0 10px;
+
+    color: #444;
+
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.mission-card p:last-child {
+    margin: 0;
+
+    color: #666;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+
+/* =========================================================
+   Activities
+========================================================= */
+
+.about-activities {
+    padding: 75px 0 90px;
+
+    background: #faf8f8;
+}
+
+
+.activity-list {
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    border-top: 1px solid #ddd;
+}
+
+
+.activity-item {
+    display: grid;
+
+    grid-template-columns:
+        75px 1fr;
+
+    gap: 25px;
+
+    padding: 25px 0;
+
+    border-bottom: 1px solid #ddd;
+}
+
+
+.activity-number {
+    color: #b48690;
+
+    font-size: 24px;
+
+    line-height: 1.4;
+}
+
+
+.activity-content h3 {
+    margin: 0 0 5px;
+
+    color: #444;
+
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.activity-content p {
+    margin: 0;
+
+    color: #666;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+
+/* =========================================================
+   Join
+========================================================= */
+
+.about-join {
+    padding: 65px 0;
+
+    background: #fff;
+}
+
+
+.about-join-inner {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 40px;
+
+    padding: 42px 46px;
+
+    background: #f6f2f3;
+}
+
+
+.join-label {
+    margin: 0 0 6px;
+
+    color: #a46f7a;
+
+    font-size: 13px;
+
+    letter-spacing: 0.12em;
+}
+
+
+.about-join h2 {
+    margin: 0 0 8px;
+
+    color: #444;
+
+    font-size: 24px;
+    font-weight: 400;
+
+    letter-spacing: 0.06em;
+}
+
+
+.about-join p {
+    margin: 0;
+
+    color: #666;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+.about-join-button {
+    display: inline-block;
+
+    flex-shrink: 0;
+
+    padding: 10px 28px;
+
+    border: 1px solid #555;
+
+    color: #444;
+
+    background: #fff;
+
+    text-decoration: none;
+
+    transition:
+        color 0.2s ease,
+        background-color 0.2s ease;
+}
+
+
+.about-join-button:hover,
+.about-join-button:focus-visible {
+    color: #fff;
+
+    background: #444;
+}
+
+
+
+/* =========================================================
+   Tablet
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .about-intro-layout {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+
+    .mission-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+
+    .about-join-inner {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+}
+
+
+
+/* =========================================================
+   Mobile
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .about-hero {
+        padding:
+            40px 18px;
+    }
+
+
+    .about-hero h1 {
+        font-size: 27px;
+
+        letter-spacing: 0.14em;
+    }
+
+
+    .about-intro {
+        padding:
+            50px 0;
+    }
+
+
+    .about-intro-title h2 {
+        font-size: 25px;
+    }
+
+
+    .about-basic-info dl > div {
+        grid-template-columns:
+            1fr;
+
+        gap: 4px;
+    }
+
+
+    .about-purpose,
+    .about-mission,
+    .about-activities {
+        padding:
+            55px 0;
+    }
+
+
+    .section-heading h2 {
+        font-size: 24px;
+    }
+
+
+    .purpose-content p {
+        font-size: 15px;
+
+        text-align: left;
+    }
+
+
+    .mission-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .mission-card {
+        min-height: 0;
+    }
+
+
+    .activity-item {
+        grid-template-columns:
+            50px 1fr;
+
+        gap: 15px;
+    }
+
+
+    .about-join {
+        padding:
+            45px 0;
+    }
+
+
+    .about-join-inner {
+        padding:
+            30px 24px;
+    }
+
+
+    .about-join-button {
+        width: 100%;
+
+        text-align: center;
+    }
+
+}
