@@ -66,35 +66,28 @@ select {
 
 
 /* =========================================================
-   共用 Header 外層
-   因為真正 Header 使用 fixed，
-   這裡保留相同高度避免內容被遮住。
+   共用 Header 外層 - 固定頁首
+   Header 是由 include.js 動態載入，因此固定外層 #site-header。
 ========================================================= */
 
 #site-header {
-    height: 130px;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    background: #fff;
 }
 
 
 /* =========================================================
-   Header - 固定頁首
+   Header
 ========================================================= */
 
 .site-header {
-    position: fixed;
-
-    top: 0;
-    left: 0;
-    right: 0;
-
-    z-index: 9999;
-
+    position: relative;
     width: 100%;
-
     background: #fff;
-
     border-bottom: 1px solid #e8e8e8;
-
     box-shadow:
         0 2px 8px
         rgba(0, 0, 0, 0.05);
@@ -775,7 +768,7 @@ select {
     ===================================================== */
 
     #site-header {
-        height: 108px;
+        width: 100%;
     }
 
 
@@ -859,9 +852,9 @@ select {
     .main-nav {
         display: none;
 
-        position: fixed;
+        position: absolute;
 
-        top: 108px;
+        top: 100%;
 
         left: 0;
 
@@ -1082,7 +1075,7 @@ select {
     ===================================================== */
 
     #site-header {
-        height: 104px;
+        width: 100%;
     }
 
 
@@ -1115,7 +1108,7 @@ select {
 
 
     .main-nav {
-        top: 104px;
+        top: 100%;
 
         max-height:
             calc(100vh - 104px);
