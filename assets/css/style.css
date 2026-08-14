@@ -1,5 +1,11 @@
 /* =========================================================
-   Base
+   TIQA - 台灣國際拼布友好會
+   Global Stylesheet
+========================================================= */
+
+
+/* =========================================================
+   Reset
 ========================================================= */
 
 * {
@@ -10,45 +16,88 @@ html {
     scroll-behavior: smooth;
 }
 
+html,
 body {
     margin: 0;
     padding: 0;
+}
+
+body {
+    color: #444;
+    background: #fff;
+
     font-family:
         "Noto Sans TC",
         "Microsoft JhengHei",
+        "PingFang TC",
         Arial,
         sans-serif;
-    color: #444;
-    background: #fff;
-    line-height: 1.7;
+
+    font-size: 16px;
+    line-height: 1.8;
 }
 
 img {
     max-width: 100%;
-    display: block;
+    height: auto;
 }
 
 a {
     color: inherit;
-    text-decoration: none;
 }
 
-button {
+button,
+input,
+textarea,
+select {
     font: inherit;
 }
 
 
 /* =========================================================
-   Header
+   共用 Container
+========================================================= */
+
+.content-container {
+    width: min(100% - 48px, 1180px);
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   共用 Header 外層
+   因為真正 Header 使用 fixed，
+   這裡保留相同高度避免內容被遮住。
+========================================================= */
+
+#site-header {
+    height: 130px;
+}
+
+
+/* =========================================================
+   Header - 固定頁首
 ========================================================= */
 
 .site-header {
-    position: sticky;
+    position: fixed;
+
     top: 0;
-    z-index: 1000;
+    left: 0;
+    right: 0;
+
+    z-index: 9999;
+
     width: 100%;
+
     background: #fff;
+
     border-bottom: 1px solid #e8e8e8;
+
+    box-shadow:
+        0 2px 8px
+        rgba(0, 0, 0, 0.05);
 }
 
 
@@ -59,42 +108,61 @@ button {
 
 .header-tools {
     width: 100%;
+
     background: #fff;
+
+    border-bottom: 1px solid #f1f1f1;
 }
 
+
 .header-tools-inner {
-    max-width: 1200px;
+    width: min(100% - 48px, 1280px);
+
     height: 42px;
+
     margin: 0 auto;
-    padding: 0 24px;
 
     display: flex;
+
     align-items: center;
+
     justify-content: flex-end;
 }
 
 
-/* Social icon group */
+/* =========================================================
+   Social Icons
+========================================================= */
 
 .social-links {
     display: flex;
+
     align-items: center;
+
     justify-content: flex-end;
+
     gap: 9px;
 }
 
 
-/* Icon */
-
 .social-icon {
-    width: 30px;
-    height: 30px;
-
     display: inline-flex;
+
     align-items: center;
+
     justify-content: center;
 
+    width: 30px;
+
+    height: 30px;
+
+    flex-shrink: 0;
+
     border-radius: 50%;
+
+    color: #fff;
+
+    text-decoration: none;
 
     transition:
         transform 0.2s ease,
@@ -103,12 +171,14 @@ button {
 }
 
 
-/* SVG */
-
 .social-icon svg {
+    display: block;
+
     width: 17px;
+
     height: 17px;
-    fill: #fff;
+
+    fill: currentColor;
 }
 
 
@@ -137,14 +207,14 @@ button {
 
 .social-icon:hover {
     transform: translateY(-2px);
+
     opacity: 0.88;
 }
 
 
-/* Keyboard focus */
-
 .social-icon:focus-visible {
     outline: 3px solid #333;
+
     outline-offset: 3px;
 }
 
@@ -155,19 +225,25 @@ button {
 
 .header-main {
     width: 100%;
+
     background: #fff;
 }
 
+
 .header-inner {
-    max-width: 1200px;
+    width: min(100% - 48px, 1280px);
+
     min-height: 88px;
 
     margin: 0 auto;
-    padding: 0 24px;
 
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
+
+    gap: 30px;
 }
 
 
@@ -176,12 +252,22 @@ button {
 ========================================================= */
 
 .site-logo {
+    display: block;
+
     flex-shrink: 0;
+
+    text-decoration: none;
 }
 
+
 .site-logo img {
-    width: 150px;
-    height: auto;
+    display: block;
+
+    width: auto;
+
+    max-width: 220px;
+
+    max-height: 68px;
 }
 
 
@@ -193,313 +279,395 @@ button {
     margin-left: auto;
 }
 
-.menu {
-    margin: 0;
-    padding: 0;
 
-    display: flex;
-    align-items: center;
+.main-nav ul {
+    margin: 0;
+
+    padding: 0;
 
     list-style: none;
 }
+
+
+.menu {
+    display: flex;
+
+    align-items: center;
+
+    gap: 2px;
+}
+
 
 .menu > li {
     position: relative;
 }
 
-.menu > li > a,
-.menu-parent > a {
-    display: block;
-    padding: 31px 15px;
-
-    color: #444;
-    font-size: 15px;
-    white-space: nowrap;
-
-    transition: color 0.2s ease;
-}
-
-.menu > li > a:hover,
-.menu-parent > a:hover {
-    color: #9c6577;
-}
-
-
-/* Current */
-
-.menu a[aria-current="page"] {
-    color: #9c6577;
-}
-
-
-/* =========================================================
-   Parent Menu
-========================================================= */
 
 .menu-parent {
     display: flex;
+
     align-items: center;
 }
 
 
-/* Desktop submenu button */
+.main-nav a {
+    display: block;
 
-.submenu-button {
-    width: 26px;
-    height: 26px;
+    padding: 15px 12px;
 
-    margin-left: -10px;
-    padding: 0;
+    color: #555;
 
-    border: 0;
-    background: transparent;
+    text-decoration: none;
 
-    color: #777;
+    white-space: nowrap;
 
-    cursor: pointer;
+    transition:
+        color 0.2s ease,
+        background-color 0.2s ease;
+}
+
+
+.main-nav a:hover,
+.main-nav a:focus-visible {
+    color: #9b6f78;
+
+    background: #f8f6f7;
+}
+
+
+/* 目前頁面 */
+
+.main-nav a[aria-current="page"] {
+    color: #9b6f78;
 }
 
 
 /* =========================================================
-   Dropdown
+   Submenu Button
+========================================================= */
+
+.submenu-button {
+    display: none;
+}
+
+
+/* =========================================================
+   Submenu
 ========================================================= */
 
 .submenu {
+    display: none;
+
     position: absolute;
+
     top: 100%;
+
     left: 0;
 
-    min-width: 180px;
+    min-width: 210px;
 
-    margin: 0;
-    padding: 8px 0;
-
-    list-style: none;
+    padding: 8px 0 !important;
 
     background: #fff;
 
-    border: 1px solid #eee;
+    border: 1px solid #e5e5e5;
 
     box-shadow:
-        0 8px 22px rgba(0, 0, 0, 0.08);
-
-    opacity: 0;
-    visibility: hidden;
-
-    transform: translateY(8px);
-
-    transition:
-        opacity 0.2s ease,
-        transform 0.2s ease,
-        visibility 0.2s ease;
+        0 6px 18px
+        rgba(0, 0, 0, 0.08);
 
     z-index: 1100;
 }
 
-.has-submenu:hover > .submenu,
-.has-submenu:focus-within > .submenu {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
 
 .submenu li {
     position: relative;
 }
 
-.submenu a {
-    display: block;
 
+.submenu a {
     padding: 10px 18px;
 
-    color: #555;
-    font-size: 14px;
-
-    white-space: nowrap;
-}
-
-.submenu a:hover {
-    color: #9c6577;
-    background: #faf7f8;
+    font-size: 15px;
 }
 
 
 /* =========================================================
-   Level 3
+   第三級選單
 ========================================================= */
 
 .submenu-level3 {
     top: 0;
+
     left: 100%;
 }
 
 
 /* =========================================================
-   Mobile Menu Button
+   Desktop 下拉選單
+========================================================= */
+
+@media (min-width: 821px) {
+
+    .has-submenu:hover > .submenu {
+        display: block;
+    }
+
+    .has-submenu:focus-within > .submenu {
+        display: block;
+    }
+
+}
+
+
+/* =========================================================
+   Hamburger Menu
 ========================================================= */
 
 .menu-button {
     display: none;
 
-    width: 42px;
-    height: 42px;
+    width: 44px;
+
+    height: 44px;
 
     padding: 8px;
 
     border: 0;
+
     background: transparent;
 
     cursor: pointer;
 }
 
+
 .menu-button span {
     display: block;
 
-    width: 25px;
+    width: 26px;
+
     height: 2px;
 
-    margin: 5px auto;
+    margin: 6px auto;
 
     background: #444;
+
+    transition:
+        transform 0.25s ease,
+        opacity 0.25s ease;
+}
+
+
+/* Hamburger → X */
+
+.menu-button.is-open span:nth-child(1) {
+    transform:
+        translateY(8px)
+        rotate(45deg);
+}
+
+
+.menu-button.is-open span:nth-child(2) {
+    opacity: 0;
+}
+
+
+.menu-button.is-open span:nth-child(3) {
+    transform:
+        translateY(-8px)
+        rotate(-45deg);
 }
 
 
 /* =========================================================
-   Hero
+   首頁 Hero
 ========================================================= */
 
 .hero {
-    width: 100%;
-    padding: 38px 24px 0;
+    width: min(100% - 48px, 1180px);
+
+    margin: 0 auto;
+
+    padding: 45px 0 50px;
 }
+
+
+/* =========================================================
+   Hero Image
+========================================================= */
 
 .hero-image-wrap {
     position: relative;
 
-    max-width: 1100px;
-    height: 360px;
+    width: 100%;
 
-    margin: 0 auto;
+    height: 260px;
 
     overflow: hidden;
 }
 
+
 .hero-image {
+    display: block;
+
     width: 100%;
+
     height: 100%;
 
     object-fit: cover;
 
-    filter: blur(2.5px);
+    object-position: center;
 
-    transform: scale(1.02);
+    /*
+       稍微放大圖片，
+       避免模糊後邊緣出現白邊
+    */
+
+    transform: scale(1.05);
+
+    filter: blur(6px);
 }
+
+
+/* =========================================================
+   Hero Overlay
+========================================================= */
 
 .hero-overlay {
     position: absolute;
+
     inset: 0;
 
     background:
-        rgba(0, 0, 0, 0.12);
+        rgba(0, 0, 0, 0.18);
+
+    z-index: 1;
 }
 
 
-/* Hero title */
+/* =========================================================
+   Hero Title
+========================================================= */
 
 .hero-title {
     position: absolute;
 
     top: 50%;
+
     left: 50%;
 
     width: 90%;
 
-    transform: translate(-50%, -50%);
+    transform:
+        translate(-50%, -50%);
 
-    text-align: center;
-    color: #fff;
-
-    text-shadow:
-        0 2px 10px rgba(0, 0, 0, 0.45);
-}
-
-.hero-title h1 {
-    margin: 0 0 8px;
-
-    font-size: 30px;
-    font-weight: 500;
-
-    letter-spacing: 0.28em;
-}
-
-.english-name {
     margin: 0;
 
-    font-size: 14px;
-    letter-spacing: 0.08em;
+    padding: 0;
+
+    text-align: center;
+
+    z-index: 2;
+}
+
+
+.hero h1 {
+    margin: 0;
+
+    color: #fff;
+
+    font-size:
+        clamp(24px, 2.4vw, 32px);
+
+    font-weight: 400;
+
+    line-height: 1.5;
+
+    letter-spacing: 0.25em;
+
+    text-shadow:
+        0 1px 5px
+        rgba(0, 0, 0, 0.45);
+}
+
+
+.english-name {
+    margin: 8px 0 0;
+
+    color:
+        rgba(255, 255, 255, 0.95);
+
+    font-size: 15px;
+
+    letter-spacing: 0.05em;
+
+    text-shadow:
+        0 1px 4px
+        rgba(0, 0, 0, 0.45);
 }
 
 
 /* =========================================================
-   Common Container
-========================================================= */
-
-.content-container {
-    max-width: 1100px;
-
-    margin: 0 auto;
-    padding: 0 24px;
-}
-
-
-/* =========================================================
-   Contact Section
+   首頁 Contact
 ========================================================= */
 
 .contact-section {
-    padding: 70px 20px;
+    padding: 60px 0 70px;
+
+    border-top: 1px solid #e5e5e5;
 
     text-align: center;
-
-    background: #fff;
 }
+
 
 .contact-section h2 {
-    margin: 0 0 18px;
+    margin: 0 0 15px;
 
-    font-size: 24px;
-    font-weight: 500;
+    color: #444;
 
-    letter-spacing: 0.16em;
+    font-size: 28px;
+
+    font-weight: 400;
+
+    letter-spacing: 0.15em;
 }
+
 
 .contact-section p {
     margin: 0 0 25px;
 
-    color: #777;
-    font-size: 14px;
+    color: #666;
 }
+
+
+/* =========================================================
+   Contact Button
+========================================================= */
 
 .contact-button {
     display: inline-block;
 
-    padding: 10px 25px;
+    padding: 10px 28px;
 
-    border: 1px solid #aaa;
+    border: 1px solid #555;
 
-    color: #555;
-    font-size: 14px;
+    color: #444;
+
+    background: transparent;
+
+    text-decoration: none;
 
     transition:
-        background 0.2s ease,
-        color 0.2s ease,
-        border-color 0.2s ease;
+        background-color 0.2s ease,
+        color 0.2s ease;
 }
 
-.contact-button:hover {
-    background: #555;
-    border-color: #555;
+
+.contact-button:hover,
+.contact-button:focus-visible {
     color: #fff;
+
+    background: #444;
 }
 
 
@@ -510,287 +678,373 @@ button {
 .site-footer {
     padding: 45px 20px;
 
+    color: #777;
+
     background: #f5f5f5;
 
     text-align: center;
 }
 
+
 .footer-inner {
-    max-width: 1100px;
+    max-width: 1000px;
+
     margin: 0 auto;
 }
 
+
+/* =========================================================
+   Footer Navigation
+========================================================= */
+
 .footer-nav {
-    margin-bottom: 28px;
+    margin-bottom: 24px;
 
-    display: flex;
-    flex-wrap: wrap;
-
-    align-items: center;
-    justify-content: center;
-
-    gap: 8px;
+    text-align: center;
 }
+
 
 .footer-nav a {
+    display: inline-block;
+
+    margin: 4px 9px;
+
     color: #666;
-    font-size: 13px;
+
+    text-decoration: none;
+
+    transition:
+        color 0.2s ease;
 }
 
-.footer-nav a:hover {
-    color: #9c6577;
+
+.footer-nav a:hover,
+.footer-nav a:focus-visible {
+    color: #222;
+
+    text-decoration: underline;
 }
+
 
 .footer-nav span {
     color: #bbb;
 }
 
-.footer-name {
-    margin: 0 0 3px;
-
-    font-size: 14px;
-    color: #666;
-}
-
-.footer-english {
-    margin: 0 0 15px;
-
-    font-size: 12px;
-    color: #888;
-}
-
-.copyright {
-    margin: 0;
-
-    font-size: 11px;
-    color: #999;
-}
-
 
 /* =========================================================
-   Tablet
+   Footer Information
 ========================================================= */
 
-@media (max-width: 1000px) {
+.site-footer p {
+    margin: 3px 0;
+}
 
-    .header-tools-inner {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
 
-    .header-inner {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+.footer-name {
+    color: #555;
 
-    .menu > li > a,
-    .menu-parent > a {
-        padding-left: 9px;
-        padding-right: 9px;
+    font-size: 16px;
+}
 
-        font-size: 14px;
-    }
 
+.footer-english {
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+.copyright {
+    margin-top: 16px !important;
+
+    color: #999;
+
+    font-size: 12px;
 }
 
 
 /* =========================================================
-   Mobile
+   Tablet / Mobile
 ========================================================= */
 
 @media (max-width: 820px) {
 
 
-    /* Header tools */
+    /* =====================================================
+       共用 Header 高度
+    ===================================================== */
+
+    #site-header {
+        height: 108px;
+    }
+
+
+    /* =====================================================
+       Header Tools
+    ===================================================== */
 
     .header-tools-inner {
+        width: 100%;
+
         height: 38px;
 
-        padding-left: 18px;
-        padding-right: 18px;
+        padding:
+            0 18px;
     }
+
 
     .social-links {
         gap: 7px;
     }
 
+
     .social-icon {
         width: 28px;
+
         height: 28px;
     }
 
+
     .social-icon svg {
         width: 15px;
+
         height: 15px;
     }
 
 
-    /* Header */
+    /* =====================================================
+       Header Main
+    ===================================================== */
 
     .header-inner {
+        width: 100%;
+
         min-height: 70px;
 
-        padding-left: 18px;
-        padding-right: 18px;
+        padding:
+            8px 18px;
+
+        flex-wrap: wrap;
+
+        gap: 0;
     }
+
+
+    /* =====================================================
+       Logo
+    ===================================================== */
 
     .site-logo img {
-        width: 125px;
+        max-width: 170px;
+
+        max-height: 54px;
     }
 
 
-    /* Menu button */
+    /* =====================================================
+       Hamburger
+    ===================================================== */
 
     .menu-button {
         display: block;
+
+        margin-left: auto;
     }
 
 
-    /* Main nav */
+    /* =====================================================
+       Main Navigation
+    ===================================================== */
 
     .main-nav {
-        position: absolute;
+        display: none;
 
-        top: 100%;
+        position: fixed;
+
+        top: 108px;
+
         left: 0;
 
         width: 100%;
 
+        max-height:
+            calc(100vh - 108px);
+
         margin: 0;
+
+        overflow-y: auto;
 
         background: #fff;
 
-        border-top: 1px solid #eee;
+        border-top:
+            1px solid #eee;
 
-        display: none;
+        box-shadow:
+            0 8px 18px
+            rgba(0, 0, 0, 0.08);
 
-        max-height: calc(100vh - 108px);
-
-        overflow-y: auto;
+        z-index: 9998;
     }
+
 
     .main-nav.is-open {
         display: block;
     }
 
 
-    /* Menu */
-
     .menu {
         display: block;
+
+        width: 100%;
     }
+
 
     .menu > li {
-        border-bottom: 1px solid #eee;
+        width: 100%;
+
+        border-bottom:
+            1px solid #eee;
     }
 
-    .menu > li > a {
-        padding: 14px 22px;
-    }
-
-
-    /* Parent */
 
     .menu-parent {
-        justify-content: space-between;
+        width: 100%;
     }
+
 
     .menu-parent > a {
         flex: 1;
-
-        padding: 14px 22px;
     }
+
+
+    .main-nav a {
+        padding:
+            12px 20px;
+
+        white-space: normal;
+    }
+
+
+    /* =====================================================
+       Submenu Button
+    ===================================================== */
 
     .submenu-button {
-        width: 50px;
-        height: 50px;
+        display: block;
 
-        margin: 0;
+        width: 48px;
 
-        font-size: 20px;
+        height: 48px;
+
+        flex-shrink: 0;
+
+        border: 0;
+
+        background: transparent;
+
+        color: #555;
+
+        font-size: 22px;
+
+        cursor: pointer;
     }
 
 
-    /* Mobile submenu */
+    /* =====================================================
+       Mobile Submenu
+    ===================================================== */
 
     .submenu {
+        display: none;
+
         position: static;
 
-        display: none;
+        width: 100%;
 
         min-width: 0;
 
-        padding: 0;
+        padding:
+            0 0 5px 18px !important;
 
         border: 0;
-        border-top: 1px solid #eee;
+
+        border-top:
+            1px solid #f0f0f0;
 
         box-shadow: none;
 
-        opacity: 1;
-        visibility: visible;
-
-        transform: none;
-
         background: #fafafa;
     }
+
+
+    /*
+       include.js 使用 is-open
+    */
 
     .has-submenu.is-open > .submenu {
         display: block;
     }
 
-    .submenu a {
-        padding: 12px 35px;
+
+    /*
+       如果舊 main.js 還有 submenu-open，
+       也兼容它。
+    */
+
+    .has-submenu.submenu-open > .submenu {
+        display: block;
     }
+
 
     .submenu-level3 {
-        background: #f4f4f4;
+        padding-left:
+            20px !important;
+
+        background: #f5f5f5;
     }
 
-    .submenu-level3 a {
-        padding-left: 50px;
-    }
 
-
-    /* Hero */
+    /* =====================================================
+       Hero
+    ===================================================== */
 
     .hero {
+        width: 100%;
+
         padding:
-            24px
-            16px
-            0;
+            20px 0 35px;
     }
+
 
     .hero-image-wrap {
-        height: 270px;
+        height: 220px;
     }
 
-    .hero-title h1 {
-        font-size: 23px;
 
-        letter-spacing: 0.18em;
+    .hero h1 {
+        font-size: 24px;
+
+        letter-spacing: 0.15em;
     }
+
 
     .english-name {
-        font-size: 12px;
+        font-size: 14px;
     }
 
 
-    /* Contact */
+    /* =====================================================
+       Contact
+    ===================================================== */
 
     .contact-section {
         padding:
-            55px
-            18px;
+            45px 20px 55px;
     }
 
 
-    /* Footer */
-
-    .site-footer {
-        padding:
-            38px
-            18px;
+    .contact-section h2 {
+        font-size: 25px;
     }
 
 }
@@ -800,37 +1054,112 @@ button {
    Small Mobile
 ========================================================= */
 
+@media (max-width: 600px) {
+
+    .footer-nav span {
+        display: none;
+    }
+
+
+    .footer-nav a {
+        display: block;
+
+        margin: 7px 0;
+    }
+
+}
+
+
+/* =========================================================
+   Very Small Mobile
+========================================================= */
+
 @media (max-width: 480px) {
+
+
+    /* =====================================================
+       Header
+    ===================================================== */
+
+    #site-header {
+        height: 104px;
+    }
+
 
     .header-tools-inner {
         height: 36px;
+
+        padding:
+            0 14px;
     }
+
 
     .social-icon {
         width: 27px;
+
         height: 27px;
     }
 
-    .site-logo img {
-        width: 115px;
+
+    .header-inner {
+        min-height: 68px;
+
+        padding:
+            7px 14px;
     }
+
+
+    .site-logo img {
+        max-width: 150px;
+    }
+
+
+    .main-nav {
+        top: 104px;
+
+        max-height:
+            calc(100vh - 104px);
+    }
+
+
+    /* =====================================================
+       Hero
+    ===================================================== */
 
     .hero-image-wrap {
-        height: 220px;
+        height: 190px;
     }
 
-    .hero-title h1 {
-        font-size: 19px;
 
-        letter-spacing: 0.12em;
+    .hero h1 {
+        font-size: 20px;
+
+        letter-spacing: 0.08em;
     }
+
 
     .english-name {
-        font-size: 11px;
+        font-size: 13px;
     }
 
-    .footer-nav {
-        gap: 6px;
+
+    /* =====================================================
+       Contact
+    ===================================================== */
+
+    .contact-section {
+        padding:
+            40px 16px 48px;
+    }
+
+
+    /* =====================================================
+       Footer
+    ===================================================== */
+
+    .site-footer {
+        padding:
+            38px 15px;
     }
 
 }
@@ -842,11 +1171,17 @@ button {
 
 @media (prefers-reduced-motion: reduce) {
 
+    html {
+        scroll-behavior: auto;
+    }
+
+
     *,
     *::before,
     *::after {
-        scroll-behavior: auto !important;
         transition: none !important;
+
+        animation: none !important;
     }
 
 }
