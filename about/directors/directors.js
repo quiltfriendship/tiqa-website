@@ -7,7 +7,6 @@ document.addEventListener(
                 "directors-list"
             );
 
-
         if (!container) {
             return;
         }
@@ -68,7 +67,9 @@ document.addEventListener(
                     "directors-group";
 
 
-                /* 分組標題 */
+                /* =========================
+                   分組標題
+                ========================= */
 
                 const groupTitle =
                     document.createElement(
@@ -87,7 +88,9 @@ document.addEventListener(
                 );
 
 
-                /* Grid */
+                /* =========================
+                   Grid
+                ========================= */
 
                 const grid =
                     document.createElement(
@@ -159,11 +162,19 @@ function createDirectorCard(item) {
             "img"
         );
 
+
+    /*
+     * 如果 DATA 沒有指定圖片，
+     * 直接使用 default.jpg
+     */
     image.src =
-        item.image;
+        item.image ||
+        "/assets/images/directors/default.jpg";
+
 
     image.alt =
-        item.name;
+        item.name || "理監事會成員";
+
 
     image.loading =
         "lazy";
@@ -172,13 +183,16 @@ function createDirectorCard(item) {
     /*
      * 找不到圖片時使用預設圖
      */
-
     image.addEventListener(
         "error",
         function () {
 
+            /*
+             * 防止 default.jpg 本身不存在時
+             * 產生無限 error
+             */
             if (
-                image.dataset.fallback
+                image.dataset.fallback === "true"
             ) {
                 return;
             }
@@ -213,7 +227,9 @@ function createDirectorCard(item) {
         "director-info";
 
 
-    /* 職稱 */
+    /* =====================================================
+       職稱
+    ===================================================== */
 
     const position =
         document.createElement(
@@ -223,24 +239,29 @@ function createDirectorCard(item) {
     position.className =
         "director-position";
 
+
     position.textContent =
-        item.position;
+        item.position || "";
 
 
-    /* 姓名 */
+    /* =====================================================
+       姓名
+    ===================================================== */
 
     const name =
         document.createElement(
             "h3"
         );
 
+
     name.textContent =
-        item.name;
+        item.name || "";
 
 
     info.appendChild(
         position
     );
+
 
     info.appendChild(
         name
@@ -251,7 +272,10 @@ function createDirectorCard(item) {
        Facebook
     ===================================================== */
 
-    if (item.facebook) {
+    if (
+        item.facebook &&
+        item.facebook.trim() !== ""
+    ) {
 
         const social =
             document.createElement(
@@ -267,36 +291,51 @@ function createDirectorCard(item) {
                 "a"
             );
 
+
+        /*
+         * Facebook 網址
+         */
         facebook.href =
             item.facebook;
 
+
+        /*
+         * 另開新視窗
+         */
         facebook.target =
             "_blank";
+
 
         facebook.rel =
             "noopener noreferrer";
 
+
         facebook.className =
             "director-facebook";
 
+
+        /*
+         * 不再使用 SVG
+         *
+         * 避免 SVG 被其他 CSS
+         * 放大造成版面異常
+         */
+        facebook.textContent =
+            "f";
+
+
+        /*
+         * 無障礙文字
+         */
         facebook.setAttribute(
             "aria-label",
-            item.name +
+            (item.name || "") +
             "的 Facebook（另開新視窗）"
         );
 
+
         facebook.title =
             "Facebook";
-
-
-        facebook.innerHTML = `
-            <svg viewBox="0 0 24 24"
-                 aria-hidden="true">
-
-                <path d="M13.5 22v-9h3l.5-3.5h-3.5V7.3c0-1 .3-1.8 1.8-1.8H17V2.4c-.3 0-1.4-.1-2.6-.1-2.6 0-4.4 1.6-4.4 4.6v2.6H7V13h3v9h3.5z"/>
-
-            </svg>
-        `;
 
 
         social.appendChild(
@@ -312,12 +351,13 @@ function createDirectorCard(item) {
 
 
     /* =====================================================
-       組合
+       組合人物卡片
     ===================================================== */
 
     card.appendChild(
         photo
     );
+
 
     card.appendChild(
         info

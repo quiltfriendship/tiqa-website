@@ -795,7 +795,7 @@
    理監事會
 	========================================================= */
 
-	.directors-section {
+.directors-section {
 		padding: 70px 0 90px;
 
 		background: #fff;
@@ -806,17 +806,17 @@
 	   分組
 	========================================================= */
 
-	.directors-group {
+.directors-group {
 		margin-top: 55px;
 	}
 
 
-	.directors-group:first-child {
+.directors-group:first-child {
 		margin-top: 40px;
 	}
 
 
-	.directors-group-title {
+.directors-group-title {
 		margin: 0 0 25px;
 
 		padding-bottom: 12px;
@@ -836,7 +836,7 @@
 	   Grid
 	========================================================= */
 
-	.directors-grid {
+.directors-grid {
 		display: grid;
 
 		grid-template-columns:
@@ -852,7 +852,7 @@
 	   Card
 	========================================================= */
 
-	.director-card {
+.director-card {
 		display: flex;
 
 		flex-direction: column;
@@ -871,7 +871,7 @@
 	}
 
 
-	.director-card:hover {
+.director-card:hover {
 		transform:
 			translateY(-3px);
 
@@ -885,7 +885,7 @@
 	   Photo
 	========================================================= */
 
-	.director-photo {
+.director-photo {
 		width: 100%;
 
 		aspect-ratio: 4 / 5;
@@ -896,7 +896,7 @@
 	}
 
 
-	.director-photo img {
+.director-photo img {
 		display: block;
 
 		width: 100%;
@@ -911,8 +911,8 @@
 	}
 
 
-	.director-card:hover
-	.director-photo img {
+.director-card:hover
+.director-photo img {
 
 		transform:
 			scale(1.02);
@@ -923,7 +923,7 @@
 	   Info
 	========================================================= */
 
-	.director-info {
+.director-info {
 		display: flex;
 
 		flex: 1;
@@ -945,7 +945,7 @@
 	   Position
 	========================================================= */
 
-	.director-position {
+.director-position {
 		margin: 0 0 5px;
 
 		color: #a46f7a;
@@ -960,7 +960,7 @@
 	   Name
 	========================================================= */
 
-	.director-info h3 {
+.director-info h3 {
 		margin: 0;
 
 		color: #444;
@@ -976,7 +976,7 @@
 	   Social
 	========================================================= */
 
-	.director-social {
+.director-social {
 		margin-top: auto;
 
 		padding-top: 14px;
@@ -985,39 +985,34 @@
 
 	/* Facebook */
 
-	.director-facebook {
-		display: inline-flex;
+.director-facebook {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 
-		align-items: center;
+    width: 30px;
+    height: 30px;
 
-		justify-content: center;
+    border-radius: 50%;
 
-		width: 30px;
-		height: 30px;
+    color: #fff;
+    background: #4267b2;
 
-		border-radius: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
 
-		color: #fff;
+    text-decoration: none;
+    overflow: hidden;
 
-		background: #4267b2;
-
-		text-decoration: none;
-
-		transition:
-			transform 0.2s ease,
-			opacity 0.2s ease;
-	}
-
-
-	.director-facebook svg {
-		width: 17px;
-		height: 17px;
-
-		fill: currentColor;
-	}
+    transition:
+        transform 0.2s ease,
+        opacity 0.2s ease;
+}
 
 
-	.director-facebook:hover {
+.director-facebook:hover {
 		transform:
 			translateY(-2px);
 
@@ -1025,7 +1020,7 @@
 	}
 
 
-	.director-facebook:focus-visible {
+.director-facebook:focus-visible {
 		outline:
 			3px solid #333;
 
@@ -1038,7 +1033,7 @@
 	   Tablet
 	========================================================= */
 
-	@media (max-width: 900px) {
+@media (max-width: 900px) {
 
 		.directors-grid {
 			grid-template-columns:
@@ -1052,7 +1047,7 @@
 	   Mobile
 	========================================================= */
 
-	@media (max-width: 650px) {
+@media (max-width: 650px) {
 
 		.directors-section {
 			padding:
@@ -1094,11 +1089,6 @@
 		}
 
 
-		.director-facebook svg {
-			width: 15px;
-
-			height: 15px;
-		}
 
 	}
 
@@ -1107,7 +1097,7 @@
 	   Small Mobile
 	========================================================= */
 
-	@media (max-width: 380px) {
+@media (max-width: 380px) {
 
 		.directors-grid {
 			grid-template-columns:
