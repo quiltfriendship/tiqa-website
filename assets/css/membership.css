@@ -1,10 +1,11 @@
 /* =========================================================
    TIQA 加入會員
+   /assets/css/membership.css
 ========================================================= */
 
 
 /* =========================================================
-   Hero
+   01. Page Hero
 ========================================================= */
 
 .membership-hero {
@@ -24,16 +25,20 @@
     font-size: 32px;
     font-weight: 400;
 
+    line-height: 1.5;
+
     letter-spacing: 0.18em;
 }
 
 
 .membership-hero p {
-    margin: 6px 0 0;
+    margin: 7px 0 0;
 
     color: #999;
 
     font-size: 14px;
+
+    line-height: 1.6;
 
     letter-spacing: 0.08em;
 }
@@ -41,29 +46,69 @@
 
 
 /* =========================================================
-   共用
+   02. 共用設定
 ========================================================= */
 
 .membership-section {
-    padding: 75px 0 90px;
+    padding: 78px 0 90px;
 }
 
 
 .membership-label {
-    margin: 0 0 7px;
+    margin: 0 0 8px;
 
-    color: #a46f7a;
+    color: #a98a91;
 
-    font-size: 13px;
+    font-size: 12px;
+    font-weight: 400;
 
-    letter-spacing: 0.12em;
+    line-height: 1.6;
+
+    letter-spacing: 0.14em;
 }
 
 
+
+/* =========================================================
+   03. 各區塊標題
+========================================================= */
+
 .membership-section-heading {
-    margin-bottom: 38px;
+    position: relative;
+
+    margin-bottom: 48px;
+
+    padding-bottom: 22px;
 
     text-align: center;
+}
+
+
+.membership-section-heading::after {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    bottom: 0;
+
+    width: 42px;
+    height: 2px;
+
+    background: #b98d96;
+
+    transform: translateX(-50%);
+}
+
+
+.membership-section-heading .membership-label {
+    margin-bottom: 8px;
+
+    color: #a98a91;
+
+    font-size: 12px;
+
+    letter-spacing: 0.14em;
 }
 
 
@@ -73,25 +118,29 @@
     color: #3f3f3f;
 
     font-size: 28px;
-    font-weight: 400;
+    font-weight: 500;
 
-    letter-spacing: 0.15em;
+    line-height: 1.5;
+
+    letter-spacing: 0.16em;
 }
 
 
 
 /* =========================================================
-   Intro
+   04. 歡迎加入
 ========================================================= */
 
 .membership-intro {
-    padding: 75px 0;
+    padding: 78px 0 82px;
 
     background: #fff;
 }
 
 
 .membership-intro-inner {
+    position: relative;
+
     max-width: 760px;
 
     margin: 0 auto;
@@ -100,20 +149,50 @@
 }
 
 
-.membership-intro h2 {
-    margin: 0;
+.membership-intro-inner > .membership-label {
+    margin-bottom: 8px;
+}
 
-    color: #444;
+
+.membership-intro h2 {
+    position: relative;
+
+    margin: 0 0 28px;
+
+    padding-bottom: 22px;
+
+    color: #3f3f3f;
 
     font-size: 30px;
-    font-weight: 400;
+    font-weight: 500;
 
-    letter-spacing: 0.07em;
+    line-height: 1.5;
+
+    letter-spacing: 0.08em;
+}
+
+
+.membership-intro h2::after {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    bottom: 0;
+
+    width: 42px;
+    height: 2px;
+
+    background: #b98d96;
+
+    transform: translateX(-50%);
 }
 
 
 .membership-intro-text {
-    margin: 18px auto 28px;
+    max-width: 680px;
+
+    margin: 0 auto 30px;
 
     color: #666;
 
@@ -123,45 +202,65 @@
 }
 
 
+
+/* =========================================================
+   05. Google 會員表單按鈕
+========================================================= */
+
 .membership-form-button {
     display: inline-block;
 
-    padding: 12px 30px;
+    padding: 13px 31px;
+
+    border: 1px solid #9b6f78;
 
     color: #fff;
 
     background: #9b6f78;
 
-    border: 1px solid #9b6f78;
+    font-size: 14px;
+
+    line-height: 1.5;
 
     text-decoration: none;
 
     transition:
         background 0.2s ease,
-        border-color 0.2s ease;
+        border-color 0.2s ease,
+        transform 0.2s ease;
 }
 
 
-.membership-form-button:hover,
-.membership-form-button:focus-visible {
+.membership-form-button:hover {
     background: #7f5962;
 
     border-color: #7f5962;
+
+    transform: translateY(-1px);
+}
+
+
+.membership-form-button:focus-visible {
+    outline: 3px solid rgba(155, 111, 120, 0.35);
+
+    outline-offset: 3px;
 }
 
 
 .membership-form-note {
-    margin: 9px 0 0;
+    margin: 10px 0 0;
 
     color: #999;
 
     font-size: 12px;
+
+    line-height: 1.6;
 }
 
 
 
 /* =========================================================
-   Qualification
+   06. 加入會員資格
 ========================================================= */
 
 .membership-qualification {
@@ -176,9 +275,9 @@
 
     padding: 32px 38px;
 
-    background: #fff;
-
     border: 1px solid #e8e2e4;
+
+    background: #fff;
 
     text-align: center;
 }
@@ -189,7 +288,7 @@
 
     color: #555;
 
-    font-size: 17px;
+    font-size: 16px;
 
     line-height: 2;
 }
@@ -197,7 +296,7 @@
 
 
 /* =========================================================
-   Benefits
+   07. 會員權益
 ========================================================= */
 
 .membership-benefits {
@@ -216,13 +315,30 @@
 
 
 .benefit-card {
+    position: relative;
+
     min-height: 245px;
 
-    padding: 28px 26px;
+    padding: 30px 27px;
 
     border: 1px solid #e7e7e7;
 
     background: #fff;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+.benefit-card:hover {
+    border-color: #ddcdd1;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 24px rgba(0, 0, 0, 0.05);
 }
 
 
@@ -241,12 +357,14 @@
 
 
 .benefit-card h3 {
-    margin: 0 0 10px;
+    margin: 0 0 11px;
 
     color: #444;
 
     font-size: 18px;
     font-weight: 500;
+
+    line-height: 1.5;
 }
 
 
@@ -257,13 +375,13 @@
 
     font-size: 14px;
 
-    line-height: 1.8;
+    line-height: 1.85;
 }
 
 
 
 /* =========================================================
-   Fee
+   08. 會費說明
 ========================================================= */
 
 .membership-fee {
@@ -281,16 +399,16 @@
 
     max-width: 900px;
 
-    margin: 0 auto 45px;
+    margin: 0 auto 48px;
 }
 
 
 .fee-box {
-    padding: 27px 20px;
-
-    background: #fff;
+    padding: 29px 20px;
 
     border: 1px solid #e5dfe1;
+
+    background: #fff;
 
     text-align: center;
 }
@@ -299,11 +417,13 @@
 .fee-box span {
     display: block;
 
-    margin-bottom: 8px;
+    margin-bottom: 9px;
 
     color: #777;
 
     font-size: 14px;
+
+    line-height: 1.5;
 }
 
 
@@ -314,6 +434,8 @@
 
     font-size: 27px;
     font-weight: 500;
+
+    line-height: 1.4;
 }
 
 
@@ -325,13 +447,20 @@
 .fee-box small {
     display: block;
 
-    margin-top: 5px;
+    margin-top: 6px;
 
     color: #999;
 
     font-size: 12px;
+
+    line-height: 1.5;
 }
 
+
+
+/* =========================================================
+   09. 會費詳細說明
+========================================================= */
 
 .fee-detail {
     max-width: 850px;
@@ -341,17 +470,38 @@
 
 
 .fee-detail h3 {
-    margin: 28px 0 8px;
+    position: relative;
+
+    margin: 31px 0 12px;
+
+    padding-left: 13px;
 
     color: #444;
 
     font-size: 18px;
     font-weight: 500;
+
+    line-height: 1.5;
+}
+
+
+.fee-detail h3::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 4px;
+
+    width: 3px;
+    height: 19px;
+
+    background: #b98d96;
 }
 
 
 .fee-detail p {
-    margin: 0 0 12px;
+    margin: 0 0 13px;
 
     color: #666;
 
@@ -362,29 +512,35 @@
 
 
 .fee-example {
-    margin: 18px 0 30px;
+    margin: 20px 0 32px;
 
-    padding: 20px 22px;
-
-    background: #fff;
+    padding: 20px 23px;
 
     border-left: 3px solid #b98d96;
+
+    background: #fff;
 }
 
 
 .fee-example strong {
+    display: block;
+
+    margin-bottom: 5px;
+
     color: #8d626b;
+
+    font-size: 14px;
 }
 
 
 .fee-example p {
-    margin: 4px 0 0;
+    margin: 0;
 }
 
 
 
 /* =========================================================
-   Process
+   10. 入會流程
 ========================================================= */
 
 .membership-process {
@@ -399,9 +555,9 @@
 
     padding: 0;
 
-    list-style: none;
-
     border-top: 1px solid #ddd;
+
+    list-style: none;
 }
 
 
@@ -413,7 +569,7 @@
 
     gap: 22px;
 
-    padding: 25px 0;
+    padding: 27px 0;
 
     border-bottom: 1px solid #ddd;
 }
@@ -435,16 +591,21 @@
     background: #a97983;
 
     font-size: 15px;
+    font-weight: 500;
+
+    line-height: 1;
 }
 
 
 .process-list h3 {
-    margin: 0 0 5px;
+    margin: 0 0 6px;
 
     color: #444;
 
     font-size: 18px;
     font-weight: 500;
+
+    line-height: 1.5;
 }
 
 
@@ -455,13 +616,13 @@
 
     font-size: 15px;
 
-    line-height: 1.8;
+    line-height: 1.85;
 }
 
 
 
 /* =========================================================
-   Payment
+   11. 匯款資訊
 ========================================================= */
 
 .membership-payment {
@@ -476,9 +637,9 @@
 
     padding: 15px 35px;
 
-    background: #fff;
-
     border: 1px solid #e6e1e2;
+
+    background: #fff;
 }
 
 
@@ -495,7 +656,7 @@
 
     gap: 20px;
 
-    padding: 17px 0;
+    padding: 18px 0;
 
     border-bottom: 1px solid #eee;
 }
@@ -507,9 +668,11 @@
 
 
 .payment-box dt {
-    color: #888;
+    color: #999;
 
     font-size: 14px;
+
+    line-height: 1.6;
 }
 
 
@@ -519,12 +682,15 @@
     color: #444;
 
     font-size: 16px;
+    font-weight: 400;
+
+    line-height: 1.6;
 }
 
 
 
 /* =========================================================
-   Contact
+   12. 匯款後聯絡
 ========================================================= */
 
 .membership-contact {
@@ -538,24 +704,29 @@
     display: flex;
 
     align-items: center;
-
     justify-content: space-between;
 
     gap: 40px;
 
     padding: 42px 46px;
 
+    border: 1px solid #eee7e9;
+
     background: #f6f2f3;
 }
 
 
 .membership-contact h2 {
-    margin: 0 0 8px;
+    margin: 0 0 9px;
 
     color: #444;
 
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 500;
+
+    line-height: 1.5;
+
+    letter-spacing: 0.06em;
 }
 
 
@@ -565,6 +736,8 @@
     color: #666;
 
     font-size: 14px;
+
+    line-height: 1.8;
 }
 
 
@@ -580,7 +753,7 @@
 .membership-contact-button {
     display: inline-block;
 
-    padding: 10px 22px;
+    padding: 11px 22px;
 
     border: 1px solid #555;
 
@@ -588,29 +761,53 @@
 
     background: #555;
 
+    font-size: 14px;
+
+    line-height: 1.5;
+
     text-decoration: none;
+
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease;
 }
 
 
 .membership-contact-button.secondary {
+    border-color: #aaa;
+
     color: #444;
 
     background: #fff;
 }
 
 
-.membership-contact-button:hover,
-.membership-contact-button:focus-visible {
+.membership-contact-button:hover {
     opacity: 0.82;
+
+    transform: translateY(-1px);
+}
+
+
+.membership-contact-button:focus-visible {
+    outline: 3px solid rgba(80, 80, 80, 0.25);
+
+    outline-offset: 3px;
 }
 
 
 
 /* =========================================================
-   Tablet
+   13. Tablet
 ========================================================= */
 
 @media (max-width: 900px) {
+
+    .membership-section {
+        padding:
+            68px 0 78px;
+    }
+
 
     .benefit-grid {
         grid-template-columns:
@@ -634,10 +831,12 @@
 
 
 /* =========================================================
-   Mobile
+   14. Mobile
 ========================================================= */
 
 @media (max-width: 600px) {
+
+    /* Page Hero */
 
     .membership-hero {
         padding:
@@ -650,29 +849,71 @@
     }
 
 
+
+    /* 共用 Section */
+
+    .membership-section {
+        padding:
+            55px 0 62px;
+    }
+
+
+
+    /* 區塊標題 */
+
+    .membership-section-heading {
+        margin-bottom: 35px;
+
+        padding-bottom: 18px;
+    }
+
+
+    .membership-section-heading::after {
+        width: 36px;
+    }
+
+
+    .membership-section-heading h2 {
+        font-size: 24px;
+
+        letter-spacing: 0.12em;
+    }
+
+
+
+    /* Intro */
+
     .membership-intro {
         padding:
-            50px 0;
+            55px 0 60px;
     }
 
 
     .membership-intro h2 {
+        margin-bottom: 24px;
+
+        padding-bottom: 18px;
+
         font-size: 24px;
 
         line-height: 1.6;
     }
 
 
-    .membership-section {
-        padding:
-            55px 0;
+    .membership-intro h2::after {
+        width: 36px;
     }
 
 
-    .membership-section-heading h2 {
-        font-size: 24px;
+    .membership-intro-text {
+        font-size: 15px;
+
+        line-height: 1.9;
     }
 
+
+
+    /* Qualification */
 
     .qualification-box {
         padding:
@@ -687,30 +928,90 @@
     }
 
 
+
+    /* Benefits */
+
     .benefit-grid {
         grid-template-columns:
             1fr;
+
+        gap: 16px;
     }
 
 
     .benefit-card {
         min-height: 0;
+
+        padding:
+            25px 23px;
     }
 
+
+    .benefit-number {
+        margin-bottom: 17px;
+
+        font-size: 30px;
+    }
+
+
+
+    /* Fee */
 
     .fee-summary {
         grid-template-columns:
             1fr;
+
+        gap: 14px;
+
+        margin-bottom: 36px;
     }
 
+
+    .fee-box {
+        padding:
+            23px 18px;
+    }
+
+
+    .fee-detail h3 {
+        font-size: 17px;
+    }
+
+
+
+    /* Process */
 
     .process-list li {
         grid-template-columns:
             48px 1fr;
 
         gap: 14px;
+
+        padding:
+            23px 0;
     }
 
+
+    .process-number {
+        width: 38px;
+        height: 38px;
+
+        font-size: 14px;
+    }
+
+
+    .process-list h3 {
+        font-size: 17px;
+    }
+
+
+    .process-list p {
+        font-size: 14px;
+    }
+
+
+
+    /* Payment */
 
     .payment-box {
         padding:
@@ -722,9 +1023,15 @@
         grid-template-columns:
             1fr;
 
-        gap: 3px;
+        gap: 4px;
+
+        padding:
+            15px 0;
     }
 
+
+
+    /* Contact */
 
     .membership-contact {
         padding:
@@ -738,6 +1045,11 @@
     }
 
 
+    .membership-contact h2 {
+        font-size: 21px;
+    }
+
+
     .membership-contact-actions {
         width: 100%;
 
@@ -747,6 +1059,8 @@
 
     .membership-contact-button {
         width: 100%;
+
+        box-sizing: border-box;
 
         text-align: center;
     }
