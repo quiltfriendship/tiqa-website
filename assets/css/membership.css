@@ -1,0 +1,754 @@
+/* =========================================================
+   TIQA 加入會員
+========================================================= */
+
+
+/* =========================================================
+   Hero
+========================================================= */
+
+.membership-hero {
+    padding: 55px 20px;
+
+    background: #f7f3f4;
+
+    text-align: center;
+}
+
+
+.membership-hero h1 {
+    margin: 0;
+
+    color: #444;
+
+    font-size: 32px;
+    font-weight: 400;
+
+    letter-spacing: 0.18em;
+}
+
+
+.membership-hero p {
+    margin: 6px 0 0;
+
+    color: #999;
+
+    font-size: 14px;
+
+    letter-spacing: 0.08em;
+}
+
+
+
+/* =========================================================
+   共用
+========================================================= */
+
+.membership-section {
+    padding: 75px 0 90px;
+}
+
+
+.membership-label {
+    margin: 0 0 7px;
+
+    color: #a46f7a;
+
+    font-size: 13px;
+
+    letter-spacing: 0.12em;
+}
+
+
+.membership-section-heading {
+    margin-bottom: 38px;
+
+    text-align: center;
+}
+
+
+.membership-section-heading h2 {
+    margin: 0;
+
+    color: #3f3f3f;
+
+    font-size: 28px;
+    font-weight: 400;
+
+    letter-spacing: 0.15em;
+}
+
+
+
+/* =========================================================
+   Intro
+========================================================= */
+
+.membership-intro {
+    padding: 75px 0;
+
+    background: #fff;
+}
+
+
+.membership-intro-inner {
+    max-width: 760px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+.membership-intro h2 {
+    margin: 0;
+
+    color: #444;
+
+    font-size: 30px;
+    font-weight: 400;
+
+    letter-spacing: 0.07em;
+}
+
+
+.membership-intro-text {
+    margin: 18px auto 28px;
+
+    color: #666;
+
+    font-size: 16px;
+
+    line-height: 1.9;
+}
+
+
+.membership-form-button {
+    display: inline-block;
+
+    padding: 12px 30px;
+
+    color: #fff;
+
+    background: #9b6f78;
+
+    border: 1px solid #9b6f78;
+
+    text-decoration: none;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+.membership-form-button:hover,
+.membership-form-button:focus-visible {
+    background: #7f5962;
+
+    border-color: #7f5962;
+}
+
+
+.membership-form-note {
+    margin: 9px 0 0;
+
+    color: #999;
+
+    font-size: 12px;
+}
+
+
+
+/* =========================================================
+   Qualification
+========================================================= */
+
+.membership-qualification {
+    background: #faf8f8;
+}
+
+
+.qualification-box {
+    max-width: 820px;
+
+    margin: 0 auto;
+
+    padding: 32px 38px;
+
+    background: #fff;
+
+    border: 1px solid #e8e2e4;
+
+    text-align: center;
+}
+
+
+.qualification-box p {
+    margin: 0;
+
+    color: #555;
+
+    font-size: 17px;
+
+    line-height: 2;
+}
+
+
+
+/* =========================================================
+   Benefits
+========================================================= */
+
+.membership-benefits {
+    background: #fff;
+}
+
+
+.benefit-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 24px;
+}
+
+
+.benefit-card {
+    min-height: 245px;
+
+    padding: 28px 26px;
+
+    border: 1px solid #e7e7e7;
+
+    background: #fff;
+}
+
+
+.benefit-number {
+    display: block;
+
+    margin-bottom: 22px;
+
+    color: #c8aab0;
+
+    font-size: 34px;
+    font-weight: 300;
+
+    line-height: 1;
+}
+
+
+.benefit-card h3 {
+    margin: 0 0 10px;
+
+    color: #444;
+
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.benefit-card p {
+    margin: 0;
+
+    color: #666;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+
+/* =========================================================
+   Fee
+========================================================= */
+
+.membership-fee {
+    background: #faf8f8;
+}
+
+
+.fee-summary {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 22px;
+
+    max-width: 900px;
+
+    margin: 0 auto 45px;
+}
+
+
+.fee-box {
+    padding: 27px 20px;
+
+    background: #fff;
+
+    border: 1px solid #e5dfe1;
+
+    text-align: center;
+}
+
+
+.fee-box span {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+.fee-box strong {
+    display: block;
+
+    color: #9b6f78;
+
+    font-size: 27px;
+    font-weight: 500;
+}
+
+
+.fee-box .fee-period {
+    font-size: 21px;
+}
+
+
+.fee-box small {
+    display: block;
+
+    margin-top: 5px;
+
+    color: #999;
+
+    font-size: 12px;
+}
+
+
+.fee-detail {
+    max-width: 850px;
+
+    margin: 0 auto;
+}
+
+
+.fee-detail h3 {
+    margin: 28px 0 8px;
+
+    color: #444;
+
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.fee-detail p {
+    margin: 0 0 12px;
+
+    color: #666;
+
+    font-size: 15px;
+
+    line-height: 1.9;
+}
+
+
+.fee-example {
+    margin: 18px 0 30px;
+
+    padding: 20px 22px;
+
+    background: #fff;
+
+    border-left: 3px solid #b98d96;
+}
+
+
+.fee-example strong {
+    color: #8d626b;
+}
+
+
+.fee-example p {
+    margin: 4px 0 0;
+}
+
+
+
+/* =========================================================
+   Process
+========================================================= */
+
+.membership-process {
+    background: #fff;
+}
+
+
+.process-list {
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    padding: 0;
+
+    list-style: none;
+
+    border-top: 1px solid #ddd;
+}
+
+
+.process-list li {
+    display: grid;
+
+    grid-template-columns:
+        60px 1fr;
+
+    gap: 22px;
+
+    padding: 25px 0;
+
+    border-bottom: 1px solid #ddd;
+}
+
+
+.process-number {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+
+    color: #fff;
+
+    background: #a97983;
+
+    font-size: 15px;
+}
+
+
+.process-list h3 {
+    margin: 0 0 5px;
+
+    color: #444;
+
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.process-list p {
+    margin: 0;
+
+    color: #666;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+
+/* =========================================================
+   Payment
+========================================================= */
+
+.membership-payment {
+    background: #faf8f8;
+}
+
+
+.payment-box {
+    max-width: 720px;
+
+    margin: 0 auto;
+
+    padding: 15px 35px;
+
+    background: #fff;
+
+    border: 1px solid #e6e1e2;
+}
+
+
+.payment-box dl {
+    margin: 0;
+}
+
+
+.payment-box dl > div {
+    display: grid;
+
+    grid-template-columns:
+        110px 1fr;
+
+    gap: 20px;
+
+    padding: 17px 0;
+
+    border-bottom: 1px solid #eee;
+}
+
+
+.payment-box dl > div:last-child {
+    border-bottom: 0;
+}
+
+
+.payment-box dt {
+    color: #888;
+
+    font-size: 14px;
+}
+
+
+.payment-box dd {
+    margin: 0;
+
+    color: #444;
+
+    font-size: 16px;
+}
+
+
+
+/* =========================================================
+   Contact
+========================================================= */
+
+.membership-contact {
+    padding: 65px 0;
+
+    background: #fff;
+}
+
+
+.membership-contact-inner {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 40px;
+
+    padding: 42px 46px;
+
+    background: #f6f2f3;
+}
+
+
+.membership-contact h2 {
+    margin: 0 0 8px;
+
+    color: #444;
+
+    font-size: 24px;
+    font-weight: 400;
+}
+
+
+.membership-contact p:not(.membership-label) {
+    margin: 0;
+
+    color: #666;
+
+    font-size: 14px;
+}
+
+
+.membership-contact-actions {
+    display: flex;
+
+    gap: 12px;
+
+    flex-shrink: 0;
+}
+
+
+.membership-contact-button {
+    display: inline-block;
+
+    padding: 10px 22px;
+
+    border: 1px solid #555;
+
+    color: #fff;
+
+    background: #555;
+
+    text-decoration: none;
+}
+
+
+.membership-contact-button.secondary {
+    color: #444;
+
+    background: #fff;
+}
+
+
+.membership-contact-button:hover,
+.membership-contact-button:focus-visible {
+    opacity: 0.82;
+}
+
+
+
+/* =========================================================
+   Tablet
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .benefit-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+
+    .membership-contact-inner {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+
+    .membership-contact-actions {
+        flex-wrap: wrap;
+    }
+
+}
+
+
+
+/* =========================================================
+   Mobile
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .membership-hero {
+        padding:
+            40px 18px;
+    }
+
+
+    .membership-hero h1 {
+        font-size: 27px;
+    }
+
+
+    .membership-intro {
+        padding:
+            50px 0;
+    }
+
+
+    .membership-intro h2 {
+        font-size: 24px;
+
+        line-height: 1.6;
+    }
+
+
+    .membership-section {
+        padding:
+            55px 0;
+    }
+
+
+    .membership-section-heading h2 {
+        font-size: 24px;
+    }
+
+
+    .qualification-box {
+        padding:
+            26px 22px;
+
+        text-align: left;
+    }
+
+
+    .qualification-box p {
+        font-size: 15px;
+    }
+
+
+    .benefit-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .benefit-card {
+        min-height: 0;
+    }
+
+
+    .fee-summary {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .process-list li {
+        grid-template-columns:
+            48px 1fr;
+
+        gap: 14px;
+    }
+
+
+    .payment-box {
+        padding:
+            12px 22px;
+    }
+
+
+    .payment-box dl > div {
+        grid-template-columns:
+            1fr;
+
+        gap: 3px;
+    }
+
+
+    .membership-contact {
+        padding:
+            45px 0;
+    }
+
+
+    .membership-contact-inner {
+        padding:
+            30px 24px;
+    }
+
+
+    .membership-contact-actions {
+        width: 100%;
+
+        flex-direction: column;
+    }
+
+
+    .membership-contact-button {
+        width: 100%;
+
+        text-align: center;
+    }
+
+}
