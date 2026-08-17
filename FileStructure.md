@@ -47,7 +47,7 @@ tiqa-website/
 │     └─ index.html
 │
 ├─ publications/
-│  └─ index.html
+│  ├─ index.html
 │  ├─ publications-data.js   ← 只放出版品資料
 │  └─ publications.js        ← 只放產生卡片、翻頁功能
 │
@@ -59,7 +59,8 @@ tiqa-website/
 │  │  ├─ style.css       ← 全站共用
 │  │  ├─ about.css       ← 關於我們相關頁面共用
 │  │  ├─ classroom.css
-│  │  └─ contact.css
+│  │  ├─ contact.css
+│  │  └─ publications.css
 │  │
 │  ├─ js/
 │  │  ├─ include.js  
@@ -74,9 +75,16 @@ tiqa-website/
 │     │  ├─ default.jpg
 │     │  └─ 各教室圖片...
 │     │
-│     └─ about/
-│        └─ 未來如果關於我們有圖片就放這裡
-│		 
+│     ├─ about/
+│     │  └─ 未來如果關於我們有圖片就放這裡
+│	  │
+│     ├─ publications
+│	  │  └─ book1
+│	           ├─ cover.jpg
+│	           ├─ page-01.jpg
+│	           ├─ page-02.jpg
+│	           ├─ ...
+│	           └─ page-11.jpg
 ├─ components/
 │  ├─ header.html
 │  └─ footer.html

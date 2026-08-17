@@ -1,0 +1,916 @@
+/* =========================================================
+   TIQA 出版訊息
+   /assets/css/publications.css
+========================================================= */
+
+
+/* =========================================================
+   01. Page Hero
+========================================================= */
+
+.publications-hero {
+    padding: 55px 20px;
+
+    background: #f7f3f4;
+
+    text-align: center;
+}
+
+
+.publications-hero h1 {
+    margin: 0;
+
+    color: #444;
+
+    font-size: 32px;
+    font-weight: 400;
+
+    line-height: 1.5;
+
+    letter-spacing: 0.18em;
+}
+
+
+.publications-hero p {
+    margin: 7px 0 0;
+
+    color: #999;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    letter-spacing: 0.08em;
+}
+
+
+
+/* =========================================================
+   02. 共用區塊標題
+========================================================= */
+
+.publications-section-heading {
+    position: relative;
+
+    margin-bottom: 45px;
+
+    padding-bottom: 22px;
+
+    text-align: center;
+}
+
+
+.publications-section-heading::after {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    bottom: 0;
+
+    width: 42px;
+    height: 2px;
+
+    background: #b98d96;
+
+    transform: translateX(-50%);
+}
+
+
+.publications-label {
+    margin: 0 0 8px;
+
+    color: #a98a91;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+
+    letter-spacing: 0.14em;
+}
+
+
+.publications-section-heading h2 {
+    margin: 0;
+
+    color: #3f3f3f;
+
+    font-size: 28px;
+    font-weight: 500;
+
+    line-height: 1.5;
+
+    letter-spacing: 0.14em;
+}
+
+
+
+/* =========================================================
+   03. 出版理念
+========================================================= */
+
+.publications-intro {
+    padding: 78px 0 85px;
+
+    background: #fff;
+}
+
+
+.publications-intro-content {
+    max-width: 840px;
+
+    margin: 0 auto;
+}
+
+
+.publications-intro-content p {
+    margin: 0 0 18px;
+
+    color: #666;
+
+    font-size: 16px;
+
+    line-height: 2;
+}
+
+
+.publications-intro-content p:last-child {
+    margin-bottom: 0;
+}
+
+
+
+/* =========================================================
+   04. 出版品列表
+========================================================= */
+
+.publication-list-section {
+    padding: 78px 0 90px;
+
+    background: #faf8f8;
+}
+
+
+.publication-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 32px;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+}
+
+
+
+/* =========================================================
+   05. 出版品卡片
+========================================================= */
+
+.publication-card {
+    display: flex;
+
+    flex-direction: column;
+
+    overflow: hidden;
+
+    border: 1px solid #e7e1e3;
+
+    background: #fff;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.publication-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 10px 30px
+        rgba(0, 0, 0, 0.07);
+}
+
+
+
+/* =========================================================
+   06. 封面
+========================================================= */
+
+.publication-card-cover {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 380px;
+
+    padding: 28px;
+
+    background: #f4f1f2;
+}
+
+
+.publication-card-cover img {
+    display: block;
+
+    max-width: 100%;
+    max-height: 340px;
+
+    width: auto;
+    height: auto;
+
+    object-fit: contain;
+
+    box-shadow:
+        0 8px 22px
+        rgba(0, 0, 0, 0.12);
+}
+
+
+
+/* =========================================================
+   07. 卡片內容
+========================================================= */
+
+.publication-card-content {
+    display: flex;
+
+    flex: 1;
+
+    flex-direction: column;
+
+    padding: 27px;
+}
+
+
+.publication-card-year {
+    margin: 0 0 7px;
+
+    color: #aa7f88;
+
+    font-size: 12px;
+
+    letter-spacing: 0.12em;
+}
+
+
+.publication-card h3 {
+    margin: 0 0 7px;
+
+    color: #3f3f3f;
+
+    font-size: 23px;
+    font-weight: 500;
+
+    line-height: 1.5;
+
+    letter-spacing: 0.08em;
+}
+
+
+.publication-card-subtitle {
+    margin: 0 0 18px;
+
+    color: #888;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+.publication-card-description {
+    margin: 0 0 25px;
+
+    color: #666;
+
+    font-size: 14px;
+
+    line-height: 1.85;
+}
+
+
+.publication-card-footer {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-top: auto;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #eee;
+}
+
+
+.publication-card-price {
+    color: #9b6f78;
+
+    font-size: 18px;
+
+    font-weight: 500;
+}
+
+
+
+/* =========================================================
+   08. 線上瀏覽按鈕
+========================================================= */
+
+.publication-preview-button {
+    padding: 10px 20px;
+
+    border: 1px solid #9b6f78;
+
+    color: #fff;
+
+    background: #9b6f78;
+
+    font: inherit;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.publication-preview-button:hover {
+    background: #7f5962;
+
+    border-color: #7f5962;
+
+    transform: translateY(-1px);
+}
+
+
+.publication-preview-button:focus-visible {
+    outline: 3px solid
+        rgba(155, 111, 120, 0.3);
+
+    outline-offset: 3px;
+}
+
+
+
+/* =========================================================
+   09. 瀏覽器區塊
+========================================================= */
+
+.book-viewer-section {
+    padding: 78px 0 90px;
+
+    background: #fff;
+
+    scroll-margin-top: 120px;
+}
+
+
+.book-viewer-section[hidden] {
+    display: none;
+}
+
+
+
+/* =========================================================
+   10. 書籍說明
+========================================================= */
+
+.book-viewer-info {
+    max-width: 800px;
+
+    margin: -15px auto 38px;
+
+    text-align: center;
+}
+
+
+.book-viewer-subtitle {
+    margin: 0 0 10px;
+
+    color: #8f6d74;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+.book-viewer-description {
+    margin: 0;
+
+    color: #777;
+
+    font-size: 14px;
+
+    line-height: 1.9;
+}
+
+
+
+/* =========================================================
+   11. Viewer
+========================================================= */
+
+.book-viewer {
+    max-width: 1100px;
+
+    margin: 0 auto;
+}
+
+
+
+/* =========================================================
+   12. 翻頁控制
+========================================================= */
+
+.book-controls {
+    display: grid;
+
+    grid-template-columns:
+        130px 1fr 130px;
+
+    gap: 20px;
+
+    align-items: center;
+
+    margin-bottom: 22px;
+}
+
+
+.book-controls-bottom {
+    margin-top: 22px;
+
+    margin-bottom: 0;
+}
+
+
+.book-button {
+    min-height: 42px;
+
+    padding: 9px 16px;
+
+    border: 1px solid #aaa;
+
+    color: #555;
+
+    background: #fff;
+
+    font: inherit;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition:
+        color 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+.book-button:hover:not(:disabled) {
+    color: #fff;
+
+    background: #8f656f;
+
+    border-color: #8f656f;
+}
+
+
+.book-button:focus-visible {
+    outline: 3px solid
+        rgba(143, 101, 111, 0.25);
+
+    outline-offset: 3px;
+}
+
+
+.book-button:disabled {
+    color: #bbb;
+
+    border-color: #ddd;
+
+    background: #f7f7f7;
+
+    cursor: not-allowed;
+}
+
+
+.book-page-status {
+    color: #666;
+
+    font-size: 14px;
+
+    text-align: center;
+
+    letter-spacing: 0.05em;
+}
+
+
+.book-page-status span {
+    color: #9b6f78;
+
+    font-size: 16px;
+
+    font-weight: 500;
+}
+
+
+
+/* =========================================================
+   13. 作品圖片
+========================================================= */
+
+.book-page {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 450px;
+
+    padding: 28px;
+
+    border: 1px solid #e5e5e5;
+
+    background: #f7f7f7;
+}
+
+
+.book-page img {
+    display: block;
+
+    max-width: 100%;
+    max-height: 850px;
+
+    width: auto;
+    height: auto;
+
+    object-fit: contain;
+
+    background: #fff;
+
+    box-shadow:
+        0 8px 26px
+        rgba(0, 0, 0, 0.08);
+}
+
+
+
+/* =========================================================
+   14. 鍵盤提示
+========================================================= */
+
+.book-keyboard-note {
+    margin: 15px 0 0;
+
+    color: #aaa;
+
+    font-size: 12px;
+
+    text-align: center;
+}
+
+
+
+/* =========================================================
+   15. 關閉瀏覽
+========================================================= */
+
+.book-close-area {
+    margin-top: 30px;
+
+    text-align: center;
+}
+
+
+.book-close-button {
+    padding: 9px 20px;
+
+    border: 0;
+
+    border-bottom: 1px solid #999;
+
+    color: #777;
+
+    background: transparent;
+
+    font: inherit;
+
+    font-size: 13px;
+
+    cursor: pointer;
+}
+
+
+.book-close-button:hover {
+    color: #9b6f78;
+
+    border-color: #9b6f78;
+}
+
+
+
+/* =========================================================
+   16. 聯絡區
+========================================================= */
+
+.publication-contact {
+    padding: 65px 0;
+
+    background: #fff;
+}
+
+
+.publication-contact-inner {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 40px;
+
+    padding: 42px 46px;
+
+    border: 1px solid #eee7e9;
+
+    background: #f6f2f3;
+}
+
+
+.publication-contact h2 {
+    margin: 0 0 9px;
+
+    color: #444;
+
+    font-size: 24px;
+    font-weight: 500;
+
+    line-height: 1.5;
+
+    letter-spacing: 0.06em;
+}
+
+
+.publication-contact p:not(.publications-label) {
+    margin: 0;
+
+    color: #666;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+.publication-contact-actions {
+    display: flex;
+
+    gap: 12px;
+
+    flex-shrink: 0;
+}
+
+
+.publication-contact-button {
+    display: inline-block;
+
+    padding: 11px 22px;
+
+    border: 1px solid #555;
+
+    color: #fff;
+
+    background: #555;
+
+    font-size: 14px;
+
+    text-decoration: none;
+
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.publication-contact-button.secondary {
+    color: #444;
+
+    background: #fff;
+
+    border-color: #aaa;
+}
+
+
+.publication-contact-button:hover {
+    opacity: 0.82;
+
+    transform: translateY(-1px);
+}
+
+
+
+/* =========================================================
+   17. Tablet
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .publication-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+
+    .publication-contact-inner {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+
+    .publication-contact-actions {
+        flex-wrap: wrap;
+    }
+
+}
+
+
+
+/* =========================================================
+   18. Mobile
+========================================================= */
+
+@media (max-width: 650px) {
+
+
+    .publications-hero {
+        padding:
+            40px 18px;
+    }
+
+
+    .publications-hero h1 {
+        font-size: 27px;
+    }
+
+
+    .publications-intro,
+    .publication-list-section,
+    .book-viewer-section {
+        padding:
+            55px 0 65px;
+    }
+
+
+    .publications-section-heading {
+        margin-bottom: 35px;
+
+        padding-bottom: 18px;
+    }
+
+
+    .publications-section-heading h2 {
+        font-size: 24px;
+
+        letter-spacing: 0.1em;
+    }
+
+
+    .publications-intro-content p {
+        font-size: 15px;
+    }
+
+
+
+    /* 出版品 */
+
+    .publication-grid {
+        grid-template-columns:
+            1fr;
+
+        gap: 22px;
+    }
+
+
+    .publication-card-cover {
+        min-height: 300px;
+
+        padding: 24px;
+    }
+
+
+    .publication-card-cover img {
+        max-height: 280px;
+    }
+
+
+    .publication-card-content {
+        padding: 23px;
+    }
+
+
+    .publication-card h3 {
+        font-size: 21px;
+    }
+
+
+
+    /* 翻頁 */
+
+    .book-controls {
+        grid-template-columns:
+            1fr 1fr;
+
+        gap: 10px;
+    }
+
+
+    .book-page-status {
+        grid-column:
+            1 / -1;
+
+        grid-row: 1;
+
+        margin-bottom: 4px;
+    }
+
+
+    .book-button:first-child {
+        grid-column: 1;
+    }
+
+
+    .book-button:last-child {
+        grid-column: 2;
+    }
+
+
+    .book-page {
+        min-height: 250px;
+
+        padding: 10px;
+    }
+
+
+    .book-page img {
+        max-height: 600px;
+
+        box-shadow: none;
+    }
+
+
+    .book-keyboard-note {
+        display: none;
+    }
+
+
+
+    /* Contact */
+
+    .publication-contact {
+        padding:
+            45px 0;
+    }
+
+
+    .publication-contact-inner {
+        padding:
+            30px 24px;
+    }
+
+
+    .publication-contact h2 {
+        font-size: 21px;
+    }
+
+
+    .publication-contact-actions {
+        width: 100%;
+
+        flex-direction: column;
+    }
+
+
+    .publication-contact-button {
+        width: 100%;
+
+        box-sizing: border-box;
+
+        text-align: center;
+    }
+
+}
