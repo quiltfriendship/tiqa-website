@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>推薦教室｜台灣國際拼布友好會 TIQA</title>
+
+    <meta name="description"
+          content="台灣國際拼布友好會推薦拼布教室及老師資訊">
+
+    <!-- 全站共用 CSS -->
+    <link rel="stylesheet"
+          href="/assets/css/style.css">
+
+    <!-- 推薦教室專用 CSS -->
+    <link rel="stylesheet"
+          href="/assets/css/classroom.css">
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     Header
+===================================================== -->
+
+<div id="site-header"></div>
+
+
+<!-- =====================================================
+     Main
+===================================================== -->
+
+<main>
+
+
+    <!-- =================================================
+         推薦教室主視覺
+    ================================================= -->
+
+    <section class="classroom-hero">
+
+        <div class="classroom-hero-inner">
+
+            <!-- 主視覺圖片 -->
+            <img
+                src="/assets/images/classroom/classroom-hero.jpg"
+                alt=""
+                class="classroom-hero-image"
+            >
+
+
+            <!--
+                為了讓白字在圖片上較容易閱讀，
+                加一層非常淡的漸層。
+                不是黑色底框。
+            -->
+            <div class="classroom-hero-overlay"
+                 aria-hidden="true">
+            </div>
+
+
+            <!-- 主視覺文字 -->
+            <div class="classroom-hero-content">
+
+                <h1 class="classroom-hero-title">
+                    推薦教室
+                </h1>
+
+                <p class="classroom-hero-description">
+                    台灣國際拼布友好會推薦拼布教室及老師資訊，<br>
+                    歡迎喜愛拼布與手作的朋友參考。
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         推薦教室列表
+    ================================================= -->
+
+    <section class="classroom-section">
+
+        <div class="content-container">
+
+            <p class="classroom-note">
+                依老師姓氏排列
+            </p>
+
+
+            <!--
+                classroom.js 會自動將 classroom-data.js
+                內的老師資料產生在這裡
+            -->
+
+            <div id="classroom-list"
+                 class="classroom-grid">
+            </div>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     Footer
+===================================================== -->
+
+<div id="site-footer"></div>
+
+<!-- =====================================================
+     JavaScript
+===================================================== -->
+
+<script src="/assets/js/include.js"></script>
+
+<script src="/classroom/classroom-data.js"></script>
+
+<script src="/classroom/classroom.js"></script>
+
+
+</body>
+</html>
