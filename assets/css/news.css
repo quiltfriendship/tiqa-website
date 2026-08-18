@@ -1,11 +1,8 @@
 /* =========================================================
-   TIQA 最新消息
+   TIQA 最新消息專用樣式
 ========================================================= */
 
-/* =========================================================
-   主視覺
-========================================================= */
-
+/* 主視覺 Hero 區塊 */
 .news-hero {
     width: 100%;
     padding: 28px 20px 0;
@@ -20,6 +17,7 @@
     margin: 0 auto;
     overflow: hidden;
     background: #eee;
+    border-radius: 8px;
 }
 
 .news-hero-image {
@@ -35,9 +33,9 @@
     inset: 0;
     background: linear-gradient(
         90deg,
-        rgba(90, 30, 30, 0.20) 0%,
-        rgba(90, 30, 30, 0.08) 38%,
-        rgba(90, 30, 30, 0) 65%
+        rgba(90, 30, 30, 0.35) 0%,
+        rgba(90, 30, 30, 0.10) 50%,
+        rgba(90, 30, 30, 0) 100%
     );
     z-index: 1;
     pointer-events: none;
@@ -47,173 +45,151 @@
     position: absolute;
     top: 50%;
     left: 38px;
-    width: 47%;
+    width: 50%;
     transform: translateY(-50%);
     z-index: 2;
 }
 
 .news-hero-title {
-    margin: 0 0 12px;
-    padding: 0;
+    margin: 0 0 8px;
     color: #fff;
-    background: transparent;
-    font-size: 34px;
+    font-size: 32px;
     font-weight: 700;
     line-height: 1.3;
     letter-spacing: 0.08em;
-    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.28);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
 
 .news-hero-description {
     margin: 0;
     color: #fff;
     font-size: 15px;
-    font-weight: 400;
-    line-height: 1.9;
-    letter-spacing: 0.03em;
-    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.30);
+    line-height: 1.6;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
 
-/* =========================================================
-   內容區與 Grid
-========================================================= */
-
+/* 列表區域 */
 .news-section {
     padding: 38px 0 85px;
     background: #fff;
 }
 
+.news-note {
+    margin: 0 0 25px;
+    color: #777;
+    font-size: 14px;
+}
+
+/* 網格排列 */
 .news-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 30px;
-    align-items: start;
+    align-items: stretch;
 }
 
-/* =========================================================
-   Card
-========================================================= */
-
+/* 卡片設計 */
 .news-card {
     display: flex;
     flex-direction: column;
-    height: 100%;
-    overflow: hidden;
     background: #fff;
-    border: 1px solid #e7e7e7;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .news-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
 }
 
 .news-image {
+    position: relative;
     width: 100%;
-    height: 240px;
-    flex-shrink: 0;
+    height: 200px;
+    background: #f7f7f7;
     overflow: hidden;
-    background: #f3f3f3;
 }
 
 .news-image img {
-    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
-    transition: transform 0.35s ease;
 }
 
-.news-card:hover .news-image img {
-    transform: scale(1.03);
+.news-category-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 4px 10px;
+    background: #9b6f78;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 4px;
 }
 
 .news-body {
     display: flex;
-    flex: 1;
     flex-direction: column;
-    padding: 20px 20px 22px;
+    flex: 1;
+    padding: 20px;
 }
 
-.news-body h2 {
-    margin: 0 0 10px;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 1.5;
+.news-date {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 8px;
 }
 
-.news-body a {
+.news-title {
+    margin: 0 0 12px;
     color: #333;
-    text-decoration: none;
-    transition: color 0.2s ease;
-}
-
-.news-body a:hover {
-    color: #9b6f78;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.4;
 }
 
 .news-description {
-    margin: 0;
+    margin: 0 0 16px;
     color: #666;
     font-size: 14px;
-    line-height: 1.8;
+    line-height: 1.6;
+    flex: 1;
 }
 
-.news-iframe-wrap {
-    width: 100%;
-    background: #fff;
+.news-footer-link {
+    margin-top: auto;
+    padding-top: 12px;
+    border-top: 1px solid #f0f0f0;
 }
 
-/* =========================================================
-   RWD 響應式切換
-========================================================= */
+.news-footer-link a {
+    color: #9b6f78;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+}
 
-@media (max-width: 1000px) {
-    .news-hero {
-        padding: 22px 18px 0;
-    }
+.news-footer-link a:hover {
+    text-decoration: underline;
+}
 
-    .news-hero-inner {
-        height: 160px;
-    }
-
-    .news-hero-content {
-        left: 30px;
-        width: 52%;
-    }
-
-    .news-hero-title {
-        font-size: 29px;
-    }
-
+/* 響應式切換 (RWD) */
+@media (max-width: 992px) {
     .news-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
-@media (max-width: 650px) {
-    .news-hero {
-        padding: 15px 12px 0;
-    }
-
-    .news-hero-inner {
-        height: 150px;
-    }
-
-    .news-hero-content {
-        left: 20px;
-        width: 62%;
-    }
-
-    .news-hero-title {
-        font-size: 24px;
-    }
-
+@media (max-width: 600px) {
     .news-grid {
         grid-template-columns: 1fr;
-        gap: 24px;
+    }
+    
+    .news-hero-content {
+        width: 80%;
+        left: 20px;
     }
 }
