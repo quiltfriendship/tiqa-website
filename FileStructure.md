@@ -80,11 +80,21 @@ tiqa-website/
 │	  │
 │     ├─ publications
 │	  │  └─ book1
-│	           ├─ cover.jpg
-│	           ├─ page-01.jpg
-│	           ├─ page-02.jpg
-│	           ├─ ...
-│	           └─ page-11.jpg
+│	  │        ├─ cover.jpg
+│	  │        ├─ page-01.jpg
+│	  │        ├─ page-02.jpg
+│	  │        ├─ ...
+│	  │        └─ page-11.jpg
+│     │
+│     ├─ events
+│     │  ├─ 2025.jpg
+│     │  ├─ ...
+│     │  └─ 2016.jpg
+│
+│
+│
+│
+│
 ├─ components/
 │  ├─ header.html
 │  └─ footer.html

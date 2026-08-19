@@ -1,0 +1,446 @@
+/* =========================================================
+   TIQA 歷年活動
+   /assets/css/events.css
+========================================================= */
+
+
+/* =========================================================
+   Page Hero
+========================================================= */
+
+.events-hero {
+    padding: 55px 20px;
+
+    background: #f7f3f4;
+
+    text-align: center;
+}
+
+
+.events-hero h1 {
+    margin: 0;
+
+    color: #444;
+
+    font-size: 32px;
+    font-weight: 400;
+
+    line-height: 1.5;
+
+    letter-spacing: 0.18em;
+}
+
+
+.events-hero p {
+    margin: 7px 0 0;
+
+    color: #999;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    letter-spacing: 0.08em;
+}
+
+
+
+/* =========================================================
+   共用區塊標題
+========================================================= */
+
+.events-section-heading {
+    position: relative;
+
+    margin-bottom: 45px;
+
+    padding-bottom: 22px;
+
+    text-align: center;
+}
+
+
+.events-section-heading::after {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    bottom: 0;
+
+    width: 42px;
+    height: 2px;
+
+    background: #b98d96;
+
+    transform: translateX(-50%);
+}
+
+
+.events-label {
+    margin: 0 0 8px;
+
+    color: #a98a91;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+
+    letter-spacing: 0.14em;
+}
+
+
+.events-section-heading h2 {
+    margin: 0;
+
+    color: #3f3f3f;
+
+    font-size: 28px;
+    font-weight: 500;
+
+    line-height: 1.5;
+
+    letter-spacing: 0.12em;
+}
+
+
+
+/* =========================================================
+   Intro
+========================================================= */
+
+.events-intro {
+    padding: 78px 0 82px;
+
+    background: #fff;
+}
+
+
+.events-intro-content {
+    max-width: 760px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+.events-intro-content p {
+    margin: 0 0 15px;
+
+    color: #666;
+
+    font-size: 16px;
+
+    line-height: 2;
+}
+
+
+.events-intro-content p:last-child {
+    margin-bottom: 0;
+}
+
+
+
+/* =========================================================
+   歷屆活動列表
+========================================================= */
+
+.events-list-section {
+    padding: 78px 0 95px;
+
+    background: #faf8f8;
+}
+
+
+.events-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 32px;
+
+    max-width: 1080px;
+
+    margin: 0 auto;
+}
+
+
+
+/* =========================================================
+   Event Card
+========================================================= */
+
+.event-card {
+    display: flex;
+
+    flex-direction: column;
+
+    overflow: hidden;
+
+    border: 1px solid #e5dfe1;
+
+    background: #fff;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.event-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 10px 28px
+        rgba(0, 0, 0, 0.07);
+}
+
+
+
+/* =========================================================
+   Event Image
+========================================================= */
+
+.event-card-image {
+    display: block;
+
+    width: 100%;
+
+    overflow: hidden;
+
+    background: #eee;
+}
+
+
+.event-card-image img {
+    display: block;
+
+    width: 100%;
+
+    aspect-ratio: 16 / 9;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.35s ease;
+}
+
+
+.event-card:hover
+.event-card-image img {
+
+    transform: scale(1.025);
+}
+
+
+
+/* =========================================================
+   Event Content
+========================================================= */
+
+.event-card-content {
+    display: flex;
+
+    flex: 1;
+
+    flex-direction: column;
+
+    padding: 27px 28px 30px;
+}
+
+
+.event-card-year {
+    margin: 0 0 6px;
+
+    color: #b88d96;
+
+    font-size: 13px;
+
+    font-weight: 500;
+
+    line-height: 1.5;
+
+    letter-spacing: 0.13em;
+}
+
+
+.event-card h3 {
+    margin: 0 0 14px;
+
+    color: #3f3f3f;
+
+    font-size: 23px;
+    font-weight: 500;
+
+    line-height: 1.5;
+
+    letter-spacing: 0.06em;
+}
+
+
+.event-card h3 a {
+    color: inherit;
+
+    text-decoration: none;
+}
+
+
+.event-card h3 a:hover {
+    color: #9b6f78;
+}
+
+
+.event-card-description {
+    margin: 0 0 25px;
+
+    color: #666;
+
+    font-size: 14px;
+
+    line-height: 1.85;
+}
+
+
+.event-card-more {
+    display: inline-block;
+
+    align-self: flex-start;
+
+    margin-top: auto;
+
+    padding-bottom: 3px;
+
+    border-bottom: 1px solid #b98d96;
+
+    color: #91656f;
+
+    font-size: 14px;
+
+    text-decoration: none;
+
+    transition:
+        color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+.event-card-more:hover {
+    color: #6f4851;
+
+    border-color: #6f4851;
+}
+
+
+
+/* =========================================================
+   讓最後一張單數卡片不要太怪
+========================================================= */
+
+.event-card:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+
+    max-width: calc(50% - 16px);
+}
+
+
+
+/* =========================================================
+   Tablet
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .events-grid {
+        gap: 24px;
+    }
+
+
+    .event-card-content {
+        padding:
+            24px 23px 27px;
+    }
+
+
+    .event-card h3 {
+        font-size: 21px;
+    }
+
+}
+
+
+
+/* =========================================================
+   Mobile
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .events-hero {
+        padding:
+            40px 18px;
+    }
+
+
+    .events-hero h1 {
+        font-size: 27px;
+    }
+
+
+    .events-intro,
+    .events-list-section {
+        padding:
+            55px 0 65px;
+    }
+
+
+    .events-section-heading {
+        margin-bottom: 35px;
+
+        padding-bottom: 18px;
+    }
+
+
+    .events-section-heading h2 {
+        font-size: 24px;
+
+        letter-spacing: 0.09em;
+    }
+
+
+    .events-intro-content {
+        text-align: left;
+    }
+
+
+    .events-intro-content p {
+        font-size: 15px;
+    }
+
+
+    .events-grid {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+
+    .event-card:last-child:nth-child(odd) {
+        grid-column: auto;
+
+        max-width: none;
+    }
+
+
+    .event-card-content {
+        padding:
+            23px 22px 26px;
+    }
+
+
+    .event-card h3 {
+        font-size: 20px;
+    }
+
+}

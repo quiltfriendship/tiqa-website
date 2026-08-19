@@ -7,13 +7,18 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <title>台灣國際拼布友好會 TIQA</title>
+    <title>歷年活動｜台灣國際拼布友好會 TIQA</title>
 
     <meta name="description"
-          content="台灣國際拼布友好會 Taiwan International Quilt Association 官方網站">
+          content="台灣國際拼布友好會歷年活動，包含友好拼布手作節、展覽、工作坊與相關活動紀錄。">
 
+    <!-- 全站共用 CSS -->
     <link rel="stylesheet"
           href="/assets/css/style.css">
+
+    <!-- 歷年活動專用 CSS -->
+    <link rel="stylesheet"
+          href="/assets/css/events.css">
 </head>
 
 
@@ -36,30 +41,59 @@
 
 
     <!-- =================================================
-         Hero 主視覺
+         Page Hero
     ================================================= -->
 
-    <section class="hero">
+    <section class="events-hero">
 
-        <div class="hero-image-wrap">
+        <div class="content-container">
 
-            <img
-                src="/assets/images/hero.jpg"
-                alt=""
-                class="hero-image"
-            >
+            <h1>
+                歷年活動
+            </h1>
 
-            <div class="hero-overlay"></div>
+            <p>
+                Past Events
+            </p>
+
+        </div>
+
+    </section>
 
 
-            <div class="hero-title">
 
-                <h1>
-                    台 灣 國 際 拼 布 友 好 會
-                </h1>
+    <!-- =================================================
+         Intro
+    ================================================= -->
 
-                <p class="english-name">
-                    Taiwan International Quilt Association
+    <section class="events-intro">
+
+        <div class="content-container">
+
+            <div class="events-section-heading">
+
+                <p class="events-label">
+                    Taiwan Friendly Quilt & Craft Festival
+                </p>
+
+                <h2>
+                    一起回顧我們走過的拼布時光
+                </h2>
+
+            </div>
+
+
+            <div class="events-intro-content">
+
+                <p>
+                    台灣國際拼布友好會持續透過展覽、競賽、
+                    工作坊、市集及交流活動，
+                    推廣拼布文化並串連不同領域的創作者。
+                </p>
+
+                <p>
+                    歡迎依年度瀏覽歷屆活動，
+                    回顧每一屆友好拼布手作節與相關活動紀錄。
                 </p>
 
             </div>
@@ -71,25 +105,33 @@
 
 
     <!-- =================================================
-         聯絡我們
+         年度活動
+         由 events.js 依 eventsData 自動產生
     ================================================= -->
 
-    <section class="contact-section">
+    <section class="events-list-section">
 
         <div class="content-container">
 
-            <h2>
-                聯絡我們
-            </h2>
+            <div class="events-section-heading">
 
-            <p>
-                如有相關問題，歡迎與台灣國際拼布友好會聯絡。
-            </p>
+                <p class="events-label">
+                    Event Archive
+                </p>
 
-            <a class="contact-button"
-               href="/about/contact/">
-                聯絡 TIQA
-            </a>
+                <h2>
+                    歷屆活動
+                </h2>
+
+            </div>
+
+
+            <div id="events-list"
+                 class="events-grid">
+
+                <!-- events.js 自動產生 -->
+
+            </div>
 
         </div>
 
@@ -109,10 +151,14 @@
 
 
 <!-- =====================================================
-     共用元件載入
+     JavaScript
 ===================================================== -->
 
 <script src="/assets/js/include.js"></script>
+
+<script src="/events/events-data.js"></script>
+
+<script src="/events/events.js"></script>
 
 
 </body>
