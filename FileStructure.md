@@ -34,9 +34,17 @@ tiqa-website/
 │  └─ index.html
 │
 ├─ events/
+│  ├─ event-gallery.js
 │  ├─ index.html
 │  ├─ 2016/
-│  │  └─ index.html
+│  │  ├─ index.html
+│  │  └─ gallery-data.js
+│  ├─ 2017/
+│  │  ├─ index.html
+│  │  └─ gallery-data.js
+│  ├─ 2018/
+│  │  ├─ index.html
+│  │  └─ gallery-data.js
 │  ├─ 2019/
 │  │  └─ index.html
 │  ├─ 2021/
@@ -60,7 +68,8 @@ tiqa-website/
 │  │  ├─ about.css       ← 關於我們相關頁面共用
 │  │  ├─ classroom.css
 │  │  ├─ contact.css
-│  │  └─ publications.css
+│  │  ├─ publications.css
+│  │  └─ event-gallery.css
 │  │
 │  ├─ js/
 │  │  ├─ include.js  
@@ -90,8 +99,10 @@ tiqa-website/
 │     │  ├─ 2025.jpg
 │     │  ├─ ...
 │     │  └─ 2016.jpg
-│
-│
+│     │  ├─ 2016/│
+│     │        ├─ work-01.jpg
+│     │        ├─ ...
+│     │        └─ work-nn.jpg
 │
 │
 │

@@ -1,0 +1,668 @@
+/* =========================================================
+   TIQA 年度作品展
+   /assets/css/event-gallery.css
+========================================================= */
+
+
+/* =========================================================
+   Page Hero
+========================================================= */
+
+.event-gallery-hero {
+    padding: 55px 20px;
+
+    background: #f7f3f4;
+
+    text-align: center;
+}
+
+
+.event-gallery-hero h1 {
+    margin: 0;
+
+    color: #444;
+
+    font-size: 32px;
+    font-weight: 400;
+
+    line-height: 1.5;
+
+    letter-spacing: 0.15em;
+}
+
+
+.event-gallery-hero p {
+    margin: 7px 0 0;
+
+    color: #999;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    letter-spacing: 0.08em;
+}
+
+
+
+/* =========================================================
+   Intro
+========================================================= */
+
+.event-gallery-intro {
+    padding: 70px 0 55px;
+
+    background: #fff;
+}
+
+
+
+/* =========================================================
+   共用標題
+========================================================= */
+
+.event-gallery-heading {
+    position: relative;
+
+    margin-bottom: 35px;
+
+    padding-bottom: 20px;
+
+    text-align: center;
+}
+
+
+.event-gallery-heading::after {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    bottom: 0;
+
+    width: 42px;
+    height: 2px;
+
+    background: #b98d96;
+
+    transform: translateX(-50%);
+}
+
+
+.event-gallery-label {
+    margin: 0 0 8px;
+
+    color: #a98a91;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+
+    letter-spacing: 0.14em;
+}
+
+
+.event-gallery-heading h2 {
+    margin: 0;
+
+    color: #3f3f3f;
+
+    font-size: 28px;
+    font-weight: 500;
+
+    line-height: 1.5;
+
+    letter-spacing: 0.14em;
+}
+
+
+.event-gallery-description {
+    max-width: 760px;
+
+    margin: 0 auto;
+
+    color: #666;
+
+    font-size: 15px;
+
+    line-height: 1.9;
+
+    text-align: center;
+}
+
+
+
+/* =========================================================
+   Gallery Section
+========================================================= */
+
+.event-gallery-section {
+    padding: 20px 0 90px;
+
+    background: #fff;
+}
+
+
+
+/* =========================================================
+   Gallery Grid
+========================================================= */
+
+.event-gallery-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 28px 22px;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+}
+
+
+
+/* =========================================================
+   Card
+========================================================= */
+
+.event-gallery-card {
+    min-width: 0;
+}
+
+
+.event-gallery-card-button {
+    display: block;
+
+    width: 100%;
+
+    margin: 0;
+
+    padding: 0;
+
+    border: 1px solid #e5e5e5;
+
+    color: inherit;
+
+    background: #fff;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+
+.event-gallery-card-button:hover {
+    transform: translateY(-3px);
+
+    border-color: #d9c6ca;
+
+    box-shadow:
+        0 9px 25px
+        rgba(0, 0, 0, 0.07);
+}
+
+
+.event-gallery-card-button:focus-visible {
+    outline: 3px solid rgba(155, 111, 120, 0.3);
+
+    outline-offset: 3px;
+}
+
+
+
+/* =========================================================
+   Card Image
+========================================================= */
+
+.event-gallery-card-image {
+    width: 100%;
+
+    aspect-ratio: 4 / 3;
+
+    overflow: hidden;
+
+    background: #f3f3f3;
+}
+
+
+.event-gallery-card-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    transition:
+        transform 0.35s ease;
+}
+
+
+.event-gallery-card-button:hover
+.event-gallery-card-image img {
+
+    transform: scale(1.025);
+}
+
+
+
+/* =========================================================
+   Card Info
+========================================================= */
+
+.event-gallery-card-info {
+    min-height: 90px;
+
+    padding: 17px 18px 18px;
+
+    text-align: center;
+}
+
+
+.event-gallery-card-info h3 {
+    margin: 0 0 5px;
+
+    color: #444;
+
+    font-size: 17px;
+    font-weight: 500;
+
+    line-height: 1.6;
+}
+
+
+.event-gallery-card-info p {
+    margin: 0;
+
+    color: #888;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+
+/* =========================================================
+   Lightbox Body
+========================================================= */
+
+body.gallery-lightbox-open {
+    overflow: hidden;
+}
+
+
+
+/* =========================================================
+   Lightbox
+========================================================= */
+
+.gallery-lightbox {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 20000;
+}
+
+
+.gallery-lightbox[hidden] {
+    display: none;
+}
+
+
+
+/* =========================================================
+   Lightbox Backdrop
+========================================================= */
+
+.gallery-lightbox-backdrop {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        rgba(20, 20, 20, 0.82);
+}
+
+
+
+/* =========================================================
+   Lightbox Dialog
+========================================================= */
+
+.gallery-lightbox-dialog {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    width: min(92vw, 1100px);
+
+    max-height: 92vh;
+
+    padding: 24px;
+
+    background: #fff;
+
+    transform:
+        translate(-50%, -50%);
+
+    overflow: auto;
+
+    box-shadow:
+        0 15px 45px
+        rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* =========================================================
+   Close
+========================================================= */
+
+.gallery-lightbox-close {
+    position: absolute;
+
+    top: 10px;
+    right: 12px;
+
+    z-index: 2;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 38px;
+    height: 38px;
+
+    padding: 0;
+
+    border: 0;
+
+    color: #555;
+
+    background: rgba(255, 255, 255, 0.92);
+
+    font-size: 28px;
+    font-weight: 300;
+
+    line-height: 1;
+
+    cursor: pointer;
+}
+
+
+.gallery-lightbox-close:hover {
+    color: #9b6f78;
+}
+
+
+
+/* =========================================================
+   Lightbox Image
+========================================================= */
+
+.gallery-lightbox-image-wrap {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 300px;
+
+    padding: 10px;
+
+    background: #f4f4f4;
+}
+
+
+.gallery-lightbox-image-wrap img {
+    display: block;
+
+    max-width: 100%;
+    max-height: 68vh;
+
+    width: auto;
+    height: auto;
+
+    object-fit: contain;
+}
+
+
+
+/* =========================================================
+   Lightbox Info
+========================================================= */
+
+.gallery-lightbox-info {
+    padding: 20px 0 8px;
+
+    text-align: center;
+}
+
+
+.gallery-lightbox-info h2 {
+    margin: 0 0 6px;
+
+    color: #444;
+
+    font-size: 20px;
+    font-weight: 500;
+
+    line-height: 1.5;
+}
+
+
+.gallery-lightbox-artist {
+    margin: 0 0 4px;
+
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+.gallery-lightbox-count {
+    margin: 0;
+
+    color: #aaa;
+
+    font-size: 12px;
+}
+
+
+
+/* =========================================================
+   Lightbox Controls
+========================================================= */
+
+.gallery-lightbox-controls {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 16px;
+
+    padding-top: 10px;
+}
+
+
+.gallery-lightbox-button {
+    min-width: 110px;
+
+    padding: 9px 16px;
+
+    border: 1px solid #aaa;
+
+    color: #555;
+
+    background: #fff;
+
+    font: inherit;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+
+.gallery-lightbox-button:hover:not(:disabled) {
+    color: #fff;
+
+    border-color: #8f656f;
+
+    background: #8f656f;
+}
+
+
+.gallery-lightbox-button:disabled {
+    color: #bbb;
+
+    border-color: #ddd;
+
+    background: #f7f7f7;
+
+    cursor: not-allowed;
+}
+
+
+
+/* =========================================================
+   Tablet
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .event-gallery-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 22px;
+    }
+
+}
+
+
+
+/* =========================================================
+   Mobile
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .event-gallery-hero {
+        padding:
+            40px 18px;
+    }
+
+
+    .event-gallery-hero h1 {
+        font-size: 27px;
+
+        letter-spacing: 0.1em;
+    }
+
+
+    .event-gallery-intro {
+        padding:
+            55px 0 40px;
+    }
+
+
+    .event-gallery-heading {
+        margin-bottom: 28px;
+
+        padding-bottom: 18px;
+    }
+
+
+    .event-gallery-heading h2 {
+        font-size: 24px;
+    }
+
+
+    .event-gallery-description {
+        font-size: 15px;
+
+        text-align: left;
+    }
+
+
+    .event-gallery-section {
+        padding:
+            15px 0 65px;
+    }
+
+
+    .event-gallery-grid {
+        grid-template-columns:
+            1fr;
+
+        gap: 18px;
+    }
+
+
+    .event-gallery-card-image {
+        aspect-ratio: 4 / 3;
+    }
+
+
+    /* Lightbox */
+
+    .gallery-lightbox-dialog {
+        width: 94vw;
+
+        max-height: 94vh;
+
+        padding: 14px;
+    }
+
+
+    .gallery-lightbox-image-wrap {
+        min-height: 200px;
+
+        padding: 5px;
+    }
+
+
+    .gallery-lightbox-image-wrap img {
+        max-height: 65vh;
+    }
+
+
+    .gallery-lightbox-info {
+        padding:
+            15px 5px 5px;
+    }
+
+
+    .gallery-lightbox-controls {
+        gap: 8px;
+    }
+
+
+    .gallery-lightbox-button {
+        min-width: 0;
+
+        flex: 1;
+    }
+
+}
