@@ -19,10 +19,10 @@ const publicationsData = [
         price: "NT$600",
 
         cover:
-            "/assets/images/publications/book1/cover.jpg",
+            "/publications/book1/cover.jpg",
 
         imagePath:
-            "/assets/images/publications/book1/",
+            "/publications/book1/",
 
         totalPages: 11
     }
@@ -50,10 +50,10 @@ const publicationsData = [
      *     price: "NT$600",
      *
      *     cover:
-     *         "/assets/images/publications/book2/cover.jpg",
+     *         "/publications/book2/cover.jpg",
      *
      *     imagePath:
-     *         "/assets/images/publications/book2/",
+     *         "/publications/book2/",
      *
      *     totalPages: 20
      * }

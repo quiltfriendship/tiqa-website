@@ -6,7 +6,7 @@ const classroomData = [
         phone: "0933903603",
         addressLabel: "地址",
         address: "台北市南京西路一號5樓-505",
-        image: "/assets/images/classroom/wang-qiongling.jpg",
+        image: "/classroom/wang-qiongling.jpg",
         description: "",
         teaching:
             "手縫拼布、手縫拼布證書班、機縫拼布、機縫拼布證書班、拼布包、手作包、手作衣／帽、各種刺繡、布作小物",
@@ -20,7 +20,7 @@ const classroomData = [
         phone: "0936884546",
         addressLabel: "地址",
         address: "高雄市仁武區霞海路358號",
-        image: "/assets/images/classroom/bai-lingzhao.jpg",
+        image: "/classroom/bai-lingzhao.jpg",
         description:
             "「慕嵐」，取其羨慕山嵐之意，從山中出來的人，無論身於何處，最羨慕的，還是山嵐的自由自在。",
         teaching:
@@ -35,7 +35,7 @@ const classroomData = [
         phone: "0933917555",
         addressLabel: "地址",
         address: "台北市洛陽街55號（北門、西門捷運站之間）",
-        image: "/assets/images/classroom/wu-lihua.jpg",
+        image: "/classroom/wu-lihua.jpg",
         description: "",
         teaching:
             "手縫拼布、手縫拼布證書班、機縫拼布、機縫拼布證書班、拼布包、手作包、各種刺繡、布作小物",
@@ -49,7 +49,7 @@ const classroomData = [
         phone: "0932927986",
         addressLabel: "教學地點",
         address: "林口社區大學、萬華社區大學",
-        image: "/assets/images/classroom/li-tingzi.jpg",
+        image: "/classroom/li-tingzi.jpg",
         description: "",
         teaching:
             "手縫拼布、手縫拼布證書班、機縫拼布",
@@ -63,7 +63,7 @@ const classroomData = [
         phone: "0933755852",
         addressLabel: "地址",
         address: "新北市林口區仁愛路二段237號B1商店街三號",
-        image: "/assets/images/classroom/lin-meiling.jpg",
+        image: "/classroom/lin-meiling.jpg",
         description: "",
         teaching:
             "手縫拼布、機縫拼布、拼布包、手作衣／帽、手工皂＆香氛皂",
@@ -77,7 +77,7 @@ const classroomData = [
         phone: "0912666915",
         addressLabel: "地址",
         address: "台中市南屯區大墩十街354號",
-        image: "/assets/images/classroom/lin-yaying.jpg",
+        image: "/classroom/lin-yaying.jpg",
         description: "",
         teaching:
             "手縫拼布、手縫拼布證書班、機縫拼布、機縫拼布證書班、拼布包、手作包、手作衣／帽、各種刺繡、布作小物",
@@ -91,7 +91,7 @@ const classroomData = [
         phone: "0915800129",
         addressLabel: "教學地點",
         address: "永樂市場4樓",
-        image: "/assets/images/classroom/hong-yifang.jpg",
+        image: "/classroom/hong-yifang.jpg",
         description: "",
         teaching:
             "手縫拼布、手縫拼布證書班、機縫拼布、機縫拼布證書班、拼布包、手作包、手作衣／帽、法式布盒、各種刺繡、布作小物",
@@ -105,7 +105,7 @@ const classroomData = [
         phone: "",
         addressLabel: "地址",
         address: "新竹縣竹北市文昌街74號",
-        image: "/assets/images/classroom/xu-zhongxiu.jpg",
+        image: "/classroom/xu-zhongxiu.jpg",
         description: "",
         teaching:
             "手縫拼布、手縫拼布證書班、機縫拼布、機縫拼布證書班、拼布包、手作包、手作衣／帽、布作小物",
@@ -119,7 +119,7 @@ const classroomData = [
         phone: "0911120808",
         addressLabel: "地址",
         address: "台北市文山區",
-        image: "/assets/images/classroom/xu-minxiu.jpg",
+        image: "/classroom/xu-minxiu.jpg",
         description: "",
         teaching:
             "機縫拼布、拼布包、手作包、機縫刺繡",
@@ -133,7 +133,7 @@ const classroomData = [
         phone: "0918650059",
         addressLabel: "地址",
         address: "台南市北區東豐路277號",
-        image: "/assets/images/classroom/zhuang-xiuhui.jpg",
+        image: "/classroom/zhuang-xiuhui.jpg",
         description: "",
         teaching:
             "手縫拼布、手縫拼布證書班、機縫拼布、機縫拼布證書班、拼布包、手作包、各種刺繡",
@@ -147,7 +147,7 @@ const classroomData = [
         phone: "0936904522",
         addressLabel: "地址",
         address: "台北市南港區忠孝東路六段232號",
-        image: "/assets/images/classroom/guo-zhiting.jpg",
+        image: "/classroom/guo-zhiting.jpg",
         description: "",
         teaching:
             "手縫拼布、機縫拼布、機縫拼布證書班、拼布包、手作包、手作衣／帽、法式布盒、各種刺繡、布作小物",
@@ -161,7 +161,7 @@ const classroomData = [
         phone: "0932664637",
         addressLabel: "地點",
         address: "台東市",
-        image: "/assets/images/classroom/fu-juzhu.jpg",
+        image: "/classroom/fu-juzhu.jpg",
         description: "",
         teaching:
             "機縫拼布、多彩染色、布藝禪繞",
@@ -175,7 +175,7 @@ const classroomData = [
         phone: "0935508316",
         addressLabel: "地址",
         address: "桃園市中壢區元化路2樓",
-        image: "/assets/images/classroom/yang-cairu.jpg",
+        image: "/classroom/yang-cairu.jpg",
         description: "",
         teaching:
             "手縫拼布、手縫拼布證書班、機縫拼布、機縫拼布證書班、拼布包、手作包、手作衣／帽、各種刺繡、布作小物、電腦長臂機壓線代工、藝術線條設計",
@@ -189,7 +189,7 @@ const classroomData = [
         phone: "0913253665",
         addressLabel: "地址",
         address: "台北市迪化街",
-        image: "/assets/images/classroom/xiong-jialing.jpg",
+        image: "/classroom/xiong-jialing.jpg",
         description: "",
         teaching:
             "機縫拼布、拼布包、手作包、手作衣／帽、布作小物、機縫基礎課程",
@@ -210,7 +210,7 @@ const classroomData = [
         phone: "0928185917",
         addressLabel: "地址",
         address: "苗栗縣竹南鎮照南里華東街59巷28號",
-        image: "/assets/images/classroom/liu-juling.jpg",
+        image: "/classroom/liu-juling.jpg",
         description: "",
         teaching:
             "手縫拼布、手縫拼布證書班、機縫拼布、機縫拼布證書班、拼布包、手作包、各種刺繡、刺繡證書班",
@@ -231,7 +231,7 @@ const classroomData = [
         phone: "0907098399",
         addressLabel: "",
         address: "",
-        image: "/assets/images/classroom/ou-xiugui.jpg",
+        image: "/classroom/ou-xiugui.jpg",
         description: "",
         teaching:
             "手縫拼布、手縫拼布證書班、機縫拼布、機縫拼布證書班、拼布包、手作包、手作衣／帽、法式布盒、各種刺繡、布作小物",
@@ -245,7 +245,7 @@ const classroomData = [
         phone: "0972227320",
         addressLabel: "地址",
         address: "台中市霧峰區吉峰路100號2樓",
-        image: "/assets/images/classroom/pan-yuying.jpg",
+        image: "/classroom/pan-yuying.jpg",
         description: "",
         teaching:
             "手縫拼布、機縫拼布、布作小物、手染布花、手工拼布花、可愛圖案布小物系列",
@@ -270,7 +270,7 @@ const classroomData = [
         phone: "0920486701",
         addressLabel: "",
         address: "",
-        image: "/assets/images/classroom/lai-fanghui.jpg",
+        image: "/classroom/lai-fanghui.jpg",
         description: "",
         teaching:
             "機縫拼布，以中華傳統紋樣為教學主軸",
@@ -291,7 +291,7 @@ const classroomData = [
         phone: "0933788396",
         addressLabel: "教學方式",
         address: "線上教室",
-        image: "/assets/images/classroom/zhong-guolan.jpg",
+        image: "/classroom/zhong-guolan.jpg",
         description: "",
         teaching:
             "美式機縫拼布、機縫拼布證書班、摩登拼布創作、Freemotion Quilt",
@@ -305,7 +305,7 @@ const classroomData = [
         phone: "02-23112578",
         addressLabel: "地址",
         address: "台北市中正區延平南路61號10樓C室，捷運西門站5號出口",
-        image: "/assets/images/classroom/pang-huiru.jpg",
+        image: "/classroom/pang-huiru.jpg",
         description: "",
         teaching:
             "手縫拼布、手縫拼布證書班、機縫拼布、機縫拼布證書班、拼布包、手作包、布作小物",
@@ -319,7 +319,7 @@ const classroomData = [
         phone: "0985274916",
         addressLabel: "教室",
         address: "市集旋轉拍賣龔子芸",
-        image: "/assets/images/classroom/gong-ziyun.jpg",
+        image: "/classroom/gong-ziyun.jpg",
         description: "",
         teaching:
             "手縫拼布、拼布包、布作小物",

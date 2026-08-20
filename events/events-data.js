@@ -13,7 +13,7 @@ const eventsData = [
             "2025 年友好拼布手作節活動紀錄，包含活動介紹、展覽、工作坊及相關資訊。",
 
         image:
-            "/assets/images/events/2025.jpg",
+            "/events/2025.jpg",
 
         url:
             "/events/2025/"
@@ -29,7 +29,7 @@ const eventsData = [
             "2023 年友好拼布手作節活動紀錄，回顧展覽、創作及相關交流活動。",
 
         image:
-            "/assets/images/events/2023.jpg",
+            "/events/2023.jpg",
 
         url:
             "/events/2023/"
@@ -45,7 +45,7 @@ const eventsData = [
             "2021 年友好拼布手作節活動紀錄，保存當年度的拼布創作與活動內容。",
 
         image:
-            "/assets/images/events/2021.jpg",
+            "/events/2021.jpg",
 
         url:
             "/events/2021/"
@@ -61,7 +61,7 @@ const eventsData = [
             "第一屆友好拼布手作節，包含展覽、競賽、工作坊、市集及策展相關紀錄。",
 
         image:
-            "/assets/images/events/2019.jpg",
+            "/events/2019.jpg",
 
         url:
             "/events/2019/"
@@ -76,7 +76,7 @@ const eventsData = [
             "回顧 2018 年展覽作品，保存台灣國際拼布友好會早期的創作與展覽紀錄。",
 
         image:
-            "/assets/images/events/2018.jpg",
+            "/events/2018.jpg",
 
         url:
             "/events/2018/"
@@ -92,7 +92,7 @@ const eventsData = [
             "回顧 2017 年展覽作品，保存台灣國際拼布友好會早期的創作與展覽紀錄。",
 
         image:
-            "/assets/images/events/2017.jpg",
+            "/events/2017.jpg",
 
         url:
             "/events/2017/"
@@ -108,7 +108,7 @@ const eventsData = [
             "回顧 2016 年展覽作品，保存台灣國際拼布友好會早期的創作與展覽紀錄。",
 
         image:
-            "/assets/images/events/2016.jpg",
+            "/events/2016.jpg",
 
         url:
             "/events/2016/"

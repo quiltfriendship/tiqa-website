@@ -8,7 +8,7 @@ const newsData = [
         title: "【今天、明天來大稻埕走走吧｜今紳今市文創集】",
         date: "2025-08-15 ~ 2025-08-16",
         category: "展覽活動",
-        image: "/assets/images/news/20260815.jpg",
+        image: "/news/20260815.jpg",
         description: "8／15（六）、8／16（日）在新芳春茶行有一場很有味道的文創市集", 
         content: `《今紳今市文創集》登場囉！
 （小編補充：這是室內市集，有冷氣喔～不熱😆）
