@@ -224,42 +224,56 @@
     <!-- =====================================================
          JavaScript
     ===================================================== -->
-    <!-- 共用 Header / Footer -->
-    <script src="/assets/js/include.js"></script>
+<!-- 共用 Header / Footer -->
+<script src="/assets/js/include.js"></script>
 
-    <script>
-        window.breadcrumbData = [
 
-            {
-                title: "首頁",
-                url: "/"
-            },
+<!-- =====================================================
+     Breadcrumb DATA
+===================================================== -->
 
-            {
-                title: "歷年活動",
-                url: "/events/"
-            },
+	<script>
+		window.breadcrumbData = [
 
-            {
-                title: "2023",
-                url: "/events/2023/"
-            },
+			{
+				title: "首頁",
+				url: "/"
+			},
 
-            {
-                title: "2023 作品展"
-            }
+			{
+				title: "歷年活動",
+				url: "/events/"
+			},
 
-        ];
-    </script>
+			{
+				title: "2023 友好拼布手作節",
+				url: "/events/2023/"
+			},
 
-    <script src="/assets/js/breadcrumb.js"></script>
+			{
+				title: "作品展"
+			}
 
-    <!-- 2023 年作品資料 -->
-    <script src="/events/2023/gallery-data.js"></script>
+		];
+	</script>
 
-    <!-- 作品展共用功能 -->
-    <script src="/events/event-gallery.js"></script>
 
+	<!-- 共用 Breadcrumb -->
+	<script src="/assets/js/breadcrumb.js"></script>
+
+
+	<!-- =====================================================
+		 2023 作品資料
+	===================================================== -->
+
+	<script src="/events/2023/exhibition/gallery-data.js"></script>
+
+
+	<!-- =====================================================
+		 作品展共用功能
+	===================================================== -->
+
+	<script src="/events/event-gallery.js"></script>
 
 </body>
 
