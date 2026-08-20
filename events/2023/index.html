@@ -26,19 +26,20 @@
     <style>
 
         /* =====================================================
-           Page Hero
+           2023 首頁主標題區
+           將原本「頁面標題」＋「介紹」整合為同一區
         ===================================================== */
 
-        .event-year-hero {
-            padding: 55px 20px;
+        .event-year-header {
+            padding: 48px 20px 42px;
 
-            background: #f7f3f4;
+            background: #f8f3f4;
 
             text-align: center;
         }
 
 
-        .event-year-hero h1 {
+        .event-year-header h1 {
             margin: 0;
 
             color: #444;
@@ -52,71 +53,26 @@
         }
 
 
-        .event-year-hero p {
-            margin: 7px 0 0;
+        .event-year-header-subtitle {
+            position: relative;
 
-            color: #999;
+            display: inline-block;
+
+            margin: 8px 0 0;
+
+            padding-bottom: 17px;
+
+            color: #888;
 
             font-size: 14px;
 
             line-height: 1.6;
 
-            letter-spacing: 0.08em;
+            letter-spacing: 0.05em;
         }
 
 
-
-        /* =====================================================
-           活動主視覺
-        ===================================================== */
-
-        .event-year-visual {
-            padding: 55px 0 20px;
-
-            background: #fff;
-        }
-
-
-        .event-year-visual-image {
-            max-width: 1080px;
-
-            margin: 0 auto;
-
-            overflow: hidden;
-
-            background: #f4f4f4;
-        }
-
-
-        .event-year-visual-image img {
-            display: block;
-
-            width: 100%;
-            height: auto;
-
-            max-height: 560px;
-
-            object-fit: contain;
-        }
-
-
-
-        /* =====================================================
-           共用章節標題
-        ===================================================== */
-
-        .event-year-heading {
-            position: relative;
-
-            margin-bottom: 38px;
-
-            padding-bottom: 20px;
-
-            text-align: center;
-        }
-
-
-        .event-year-heading::after {
+        .event-year-header-subtitle::after {
             content: "";
 
             position: absolute;
@@ -133,20 +89,133 @@
         }
 
 
-        .event-year-label {
-            margin: 0 0 8px;
+
+        /* =====================================================
+           活動介紹＋主視覺
+        ===================================================== */
+
+        .event-overview {
+            padding: 55px 0 65px;
+
+            background: #fff;
+        }
+
+
+        .event-overview-card {
+            display: grid;
+
+            grid-template-columns:
+                minmax(260px, 0.8fr)
+                minmax(0, 1.2fr);
+
+            gap: 55px;
+
+            align-items: center;
+
+            max-width: 960px;
+
+            margin: 0 auto;
+
+            padding: 28px;
+
+            background: #faf8f8;
+
+            border-radius: 6px;
+        }
+
+
+        .event-overview-image {
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .event-overview-image img {
+            display: block;
+
+            width: auto;
+
+            max-width: 100%;
+            max-height: 430px;
+
+            object-fit: contain;
+        }
+
+
+        .event-overview-content h2 {
+            margin: 0 0 20px;
+
+            color: #444;
+
+            font-size: 28px;
+            font-weight: 400;
+
+            line-height: 1.5;
+
+            letter-spacing: 0.1em;
+        }
+
+
+        .event-overview-content p {
+            margin: 0;
+
+            color: #666;
+
+            font-size: 15px;
+
+            line-height: 2;
+        }
+
+
+
+        /* =====================================================
+           共用章節標題
+        ===================================================== */
+
+        .event-section-heading {
+            position: relative;
+
+            margin-bottom: 38px;
+
+            padding-bottom: 20px;
+
+            text-align: center;
+        }
+
+
+        .event-section-heading::after {
+            content: "";
+
+            position: absolute;
+
+            left: 50%;
+            bottom: 0;
+
+            width: 42px;
+            height: 2px;
+
+            background: #b98d96;
+
+            transform: translateX(-50%);
+        }
+
+
+        .event-section-label {
+            margin: 0 0 7px;
 
             color: #a98a91;
 
             font-size: 12px;
 
-            line-height: 1.6;
+            line-height: 1.5;
 
             letter-spacing: 0.14em;
         }
 
 
-        .event-year-heading h2 {
+        .event-section-heading h2 {
             margin: 0;
 
             color: #3f3f3f;
@@ -162,43 +231,11 @@
 
 
         /* =====================================================
-           活動介紹
-        ===================================================== */
-
-        .event-year-intro {
-            padding: 60px 0 75px;
-
-            background: #fff;
-        }
-
-
-        .event-year-intro-content {
-            max-width: 800px;
-
-            margin: 0 auto;
-
-            color: #666;
-
-            font-size: 16px;
-
-            line-height: 2;
-
-            text-align: center;
-        }
-
-
-        .event-year-intro-content p {
-            margin: 0;
-        }
-
-
-
-        /* =====================================================
            作品展
         ===================================================== */
 
         .event-exhibition {
-            padding: 75px 0 85px;
+            padding: 55px 0 75px;
 
             background: #faf8f8;
         }
@@ -211,15 +248,15 @@
                 minmax(300px, 1.15fr)
                 minmax(280px, 0.85fr);
 
-            gap: 50px;
+            gap: 45px;
 
             align-items: center;
 
-            max-width: 1050px;
+            max-width: 960px;
 
             margin: 0 auto;
 
-            padding: 30px;
+            padding: 22px;
 
             border: 1px solid #e4dcde;
 
@@ -255,7 +292,7 @@
 
 
         .event-exhibition-content {
-            padding: 10px 10px 10px 0;
+            padding-right: 15px;
         }
 
 
@@ -266,16 +303,18 @@
 
             font-size: 12px;
 
+            line-height: 1.5;
+
             letter-spacing: 0.14em;
         }
 
 
         .event-exhibition-content h3 {
-            margin: 0 0 16px;
+            margin: 0 0 15px;
 
             color: #444;
 
-            font-size: 27px;
+            font-size: 25px;
             font-weight: 500;
 
             line-height: 1.5;
@@ -285,11 +324,11 @@
 
 
         .event-exhibition-description {
-            margin: 0 0 25px;
+            margin: 0 0 24px;
 
             color: #666;
 
-            font-size: 15px;
+            font-size: 14px;
 
             line-height: 1.9;
         }
@@ -298,7 +337,7 @@
         .event-exhibition-button {
             display: inline-block;
 
-            padding: 11px 25px;
+            padding: 10px 24px;
 
             border: 1px solid #9b6f78;
 
@@ -331,40 +370,35 @@
            活動紀錄
         ===================================================== */
 
-        .event-year-sections {
-            padding: 75px 0 90px;
+        .event-archive {
+            padding: 65px 0 90px;
 
             background: #fff;
         }
 
 
-        .event-year-grid {
+        .event-archive-grid {
             display: grid;
 
             grid-template-columns:
                 repeat(2, minmax(0, 1fr));
 
-            gap: 22px;
+            gap: 18px;
 
-            max-width: 1050px;
+            max-width: 960px;
 
             margin: 0 auto;
         }
 
 
-
-        /* =====================================================
-           活動紀錄 Card
-        ===================================================== */
-
-        .event-year-card {
+        .event-archive-card {
             display: flex;
 
             flex-direction: column;
 
-            min-height: 235px;
+            min-height: 190px;
 
-            padding: 30px 30px 28px;
+            padding: 23px 24px;
 
             border: 1px solid #e6e0e2;
 
@@ -377,19 +411,19 @@
         }
 
 
-        .event-year-card:hover {
+        .event-archive-card:hover {
             transform: translateY(-3px);
 
             border-color: #d9c6ca;
 
             box-shadow:
-                0 9px 25px
-                rgba(0, 0, 0, 0.06);
+                0 8px 22px
+                rgba(0, 0, 0, 0.05);
         }
 
 
-        .event-year-card-label {
-            margin: 0 0 8px;
+        .event-archive-label {
+            margin: 0 0 6px;
 
             color: #b18a92;
 
@@ -401,53 +435,51 @@
         }
 
 
-        .event-year-card h3 {
-            margin: 0 0 12px;
+        .event-archive-card h3 {
+            margin: 0 0 10px;
 
             color: #444;
 
-            font-size: 21px;
+            font-size: 19px;
             font-weight: 500;
 
             line-height: 1.5;
 
-            letter-spacing: 0.05em;
+            letter-spacing: 0.04em;
         }
 
 
-        .event-year-card-description {
-            margin: 0 0 22px;
+        .event-archive-description {
+            margin: 0 0 18px;
 
             color: #666;
 
-            font-size: 14px;
+            font-size: 13px;
 
-            line-height: 1.85;
+            line-height: 1.8;
         }
 
 
-        .event-year-card-link {
+        .event-archive-link {
             display: inline-block;
 
             align-self: flex-start;
 
             margin-top: auto;
 
-            padding-bottom: 3px;
+            padding-bottom: 2px;
 
             border-bottom: 1px solid #b98d96;
 
             color: #91656f;
 
-            font-size: 14px;
-
-            line-height: 1.5;
+            font-size: 13px;
 
             text-decoration: none;
         }
 
 
-        .event-year-card-link:hover {
+        .event-archive-link:hover {
             color: #6f4851;
 
             border-color: #6f4851;
@@ -460,7 +492,7 @@
         ===================================================== */
 
         .event-year-back {
-            padding: 50px 0 60px;
+            padding: 40px 0 50px;
 
             background: #faf8f8;
 
@@ -471,7 +503,7 @@
         .event-year-back a {
             display: inline-block;
 
-            padding: 10px 24px;
+            padding: 9px 22px;
 
             border: 1px solid #aaa;
 
@@ -501,6 +533,7 @@
 
         @media (max-width: 850px) {
 
+            .event-overview-card,
             .event-exhibition-card {
                 grid-template-columns:
                     1fr;
@@ -509,8 +542,13 @@
             }
 
 
+            .event-overview-image img {
+                max-height: 500px;
+            }
+
+
             .event-exhibition-content {
-                padding: 0;
+                padding-right: 0;
             }
 
         }
@@ -523,92 +561,87 @@
 
         @media (max-width: 650px) {
 
-            .event-year-hero {
+            .event-year-header {
                 padding:
-                    40px 18px;
+                    38px 18px 34px;
             }
 
 
-            .event-year-hero h1 {
+            .event-year-header h1 {
                 font-size: 26px;
 
                 letter-spacing: 0.08em;
             }
 
 
-            .event-year-visual {
+            .event-overview {
                 padding:
-                    30px 0 10px;
+                    35px 0 50px;
             }
 
 
-            .event-year-heading {
+            .event-overview-card {
+                padding: 18px;
+            }
+
+
+            .event-overview-content h2 {
+                font-size: 23px;
+            }
+
+
+            .event-overview-content p {
+                font-size: 14px;
+            }
+
+
+            .event-section-heading {
                 margin-bottom: 30px;
 
-                padding-bottom: 18px;
+                padding-bottom: 17px;
             }
 
 
-            .event-year-heading h2 {
+            .event-section-heading h2 {
                 font-size: 24px;
-            }
-
-
-            .event-year-intro {
-                padding:
-                    50px 0 60px;
-            }
-
-
-            .event-year-intro-content {
-                font-size: 15px;
-
-                text-align: left;
             }
 
 
             .event-exhibition {
                 padding:
-                    55px 0 65px;
+                    50px 0 60px;
             }
 
 
             .event-exhibition-card {
-                padding: 18px;
-
-                gap: 24px;
+                padding: 16px;
             }
 
 
             .event-exhibition-content h3 {
-                font-size: 23px;
+                font-size: 22px;
             }
 
 
-            .event-year-sections {
+            .event-archive {
                 padding:
-                    55px 0 65px;
+                    50px 0 65px;
             }
 
 
-            .event-year-grid {
+            .event-archive-grid {
                 grid-template-columns:
                     1fr;
 
-                gap: 16px;
+                gap: 14px;
             }
 
 
-            .event-year-card {
+            .event-archive-card {
                 min-height: 0;
 
                 padding:
-                    25px 23px;
-            }
-
-
-            .event-year-card h3 {
-                font-size: 19px;
+                    21px 20px;
             }
 
         }
@@ -616,7 +649,6 @@
     </style>
 
 </head>
-
 
 
 <body>
@@ -629,7 +661,6 @@
 <div id="site-header"></div>
 
 
-
 <!-- =====================================================
      Breadcrumb
 ===================================================== -->
@@ -640,19 +671,14 @@
 </nav>
 
 
-
-<!-- =====================================================
-     Main
-===================================================== -->
-
 <main>
 
 
     <!-- =================================================
-         Page Hero
+         年度標題
     ================================================= -->
 
-    <section class="event-year-hero">
+    <section class="event-year-header">
 
         <div class="content-container">
 
@@ -660,7 +686,8 @@
                 2023 友好拼布手作節
             </h1>
 
-            <p id="event-subtitle">
+            <p id="event-header-subtitle"
+               class="event-year-header-subtitle">
                 在松菸1號倉庫
             </p>
 
@@ -671,54 +698,37 @@
 
 
     <!-- =================================================
-         活動主視覺
+         主視覺＋介紹
+         原本兩個紅框區合併在這裡
     ================================================= -->
 
-    <section class="event-year-visual">
+    <section class="event-overview">
 
         <div class="content-container">
 
-            <div class="event-year-visual-image">
+            <article class="event-overview-card">
 
-                <img id="event-image"
-                     src="/events/2023/2023.jpg"
-                     alt="2023 友好拼布手作節">
+                <div class="event-overview-image">
 
-            </div>
+                    <img id="event-image"
+                         src="/events/2023/2023.jpg"
+                         alt="2023 友好拼布手作節">
 
-        </div>
-
-    </section>
+                </div>
 
 
+                <div class="event-overview-content">
 
-    <!-- =================================================
-         活動介紹
-    ================================================= -->
+                    <h2 id="event-overview-title">
+                        2023 友好拼布手作節
+                    </h2>
 
-    <section class="event-year-intro">
+                    <p id="event-description">
+                    </p>
 
-        <div class="content-container">
+                </div>
 
-            <div class="event-year-heading">
-
-                <p class="event-year-label">
-                    About the Festival
-                </p>
-
-                <h2>
-                    2023 友好拼布手作節
-                </h2>
-
-            </div>
-
-
-            <div class="event-year-intro-content">
-
-                <p id="event-description">
-                </p>
-
-            </div>
+            </article>
 
         </div>
 
@@ -734,9 +744,9 @@
 
         <div class="content-container">
 
-            <div class="event-year-heading">
+            <div class="event-section-heading">
 
-                <p class="event-year-label">
+                <p class="event-section-label">
                     Exhibition
                 </p>
 
@@ -795,13 +805,13 @@
          活動紀錄
     ================================================= -->
 
-    <section class="event-year-sections">
+    <section class="event-archive">
 
         <div class="content-container">
 
-            <div class="event-year-heading">
+            <div class="event-section-heading">
 
-                <p class="event-year-label">
+                <p class="event-section-label">
                     Event Archive
                 </p>
 
@@ -813,9 +823,9 @@
 
 
             <div id="event-section-list"
-                 class="event-year-grid">
+                 class="event-archive-grid">
 
-                <!-- event-data.js 自動產生 -->
+                <!-- JS 自動產生 -->
 
             </div>
 
@@ -845,7 +855,6 @@
 </main>
 
 
-
 <!-- =====================================================
      共用 Footer
 ===================================================== -->
@@ -853,13 +862,11 @@
 <div id="site-footer"></div>
 
 
-
 <!-- =====================================================
      JavaScript
 ===================================================== -->
 
 <script src="/assets/js/include.js"></script>
-
 
 
 <!-- Breadcrumb DATA -->
@@ -890,11 +897,9 @@
 <script src="/assets/js/breadcrumb.js"></script>
 
 
-
 <!-- 2023 DATA -->
 
 <script src="/events/2023/event-data.js"></script>
-
 
 
 <!-- =====================================================
@@ -922,59 +927,78 @@
     }
 
 
-
     /* =====================================================
-       活動基本資料
+       年度基本資料
     ===================================================== */
 
-    const title =
+    const eventTitle =
         document.getElementById(
             "event-title"
         );
 
 
-    const subtitle =
+    const eventHeaderSubtitle =
         document.getElementById(
-            "event-subtitle"
+            "event-header-subtitle"
         );
 
 
-    const description =
+    const eventOverviewTitle =
+        document.getElementById(
+            "event-overview-title"
+        );
+
+
+    const eventDescription =
         document.getElementById(
             "event-description"
         );
 
 
-    const image =
+    const eventImage =
         document.getElementById(
             "event-image"
         );
 
 
-    if (title) {
-        title.textContent =
+    if (eventTitle) {
+
+        eventTitle.textContent =
             eventData.title || "";
+
     }
 
 
-    if (subtitle) {
-        subtitle.textContent =
+    if (eventHeaderSubtitle) {
+
+        eventHeaderSubtitle.textContent =
             eventData.subtitle || "";
+
     }
 
 
-    if (description) {
-        description.textContent =
+    if (eventOverviewTitle) {
+
+        eventOverviewTitle.textContent =
+            eventData.title || "";
+
+    }
+
+
+    if (eventDescription) {
+
+        eventDescription.textContent =
             eventData.description || "";
+
     }
 
 
-    if (image) {
+    if (eventImage) {
 
-        image.src =
+        eventImage.src =
             eventData.image;
 
-        image.alt =
+        eventImage.alt =
             eventData.title || "";
 
     }
@@ -1024,7 +1048,7 @@
         if (exhibitionImage) {
 
             exhibitionImage.src =
-                exhibition.image;
+                exhibition.image || "";
 
             exhibitionImage.alt =
                 eventData.year +
@@ -1061,7 +1085,7 @@
         if (exhibitionLink) {
 
             exhibitionLink.href =
-                exhibition.url;
+                exhibition.url || "#";
 
         }
 
@@ -1100,7 +1124,7 @@
 
 
             article.className =
-                "event-year-card";
+                "event-archive-card";
 
 
             /* English */
@@ -1112,7 +1136,7 @@
 
 
             label.className =
-                "event-year-card-label";
+                "event-archive-label";
 
 
             label.textContent =
@@ -1133,17 +1157,17 @@
 
             /* Description */
 
-            const text =
+            const description =
                 document.createElement(
                     "p"
                 );
 
 
-            text.className =
-                "event-year-card-description";
+            description.className =
+                "event-archive-description";
 
 
-            text.textContent =
+            description.textContent =
                 item.description || "";
 
 
@@ -1156,11 +1180,11 @@
 
 
             link.href =
-                item.url;
+                item.url || "#";
 
 
             link.className =
-                "event-year-card-link";
+                "event-archive-link";
 
 
             link.textContent =
@@ -1180,7 +1204,7 @@
 
 
             article.appendChild(
-                text
+                description
             );
 
 

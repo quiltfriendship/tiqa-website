@@ -66,7 +66,6 @@ const eventData = {
                 "/events/2023/about/"
         },
 
-
         {
             title:
                 "活動門票",
@@ -80,7 +79,6 @@ const eventData = {
             url:
                 "/events/2023/ticket/"
         },
-
 
         {
             title:
@@ -96,7 +94,6 @@ const eventData = {
                 "/events/2023/volunteer/"
         },
 
-
         {
             title:
                 "第三屆台灣拼布大賽",
@@ -110,7 +107,6 @@ const eventData = {
             url:
                 "/events/2023/competition/"
         },
-
 
         {
             title:
@@ -126,7 +122,6 @@ const eventData = {
                 "/events/2023/theme-quilt/"
         },
 
-
         {
             title:
                 "會員專屬 50×50 徵件",
@@ -141,7 +136,6 @@ const eventData = {
                 "/events/2023/member-50x50/"
         },
 
-
         {
             title:
                 "代表作徵件",
@@ -155,7 +149,6 @@ const eventData = {
             url:
                 "/events/2023/representative/"
         },
-
 
         {
             title:
