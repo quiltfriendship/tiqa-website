@@ -27,180 +27,178 @@
 
 
     /* =====================================================
-       等待 DOM 完成
+       取得 Breadcrumb 容器
     ===================================================== */
 
-    document.addEventListener(
-        "DOMContentLoaded",
-        function () {
+    const container =
+        document.getElementById(
+            "breadcrumb"
+        );
 
 
-            /* =================================================
-               取得麵包屑容器
-            ================================================= */
+    /*
+     * 頁面沒有 Breadcrumb
+     * 就不執行
+     */
 
-            const container =
-                document.getElementById(
-                    "breadcrumb"
+    if (!container) {
+
+        console.warn(
+            "找不到 #breadcrumb"
+        );
+
+        return;
+
+    }
+
+
+
+    /* =====================================================
+       確認 breadcrumbData
+    ===================================================== */
+
+    if (
+        typeof window.breadcrumbData === "undefined" ||
+        !Array.isArray(window.breadcrumbData) ||
+        window.breadcrumbData.length === 0
+    ) {
+
+        console.warn(
+            "breadcrumbData 未設定"
+        );
+
+        return;
+
+    }
+
+
+
+    /* =====================================================
+       建立 <ol>
+    ===================================================== */
+
+    const list =
+        document.createElement(
+            "ol"
+        );
+
+
+    list.className =
+        "breadcrumb-list";
+
+
+
+    /* =====================================================
+       建立每一層
+    ===================================================== */
+
+    window.breadcrumbData.forEach(
+        function (item, index) {
+
+
+            const listItem =
+                document.createElement(
+                    "li"
                 );
 
 
-            /*
-             * 頁面沒有 breadcrumb 容器
-             * 就不執行
-             */
+            listItem.className =
+                "breadcrumb-item";
 
-            if (!container) {
-                return;
-            }
+
+            const isLast =
+                index ===
+                window.breadcrumbData.length - 1;
 
 
 
             /* =================================================
-               確認 breadcrumbData
+               非最後一層
             ================================================= */
 
             if (
-                typeof window.breadcrumbData === "undefined" ||
-                !Array.isArray(window.breadcrumbData) ||
-                window.breadcrumbData.length === 0
+                !isLast &&
+                item.url
             ) {
 
-                console.warn(
-                    "breadcrumbData 未設定"
+                const link =
+                    document.createElement(
+                        "a"
+                    );
+
+
+                link.href =
+                    item.url;
+
+
+                link.textContent =
+                    item.title;
+
+
+                listItem.appendChild(
+                    link
                 );
 
-                return;
             }
 
 
 
             /* =================================================
-               建立 <ol>
+               最後一層 / 沒有 URL
             ================================================= */
 
-            const list =
-                document.createElement(
-                    "ol"
-                );
+            else {
+
+                const current =
+                    document.createElement(
+                        "span"
+                    );
 
 
-            list.className =
-                "breadcrumb-list";
+                current.textContent =
+                    item.title;
 
 
+                if (isLast) {
 
-            /* =================================================
-               建立每一層
-            ================================================= */
-
-            window.breadcrumbData.forEach(
-                function (item, index) {
-
-
-                    const listItem =
-                        document.createElement(
-                            "li"
-                        );
-
-
-                    listItem.className =
-                        "breadcrumb-item";
-
-
-                    const isLast =
-                        index ===
-                        window.breadcrumbData.length - 1;
-
-
-
-                    /* -----------------------------------------
-                       非最後一層：建立連結
-                    ----------------------------------------- */
-
-                    if (
-                        !isLast &&
-                        item.url
-                    ) {
-
-                        const link =
-                            document.createElement(
-                                "a"
-                            );
-
-
-                        link.href =
-                            item.url;
-
-
-                        link.textContent =
-                            item.title;
-
-
-                        listItem.appendChild(
-                            link
-                        );
-
-                    }
-
-
-
-                    /* -----------------------------------------
-                       最後一層：目前頁面
-                    ----------------------------------------- */
-
-                    else {
-
-                        const current =
-                            document.createElement(
-                                "span"
-                            );
-
-
-                        current.textContent =
-                            item.title;
-
-
-                        if (isLast) {
-
-                            current.setAttribute(
-                                "aria-current",
-                                "page"
-                            );
-
-                        }
-
-
-                        listItem.appendChild(
-                            current
-                        );
-
-                    }
-
-
-
-                    list.appendChild(
-                        listItem
+                    current.setAttribute(
+                        "aria-current",
+                        "page"
                     );
 
                 }
-            );
+
+
+                listItem.appendChild(
+                    current
+                );
+
+            }
 
 
 
             /* =================================================
-               放入頁面
+               加入清單
             ================================================= */
 
-            container.innerHTML = "";
-
-
-            container.appendChild(
-                list
+            list.appendChild(
+                listItem
             );
 
-
         }
+    );
+
+
+
+    /* =====================================================
+       放入 Breadcrumb
+    ===================================================== */
+
+    container.innerHTML = "";
+
+
+    container.appendChild(
+        list
     );
 
 
