@@ -34,7 +34,8 @@ https://taipeisummer.travel.taipei/`,
                 url: "https://www.facebook.com/share/p/1EmcqZNqiG/"
             }
         ]
-    },{
+    },
+	{
         id: "2025-quilt-festival",
         title: "2025 友好拼布手作節-在松菸1號倉庫+文創大街",
         date: "2025-01-15",
