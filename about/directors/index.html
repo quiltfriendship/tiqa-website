@@ -26,96 +26,123 @@
 <body>
 
 
-<!-- =====================================================
-     共用 Header
-===================================================== -->
+    <!-- =====================================================
+         共用 Header
+    ===================================================== -->
 
-<div id="site-header"></div>
+    <div id="site-header"></div>
 
+    <!-- =====================================================
+         Breadcrumb
+    ===================================================== -->
 
+    <nav id="breadcrumb"
+         class="breadcrumb"
+         aria-label="麵包屑">
+    </nav>
 
-<!-- =====================================================
-     Main
-===================================================== -->
+    <!-- =====================================================
+         Main
+    ===================================================== -->
 
-<main>
-
-
-    <!-- =================================================
-         Page Hero
-    ================================================= -->
-
-    <section class="about-hero">
-
-        <div class="content-container">
-
-            <h1>
-                理監事會
-            </h1>
-
-            <p>
-                Board Members
-            </p>
-
-        </div>
-
-    </section>
+    <main>
 
 
+        <!-- =================================================
+             Page Hero
+        ================================================= -->
 
-    <!-- =================================================
-         理監事會
-    ================================================= -->
+        <section class="about-hero">
 
-    <section class="directors-section">
+            <div class="content-container">
 
-        <div class="content-container">
+                <h1>
+                    理監事會
+                </h1>
 
-            <div class="about-section-heading">
-
-                <h2>
-                    第六屆理監事會（2026-2027）
-                </h2>
+                <p>
+                    Board Members
+                </p>
 
             </div>
 
-
-            <!--
-                directors.js 會依 directors-data.js
-                自動產生各組人員
-            -->
-
-            <div id="directors-list"></div>
-
-        </div>
-
-    </section>
-
-
-</main>
+        </section>
 
 
 
-<!-- =====================================================
-     共用 Footer
-===================================================== -->
+        <!-- =================================================
+             理監事會
+        ================================================= -->
 
-<div id="site-footer"></div>
+        <section class="directors-section">
+
+            <div class="content-container">
+
+                <div class="about-section-heading">
+
+                    <h2>
+                        第六屆理監事會（2026-2027）
+                    </h2>
+
+                </div>
+
+
+                <!--
+                    directors.js 會依 directors-data.js
+                    自動產生各組人員
+                -->
+
+                <div id="directors-list"></div>
+
+            </div>
+
+        </section>
+
+
+    </main>
 
 
 
-<!-- =====================================================
-     JavaScript
-===================================================== -->
+    <!-- =====================================================
+         共用 Footer
+    ===================================================== -->
 
-<!-- 共用 Header / Footer -->
-<script src="/assets/js/include.js"></script>
+    <div id="site-footer"></div>
 
-<!-- 理監事資料 -->
-<script src="/about/directors/directors-data.js"></script>
 
-<!-- 理監事卡片產生程式 -->
-<script src="/about/directors/directors.js"></script>
+
+    <!-- =====================================================
+         JavaScript
+    ===================================================== -->
+    <!-- 共用 Header / Footer -->
+    <script src="/assets/js/include.js"></script>
+    <script>
+        window.breadcrumbData = [
+
+            {
+                title: "首頁",
+                url: "/"
+            },
+
+            {
+                title: "關於我們",
+                url: "/about/"
+            },
+
+            {
+                title: "理監事會"
+            }
+
+        ];
+    </script>
+
+    <script src="/assets/js/breadcrumb.js"></script>
+
+    <!-- 理監事資料 -->
+    <script src="/about/directors/directors-data.js"></script>
+
+    <!-- 理監事卡片產生程式 -->
+    <script src="/about/directors/directors.js"></script>
 
 
 </body>

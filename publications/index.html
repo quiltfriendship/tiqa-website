@@ -26,382 +26,396 @@
 <body>
 
 
-<!-- =====================================================
-     共用 Header
-===================================================== -->
+    <!-- =====================================================
+         共用 Header
+    ===================================================== -->
 
-<div id="site-header"></div>
+    <div id="site-header"></div>
 
+    <!-- =====================================================
+         Breadcrumb
+    ===================================================== -->
 
+    <nav id="breadcrumb"
+         class="breadcrumb"
+         aria-label="麵包屑">
+    </nav>
 
-<!-- =====================================================
-     Main
-===================================================== -->
+    <!-- =====================================================
+         Main
+    ===================================================== -->
 
-<main>
-
-
-    <!-- =================================================
-         Page Hero
-    ================================================= -->
-
-    <section class="publications-hero">
-
-        <div class="content-container">
-
-            <h1>
-                出版訊息
-            </h1>
-
-            <p>
-                Publications
-            </p>
-
-        </div>
-
-    </section>
+    <main>
 
 
+        <!-- =================================================
+             Page Hero
+        ================================================= -->
 
-    <!-- =================================================
-         出版理念
-    ================================================= -->
+        <section class="publications-hero">
 
-    <section class="publications-intro">
+            <div class="content-container">
 
-        <div class="content-container">
-
-            <div class="publications-section-heading">
-
-                <p class="publications-label">
-                    Our Publications
-                </p>
-
-                <h2>
-                    我們的出版品
-                </h2>
-
-            </div>
-
-
-            <div class="publications-intro-content">
+                <h1>
+                    出版訊息
+                </h1>
 
                 <p>
-                    拼布在台灣並不陌生，從生活手作、社區活動、
-                    教學課程，到參與國際比賽的藝術創作，
-                    以不同形式存在於我們的生活之中。
-                </p>
-
-                <p>
-                    台灣國際拼布友好會成立於 2016 年，
-                    透過展覽、競賽與交流活動，
-                    持續累積台灣拼布創作者的作品與故事。
-                </p>
-
-                <p>
-                    為保存展覽及創作紀錄，
-                    本會將參展及比賽作品集結出版，
-                    希望透過紙本作品集，
-                    留下台灣拼布文化發展的重要紀錄。
+                    Publications
                 </p>
 
             </div>
 
-        </div>
+        </section>
 
-    </section>
 
 
+        <!-- =================================================
+             出版理念
+        ================================================= -->
 
-    <!-- =================================================
-         出版品列表
-         publications.js 會依 publications-data.js 產生
-    ================================================= -->
+        <section class="publications-intro">
 
-    <section class="publication-list-section">
+            <div class="content-container">
 
-        <div class="content-container">
-
-            <div class="publications-section-heading">
-
-                <p class="publications-label">
-                    Publication Collection
-                </p>
-
-                <h2>
-                    出版品一覽
-                </h2>
-
-            </div>
-
-
-            <div id="publication-list"
-                 class="publication-grid">
-
-                <!-- JS 自動產生 -->
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =================================================
-         線上瀏覽器
-    ================================================= -->
-
-    <section id="book-preview"
-             class="book-viewer-section"
-             hidden>
-
-        <div class="content-container">
-
-
-            <div class="publications-section-heading">
-
-                <p class="publications-label">
-                    Preview
-                </p>
-
-                <h2 id="book-viewer-title">
-                    作品集線上瀏覽
-                </h2>
-
-            </div>
-
-
-
-            <!-- 書籍說明 -->
-
-            <div class="book-viewer-info">
-
-                <p id="book-viewer-subtitle"
-                   class="book-viewer-subtitle">
-                </p>
-
-                <p id="book-viewer-description"
-                   class="book-viewer-description">
-                </p>
-
-            </div>
-
-
-
-            <!-- 翻頁 -->
-
-            <div class="book-viewer"
-                 aria-label="作品集線上瀏覽器">
-
-
-                <!-- 上方控制 -->
-
-                <div class="book-controls">
-
-                    <button
-                        type="button"
-                        id="book-prev-top"
-                        class="book-button">
-                        ← 上一頁
-                    </button>
-
-
-                    <div class="book-page-status"
-                         aria-live="polite">
-
-                        第
-                        <span id="book-current-page-top">
-                            1
-                        </span>
-
-                        /
-
-                        <span id="book-total-pages-top">
-                            1
-                        </span>
-                        頁
-
-                    </div>
-
-
-                    <button
-                        type="button"
-                        id="book-next-top"
-                        class="book-button">
-                        下一頁 →
-                    </button>
-
-                </div>
-
-
-
-                <!-- 頁面圖片 -->
-
-                <div class="book-page">
-
-                    <img
-                        id="book-page-image"
-                        src=""
-                        alt=""
-                    >
-
-                </div>
-
-
-
-                <!-- 下方控制 -->
-
-                <div class="book-controls book-controls-bottom">
-
-                    <button
-                        type="button"
-                        id="book-prev-bottom"
-                        class="book-button">
-                        ← 上一頁
-                    </button>
-
-
-                    <div class="book-page-status">
-
-                        第
-                        <span id="book-current-page-bottom">
-                            1
-                        </span>
-
-                        /
-
-                        <span id="book-total-pages-bottom">
-                            1
-                        </span>
-                        頁
-
-                    </div>
-
-
-                    <button
-                        type="button"
-                        id="book-next-bottom"
-                        class="book-button">
-                        下一頁 →
-                    </button>
-
-                </div>
-
-
-                <p class="book-keyboard-note">
-                    可使用鍵盤 ← → 方向鍵翻頁
-                </p>
-
-
-                <!-- 關閉 -->
-
-                <div class="book-close-area">
-
-                    <button
-                        type="button"
-                        id="book-close"
-                        class="book-close-button">
-
-                        關閉線上瀏覽
-
-                    </button>
-
-                </div>
-
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =================================================
-         聯絡 / 認購
-    ================================================= -->
-
-    <section class="publication-contact">
-
-        <div class="content-container">
-
-            <div class="publication-contact-inner">
-
-
-                <div>
+                <div class="publications-section-heading">
 
                     <p class="publications-label">
-                        Contact
+                        Our Publications
                     </p>
 
                     <h2>
-                        出版品相關詢問
+                        我們的出版品
                     </h2>
 
+                </div>
+
+
+                <div class="publications-intro-content">
+
                     <p>
-                        如欲認購出版品或詢問寄送方式，
-                        歡迎與台灣國際拼布友好會聯絡。
+                        拼布在台灣並不陌生，從生活手作、社區活動、
+                        教學課程，到參與國際比賽的藝術創作，
+                        以不同形式存在於我們的生活之中。
+                    </p>
+
+                    <p>
+                        台灣國際拼布友好會成立於 2016 年，
+                        透過展覽、競賽與交流活動，
+                        持續累積台灣拼布創作者的作品與故事。
+                    </p>
+
+                    <p>
+                        為保存展覽及創作紀錄，
+                        本會將參展及比賽作品集結出版，
+                        希望透過紙本作品集，
+                        留下台灣拼布文化發展的重要紀錄。
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             出版品列表
+             publications.js 會依 publications-data.js 產生
+        ================================================= -->
+
+        <section class="publication-list-section">
+
+            <div class="content-container">
+
+                <div class="publications-section-heading">
+
+                    <p class="publications-label">
+                        Publication Collection
+                    </p>
+
+                    <h2>
+                        出版品一覽
+                    </h2>
+
+                </div>
+
+
+                <div id="publication-list"
+                     class="publication-grid">
+
+                    <!-- JS 自動產生 -->
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             線上瀏覽器
+        ================================================= -->
+
+        <section id="book-preview"
+                 class="book-viewer-section"
+                 hidden>
+
+            <div class="content-container">
+
+
+                <div class="publications-section-heading">
+
+                    <p class="publications-label">
+                        Preview
+                    </p>
+
+                    <h2 id="book-viewer-title">
+                        作品集線上瀏覽
+                    </h2>
+
+                </div>
+
+
+
+                <!-- 書籍說明 -->
+
+                <div class="book-viewer-info">
+
+                    <p id="book-viewer-subtitle"
+                       class="book-viewer-subtitle">
+                    </p>
+
+                    <p id="book-viewer-description"
+                       class="book-viewer-description">
                     </p>
 
                 </div>
 
 
 
-                <div class="publication-contact-actions">
+                <!-- 翻頁 -->
 
-                    <a
-                        href="/about/contact/"
-                        class="publication-contact-button">
-
-                        聯絡我們
-
-                    </a>
+                <div class="book-viewer"
+                     aria-label="作品集線上瀏覽器">
 
 
-                    <a
-                        href="https://m.me/Taiwanquilters"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="publication-contact-button secondary">
+                    <!-- 上方控制 -->
 
-                        Facebook Messenger
+                    <div class="book-controls">
 
-                    </a>
+                        <button type="button"
+                                id="book-prev-top"
+                                class="book-button">
+                            ← 上一頁
+                        </button>
+
+
+                        <div class="book-page-status"
+                             aria-live="polite">
+
+                            第
+                            <span id="book-current-page-top">
+                                1
+                            </span>
+
+                            /
+
+                            <span id="book-total-pages-top">
+                                1
+                            </span>
+                            頁
+
+                        </div>
+
+
+                        <button type="button"
+                                id="book-next-top"
+                                class="book-button">
+                            下一頁 →
+                        </button>
+
+                    </div>
+
+
+
+                    <!-- 頁面圖片 -->
+
+                    <div class="book-page">
+
+                        <img id="book-page-image"
+                             src=""
+                             alt="">
+
+                    </div>
+
+
+
+                    <!-- 下方控制 -->
+
+                    <div class="book-controls book-controls-bottom">
+
+                        <button type="button"
+                                id="book-prev-bottom"
+                                class="book-button">
+                            ← 上一頁
+                        </button>
+
+
+                        <div class="book-page-status">
+
+                            第
+                            <span id="book-current-page-bottom">
+                                1
+                            </span>
+
+                            /
+
+                            <span id="book-total-pages-bottom">
+                                1
+                            </span>
+                            頁
+
+                        </div>
+
+
+                        <button type="button"
+                                id="book-next-bottom"
+                                class="book-button">
+                            下一頁 →
+                        </button>
+
+                    </div>
+
+
+                    <p class="book-keyboard-note">
+                        可使用鍵盤 ← → 方向鍵翻頁
+                    </p>
+
+
+                    <!-- 關閉 -->
+
+                    <div class="book-close-area">
+
+                        <button type="button"
+                                id="book-close"
+                                class="book-close-button">
+
+                            關閉線上瀏覽
+
+                        </button>
+
+                    </div>
+
 
                 </div>
 
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             聯絡 / 認購
+        ================================================= -->
+
+        <section class="publication-contact">
+
+            <div class="content-container">
+
+                <div class="publication-contact-inner">
+
+
+                    <div>
+
+                        <p class="publications-label">
+                            Contact
+                        </p>
+
+                        <h2>
+                            出版品相關詢問
+                        </h2>
+
+                        <p>
+                            如欲認購出版品或詢問寄送方式，
+                            歡迎與台灣國際拼布友好會聯絡。
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="publication-contact-actions">
+
+                        <a href="/about/contact/"
+                           class="publication-contact-button">
+
+                            聯絡我們
+
+                        </a>
+
+
+                        <a href="https://m.me/Taiwanquilters"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="publication-contact-button secondary">
+
+                            Facebook Messenger
+
+                        </a>
+
+                    </div>
+
+
+                </div>
 
             </div>
 
-        </div>
-
-    </section>
+        </section>
 
 
-</main>
+    </main>
 
 
 
-<!-- =====================================================
-     共用 Footer
-===================================================== -->
+    <!-- =====================================================
+         共用 Footer
+    ===================================================== -->
 
-<div id="site-footer"></div>
+    <div id="site-footer"></div>
 
 
 
-<!-- =====================================================
-     JavaScript
-===================================================== -->
+    <!-- =====================================================
+         JavaScript
+    ===================================================== -->
 
-<script src="/assets/js/include.js"></script>
+    <script src="/assets/js/include.js"></script>
+    <script>
+        window.breadcrumbData = [
 
-<!-- 先載入 DATA -->
-<script src="/publications/publications-data.js"></script>
+            {
+                title: "首頁",
+                url: "/"
+            },
 
-<!-- 再載入功能 -->
-<script src="/publications/publications.js"></script>
+            {
+                title: "出版訊息"
+            }
+
+        ];
+    </script>
+
+    <script src="/assets/js/breadcrumb.js"></script>
+
+    <!-- 先載入 DATA -->
+    <script src="/publications/publications-data.js"></script>
+
+    <!-- 再載入功能 -->
+    <script src="/publications/publications.js"></script>
 
 
 </body>

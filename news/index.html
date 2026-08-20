@@ -23,77 +23,101 @@
 
 <body>
 
+    <div id="site-header"></div>
 
-<div id="site-header"></div>
+    <!-- =====================================================
+         Breadcrumb
+    ===================================================== -->
 
+    <nav id="breadcrumb"
+         class="breadcrumb"
+         aria-label="麵包屑">
+    </nav>
 
-<main>
-
-
-    <section class="news-hero">
-
-        <div class="news-hero-inner">
-
-            <img
-                src="https://tiqa-hello.weebly.com/uploads/1/2/0/0/120024501/863937201_orig.jpg"
-                alt=""
-                class="news-hero-image"
-            >
+    <main>
 
 
-            <div class="news-hero-overlay"
-                 aria-hidden="true">
+        <section class="news-hero">
+
+            <div class="news-hero-inner">
+
+                <img src="https://tiqa-hello.weebly.com/uploads/1/2/0/0/120024501/863937201_orig.jpg"
+                     alt=""
+                     class="news-hero-image">
+
+
+                <div class="news-hero-overlay"
+                     aria-hidden="true">
+                </div>
+
+
+                <div class="news-hero-content">
+
+                    <h1 class="news-hero-title">
+                        最新消息
+                    </h1>
+
+                    <p class="news-hero-description">
+                        掌握台灣國際拼布友好會最新活動、展覽及會務動態，<br>
+                        歡迎喜愛拼布與手作的朋友參考。
+                    </p>
+
+                </div>
+
             </div>
 
+        </section>
 
-            <div class="news-hero-content">
 
-                <h1 class="news-hero-title">
-                    最新消息
-                </h1>
 
-                <p class="news-hero-description">
-                    掌握台灣國際拼布友好會最新活動、展覽及會務動態，<br>
-                    歡迎喜愛拼布與手作的朋友參考。
+        <section class="news-section">
+
+            <div class="content-container">
+
+                <p class="news-note">
+                    依發布日期排序
                 </p>
 
+
+                <div id="news-list"
+                     class="news-grid">
+                </div>
+
             </div>
 
-        </div>
-
-    </section>
+        </section>
 
 
-
-    <section class="news-section">
-
-        <div class="content-container">
-
-            <p class="news-note">
-                依發布日期排序
-            </p>
-
-
-            <div id="news-list"
-                 class="news-grid">
-            </div>
-
-        </div>
-
-    </section>
-
-
-</main>
+    </main>
 
 
 
-<div id="site-footer"></div>
+    <div id="site-footer"></div>
 
-<script src="/assets/js/include.js"></script>
+    <script src="/assets/js/include.js"></script>
+    <!-- Breadcrumb DATA -->
+    <script>
+        window.breadcrumbData = [
 
-<script src="/news/news-data.js"></script>
+            {
+                title: "首頁",
+                url: "/"
+            },
 
-<script src="/news/news.js"></script>
+            {
+                title: "最新消息"
+            }
+
+        ];
+    </script>
+
+    <!-- 共用 Breadcrumb -->
+    <script src="/assets/js/breadcrumb.js"></script>
+
+
+    <script src="/news/news-data.js"></script>
+
+    <script src="/news/news.js"></script>
 
 
 </body>

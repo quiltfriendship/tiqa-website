@@ -25,14 +25,7 @@ body {
 body {
     color: #444;
     background: #fff;
-
-    font-family:
-        "Noto Sans TC",
-        "Microsoft JhengHei",
-        "PingFang TC",
-        Arial,
-        sans-serif;
-
+    font-family: "Noto Sans TC", "Microsoft JhengHei", "PingFang TC", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.8;
 }
@@ -60,37 +53,37 @@ select {
 
 .content-container {
     width: min(100% - 48px, 1180px);
-
     margin: 0 auto;
 }
 
 
 /* =========================================================
-   共用 Header 外層 - 固定頁首
-   Header 是由 include.js 動態載入，因此固定外層 #site-header。
+   共用 Header 外層
+
+   真正 Header 使用 fixed，
+   #site-header 保留相同高度，
+   避免頁面內容被固定 Header 遮住。
 ========================================================= */
 
 #site-header {
-    position: sticky;
-    top: 0;
-    z-index: 9999;
-    width: 100%;
-    background: #fff;
+    height: 130px;
 }
 
 
 /* =========================================================
-   Header
+   Header - 固定頁首
 ========================================================= */
 
 .site-header {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
     width: 100%;
     background: #fff;
     border-bottom: 1px solid #e8e8e8;
-    box-shadow:
-        0 2px 8px
-        rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 
@@ -101,24 +94,17 @@ select {
 
 .header-tools {
     width: 100%;
-
     background: #fff;
-
     border-bottom: 1px solid #f1f1f1;
 }
 
 
 .header-tools-inner {
     width: min(100% - 48px, 1280px);
-
     height: 42px;
-
     margin: 0 auto;
-
     display: flex;
-
     align-items: center;
-
     justify-content: flex-end;
 }
 
@@ -129,50 +115,32 @@ select {
 
 .social-links {
     display: flex;
-
     align-items: center;
-
     justify-content: flex-end;
-
     gap: 9px;
 }
 
 
 .social-icon {
     display: inline-flex;
-
     align-items: center;
-
     justify-content: center;
-
     width: 30px;
-
     height: 30px;
-
     flex-shrink: 0;
-
     border-radius: 50%;
-
     color: #fff;
-
     text-decoration: none;
-
-    transition:
-        transform 0.2s ease,
-        opacity 0.2s ease,
-        box-shadow 0.2s ease;
+    transition: transform 0.2s ease, opacity 0.2s ease, box-shadow 0.2s ease;
 }
 
 
-.social-icon svg {
-    display: block;
-
-    width: 17px;
-
-    height: 17px;
-
-    fill: currentColor;
-}
+    .social-icon svg {
+        display: block;
+        width: 17px;
+        height: 17px;
+        fill: currentColor;
+    }
 
 
 /* Facebook */
@@ -200,14 +168,12 @@ select {
 
 .social-icon:hover {
     transform: translateY(-2px);
-
     opacity: 0.88;
 }
 
 
 .social-icon:focus-visible {
     outline: 3px solid #333;
-
     outline-offset: 3px;
 }
 
@@ -218,24 +184,17 @@ select {
 
 .header-main {
     width: 100%;
-
     background: #fff;
 }
 
 
 .header-inner {
     width: min(100% - 48px, 1280px);
-
     min-height: 88px;
-
     margin: 0 auto;
-
     display: flex;
-
     align-items: center;
-
     justify-content: space-between;
-
     gap: 30px;
 }
 
@@ -246,22 +205,17 @@ select {
 
 .site-logo {
     display: block;
-
     flex-shrink: 0;
-
     text-decoration: none;
 }
 
 
-.site-logo img {
-    display: block;
-
-    width: auto;
-
-    max-width: 220px;
-
-    max-height: 68px;
-}
+    .site-logo img {
+        display: block;
+        width: auto;
+        max-width: 220px;
+        max-height: 68px;
+    }
 
 
 /* =========================================================
@@ -273,66 +227,53 @@ select {
 }
 
 
-.main-nav ul {
-    margin: 0;
-
-    padding: 0;
-
-    list-style: none;
-}
+    .main-nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
 
 
 .menu {
     display: flex;
-
     align-items: center;
-
     gap: 2px;
 }
 
 
-.menu > li {
-    position: relative;
-}
+    .menu > li {
+        position: relative;
+    }
 
 
 .menu-parent {
     display: flex;
-
     align-items: center;
 }
 
 
 .main-nav a {
     display: block;
-
     padding: 15px 12px;
-
     color: #555;
-
     text-decoration: none;
-
     white-space: nowrap;
-
-    transition:
-        color 0.2s ease,
-        background-color 0.2s ease;
+    transition: color 0.2s ease, background-color 0.2s ease;
 }
 
 
-.main-nav a:hover,
-.main-nav a:focus-visible {
-    color: #9b6f78;
+    .main-nav a:hover,
+    .main-nav a:focus-visible {
+        color: #9b6f78;
+        background: #f8f6f7;
+    }
 
-    background: #f8f6f7;
-}
 
+    /* 目前頁面 */
 
-/* 目前頁面 */
-
-.main-nav a[aria-current="page"] {
-    color: #9b6f78;
-}
+    .main-nav a[aria-current="page"] {
+        color: #9b6f78;
+    }
 
 
 /* =========================================================
@@ -350,39 +291,27 @@ select {
 
 .submenu {
     display: none;
-
     position: absolute;
-
     top: 100%;
-
     left: 0;
-
     min-width: 210px;
-
     padding: 8px 0 !important;
-
     background: #fff;
-
     border: 1px solid #e5e5e5;
-
-    box-shadow:
-        0 6px 18px
-        rgba(0, 0, 0, 0.08);
-
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
     z-index: 1100;
 }
 
 
-.submenu li {
-    position: relative;
-}
+    .submenu li {
+        position: relative;
+    }
 
 
-.submenu a {
-    padding: 10px 18px;
-
-    font-size: 15px;
-}
+    .submenu a {
+        padding: 10px 18px;
+        font-size: 15px;
+    }
 
 
 /* =========================================================
@@ -391,7 +320,6 @@ select {
 
 .submenu-level3 {
     top: 0;
-
     left: 100%;
 }
 
@@ -409,7 +337,6 @@ select {
     .has-submenu:focus-within > .submenu {
         display: block;
     }
-
 }
 
 
@@ -419,57 +346,113 @@ select {
 
 .menu-button {
     display: none;
-
     width: 44px;
-
     height: 44px;
-
     padding: 8px;
-
     border: 0;
-
     background: transparent;
-
     cursor: pointer;
 }
 
 
-.menu-button span {
-    display: block;
+    .menu-button span {
+        display: block;
+        width: 26px;
+        height: 2px;
+        margin: 6px auto;
+        background: #444;
+        transition: transform 0.25s ease, opacity 0.25s ease;
+    }
 
-    width: 26px;
 
-    height: 2px;
+    /* Hamburger → X */
 
-    margin: 6px auto;
+    .menu-button.is-open span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
 
-    background: #444;
 
-    transition:
-        transform 0.25s ease,
-        opacity 0.25s ease;
+    .menu-button.is-open span:nth-child(2) {
+        opacity: 0;
+    }
+
+
+    .menu-button.is-open span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+/* =========================================================
+   Breadcrumb 麵包屑
+========================================================= */
+
+.breadcrumb {
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #eee;
 }
 
 
-/* Hamburger → X */
-
-.menu-button.is-open span:nth-child(1) {
-    transform:
-        translateY(8px)
-        rotate(45deg);
+.breadcrumb-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: min(100% - 48px, 1180px);
+    margin: 0 auto;
+    padding: 12px 0;
+    list-style: none;
 }
 
 
-.menu-button.is-open span:nth-child(2) {
-    opacity: 0;
+.breadcrumb-item {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    color: #888;
+    font-size: 13px;
+    line-height: 1.6;
 }
 
 
-.menu-button.is-open span:nth-child(3) {
-    transform:
-        translateY(-8px)
-        rotate(-45deg);
-}
+    /* 麵包屑分隔符號 */
+
+    .breadcrumb-item:not(:last-child)::after {
+        content: "›";
+        display: inline-block;
+        margin: 0 10px;
+        color: #bbb;
+        font-size: 16px;
+        line-height: 1;
+    }
+
+
+    /* 麵包屑連結 */
+
+    .breadcrumb-item a {
+        color: #777;
+        text-decoration: none;
+        transition: color 0.2s ease;
+    }
+
+
+        .breadcrumb-item a:hover {
+            color: #9b6f78;
+            text-decoration: underline;
+        }
+
+
+        .breadcrumb-item a:focus-visible {
+            outline: 2px solid #9b6f78;
+            outline-offset: 3px;
+        }
+
+
+    /* 目前所在頁面 */
+
+    .breadcrumb-item [aria-current="page"] {
+        color: #9b6f78;
+        font-weight: 500;
+    }
 
 
 /* =========================================================
@@ -478,9 +461,7 @@ select {
 
 .hero {
     width: min(100% - 48px, 1180px);
-
     margin: 0 auto;
-
     padding: 45px 0 50px;
 }
 
@@ -491,33 +472,24 @@ select {
 
 .hero-image-wrap {
     position: relative;
-
     width: 100%;
-
     height: 260px;
-
     overflow: hidden;
 }
 
 
 .hero-image {
     display: block;
-
     width: 100%;
-
     height: 100%;
-
     object-fit: cover;
-
     object-position: center;
-
     /*
        稍微放大圖片，
        避免模糊後邊緣出現白邊
     */
 
     transform: scale(1.05);
-
     filter: blur(6px);
 }
 
@@ -528,12 +500,8 @@ select {
 
 .hero-overlay {
     position: absolute;
-
     inset: 0;
-
-    background:
-        rgba(0, 0, 0, 0.18);
-
+    background: rgba(0, 0, 0, 0.18);
     z-index: 1;
 }
 
@@ -544,59 +512,34 @@ select {
 
 .hero-title {
     position: absolute;
-
     top: 50%;
-
     left: 50%;
-
     width: 90%;
-
-    transform:
-        translate(-50%, -50%);
-
+    transform: translate(-50%, -50%);
     margin: 0;
-
     padding: 0;
-
     text-align: center;
-
     z-index: 2;
 }
 
 
 .hero h1 {
     margin: 0;
-
     color: #fff;
-
-    font-size:
-        clamp(24px, 2.4vw, 32px);
-
+    font-size: clamp(24px, 2.4vw, 32px);
     font-weight: 400;
-
     line-height: 1.5;
-
     letter-spacing: 0.25em;
-
-    text-shadow:
-        0 1px 5px
-        rgba(0, 0, 0, 0.45);
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.45);
 }
 
 
 .english-name {
     margin: 8px 0 0;
-
-    color:
-        rgba(255, 255, 255, 0.95);
-
+    color: rgba(255, 255, 255, 0.95);
     font-size: 15px;
-
     letter-spacing: 0.05em;
-
-    text-shadow:
-        0 1px 4px
-        rgba(0, 0, 0, 0.45);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
 }
 
 
@@ -606,31 +549,24 @@ select {
 
 .contact-section {
     padding: 60px 0 70px;
-
     border-top: 1px solid #e5e5e5;
-
     text-align: center;
 }
 
 
-.contact-section h2 {
-    margin: 0 0 15px;
-
-    color: #444;
-
-    font-size: 28px;
-
-    font-weight: 400;
-
-    letter-spacing: 0.15em;
-}
+    .contact-section h2 {
+        margin: 0 0 15px;
+        color: #444;
+        font-size: 28px;
+        font-weight: 400;
+        letter-spacing: 0.15em;
+    }
 
 
-.contact-section p {
-    margin: 0 0 25px;
-
-    color: #666;
-}
+    .contact-section p {
+        margin: 0 0 25px;
+        color: #666;
+    }
 
 
 /* =========================================================
@@ -639,29 +575,20 @@ select {
 
 .contact-button {
     display: inline-block;
-
     padding: 10px 28px;
-
     border: 1px solid #555;
-
     color: #444;
-
     background: transparent;
-
     text-decoration: none;
-
-    transition:
-        background-color 0.2s ease,
-        color 0.2s ease;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 
-.contact-button:hover,
-.contact-button:focus-visible {
-    color: #fff;
-
-    background: #444;
-}
+    .contact-button:hover,
+    .contact-button:focus-visible {
+        color: #fff;
+        background: #444;
+    }
 
 
 /* =========================================================
@@ -670,18 +597,14 @@ select {
 
 .site-footer {
     padding: 45px 20px;
-
     color: #777;
-
     background: #f5f5f5;
-
     text-align: center;
 }
 
 
 .footer-inner {
     max-width: 1000px;
-
     margin: 0 auto;
 }
 
@@ -692,36 +615,29 @@ select {
 
 .footer-nav {
     margin-bottom: 24px;
-
     text-align: center;
 }
 
 
-.footer-nav a {
-    display: inline-block;
-
-    margin: 4px 9px;
-
-    color: #666;
-
-    text-decoration: none;
-
-    transition:
-        color 0.2s ease;
-}
+    .footer-nav a {
+        display: inline-block;
+        margin: 4px 9px;
+        color: #666;
+        text-decoration: none;
+        transition: color 0.2s ease;
+    }
 
 
-.footer-nav a:hover,
-.footer-nav a:focus-visible {
-    color: #222;
+        .footer-nav a:hover,
+        .footer-nav a:focus-visible {
+            color: #222;
+            text-decoration: underline;
+        }
 
-    text-decoration: underline;
-}
 
-
-.footer-nav span {
-    color: #bbb;
-}
+    .footer-nav span {
+        color: #bbb;
+    }
 
 
 /* =========================================================
@@ -735,23 +651,19 @@ select {
 
 .footer-name {
     color: #555;
-
     font-size: 16px;
 }
 
 
 .footer-english {
     color: #777;
-
     font-size: 14px;
 }
 
 
 .copyright {
     margin-top: 16px !important;
-
     color: #999;
-
     font-size: 12px;
 }
 
@@ -768,7 +680,7 @@ select {
     ===================================================== */
 
     #site-header {
-        width: 100%;
+        height: 108px;
     }
 
 
@@ -778,11 +690,8 @@ select {
 
     .header-tools-inner {
         width: 100%;
-
         height: 38px;
-
-        padding:
-            0 18px;
+        padding: 0 18px;
     }
 
 
@@ -793,16 +702,14 @@ select {
 
     .social-icon {
         width: 28px;
-
         height: 28px;
     }
 
 
-    .social-icon svg {
-        width: 15px;
-
-        height: 15px;
-    }
+        .social-icon svg {
+            width: 15px;
+            height: 15px;
+        }
 
 
     /* =====================================================
@@ -811,14 +718,9 @@ select {
 
     .header-inner {
         width: 100%;
-
         min-height: 70px;
-
-        padding:
-            8px 18px;
-
+        padding: 8px 18px;
         flex-wrap: wrap;
-
         gap: 0;
     }
 
@@ -829,7 +731,6 @@ select {
 
     .site-logo img {
         max-width: 170px;
-
         max-height: 54px;
     }
 
@@ -840,7 +741,6 @@ select {
 
     .menu-button {
         display: block;
-
         margin-left: auto;
     }
 
@@ -851,53 +751,35 @@ select {
 
     .main-nav {
         display: none;
-
-        position: absolute;
-
-        top: 100%;
-
+        position: fixed;
+        top: 108px;
         left: 0;
-
         width: 100%;
-
-        max-height:
-            calc(100vh - 108px);
-
+        max-height: calc(100vh - 108px);
         margin: 0;
-
         overflow-y: auto;
-
         background: #fff;
-
-        border-top:
-            1px solid #eee;
-
-        box-shadow:
-            0 8px 18px
-            rgba(0, 0, 0, 0.08);
-
+        border-top: 1px solid #eee;
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
         z-index: 9998;
     }
 
 
-    .main-nav.is-open {
-        display: block;
-    }
+        .main-nav.is-open {
+            display: block;
+        }
 
 
     .menu {
         display: block;
-
         width: 100%;
     }
 
 
-    .menu > li {
-        width: 100%;
-
-        border-bottom:
-            1px solid #eee;
-    }
+        .menu > li {
+            width: 100%;
+            border-bottom: 1px solid #eee;
+        }
 
 
     .menu-parent {
@@ -905,15 +787,13 @@ select {
     }
 
 
-    .menu-parent > a {
-        flex: 1;
-    }
+        .menu-parent > a {
+            flex: 1;
+        }
 
 
     .main-nav a {
-        padding:
-            12px 20px;
-
+        padding: 12px 20px;
         white-space: normal;
     }
 
@@ -924,21 +804,13 @@ select {
 
     .submenu-button {
         display: block;
-
         width: 48px;
-
         height: 48px;
-
         flex-shrink: 0;
-
         border: 0;
-
         background: transparent;
-
         color: #555;
-
         font-size: 22px;
-
         cursor: pointer;
     }
 
@@ -949,23 +821,13 @@ select {
 
     .submenu {
         display: none;
-
         position: static;
-
         width: 100%;
-
         min-width: 0;
-
-        padding:
-            0 0 5px 18px !important;
-
+        padding: 0 0 5px 18px !important;
         border: 0;
-
-        border-top:
-            1px solid #f0f0f0;
-
+        border-top: 1px solid #f0f0f0;
         box-shadow: none;
-
         background: #fafafa;
     }
 
@@ -990,11 +852,29 @@ select {
 
 
     .submenu-level3 {
-        padding-left:
-            20px !important;
-
+        padding-left: 20px !important;
         background: #f5f5f5;
     }
+
+
+    /* =====================================================
+       Breadcrumb
+    ===================================================== */
+
+    .breadcrumb-list {
+        width: 100%;
+        padding: 10px 18px;
+    }
+
+
+    .breadcrumb-item {
+        font-size: 12px;
+    }
+
+
+        .breadcrumb-item:not(:last-child)::after {
+            margin: 0 7px;
+        }
 
 
     /* =====================================================
@@ -1003,9 +883,7 @@ select {
 
     .hero {
         width: 100%;
-
-        padding:
-            20px 0 35px;
+        padding: 20px 0 35px;
     }
 
 
@@ -1016,7 +894,6 @@ select {
 
     .hero h1 {
         font-size: 24px;
-
         letter-spacing: 0.15em;
     }
 
@@ -1031,15 +908,13 @@ select {
     ===================================================== */
 
     .contact-section {
-        padding:
-            45px 20px 55px;
+        padding: 45px 20px 55px;
     }
 
 
-    .contact-section h2 {
-        font-size: 25px;
-    }
-
+        .contact-section h2 {
+            font-size: 25px;
+        }
 }
 
 
@@ -1056,10 +931,8 @@ select {
 
     .footer-nav a {
         display: block;
-
         margin: 7px 0;
     }
-
 }
 
 
@@ -1075,30 +948,25 @@ select {
     ===================================================== */
 
     #site-header {
-        width: 100%;
+        height: 104px;
     }
 
 
     .header-tools-inner {
         height: 36px;
-
-        padding:
-            0 14px;
+        padding: 0 14px;
     }
 
 
     .social-icon {
         width: 27px;
-
         height: 27px;
     }
 
 
     .header-inner {
         min-height: 68px;
-
-        padding:
-            7px 14px;
+        padding: 7px 14px;
     }
 
 
@@ -1108,11 +976,28 @@ select {
 
 
     .main-nav {
-        top: 100%;
-
-        max-height:
-            calc(100vh - 104px);
+        top: 104px;
+        max-height: calc(100vh - 104px);
     }
+
+
+    /* =====================================================
+       Breadcrumb
+    ===================================================== */
+
+    .breadcrumb-list {
+        padding: 9px 14px;
+    }
+
+
+    .breadcrumb-item {
+        font-size: 12px;
+    }
+
+
+        .breadcrumb-item:not(:last-child)::after {
+            margin: 0 6px;
+        }
 
 
     /* =====================================================
@@ -1126,7 +1011,6 @@ select {
 
     .hero h1 {
         font-size: 20px;
-
         letter-spacing: 0.08em;
     }
 
@@ -1141,8 +1025,7 @@ select {
     ===================================================== */
 
     .contact-section {
-        padding:
-            40px 16px 48px;
+        padding: 40px 16px 48px;
     }
 
 
@@ -1151,10 +1034,8 @@ select {
     ===================================================== */
 
     .site-footer {
-        padding:
-            38px 15px;
+        padding: 38px 15px;
     }
-
 }
 
 
@@ -1173,8 +1054,6 @@ select {
     *::before,
     *::after {
         transition: none !important;
-
         animation: none !important;
     }
-
 }

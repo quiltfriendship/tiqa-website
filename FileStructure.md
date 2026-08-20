@@ -22,7 +22,7 @@ tiqa-website/
 │  ├─ js/
 │  │  ├─ head-common.js    ← favicon / manifest  管 <head>
 │  │  ├─ include.js        管 <body> 裡的 Header / Footer
-│  │  └─ breadcrumb.js
+│  │  ├─ breadcrumb.js
 │  │  └─ main.js
 │  │
 │  └─ images/             全站共用圖
