@@ -46,7 +46,7 @@ const directorsData = [
     },
     {
         group: "監事",
-        position: "常務監事",
+        position: "監事",
         name: "李易娟",
         image: "/assets/images/directors/li-yi-chuan.jpg",
         facebook: "https://www.facebook.com/gigi.lee.39"
