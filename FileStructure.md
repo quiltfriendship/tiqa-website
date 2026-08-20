@@ -38,13 +38,6 @@ tiqa-website/
 │     ├─ favicon-256.png
 │     ├─ favicon-512.png
 │     └─ apple-touch-icon.png
-│     
-├─ classroom/
-│  ├─ classroom-hero.jpg
-│  ├─ default.jpg
-│  ├─ 教室圖片1
-│  ├─ ...
-│  └─ 教室圖片n
 │ 
 ├─ about/
 │  ├─ index.html                 ← 第一層「關於我們」入口頁
@@ -69,6 +62,7 @@ tiqa-website/
 │  ├─ classroom-data.js
 │  ├─ classroom.js
 │  ├─ classroom-hero.jpg
+│  ├─ default.jpg
 │  ├─ classroom-01.jpg
 │  ├─ ...
 │  └─ classroom-nn.jpg
@@ -124,7 +118,16 @@ tiqa-website/
 │  ├─ 2021/
 │  │  └─ index.html
 │  ├─ 2023/
-│  │  └─ index.html
+│     ├─ index.html
+│     ├─ event-data.js
+│     ├─ 2023.jpg
+│     ├─ exhibition.jpg
+│     └─ exhibition/
+│        ├─ index.html
+│        ├─ gallery-data.js
+│        ├─ work-01.jpg
+│        ├─ ...
+│        └─ work-nn.jpg
 │  └─ 2025/
 │     └─ index.html
 │

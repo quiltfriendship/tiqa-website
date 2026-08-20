@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>2023 友好拼布手作節｜台灣國際拼布友好會 TIQA</title>
+
+    <meta name="description"
+          content="2023 友好拼布手作節活動紀錄，包含作品展、拼布大賽、主題作品募集、會員徵件及參展攤位等內容。">
+
+
+    <!-- 全站共用 CSS -->
+    <link rel="stylesheet"
+          href="/assets/css/style.css">
+
+
+    <!-- 共用 HEAD -->
+    <script src="/assets/js/head-common.js"></script>
+
+
+    <style>
+
+        /* =====================================================
+           Page Hero
+        ===================================================== */
+
+        .event-year-hero {
+            padding: 55px 20px;
+
+            background: #f7f3f4;
+
+            text-align: center;
+        }
+
+
+        .event-year-hero h1 {
+            margin: 0;
+
+            color: #444;
+
+            font-size: 32px;
+            font-weight: 400;
+
+            line-height: 1.5;
+
+            letter-spacing: 0.12em;
+        }
+
+
+        .event-year-hero p {
+            margin: 7px 0 0;
+
+            color: #999;
+
+            font-size: 14px;
+
+            line-height: 1.6;
+
+            letter-spacing: 0.08em;
+        }
+
+
+
+        /* =====================================================
+           活動主視覺
+        ===================================================== */
+
+        .event-year-visual {
+            padding: 55px 0 20px;
+
+            background: #fff;
+        }
+
+
+        .event-year-visual-image {
+            max-width: 1080px;
+
+            margin: 0 auto;
+
+            overflow: hidden;
+
+            background: #f4f4f4;
+        }
+
+
+        .event-year-visual-image img {
+            display: block;
+
+            width: 100%;
+            height: auto;
+
+            max-height: 560px;
+
+            object-fit: contain;
+        }
+
+
+
+        /* =====================================================
+           共用章節標題
+        ===================================================== */
+
+        .event-year-heading {
+            position: relative;
+
+            margin-bottom: 38px;
+
+            padding-bottom: 20px;
+
+            text-align: center;
+        }
+
+
+        .event-year-heading::after {
+            content: "";
+
+            position: absolute;
+
+            left: 50%;
+            bottom: 0;
+
+            width: 42px;
+            height: 2px;
+
+            background: #b98d96;
+
+            transform: translateX(-50%);
+        }
+
+
+        .event-year-label {
+            margin: 0 0 8px;
+
+            color: #a98a91;
+
+            font-size: 12px;
+
+            line-height: 1.6;
+
+            letter-spacing: 0.14em;
+        }
+
+
+        .event-year-heading h2 {
+            margin: 0;
+
+            color: #3f3f3f;
+
+            font-size: 28px;
+            font-weight: 500;
+
+            line-height: 1.5;
+
+            letter-spacing: 0.12em;
+        }
+
+
+
+        /* =====================================================
+           活動介紹
+        ===================================================== */
+
+        .event-year-intro {
+            padding: 60px 0 75px;
+
+            background: #fff;
+        }
+
+
+        .event-year-intro-content {
+            max-width: 800px;
+
+            margin: 0 auto;
+
+            color: #666;
+
+            font-size: 16px;
+
+            line-height: 2;
+
+            text-align: center;
+        }
+
+
+        .event-year-intro-content p {
+            margin: 0;
+        }
+
+
+
+        /* =====================================================
+           作品展
+        ===================================================== */
+
+        .event-exhibition {
+            padding: 75px 0 85px;
+
+            background: #faf8f8;
+        }
+
+
+        .event-exhibition-card {
+            display: grid;
+
+            grid-template-columns:
+                minmax(300px, 1.15fr)
+                minmax(280px, 0.85fr);
+
+            gap: 50px;
+
+            align-items: center;
+
+            max-width: 1050px;
+
+            margin: 0 auto;
+
+            padding: 30px;
+
+            border: 1px solid #e4dcde;
+
+            background: #fff;
+        }
+
+
+        .event-exhibition-image {
+            overflow: hidden;
+
+            background: #f3f3f3;
+        }
+
+
+        .event-exhibition-image img {
+            display: block;
+
+            width: 100%;
+
+            aspect-ratio: 16 / 10;
+
+            object-fit: cover;
+
+            transition:
+                transform 0.35s ease;
+        }
+
+
+        .event-exhibition-card:hover
+        .event-exhibition-image img {
+            transform: scale(1.02);
+        }
+
+
+        .event-exhibition-content {
+            padding: 10px 10px 10px 0;
+        }
+
+
+        .event-exhibition-label {
+            margin: 0 0 7px;
+
+            color: #b18a92;
+
+            font-size: 12px;
+
+            letter-spacing: 0.14em;
+        }
+
+
+        .event-exhibition-content h3 {
+            margin: 0 0 16px;
+
+            color: #444;
+
+            font-size: 27px;
+            font-weight: 500;
+
+            line-height: 1.5;
+
+            letter-spacing: 0.08em;
+        }
+
+
+        .event-exhibition-description {
+            margin: 0 0 25px;
+
+            color: #666;
+
+            font-size: 15px;
+
+            line-height: 1.9;
+        }
+
+
+        .event-exhibition-button {
+            display: inline-block;
+
+            padding: 11px 25px;
+
+            border: 1px solid #9b6f78;
+
+            color: #fff;
+
+            background: #9b6f78;
+
+            font-size: 14px;
+
+            text-decoration: none;
+
+            transition:
+                background 0.2s ease,
+                border-color 0.2s ease,
+                transform 0.2s ease;
+        }
+
+
+        .event-exhibition-button:hover {
+            background: #7f5962;
+
+            border-color: #7f5962;
+
+            transform: translateY(-1px);
+        }
+
+
+
+        /* =====================================================
+           活動紀錄
+        ===================================================== */
+
+        .event-year-sections {
+            padding: 75px 0 90px;
+
+            background: #fff;
+        }
+
+
+        .event-year-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, minmax(0, 1fr));
+
+            gap: 22px;
+
+            max-width: 1050px;
+
+            margin: 0 auto;
+        }
+
+
+
+        /* =====================================================
+           活動紀錄 Card
+        ===================================================== */
+
+        .event-year-card {
+            display: flex;
+
+            flex-direction: column;
+
+            min-height: 235px;
+
+            padding: 30px 30px 28px;
+
+            border: 1px solid #e6e0e2;
+
+            background: #fff;
+
+            transition:
+                transform 0.25s ease,
+                box-shadow 0.25s ease,
+                border-color 0.25s ease;
+        }
+
+
+        .event-year-card:hover {
+            transform: translateY(-3px);
+
+            border-color: #d9c6ca;
+
+            box-shadow:
+                0 9px 25px
+                rgba(0, 0, 0, 0.06);
+        }
+
+
+        .event-year-card-label {
+            margin: 0 0 8px;
+
+            color: #b18a92;
+
+            font-size: 11px;
+
+            line-height: 1.5;
+
+            letter-spacing: 0.12em;
+        }
+
+
+        .event-year-card h3 {
+            margin: 0 0 12px;
+
+            color: #444;
+
+            font-size: 21px;
+            font-weight: 500;
+
+            line-height: 1.5;
+
+            letter-spacing: 0.05em;
+        }
+
+
+        .event-year-card-description {
+            margin: 0 0 22px;
+
+            color: #666;
+
+            font-size: 14px;
+
+            line-height: 1.85;
+        }
+
+
+        .event-year-card-link {
+            display: inline-block;
+
+            align-self: flex-start;
+
+            margin-top: auto;
+
+            padding-bottom: 3px;
+
+            border-bottom: 1px solid #b98d96;
+
+            color: #91656f;
+
+            font-size: 14px;
+
+            line-height: 1.5;
+
+            text-decoration: none;
+        }
+
+
+        .event-year-card-link:hover {
+            color: #6f4851;
+
+            border-color: #6f4851;
+        }
+
+
+
+        /* =====================================================
+           返回歷年活動
+        ===================================================== */
+
+        .event-year-back {
+            padding: 50px 0 60px;
+
+            background: #faf8f8;
+
+            text-align: center;
+        }
+
+
+        .event-year-back a {
+            display: inline-block;
+
+            padding: 10px 24px;
+
+            border: 1px solid #aaa;
+
+            color: #555;
+
+            background: #fff;
+
+            font-size: 14px;
+
+            text-decoration: none;
+        }
+
+
+        .event-year-back a:hover {
+            color: #fff;
+
+            border-color: #8f656f;
+
+            background: #8f656f;
+        }
+
+
+
+        /* =====================================================
+           Tablet
+        ===================================================== */
+
+        @media (max-width: 850px) {
+
+            .event-exhibition-card {
+                grid-template-columns:
+                    1fr;
+
+                gap: 28px;
+            }
+
+
+            .event-exhibition-content {
+                padding: 0;
+            }
+
+        }
+
+
+
+        /* =====================================================
+           Mobile
+        ===================================================== */
+
+        @media (max-width: 650px) {
+
+            .event-year-hero {
+                padding:
+                    40px 18px;
+            }
+
+
+            .event-year-hero h1 {
+                font-size: 26px;
+
+                letter-spacing: 0.08em;
+            }
+
+
+            .event-year-visual {
+                padding:
+                    30px 0 10px;
+            }
+
+
+            .event-year-heading {
+                margin-bottom: 30px;
+
+                padding-bottom: 18px;
+            }
+
+
+            .event-year-heading h2 {
+                font-size: 24px;
+            }
+
+
+            .event-year-intro {
+                padding:
+                    50px 0 60px;
+            }
+
+
+            .event-year-intro-content {
+                font-size: 15px;
+
+                text-align: left;
+            }
+
+
+            .event-exhibition {
+                padding:
+                    55px 0 65px;
+            }
+
+
+            .event-exhibition-card {
+                padding: 18px;
+
+                gap: 24px;
+            }
+
+
+            .event-exhibition-content h3 {
+                font-size: 23px;
+            }
+
+
+            .event-year-sections {
+                padding:
+                    55px 0 65px;
+            }
+
+
+            .event-year-grid {
+                grid-template-columns:
+                    1fr;
+
+                gap: 16px;
+            }
+
+
+            .event-year-card {
+                min-height: 0;
+
+                padding:
+                    25px 23px;
+            }
+
+
+            .event-year-card h3 {
+                font-size: 19px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+
+<body>
+
+
+<!-- =====================================================
+     共用 Header
+===================================================== -->
+
+<div id="site-header"></div>
+
+
+
+<!-- =====================================================
+     Breadcrumb
+===================================================== -->
+
+<nav id="breadcrumb"
+     class="breadcrumb"
+     aria-label="麵包屑">
+</nav>
+
+
+
+<!-- =====================================================
+     Main
+===================================================== -->
+
+<main>
+
+
+    <!-- =================================================
+         Page Hero
+    ================================================= -->
+
+    <section class="event-year-hero">
+
+        <div class="content-container">
+
+            <h1 id="event-title">
+                2023 友好拼布手作節
+            </h1>
+
+            <p id="event-subtitle">
+                在松菸1號倉庫
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         活動主視覺
+    ================================================= -->
+
+    <section class="event-year-visual">
+
+        <div class="content-container">
+
+            <div class="event-year-visual-image">
+
+                <img id="event-image"
+                     src="/events/2023/2023.jpg"
+                     alt="2023 友好拼布手作節">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         活動介紹
+    ================================================= -->
+
+    <section class="event-year-intro">
+
+        <div class="content-container">
+
+            <div class="event-year-heading">
+
+                <p class="event-year-label">
+                    About the Festival
+                </p>
+
+                <h2>
+                    2023 友好拼布手作節
+                </h2>
+
+            </div>
+
+
+            <div class="event-year-intro-content">
+
+                <p id="event-description">
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         作品展
+    ================================================= -->
+
+    <section class="event-exhibition">
+
+        <div class="content-container">
+
+            <div class="event-year-heading">
+
+                <p class="event-year-label">
+                    Exhibition
+                </p>
+
+                <h2>
+                    作品展
+                </h2>
+
+            </div>
+
+
+            <article class="event-exhibition-card">
+
+                <div class="event-exhibition-image">
+
+                    <img id="exhibition-image"
+                         src="/events/2023/exhibition.jpg"
+                         alt="2023 作品展">
+
+                </div>
+
+
+                <div class="event-exhibition-content">
+
+                    <p id="exhibition-english-title"
+                       class="event-exhibition-label">
+                        Exhibition
+                    </p>
+
+                    <h3 id="exhibition-title">
+                        作品展
+                    </h3>
+
+                    <p id="exhibition-description"
+                       class="event-exhibition-description">
+                    </p>
+
+                    <a id="exhibition-link"
+                       href="/events/2023/exhibition/"
+                       class="event-exhibition-button">
+
+                        瀏覽作品展 →
+
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         活動紀錄
+    ================================================= -->
+
+    <section class="event-year-sections">
+
+        <div class="content-container">
+
+            <div class="event-year-heading">
+
+                <p class="event-year-label">
+                    Event Archive
+                </p>
+
+                <h2>
+                    活動紀錄
+                </h2>
+
+            </div>
+
+
+            <div id="event-section-list"
+                 class="event-year-grid">
+
+                <!-- event-data.js 自動產生 -->
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         返回歷年活動
+    ================================================= -->
+
+    <section class="event-year-back">
+
+        <div class="content-container">
+
+            <a href="/events/">
+                ← 返回歷年活動
+            </a>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     共用 Footer
+===================================================== -->
+
+<div id="site-footer"></div>
+
+
+
+<!-- =====================================================
+     JavaScript
+===================================================== -->
+
+<script src="/assets/js/include.js"></script>
+
+
+
+<!-- Breadcrumb DATA -->
+
+<script>
+
+    window.breadcrumbData = [
+
+        {
+            title: "首頁",
+            url: "/"
+        },
+
+        {
+            title: "歷年活動",
+            url: "/events/"
+        },
+
+        {
+            title: "2023 友好拼布手作節"
+        }
+
+    ];
+
+</script>
+
+
+<script src="/assets/js/breadcrumb.js"></script>
+
+
+
+<!-- 2023 DATA -->
+
+<script src="/events/2023/event-data.js"></script>
+
+
+
+<!-- =====================================================
+     產生頁面內容
+===================================================== -->
+
+<script>
+
+(function () {
+
+    "use strict";
+
+
+    if (
+        typeof eventData === "undefined" ||
+        !eventData
+    ) {
+
+        console.error(
+            "eventData 資料不存在"
+        );
+
+        return;
+
+    }
+
+
+
+    /* =====================================================
+       活動基本資料
+    ===================================================== */
+
+    const title =
+        document.getElementById(
+            "event-title"
+        );
+
+
+    const subtitle =
+        document.getElementById(
+            "event-subtitle"
+        );
+
+
+    const description =
+        document.getElementById(
+            "event-description"
+        );
+
+
+    const image =
+        document.getElementById(
+            "event-image"
+        );
+
+
+    if (title) {
+        title.textContent =
+            eventData.title || "";
+    }
+
+
+    if (subtitle) {
+        subtitle.textContent =
+            eventData.subtitle || "";
+    }
+
+
+    if (description) {
+        description.textContent =
+            eventData.description || "";
+    }
+
+
+    if (image) {
+
+        image.src =
+            eventData.image;
+
+        image.alt =
+            eventData.title || "";
+
+    }
+
+
+
+    /* =====================================================
+       作品展
+    ===================================================== */
+
+    if (eventData.exhibition) {
+
+        const exhibition =
+            eventData.exhibition;
+
+
+        const exhibitionImage =
+            document.getElementById(
+                "exhibition-image"
+            );
+
+
+        const exhibitionEnglishTitle =
+            document.getElementById(
+                "exhibition-english-title"
+            );
+
+
+        const exhibitionTitle =
+            document.getElementById(
+                "exhibition-title"
+            );
+
+
+        const exhibitionDescription =
+            document.getElementById(
+                "exhibition-description"
+            );
+
+
+        const exhibitionLink =
+            document.getElementById(
+                "exhibition-link"
+            );
+
+
+        if (exhibitionImage) {
+
+            exhibitionImage.src =
+                exhibition.image;
+
+            exhibitionImage.alt =
+                eventData.year +
+                " " +
+                exhibition.title;
+
+        }
+
+
+        if (exhibitionEnglishTitle) {
+
+            exhibitionEnglishTitle.textContent =
+                exhibition.englishTitle || "";
+
+        }
+
+
+        if (exhibitionTitle) {
+
+            exhibitionTitle.textContent =
+                exhibition.title || "";
+
+        }
+
+
+        if (exhibitionDescription) {
+
+            exhibitionDescription.textContent =
+                exhibition.description || "";
+
+        }
+
+
+        if (exhibitionLink) {
+
+            exhibitionLink.href =
+                exhibition.url;
+
+        }
+
+    }
+
+
+
+    /* =====================================================
+       活動紀錄
+    ===================================================== */
+
+    const container =
+        document.getElementById(
+            "event-section-list"
+        );
+
+
+    if (
+        !container ||
+        !Array.isArray(eventData.sections)
+    ) {
+
+        return;
+
+    }
+
+
+    eventData.sections.forEach(
+        function (item) {
+
+
+            const article =
+                document.createElement(
+                    "article"
+                );
+
+
+            article.className =
+                "event-year-card";
+
+
+            /* English */
+
+            const label =
+                document.createElement(
+                    "p"
+                );
+
+
+            label.className =
+                "event-year-card-label";
+
+
+            label.textContent =
+                item.englishTitle || "";
+
+
+            /* Title */
+
+            const heading =
+                document.createElement(
+                    "h3"
+                );
+
+
+            heading.textContent =
+                item.title || "";
+
+
+            /* Description */
+
+            const text =
+                document.createElement(
+                    "p"
+                );
+
+
+            text.className =
+                "event-year-card-description";
+
+
+            text.textContent =
+                item.description || "";
+
+
+            /* Link */
+
+            const link =
+                document.createElement(
+                    "a"
+                );
+
+
+            link.href =
+                item.url;
+
+
+            link.className =
+                "event-year-card-link";
+
+
+            link.textContent =
+                "查看內容 →";
+
+
+            /* 組合 */
+
+            article.appendChild(
+                label
+            );
+
+
+            article.appendChild(
+                heading
+            );
+
+
+            article.appendChild(
+                text
+            );
+
+
+            article.appendChild(
+                link
+            );
+
+
+            container.appendChild(
+                article
+            );
+
+        }
+    );
+
+
+})();
+
+</script>
+
+
+</body>
+
+</html>
