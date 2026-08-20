@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Weng\\MyProject\\TaiwanQuilter\\\u62FC\u5E03\u53CB\u597D\u6703\\Website\\tiqa-website\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Weng\\MyProject\\TaiwanQuilter\\\u62FC\u5E03\u53CB\u597D\u6703\\Website\\tiqa-website\\news\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:news\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Weng\\MyProject\\TaiwanQuilter\\\u62FC\u5E03\u53CB\u597D\u6703\\Website\\tiqa-website\\publications\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:publications\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Weng\\MyProject\\TaiwanQuilter\\\u62FC\u5E03\u53CB\u597D\u6703\\Website\\tiqa-website\\membership\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:membership\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Weng\\MyProject\\TaiwanQuilter\\\u62FC\u5E03\u53CB\u597D\u6703\\Website\\tiqa-website\\events\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:events\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Weng\\MyProject\\TaiwanQuilter\\\u62FC\u5E03\u53CB\u597D\u6703\\Website\\tiqa-website\\events\\2019\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:events\\2019\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Weng\\MyProject\\TaiwanQuilter\\\u62FC\u5E03\u53CB\u597D\u6703\\Website\\tiqa-website\\events\\2017\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:events\\2017\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Weng\\MyProject\\TaiwanQuilter\\\u62FC\u5E03\u53CB\u597D\u6703\\Website\\tiqa-website\\events\\2018\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:events\\2018\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "index.html",
+              "DocumentMoniker": "D:\\Weng\\MyProject\\TaiwanQuilter\\\u62FC\u5E03\u53CB\u597D\u6703\\Website\\tiqa-website\\publications\\index.html",
+              "RelativeDocumentMoniker": "publications\\index.html",
+              "ToolTip": "D:\\Weng\\MyProject\\TaiwanQuilter\\\u62FC\u5E03\u53CB\u597D\u6703\\Website\\tiqa-website\\publications\\index.html",
+              "RelativeToolTip": "publications\\index.html",
+              "ViewState": "AQIAAIIBAAAAAAAAAAAewJEBAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-08-20T15:52:21.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "index.html",
+              "DocumentMoniker": "D:\\Weng\\MyProject\\TaiwanQuilter\\\u62FC\u5E03\u53CB\u597D\u6703\\Website\\tiqa-website\\news\\index.html",
+              "RelativeDocumentMoniker": "news\\index.html",
+              "ToolTip": "D:\\Weng\\MyProject\\TaiwanQuilter\\\u62FC\u5E03\u53CB\u597D\u6703\\Website\\tiqa-website\\news\\index.html",
+              "RelativeToolTip": "news\\index.html",
+              "ViewState": "AQIAAFUAAAAAAAAAAAAuwGsAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-08-20T15:51:11.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "index.html",
+              "DocumentMoniker": "D:\\Weng\\MyProject\\TaiwanQuilter\\\u62FC\u5E03\u53CB\u597D\u6703\\Website\\tiqa-website\\membership\\index.html",
+              "RelativeDocumentMoniker": "membership\\index.html",
+              "ToolTip": "D:\\Weng\\MyProject\\TaiwanQuilter\\\u62FC\u5E03\u53CB\u597D\u6703\\Website\\tiqa-website\\membership\\index.html",
+              "RelativeToolTip": "membership\\index.html",
+              "ViewState": "AQIAAOMCAAAAVD5KRMcawAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-08-20T15:50:53.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "index.html",
+              "DocumentMoniker": "D:\\Weng\\MyProject\\TaiwanQuilter\\\u62FC\u5E03\u53CB\u597D\u6703\\Website\\tiqa-website\\events\\index.html",
+              "RelativeDocumentMoniker": "events\\index.html",
+              "ToolTip": "D:\\Weng\\MyProject\\TaiwanQuilter\\\u62FC\u5E03\u53CB\u597D\u6703\\Website\\tiqa-website\\events\\index.html",
+              "RelativeToolTip": "events\\index.html",
+              "ViewState": "AQIAAJgAAAAAAAAAAAAuwLUAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-08-20T15:50:24.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "index.html",
+              "DocumentMoniker": "D:\\Weng\\MyProject\\TaiwanQuilter\\\u62FC\u5E03\u53CB\u597D\u6703\\Website\\tiqa-website\\events\\2019\\index.html",
+              "RelativeDocumentMoniker": "events\\2019\\index.html",
+              "ToolTip": "D:\\Weng\\MyProject\\TaiwanQuilter\\\u62FC\u5E03\u53CB\u597D\u6703\\Website\\tiqa-website\\events\\2019\\index.html",
+              "RelativeToolTip": "events\\2019\\index.html",
+              "ViewState": "AQIAAO0AAAAAAAAAAAAAAPQAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-08-20T15:49:52.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "index.html",
+              "DocumentMoniker": "D:\\Weng\\MyProject\\TaiwanQuilter\\\u62FC\u5E03\u53CB\u597D\u6703\\Website\\tiqa-website\\events\\2018\\index.html",
+              "RelativeDocumentMoniker": "events\\2018\\index.html",
+              "ToolTip": "D:\\Weng\\MyProject\\TaiwanQuilter\\\u62FC\u5E03\u53CB\u597D\u6703\\Website\\tiqa-website\\events\\2018\\index.html",
+              "RelativeToolTip": "events\\2018\\index.html",
+              "ViewState": "AQIAAN8AAAAAAAAAAAAuwP0AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-08-20T15:49:01.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "index.html",
+              "DocumentMoniker": "D:\\Weng\\MyProject\\TaiwanQuilter\\\u62FC\u5E03\u53CB\u597D\u6703\\Website\\tiqa-website\\events\\2017\\index.html",
+              "RelativeDocumentMoniker": "events\\2017\\index.html",
+              "ToolTip": "D:\\Weng\\MyProject\\TaiwanQuilter\\\u62FC\u5E03\u53CB\u597D\u6703\\Website\\tiqa-website\\events\\2017\\index.html",
+              "RelativeToolTip": "events\\2017\\index.html",
+              "ViewState": "AQIAAOQAAAAAAAAAAAAAAP0AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-08-20T15:48:37.764Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
