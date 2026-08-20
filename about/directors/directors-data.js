@@ -70,7 +70,7 @@ const directorsData = [
         position: "理事",
         name: "熊嘉玲",
         image: "/assets/images/directors/default.jpg",
-        facebook: 
+        facebook: ""
     },
 
     {
@@ -78,7 +78,7 @@ const directorsData = [
         position: "理事",
         name: "陳頤",
         image: "/assets/images/directors/default.jpg",
-        facebook: 
+        facebook: ""
     },
 
     {
@@ -86,7 +86,7 @@ const directorsData = [
         position: "理事",
         name: "林婉真",
         image: "/assets/images/directors/default.jpg",
-        facebook: 
+        facebook: ""
     },
 
     {
@@ -94,7 +94,7 @@ const directorsData = [
         position: "理事",
         name: "連小慈",
         image: "/assets/images/directors/default.jpg",
-        facebook: 
+        facebook: ""
     },
 
     {
