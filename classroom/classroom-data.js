@@ -203,28 +203,6 @@ const classroomData = [
 
         links: []
     },
-
-    {
-        teacher: "劉菊齡",
-        classroom: "吉羚拼布教室",
-        phone: "0928185917",
-        addressLabel: "地址",
-        address: "苗栗縣竹南鎮照南里華東街59巷28號",
-        image: "/classroom/liu-juling.jpg",
-        description: "",
-        teaching:
-            "手縫拼布、手縫拼布證書班、機縫拼布、機縫拼布證書班、拼布包、手作包、各種刺繡、刺繡證書班",
-
-        extra: [
-            {
-                label: "Line",
-                value: "line728904"
-            }
-        ],
-
-        links: []
-    },
-
     {
         teacher: "歐秀桂",
         classroom: "轉機拼布工作室",
