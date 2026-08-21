@@ -163,7 +163,7 @@
 
             color: #666;
 
-            font-size: 15px;
+            font-size: 18px;
 
             line-height: 2;
         }
@@ -591,7 +591,7 @@
 
 
             .event-overview-content p {
-                font-size: 14px;
+                font-size: 16px;
             }
 
 
@@ -769,15 +769,6 @@
 
 
                 <div class="event-exhibition-content">
-
-                    <p id="exhibition-english-title"
-                       class="event-exhibition-label">
-                        Exhibition
-                    </p>
-
-                    <h3 id="exhibition-title">
-                        作品展
-                    </h3>
 
                     <p id="exhibition-description"
                        class="event-exhibition-description">
@@ -1021,18 +1012,6 @@
             );
 
 
-        const exhibitionEnglishTitle =
-            document.getElementById(
-                "exhibition-english-title"
-            );
-
-
-        const exhibitionTitle =
-            document.getElementById(
-                "exhibition-title"
-            );
-
-
         const exhibitionDescription =
             document.getElementById(
                 "exhibition-description"
@@ -1054,22 +1033,6 @@
                 eventData.year +
                 " " +
                 exhibition.title;
-
-        }
-
-
-        if (exhibitionEnglishTitle) {
-
-            exhibitionEnglishTitle.textContent =
-                exhibition.englishTitle || "";
-
-        }
-
-
-        if (exhibitionTitle) {
-
-            exhibitionTitle.textContent =
-                exhibition.title || "";
 
         }
 

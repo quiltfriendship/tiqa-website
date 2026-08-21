@@ -1,145 +1,109 @@
 /* =========================================================
-   TIQA 歷年活動
+   TIQA 歷年活動共用樣式
    /assets/css/events.css
+
+   適用：
+   1. /events/ 歷年活動首頁
+   2. 各年度活動一般內容頁
+   3. 2023 主題聯合作品募集等非 Gallery 頁面
+
+   Gallery / Lightbox 請使用 event-gallery.css
 ========================================================= */
 
 
 /* =========================================================
-   Page Hero
+   歷年活動首頁 Hero
 ========================================================= */
 
 .events-hero {
     padding: 55px 20px;
-
     background: #f7f3f4;
-
     text-align: center;
 }
 
-
 .events-hero h1 {
     margin: 0;
-
     color: #444;
-
     font-size: 32px;
     font-weight: 400;
-
     line-height: 1.5;
-
     letter-spacing: 0.18em;
 }
 
-
 .events-hero p {
     margin: 7px 0 0;
-
     color: #999;
-
     font-size: 14px;
-
     line-height: 1.6;
-
     letter-spacing: 0.08em;
 }
 
 
-
 /* =========================================================
-   共用區塊標題
+   歷年活動首頁共用區塊標題
 ========================================================= */
 
 .events-section-heading {
     position: relative;
-
     margin-bottom: 45px;
-
     padding-bottom: 22px;
-
     text-align: center;
 }
 
-
 .events-section-heading::after {
     content: "";
-
     position: absolute;
-
     left: 50%;
     bottom: 0;
-
     width: 42px;
     height: 2px;
-
     background: #b98d96;
-
     transform: translateX(-50%);
 }
 
-
 .events-label {
     margin: 0 0 8px;
-
     color: #a98a91;
-
     font-size: 12px;
-
     line-height: 1.6;
-
     letter-spacing: 0.14em;
 }
 
-
 .events-section-heading h2 {
     margin: 0;
-
     color: #3f3f3f;
-
     font-size: 28px;
     font-weight: 500;
-
     line-height: 1.5;
-
     letter-spacing: 0.12em;
 }
 
 
-
 /* =========================================================
-   Intro
+   歷年活動首頁 Intro
 ========================================================= */
 
 .events-intro {
     padding: 78px 0 82px;
-
     background: #fff;
 }
 
-
 .events-intro-content {
     max-width: 760px;
-
     margin: 0 auto;
-
     text-align: center;
 }
 
-
 .events-intro-content p {
     margin: 0 0 15px;
-
     color: #666;
-
     font-size: 16px;
-
     line-height: 2;
 }
-
 
 .events-intro-content p:last-child {
     margin-bottom: 0;
 }
-
 
 
 /* =========================================================
@@ -148,24 +112,16 @@
 
 .events-list-section {
     padding: 78px 0 95px;
-
     background: #faf8f8;
 }
 
-
 .events-grid {
     display: grid;
-
-    grid-template-columns:
-        repeat(2, minmax(0, 1fr));
-
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 32px;
-
     max-width: 1080px;
-
     margin: 0 auto;
 }
-
 
 
 /* =========================================================
@@ -174,176 +130,571 @@
 
 .event-card {
     display: flex;
-
     flex-direction: column;
-
     overflow: hidden;
-
     border: 1px solid #e5dfe1;
-
     background: #fff;
-
-    transition:
-        transform 0.25s ease,
-        box-shadow 0.25s ease;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
-
 
 .event-card:hover {
     transform: translateY(-4px);
-
-    box-shadow:
-        0 10px 28px
-        rgba(0, 0, 0, 0.07);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.07);
 }
-
-
-
-/* =========================================================
-   Event Image
-========================================================= */
 
 .event-card-image {
     display: block;
-
     width: 100%;
-
     overflow: hidden;
-
     background: #eee;
 }
 
-
 .event-card-image img {
     display: block;
-
     width: 100%;
-
     aspect-ratio: 16 / 9;
-
     object-fit: cover;
-
-    transition:
-        transform 0.35s ease;
+    transition: transform 0.35s ease;
 }
 
-
-.event-card:hover
-.event-card-image img {
-
+.event-card:hover .event-card-image img {
     transform: scale(1.025);
 }
 
-
-
-/* =========================================================
-   Event Content
-========================================================= */
-
 .event-card-content {
     display: flex;
-
     flex: 1;
-
     flex-direction: column;
-
     padding: 27px 28px 30px;
 }
 
-
 .event-card-year {
     margin: 0 0 6px;
-
     color: #b88d96;
-
     font-size: 13px;
-
     font-weight: 500;
-
     line-height: 1.5;
-
     letter-spacing: 0.13em;
 }
 
-
 .event-card h3 {
     margin: 0 0 14px;
-
     color: #3f3f3f;
-
     font-size: 23px;
     font-weight: 500;
-
     line-height: 1.5;
-
     letter-spacing: 0.06em;
 }
 
-
 .event-card h3 a {
     color: inherit;
-
     text-decoration: none;
 }
-
 
 .event-card h3 a:hover {
     color: #9b6f78;
 }
 
-
 .event-card-description {
     margin: 0 0 25px;
-
     color: #666;
-
     font-size: 14px;
-
     line-height: 1.85;
 }
 
-
 .event-card-more {
     display: inline-block;
-
     align-self: flex-start;
-
     margin-top: auto;
-
     padding-bottom: 3px;
-
     border-bottom: 1px solid #b98d96;
-
     color: #91656f;
-
     font-size: 14px;
-
     text-decoration: none;
-
-    transition:
-        color 0.2s ease,
-        border-color 0.2s ease;
+    transition: color 0.2s ease, border-color 0.2s ease;
 }
-
 
 .event-card-more:hover {
     color: #6f4851;
-
     border-color: #6f4851;
 }
 
-
-
-/* =========================================================
-   讓最後一張單數卡片不要太怪
-========================================================= */
-
 .event-card:last-child:nth-child(odd) {
     grid-column: 1 / -1;
-
     max-width: calc(50% - 16px);
 }
 
+
+/* =========================================================
+   一般活動內容頁共用元件
+   新頁面可優先使用這組 class
+========================================================= */
+
+.event-page-hero {
+    padding: 48px 20px 42px;
+    background: #f8f3f4;
+    text-align: center;
+}
+
+.event-page-hero h1 {
+    margin: 0;
+    color: #444;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+}
+
+.event-page-hero p {
+    position: relative;
+    display: inline-block;
+    margin: 8px 0 0;
+    padding-bottom: 17px;
+    color: #999;
+    font-size: 13px;
+    line-height: 1.6;
+    letter-spacing: 0.12em;
+}
+
+.event-page-hero p::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 42px;
+    height: 2px;
+    background: #b98d96;
+    transform: translateX(-50%);
+}
+
+.event-section {
+    padding: 70px 0;
+}
+
+.event-section.alt {
+    background: #faf8f8;
+}
+
+.event-section-heading {
+    position: relative;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.event-section-heading::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 42px;
+    height: 2px;
+    background: #b98d96;
+    transform: translateX(-50%);
+}
+
+.event-section-label {
+    margin: 0 0 7px;
+    color: #a98a91;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.14em;
+}
+
+.event-section-heading h2 {
+    margin: 0;
+    color: #444;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+}
+
+.archive-note {
+    max-width: 880px;
+    margin: 35px auto 0;
+    padding: 18px 22px;
+    border-left: 3px solid #b98d96;
+    background: #faf8f8;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.archive-note strong {
+    color: #8f656f;
+    font-weight: 500;
+}
+
+.event-back {
+    padding: 45px 20px 55px;
+    background: #faf8f8;
+    text-align: center;
+}
+
+.event-back a {
+    display: inline-block;
+    padding: 10px 24px;
+    border: 1px solid #aaa;
+    color: #555;
+    background: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.event-back a:hover,
+.event-back a:focus-visible {
+    color: #fff;
+    border-color: #8f656f;
+    background: #8f656f;
+}
+
+
+/* =========================================================
+   主題聯合作品募集
+   /events/2023/theme-quilt/
+========================================================= */
+
+.theme-hero {
+    padding: 48px 20px 42px;
+    background: #f8f3f4;
+    text-align: center;
+}
+
+.theme-hero h1 {
+    margin: 0;
+    color: #444;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+}
+
+.theme-hero p {
+    position: relative;
+    display: inline-block;
+    margin: 8px 0 0;
+    padding-bottom: 17px;
+    color: #999;
+    font-size: 13px;
+    line-height: 1.6;
+    letter-spacing: 0.12em;
+}
+
+.theme-hero p::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 42px;
+    height: 2px;
+    background: #b98d96;
+    transform: translateX(-50%);
+}
+
+.theme-section {
+    padding: 70px 0;
+}
+
+.theme-section.alt {
+    background: #faf8f8;
+}
+
+.theme-heading {
+    position: relative;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.theme-heading::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 42px;
+    height: 2px;
+    background: #b98d96;
+    transform: translateX(-50%);
+}
+
+.theme-label {
+    margin: 0 0 7px;
+    color: #a98a91;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.14em;
+}
+
+.theme-heading h2 {
+    margin: 0;
+    color: #444;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+}
+
+.theme-intro {
+    padding: 60px 0 70px;
+    background: #fff;
+}
+
+.theme-intro-content {
+    max-width: 880px;
+    margin: 0 auto;
+    color: #666;
+    font-size: 15px;
+    line-height: 2;
+}
+
+.theme-intro-content h2 {
+    margin: 0 0 22px;
+    color: #444;
+    font-size: 27px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.theme-intro-content p {
+    margin: 0 0 18px;
+}
+
+.theme-feature {
+    display: grid;
+    grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr);
+    gap: 50px;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.theme-feature-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.theme-feature-content h2 {
+    margin: 0 0 18px;
+    color: #455267;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.08em;
+}
+
+.theme-feature-content p {
+    margin: 0 0 17px;
+    color: #666;
+    font-size: 15px;
+    line-height: 2;
+}
+
+.theme-rules-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.theme-rule-card {
+    padding: 30px;
+    border: 1px solid #e5ded8;
+    background: #fff;
+}
+
+.theme-rule-number {
+    margin: 0 0 9px;
+    color: #b18a92;
+    font-family: Georgia, serif;
+    font-size: 29px;
+    line-height: 1;
+}
+
+.theme-rule-card h3 {
+    margin: 0 0 12px;
+    color: #455267;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.theme-rule-card p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.color-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.color-card {
+    padding: 27px 18px;
+    border: 1px solid #e5ded8;
+    background: #fff;
+    text-align: center;
+}
+
+.color-dot {
+    width: 58px;
+    height: 58px;
+    margin: 0 auto 16px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 50%;
+}
+
+.color-white { background: #f5f2e9; }
+.color-green { background: #668361; }
+.color-black { background: #333; }
+.color-brown { background: #816347; }
+
+.color-card h3 {
+    margin: 0 0 6px;
+    color: #444;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.color-card p {
+    margin: 0;
+    color: #777;
+    font-size: 13px;
+}
+
+.example-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.example-item {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 14px;
+    border: 1px solid #e5ded8;
+    background: #fff;
+}
+
+.example-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.example-note {
+    max-width: 760px;
+    margin: 25px auto 0;
+    color: #777;
+    font-size: 14px;
+    line-height: 1.9;
+    text-align: center;
+}
+
+.theme-download {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 25px 28px;
+    border: 1px solid #e4dcde;
+    background: #fff;
+    text-decoration: none;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.theme-download:hover,
+.theme-download:focus-visible {
+    transform: translateY(-2px);
+    border-color: #cdb9bd;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+}
+
+.theme-download-type {
+    margin: 0 0 5px;
+    color: #b18a92;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+}
+
+.theme-download-title {
+    margin: 0;
+    color: #444;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.theme-download-arrow {
+    color: #9b6f78;
+    font-size: 22px;
+}
+
+.historical-info {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 35px 40px;
+    border: 1px solid #e5ded8;
+    background: #fff;
+}
+
+.historical-row {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 20px;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.historical-row:last-child {
+    border-bottom: 0;
+}
+
+.historical-title {
+    color: #8f656f;
+    font-weight: 500;
+}
+
+.historical-value {
+    color: #555;
+    line-height: 1.8;
+}
+
+.theme-back {
+    padding: 45px 20px 55px;
+    background: #faf8f8;
+    text-align: center;
+}
+
+.theme-back a {
+    display: inline-block;
+    padding: 10px 24px;
+    border: 1px solid #aaa;
+    color: #555;
+    background: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.theme-back a:hover,
+.theme-back a:focus-visible {
+    color: #fff;
+    border-color: #8f656f;
+    background: #8f656f;
+}
 
 
 /* =========================================================
@@ -356,19 +707,26 @@
         gap: 24px;
     }
 
-
     .event-card-content {
-        padding:
-            24px 23px 27px;
+        padding: 24px 23px 27px;
     }
-
 
     .event-card h3 {
         font-size: 21px;
     }
 
-}
+    .theme-feature {
+        grid-template-columns: 1fr;
+    }
 
+    .color-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .example-grid {
+        grid-template-columns: 1fr;
+    }
+}
 
 
 /* =========================================================
@@ -378,69 +736,107 @@
 @media (max-width: 650px) {
 
     .events-hero {
-        padding:
-            40px 18px;
+        padding: 40px 18px;
     }
-
 
     .events-hero h1 {
         font-size: 27px;
     }
 
-
     .events-intro,
     .events-list-section {
-        padding:
-            55px 0 65px;
+        padding: 55px 0 65px;
     }
-
 
     .events-section-heading {
         margin-bottom: 35px;
-
         padding-bottom: 18px;
     }
 
-
     .events-section-heading h2 {
         font-size: 24px;
-
         letter-spacing: 0.09em;
     }
-
 
     .events-intro-content {
         text-align: left;
     }
 
-
     .events-intro-content p {
         font-size: 15px;
     }
 
-
     .events-grid {
         grid-template-columns: 1fr;
-
         gap: 20px;
     }
 
-
     .event-card:last-child:nth-child(odd) {
         grid-column: auto;
-
         max-width: none;
     }
 
-
     .event-card-content {
-        padding:
-            23px 22px 26px;
+        padding: 23px 22px 26px;
     }
-
 
     .event-card h3 {
         font-size: 20px;
     }
 
+    .event-page-hero,
+    .theme-hero {
+        padding: 38px 18px 34px;
+    }
+
+    .event-page-hero h1,
+    .theme-hero h1 {
+        font-size: 25px;
+    }
+
+    .event-section,
+    .theme-section {
+        padding: 50px 0;
+    }
+
+    .event-section-heading h2,
+    .theme-heading h2,
+    .theme-intro-content h2,
+    .theme-feature-content h2 {
+        font-size: 23px;
+    }
+
+    .theme-intro {
+        padding: 45px 0 55px;
+    }
+
+    .theme-rules-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .color-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .example-item {
+        padding: 10px;
+    }
+
+    .example-note {
+        text-align: left;
+    }
+
+    .historical-info {
+        padding: 25px 22px;
+    }
+
+    .historical-row {
+        grid-template-columns: 1fr;
+        gap: 3px;
+    }
+
+    .theme-download {
+        padding: 22px 20px;
+    }
 }
