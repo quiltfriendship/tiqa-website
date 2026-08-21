@@ -1,0 +1,1381 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>關於展覽｜2023 友好拼布手作節｜台灣國際拼布友好會 TIQA</title>
+
+    <meta name="description"
+          content="第三屆友好拼布手作節展覽介紹，活動於 2023 年 11 月 17 至 19 日於松山文創園區一號倉庫舉辦，主題為美好時光。">
+
+
+    <!-- =================================================
+         全站共用 CSS
+    ================================================= -->
+
+    <link rel="stylesheet"
+          href="/assets/css/style.css">
+
+
+    <!-- =================================================
+         共用 HEAD
+    ================================================= -->
+
+    <script src="/assets/js/head-common.js"></script>
+
+
+    <style>
+
+        /* =====================================================
+           Page Hero
+        ===================================================== */
+
+        .event-about-hero {
+            padding: 48px 20px 42px;
+
+            background: #f8f3f4;
+
+            text-align: center;
+        }
+
+
+        .event-about-hero h1 {
+            margin: 0;
+
+            color: #444;
+
+            font-size: 32px;
+            font-weight: 400;
+
+            line-height: 1.5;
+
+            letter-spacing: 0.12em;
+        }
+
+
+        .event-about-hero p {
+            position: relative;
+
+            display: inline-block;
+
+            margin: 8px 0 0;
+
+            padding-bottom: 17px;
+
+            color: #999;
+
+            font-size: 13px;
+
+            letter-spacing: 0.12em;
+        }
+
+
+        .event-about-hero p::after {
+            content: "";
+
+            position: absolute;
+
+            left: 50%;
+            bottom: 0;
+
+            width: 42px;
+            height: 2px;
+
+            background: #b98d96;
+
+            transform: translateX(-50%);
+        }
+
+
+
+        /* =====================================================
+           共用
+        ===================================================== */
+
+        .event-about-section {
+            padding: 70px 0;
+        }
+
+
+        .event-about-section.alt {
+            background: #faf8f8;
+        }
+
+
+        .event-about-heading {
+            position: relative;
+
+            margin-bottom: 40px;
+
+            padding-bottom: 20px;
+
+            text-align: center;
+        }
+
+
+        .event-about-heading::after {
+            content: "";
+
+            position: absolute;
+
+            left: 50%;
+            bottom: 0;
+
+            width: 42px;
+            height: 2px;
+
+            background: #b98d96;
+
+            transform: translateX(-50%);
+        }
+
+
+        .event-about-label {
+            margin: 0 0 7px;
+
+            color: #a98a91;
+
+            font-size: 12px;
+
+            letter-spacing: 0.14em;
+        }
+
+
+        .event-about-heading h2 {
+            margin: 0;
+
+            color: #444;
+
+            font-size: 28px;
+            font-weight: 500;
+
+            line-height: 1.5;
+
+            letter-spacing: 0.1em;
+        }
+
+
+
+        /* =====================================================
+           活動基本資訊
+        ===================================================== */
+
+        .event-summary {
+            padding: 60px 0 75px;
+
+            background: #fff;
+        }
+
+
+        .event-summary-card {
+            display: grid;
+
+            grid-template-columns:
+                minmax(300px, 1fr)
+                minmax(300px, 1fr);
+
+            gap: 55px;
+
+            align-items: center;
+
+            max-width: 1000px;
+
+            margin: 0 auto;
+
+            padding: 32px;
+
+            background: #f6f0e5;
+        }
+
+
+        .event-summary-image img {
+            display: block;
+
+            width: 100%;
+            height: auto;
+        }
+
+
+        .event-summary-content h2 {
+            margin: 0 0 25px;
+
+            color: #455267;
+
+            font-size: 29px;
+            font-weight: 500;
+
+            line-height: 1.5;
+
+            letter-spacing: 0.07em;
+        }
+
+
+        .event-info {
+            margin: 0;
+
+            padding: 0;
+
+            list-style: none;
+        }
+
+
+        .event-info li {
+            display: grid;
+
+            grid-template-columns: 75px 1fr;
+
+            gap: 15px;
+
+            margin-bottom: 13px;
+
+            color: #444;
+
+            font-size: 17px;
+
+            line-height: 1.7;
+        }
+
+
+        .event-info-label {
+            font-weight: 600;
+
+            color: #455267;
+        }
+
+
+
+        /* =====================================================
+           展覽動機
+        ===================================================== */
+
+        .motivation-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, minmax(0, 1fr));
+
+            gap: 25px;
+
+            max-width: 960px;
+
+            margin: 0 auto;
+        }
+
+
+        .motivation-card {
+            min-height: 220px;
+
+            padding: 36px;
+
+            color: #fff;
+
+            background: #455267;
+        }
+
+
+        .motivation-card:nth-child(2) {
+            background: #b26c50;
+        }
+
+
+        .motivation-number {
+            margin: 0 0 20px;
+
+            font-family: Georgia, serif;
+
+            font-size: 40px;
+
+            line-height: 1;
+        }
+
+
+        .motivation-card h3 {
+            margin: 0;
+
+            font-size: 22px;
+            font-weight: 500;
+
+            line-height: 1.8;
+        }
+
+
+
+        /* =====================================================
+           展覽目的
+        ===================================================== */
+
+        .purpose-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, minmax(0, 1fr));
+
+            gap: 20px;
+
+            max-width: 960px;
+
+            margin: 0 auto;
+        }
+
+
+        .purpose-card {
+            padding: 30px;
+
+            border: 1px solid #e5ded8;
+
+            background: #fff;
+        }
+
+
+        .purpose-number {
+            margin: 0 0 8px;
+
+            color: #7b8797;
+
+            font-family: Georgia, serif;
+
+            font-size: 29px;
+        }
+
+
+        .purpose-card h3 {
+            margin: 0 0 12px;
+
+            color: #9a4435;
+
+            font-size: 21px;
+            font-weight: 500;
+        }
+
+
+        .purpose-card p {
+            margin: 0;
+
+            color: #555;
+
+            font-size: 15px;
+
+            line-height: 1.9;
+        }
+
+
+
+        /* =====================================================
+           圖文區
+        ===================================================== */
+
+        .feature {
+            display: grid;
+
+            grid-template-columns:
+                minmax(300px, 1fr)
+                minmax(300px, 1fr);
+
+            gap: 50px;
+
+            align-items: center;
+
+            max-width: 1000px;
+
+            margin: 0 auto;
+        }
+
+
+        .feature.reverse .feature-image {
+            order: 2;
+        }
+
+
+        .feature.reverse .feature-content {
+            order: 1;
+        }
+
+
+        .feature-image img {
+            display: block;
+
+            width: 100%;
+            height: auto;
+        }
+
+
+        .feature-label {
+            margin: 0 0 7px;
+
+            color: #a98a91;
+
+            font-size: 12px;
+
+            letter-spacing: 0.14em;
+        }
+
+
+        .feature-content h2 {
+            margin: 0 0 20px;
+
+            color: #455267;
+
+            font-size: 27px;
+            font-weight: 500;
+
+            line-height: 1.5;
+        }
+
+
+        .feature-list {
+            margin: 0;
+
+            padding-left: 22px;
+
+            color: #555;
+
+            font-size: 15px;
+
+            line-height: 2;
+        }
+
+
+
+        /* =====================================================
+           展示內容
+        ===================================================== */
+
+        .display-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, minmax(0, 1fr));
+
+            gap: 20px;
+
+            max-width: 1000px;
+
+            margin: 0 auto;
+        }
+
+
+        .display-card {
+            padding: 30px;
+
+            border: 1px solid #e6dfda;
+
+            background: #fff;
+        }
+
+
+        .display-card h3 {
+            margin: 0 0 17px;
+
+            color: #455267;
+
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+
+        .display-card p {
+            margin: 0 0 10px;
+
+            color: #555;
+
+            font-size: 14px;
+
+            line-height: 1.9;
+        }
+
+
+
+        /* =====================================================
+           活動舞台
+        ===================================================== */
+
+        .stage-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, minmax(0, 1fr));
+
+            gap: 20px;
+
+            max-width: 1000px;
+
+            margin: 0 auto;
+        }
+
+
+        .stage-card {
+            padding: 30px;
+
+            background: #f6f0e5;
+        }
+
+
+        .stage-card h3 {
+            margin: 0 0 18px;
+
+            color: #444;
+
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+
+        .stage-card ul {
+            margin: 0;
+
+            padding-left: 20px;
+
+            color: #555;
+
+            font-size: 14px;
+
+            line-height: 2;
+        }
+
+
+
+        /* =====================================================
+           原始資料
+        ===================================================== */
+
+        .source-image-area {
+            max-width: 900px;
+
+            margin: 0 auto;
+
+            text-align: center;
+        }
+
+
+        .source-image-area img {
+            display: block;
+
+            width: 100%;
+            height: auto;
+
+            border: 1px solid #eee;
+        }
+
+
+
+        /* =====================================================
+           Back
+        ===================================================== */
+
+        .event-about-back {
+            padding: 45px 20px 55px;
+
+            background: #faf8f8;
+
+            text-align: center;
+        }
+
+
+        .event-about-back a {
+            display: inline-block;
+
+            padding: 10px 24px;
+
+            border: 1px solid #aaa;
+
+            color: #555;
+
+            background: #fff;
+
+            font-size: 14px;
+
+            text-decoration: none;
+        }
+
+
+        .event-about-back a:hover {
+            color: #fff;
+
+            border-color: #8f656f;
+
+            background: #8f656f;
+        }
+
+
+
+        /* =====================================================
+           Tablet
+        ===================================================== */
+
+        @media (max-width: 850px) {
+
+            .event-summary-card,
+            .feature {
+                grid-template-columns: 1fr;
+
+                gap: 30px;
+            }
+
+
+            .feature.reverse .feature-image,
+            .feature.reverse .feature-content {
+                order: initial;
+            }
+
+
+            .display-grid,
+            .stage-grid {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+
+
+        /* =====================================================
+           Mobile
+        ===================================================== */
+
+        @media (max-width: 650px) {
+
+            .event-about-hero {
+                padding:
+                    38px 18px 34px;
+            }
+
+
+            .event-about-hero h1 {
+                font-size: 26px;
+            }
+
+
+            .event-about-section {
+                padding:
+                    50px 0;
+            }
+
+
+            .event-summary {
+                padding:
+                    35px 0 55px;
+            }
+
+
+            .event-summary-card {
+                padding: 18px;
+            }
+
+
+            .event-summary-content h2 {
+                font-size: 23px;
+            }
+
+
+            .event-info li {
+                grid-template-columns:
+                    60px 1fr;
+
+                font-size: 15px;
+            }
+
+
+            .motivation-grid,
+            .purpose-grid {
+                grid-template-columns: 1fr;
+            }
+
+
+            .motivation-card {
+                min-height: 0;
+
+                padding: 28px;
+            }
+
+
+            .event-about-heading h2,
+            .feature-content h2 {
+                font-size: 23px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     共用 Header
+===================================================== -->
+
+<div id="site-header"></div>
+
+
+
+<!-- =====================================================
+     Breadcrumb
+===================================================== -->
+
+<nav id="breadcrumb"
+     class="breadcrumb"
+     aria-label="麵包屑">
+</nav>
+
+
+
+<main>
+
+
+    <!-- =================================================
+         Hero
+    ================================================= -->
+
+    <section class="event-about-hero">
+
+        <h1>
+            關於展覽
+        </h1>
+
+        <p>
+            About
+        </p>
+
+    </section>
+
+
+
+    <!-- =================================================
+         活動資訊
+    ================================================= -->
+
+    <section class="event-summary">
+
+        <div class="content-container">
+
+            <article class="event-summary-card">
+
+                <div class="event-summary-image">
+
+                    <img src="/events/2023/about/20230215-1_orig.jpg"
+                         alt="第三屆友好拼布手作節主視覺">
+
+                </div>
+
+
+                <div class="event-summary-content">
+
+                    <h2>
+                        第三屆友好拼布手作節
+                    </h2>
+
+
+                    <ul class="event-info">
+
+                        <li>
+                            <span class="event-info-label">
+                                日期
+                            </span>
+
+                            <span>
+                                2023/11/17–19
+                            </span>
+                        </li>
+
+                        <li>
+                            <span class="event-info-label">
+                                主題
+                            </span>
+
+                            <span>
+                                美好時光
+                            </span>
+                        </li>
+
+                        <li>
+                            <span class="event-info-label">
+                                地點
+                            </span>
+
+                            <span>
+                                松山文創園區一號倉庫
+                            </span>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         展覽動機
+    ================================================= -->
+
+    <section class="event-about-section alt">
+
+        <div class="content-container">
+
+            <div class="event-about-heading">
+
+                <p class="event-about-label">
+                    Motivation
+                </p>
+
+                <h2>
+                    展覽動機
+                </h2>
+
+            </div>
+
+
+            <div class="motivation-grid">
+
+                <article class="motivation-card">
+
+                    <p class="motivation-number">
+                        01
+                    </p>
+
+                    <h3>
+                        提升台灣拼布創作水平，
+                        並與國際接軌
+                    </h3>
+
+                </article>
+
+
+                <article class="motivation-card">
+
+                    <p class="motivation-number">
+                        02
+                    </p>
+
+                    <h3>
+                        活絡台灣拼布產業，
+                        並創造其藝術及經濟價值
+                    </h3>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         展覽目的
+    ================================================= -->
+
+    <section class="event-about-section">
+
+        <div class="content-container">
+
+            <div class="event-about-heading">
+
+                <p class="event-about-label">
+                    Objectives
+                </p>
+
+                <h2>
+                    展覽目的
+                </h2>
+
+            </div>
+
+
+            <div class="purpose-grid">
+
+                <article class="purpose-card">
+
+                    <p class="purpose-number">01</p>
+
+                    <h3>
+                        持續熱度
+                    </h3>
+
+                    <p>
+                        累積過往佈展經驗，
+                        並延續展覽話題性及熱絡氣氛。
+                    </p>
+
+                </article>
+
+
+                <article class="purpose-card">
+
+                    <p class="purpose-number">02</p>
+
+                    <h3>
+                        提供舞台
+                    </h3>
+
+                    <p>
+                        透過比賽及作品募集，
+                        提供國內創作者發揮及曝光機會。
+                    </p>
+
+                </article>
+
+
+                <article class="purpose-card">
+
+                    <p class="purpose-number">03</p>
+
+                    <h3>
+                        海外交流
+                    </h3>
+
+                    <p>
+                        邀請海外創作者來台展出及交流，
+                        除擴展視野外，更能與國際接軌。
+                    </p>
+
+                </article>
+
+
+                <article class="purpose-card">
+
+                    <p class="purpose-number">04</p>
+
+                    <h3>
+                        合作平台
+                    </h3>
+
+                    <p>
+                        提供創作者、師資群及產業廠商
+                        交流合作的平台。
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         主視覺設計
+    ================================================= -->
+
+    <section class="event-about-section alt">
+
+        <div class="content-container">
+
+            <div class="feature">
+
+                <div class="feature-image">
+
+                    <img src="/events/2023/about/20230215-5_orig.jpg"
+                         alt="2023 友好拼布手作節主視覺設計">
+
+                </div>
+
+
+                <div class="feature-content">
+
+                    <p class="feature-label">
+                        Visual Design
+                    </p>
+
+                    <h2>
+                        主視覺設計
+                    </h2>
+
+
+                    <ul class="feature-list">
+
+                        <li>
+                            呈現沉浸在製作拼布中的
+                            「美好時光」
+                        </li>
+
+                        <li>
+                            融合入口處聯合作品
+                            「小房子」的元素
+                        </li>
+
+                        <li>
+                            採用溫暖色調及添加各種
+                            縫紉相關細節
+                        </li>
+
+                        <li>
+                            吸引年輕族群及一般
+                            手作愛好者
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         主題拼布牆
+    ================================================= -->
+
+    <section class="event-about-section">
+
+        <div class="content-container">
+
+            <div class="feature reverse">
+
+                <div class="feature-image">
+
+                    <img src="/events/2023/about/20230215-6_orig.jpg"
+                         alt="2023 友好拼布手作節主題拼布牆">
+
+                </div>
+
+
+                <div class="feature-content">
+
+                    <p class="feature-label">
+                        Theme Quilt Wall
+                    </p>
+
+                    <h2>
+                        主題拼布牆
+                    </h2>
+
+
+                    <ul class="feature-list">
+
+                        <li>
+                            以「家」為主題
+                        </li>
+
+                        <li>
+                            共 20 個小房子圖形
+                        </li>
+
+                        <li>
+                            呼應視覺設計的溫暖色調，
+                            規範作品色系
+                        </li>
+
+                        <li>
+                            400 人聯合創作
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         作品展示區
+    ================================================= -->
+
+    <section class="event-about-section alt">
+
+        <div class="content-container">
+
+            <div class="event-about-heading">
+
+                <p class="event-about-label">
+                    Exhibition Area
+                </p>
+
+                <h2>
+                    作品展示區
+                </h2>
+
+            </div>
+
+
+            <div class="display-grid">
+
+                <article class="display-card">
+
+                    <h3>
+                        主題比賽
+                    </h3>
+
+                    <p>傳統拼布組</p>
+                    <p>創新拼布組</p>
+                    <p>青少年組</p>
+                    <p>約 35～45 件</p>
+
+                </article>
+
+
+                <article class="display-card">
+
+                    <h3>
+                        專業代表作
+                    </h3>
+
+                    <p>
+                        國外參展作品
+                        約 33～40 件
+                    </p>
+
+                    <p>
+                        國內師資作品
+                        約 44～50 件
+                    </p>
+
+                </article>
+
+
+                <article class="display-card">
+
+                    <h3>
+                        會員徵件
+                    </h3>
+
+                    <p>
+                        友好會會員限定
+                    </p>
+
+                    <p>
+                        小型主題壁飾
+                    </p>
+
+                    <p>
+                        約 40～50 件
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         品牌展示區
+    ================================================= -->
+
+    <section class="event-about-section">
+
+        <div class="content-container">
+
+            <div class="event-about-heading">
+
+                <p class="event-about-label">
+                    Brand Exhibition
+                </p>
+
+                <h2>
+                    品牌展示區
+                </h2>
+
+            </div>
+
+
+            <div class="purpose-grid">
+
+                <article class="purpose-card">
+
+                    <h3>
+                        拼布教室｜個人工作室
+                    </h3>
+
+                    <p>
+                        200cm 寬 × 200cm 深
+                    </p>
+
+                    <p>
+                        總計 20 個單位
+                    </p>
+
+                </article>
+
+
+                <article class="purpose-card">
+
+                    <h3>
+                        拼布產業相關廠商
+                    </h3>
+
+                    <p>
+                        300cm 寬 × 200cm 深
+                    </p>
+
+                    <p>
+                        總計 22 個單位
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         活動舞台區
+    ================================================= -->
+
+    <section class="event-about-section alt">
+
+        <div class="content-container">
+
+            <div class="event-about-heading">
+
+                <p class="event-about-label">
+                    Event Stage
+                </p>
+
+                <h2>
+                    活動舞台區
+                </h2>
+
+            </div>
+
+
+            <div class="stage-grid">
+
+                <article class="stage-card">
+
+                    <h3>
+                        大會活動
+                    </h3>
+
+                    <ul>
+                        <li>開幕儀式</li>
+                        <li>拼布比賽頒獎典禮</li>
+                        <li>閉幕儀式及抽獎活動</li>
+                    </ul>
+
+                </article>
+
+
+                <article class="stage-card">
+
+                    <h3>
+                        講座及分享會
+                    </h3>
+
+                    <ul>
+                        <li>廠商新品展示</li>
+                        <li>名師技巧／經驗分享</li>
+                        <li>新書發表</li>
+                    </ul>
+
+                </article>
+
+
+                <article class="stage-card">
+
+                    <h3>
+                        動態活動
+                    </h3>
+
+                    <ul>
+                        <li>拼布衣走秀</li>
+                        <li>快閃表演</li>
+                    </ul>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         返回
+    ================================================= -->
+
+    <section class="event-about-back">
+
+        <a href="/events/2023/">
+            ← 返回 2023 友好拼布手作節
+        </a>
+
+    </section>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     Footer
+===================================================== -->
+
+<div id="site-footer"></div>
+
+
+
+<!-- =====================================================
+     JavaScript
+===================================================== -->
+
+<script src="/assets/js/include.js"></script>
+
+
+<script>
+
+    window.breadcrumbData = [
+
+        {
+            title: "首頁",
+            url: "/"
+        },
+
+        {
+            title: "歷年活動",
+            url: "/events/"
+        },
+
+        {
+            title: "2023 友好拼布手作節",
+            url: "/events/2023/"
+        },
+
+        {
+            title: "關於展覽"
+        }
+
+    ];
+
+</script>
+
+
+<script src="/assets/js/breadcrumb.js"></script>
+
+
+</body>
+
+</html>
