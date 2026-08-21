@@ -134,7 +134,50 @@ const eventGalleryData = {
             image: "/events/2023/exhibition/work-21.jpg",
             title: "",
             artist: ""
-        }
+        },
 
+        {
+            image: "/events/2023/exhibition/work-22.jpg",
+            title: "",
+            artist: ""
+        },
+
+        {
+            image: "/events/2023/exhibition/work-23.jpg",
+            title: "",
+            artist: ""
+        },
+
+        {
+            image: "/events/2023/exhibition/work-24.jpg",
+            title: "",
+            artist: ""
+        },
+
+        {
+            image: "/events/2023/exhibition/work-25.jpg",
+            title: "",
+            artist: ""
+        },
+        {
+            image: "/events/2023/exhibition/work-26.jpg",
+            title: "",
+            artist: ""
+        },
+		{
+            image: "/events/2023/exhibition/work-27.jpg",
+            title: "",
+            artist: ""
+        },
+		{
+            image: "/events/2023/exhibition/work-28.jpg",
+            title: "",
+            artist: ""
+        },
+		{
+            image: "/events/2023/exhibition/work-29.jpg",
+            title: "",
+            artist: ""
+        }
     ]
 };
