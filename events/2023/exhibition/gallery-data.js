@@ -23,7 +23,7 @@ const eventGalleryData = {
         },
 
         {
-            image: "/events/2023/exhibition/work-03.jpg",
+            image: "/events/2023/exhibition/work-03.jpeg",
             title: "",
             artist: ""
         },
@@ -131,19 +131,19 @@ const eventGalleryData = {
         },
 
         {
-            image: "/events/2023/exhibition/work-21.jpg",
+            image: "/events/2023/exhibition/work-21.jpeg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2023/exhibition/work-22.jpg",
+            image: "/events/2023/exhibition/work-22.jpeg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2023/exhibition/work-23.jpg",
+            image: "/events/2023/exhibition/work-23.jpeg",
             title: "",
             artist: ""
         },
