@@ -117,17 +117,45 @@ tiqa-website/
 │  │  └─ index.html
 │  ├─ 2021/
 │  │  └─ index.html
+
 │  ├─ 2023/
-│     ├─ index.html
-│     ├─ event-data.js
-│     ├─ 2023.jpg
-│     ├─ exhibition.jpg
-│     └─ exhibition/
-│        ├─ index.html
-│        ├─ gallery-data.js
-│        ├─ work-01.jpg
-│        ├─ ...
-│        └─ work-nn.jpg
+│  │  ├─ index.html
+│  │  ├─ event-data.js
+│  │  ├─ 2023.jpg
+│  │  ├─ exhibition.jpg
+│  │  ├─ exhibition/
+│  │  │  ├─ index.html
+│  │  │  ├─ gallery-data.js
+│  │  │  ├─ work-01.jpg
+│  │  │  ├─ ...
+│  │  │  └─ work-nn.jpg
+│  │  │
+│  │  ├─ about/
+│  │  │  ├─ index.html
+│  │  │  ├─ 20230215-1_orig.jpg
+│  │  │  ├─ 20230215-2_orig.jpg
+│  │  │  ├─ 20230215-3_orig.jpg
+│  │  │  ├─ 20230215-4_orig.jpg
+│  │  │  ├─ 20230215-5_orig.jpg
+│  │  │  ├─ 20230215-6_orig.jpg
+│  │  │  ├─ 20230215-7_orig.jpg
+│  │  │  ├─ 20230215-8_orig.jpg
+│  │  │  └─ 20230215-9_orig.jpg
+│  │  │ 
+│  │  ├─ ticket/
+│  │  │  └─ index.html
+│  │  │ 
+│  │  └─ volunteer/
+│  │     ├─ index.html
+│  │     ├─ volunteer-data.js
+│  │     ├─ volunteer.js
+│  │     ├─ schedule.jpg
+│  │     ├─ volunteer-01.jpg
+│  │     ├─ volunteer-02.jpg
+│  │     ├─ ...
+│  │     └─ volunteer-24.jpg
+
+
 │  └─ 2025/
 │     └─ index.html
 │
