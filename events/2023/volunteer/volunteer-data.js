@@ -118,11 +118,6 @@ const volunteerPhotos = [
     {
         image: "/events/2023/volunteer/volunteer23.jpg",
         alt: "2023 友好拼布手作節志工工作紀錄 23"
-    },
-
-    {
-        image: "/events/2023/volunteer/volunteer24.jpg",
-        alt: "2023 友好拼布手作節志工工作紀錄 24"
     }
 
 ];

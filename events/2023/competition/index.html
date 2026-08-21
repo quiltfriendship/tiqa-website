@@ -1,0 +1,1542 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>第三屆台灣拼布大賽｜2023 友好拼布手作節｜台灣國際拼布友好會 TIQA</title>
+
+    <meta name="description"
+          content="2023 第三屆台灣拼布大賽競賽紀錄，包含比賽主題、報名資格、比賽類別、獎項、賽程事務處理費及評選流程。">
+
+
+    <!-- =====================================================
+         全站共用 CSS
+    ====================================================== -->
+
+    <link rel="stylesheet"
+          href="/assets/css/style.css">
+
+
+    <!-- =====================================================
+         共用 HEAD
+    ====================================================== -->
+
+    <script src="/assets/js/head-common.js"></script>
+
+
+    <!-- =====================================================
+         本頁 CSS
+    ====================================================== -->
+
+    <style>
+
+        /* =====================================================
+           Page Hero
+        ===================================================== */
+
+        .competition-hero {
+            padding: 48px 20px 42px;
+            background: #f8f3f4;
+            text-align: center;
+        }
+
+        .competition-hero h1 {
+            margin: 0;
+            color: #444;
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 1.5;
+            letter-spacing: 0.1em;
+        }
+
+        .competition-hero p {
+            position: relative;
+            display: inline-block;
+            margin: 8px 0 0;
+            padding-bottom: 17px;
+            color: #999;
+            font-size: 13px;
+            line-height: 1.6;
+            letter-spacing: 0.12em;
+        }
+
+        .competition-hero p::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            width: 42px;
+            height: 2px;
+            background: #b98d96;
+            transform: translateX(-50%);
+        }
+
+
+        /* =====================================================
+           Section
+        ===================================================== */
+
+        .competition-section {
+            padding: 70px 0;
+        }
+
+        .competition-section.alt {
+            background: #faf8f8;
+        }
+
+        .competition-heading {
+            position: relative;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+
+        .competition-heading::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            width: 42px;
+            height: 2px;
+            background: #b98d96;
+            transform: translateX(-50%);
+        }
+
+        .competition-label {
+            margin: 0 0 7px;
+            color: #a98a91;
+            font-size: 12px;
+            line-height: 1.5;
+            letter-spacing: 0.14em;
+        }
+
+        .competition-heading h2 {
+            margin: 0;
+            color: #444;
+            font-size: 28px;
+            font-weight: 500;
+            line-height: 1.5;
+            letter-spacing: 0.1em;
+        }
+
+
+        /* =====================================================
+           Intro
+        ===================================================== */
+
+        .competition-intro {
+            padding: 60px 0 70px;
+            background: #fff;
+        }
+
+        .competition-intro-content {
+            max-width: 880px;
+            margin: 0 auto;
+        }
+
+        .competition-intro-content h2 {
+            margin: 0 0 22px;
+            color: #444;
+            font-size: 27px;
+            font-weight: 500;
+            line-height: 1.5;
+        }
+
+        .competition-intro-content p {
+            margin: 0 0 18px;
+            color: #666;
+            font-size: 15px;
+            line-height: 2;
+        }
+
+
+        /* =====================================================
+           歷史資料提示
+        ===================================================== */
+
+        .archive-note {
+            max-width: 880px;
+            margin: 35px auto 0;
+            padding: 18px 22px;
+            border-left: 3px solid #b98d96;
+            background: #faf8f8;
+            color: #666;
+            font-size: 14px;
+            line-height: 1.9;
+        }
+
+        .archive-note strong {
+            color: #8f656f;
+            font-weight: 500;
+        }
+
+
+        /* =====================================================
+           Theme
+        ===================================================== */
+
+        .competition-theme {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 42px 40px;
+            background: #455267;
+            color: #fff;
+            text-align: center;
+        }
+
+        .competition-theme-label {
+            margin: 0 0 8px;
+            color: rgba(255,255,255,.72);
+            font-size: 12px;
+            letter-spacing: .14em;
+        }
+
+        .competition-theme h2 {
+            margin: 0;
+            font-size: 31px;
+            font-weight: 500;
+            letter-spacing: .15em;
+        }
+
+
+        /* =====================================================
+           Qualification
+        ===================================================== */
+
+        .qualification {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        .qualification ol {
+            margin: 0;
+            padding-left: 25px;
+            color: #666;
+            font-size: 15px;
+            line-height: 2;
+        }
+
+        .qualification li {
+            margin-bottom: 9px;
+        }
+
+
+        /* =====================================================
+           PDF Downloads
+        ===================================================== */
+
+        .competition-downloads {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 20px;
+            max-width: 850px;
+            margin: 42px auto 0;
+        }
+
+        .competition-download {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 23px 25px;
+            border: 1px solid #e4dcde;
+            background: #fff;
+            text-decoration: none;
+            transition:
+                border-color .2s ease,
+                box-shadow .2s ease,
+                transform .2s ease;
+        }
+
+        .competition-download:hover {
+            transform: translateY(-2px);
+            border-color: #cdb9bd;
+            box-shadow: 0 6px 18px rgba(0,0,0,.05);
+        }
+
+        .competition-download-type {
+            margin: 0 0 5px;
+            color: #b18a92;
+            font-size: 11px;
+            letter-spacing: .12em;
+        }
+
+        .competition-download-title {
+            margin: 0;
+            color: #444;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.6;
+        }
+
+        .competition-download-arrow {
+            flex: 0 0 auto;
+            color: #9b6f78;
+            font-size: 20px;
+        }
+
+
+        /* =====================================================
+           Categories
+        ===================================================== */
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 20px;
+            max-width: 1050px;
+            margin: 0 auto;
+        }
+
+        .category-card {
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            border: 1px solid #e3ddda;
+            background: #fff;
+        }
+
+        .category-card-header {
+            padding: 25px 25px 22px;
+            background: #f4ede3;
+            text-align: center;
+        }
+
+        .category-card-header h3 {
+            margin: 0;
+            color: #444;
+            font-size: 21px;
+            font-weight: 500;
+            line-height: 1.5;
+        }
+
+        .category-card-header p {
+            margin: 5px 0 0;
+            color: #888;
+            font-size: 12px;
+        }
+
+        .category-card-body {
+            flex: 1;
+            padding: 25px;
+        }
+
+        .category-row {
+            padding: 13px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .category-row:last-child {
+            border-bottom: 0;
+        }
+
+        .category-row-title {
+            margin: 0 0 5px;
+            color: #9b6f78;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        .category-row-text {
+            margin: 0;
+            color: #555;
+            font-size: 14px;
+            line-height: 1.85;
+        }
+
+
+        /* =====================================================
+           Awards
+        ===================================================== */
+
+        .award-highlight {
+            max-width: 1000px;
+            margin: 0 auto 20px;
+            padding: 25px;
+            background: #455267;
+            color: #fff;
+            text-align: center;
+        }
+
+        .award-highlight span {
+            display: block;
+            margin-bottom: 5px;
+            color: rgba(255,255,255,.7);
+            font-size: 11px;
+            letter-spacing: .12em;
+        }
+
+        .award-highlight strong {
+            font-size: 22px;
+            font-weight: 500;
+            letter-spacing: .08em;
+        }
+
+        .award-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .award-card {
+            padding: 28px;
+            border: 1px solid #e5ded8;
+            background: #fff;
+            text-align: center;
+        }
+
+        .award-card h3 {
+            margin: 0 0 18px;
+            color: #455267;
+            font-size: 19px;
+            font-weight: 500;
+        }
+
+        .award-card p {
+            margin: 7px 0;
+            color: #666;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+
+        /* =====================================================
+           Fee
+        ===================================================== */
+
+        .fee-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .fee-card {
+            padding: 30px;
+            border: 1px solid #e5ded8;
+            background: #fff;
+            text-align: center;
+        }
+
+        .fee-card h3 {
+            margin: 0 0 15px;
+            color: #444;
+            font-size: 19px;
+            font-weight: 500;
+        }
+
+        .fee-main {
+            margin: 0;
+            color: #a34f43;
+            font-size: 21px;
+            font-weight: 500;
+        }
+
+        .fee-note {
+            margin: 10px 0 0;
+            color: #777;
+            font-size: 13px;
+            line-height: 1.8;
+        }
+
+        .fee-description {
+            max-width: 900px;
+            margin: 0 auto 30px;
+            color: #666;
+            font-size: 14px;
+            line-height: 1.9;
+            text-align: center;
+        }
+
+
+        /* =====================================================
+           Timeline
+        ===================================================== */
+
+        .timeline {
+            max-width: 900px;
+            margin: 0 auto;
+            border-top: 1px solid #e5ded8;
+        }
+
+        .timeline-item {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            gap: 35px;
+            padding: 27px 0;
+            border-bottom: 1px solid #e5ded8;
+        }
+
+        .timeline-date {
+            color: #9b6f78;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .timeline-content h3 {
+            margin: 0 0 8px;
+            color: #444;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .timeline-content p {
+            margin: 0;
+            color: #666;
+            font-size: 14px;
+            line-height: 1.9;
+        }
+
+
+        /* =====================================================
+           Event Information
+        ===================================================== */
+
+        .competition-event-info {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 36px 40px;
+            border: 1px solid #e5ded8;
+            background: #fff;
+        }
+
+        .competition-event-row {
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            gap: 20px;
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .competition-event-row:last-child {
+            border-bottom: 0;
+        }
+
+        .competition-event-title {
+            color: #8f656f;
+            font-weight: 500;
+        }
+
+        .competition-event-value {
+            color: #555;
+            line-height: 1.8;
+        }
+
+
+        /* =====================================================
+           Back
+        ===================================================== */
+
+        .competition-back {
+            padding: 45px 20px 55px;
+            background: #faf8f8;
+            text-align: center;
+        }
+
+        .competition-back a {
+            display: inline-block;
+            padding: 10px 24px;
+            border: 1px solid #aaa;
+            color: #555;
+            background: #fff;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        .competition-back a:hover {
+            color: #fff;
+            border-color: #8f656f;
+            background: #8f656f;
+        }
+
+
+        /* =====================================================
+           Tablet
+        ===================================================== */
+
+        @media (max-width: 850px) {
+
+            .category-grid,
+            .award-grid,
+            .fee-grid {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+
+        /* =====================================================
+           Mobile
+        ===================================================== */
+
+        @media (max-width: 650px) {
+
+            .competition-hero {
+                padding: 38px 18px 34px;
+            }
+
+            .competition-hero h1 {
+                font-size: 25px;
+            }
+
+            .competition-section {
+                padding: 50px 0;
+            }
+
+            .competition-intro {
+                padding: 45px 0 55px;
+            }
+
+            .competition-intro-content h2,
+            .competition-heading h2 {
+                font-size: 23px;
+            }
+
+            .competition-theme {
+                padding: 30px 22px;
+            }
+
+            .competition-theme h2 {
+                font-size: 25px;
+            }
+
+            .competition-downloads {
+                grid-template-columns: 1fr;
+            }
+
+            .timeline-item {
+                grid-template-columns: 1fr;
+                gap: 8px;
+            }
+
+            .competition-event-info {
+                padding: 25px 22px;
+            }
+
+            .competition-event-row {
+                grid-template-columns: 1fr;
+                gap: 3px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     Header
+===================================================== -->
+
+<div id="site-header"></div>
+
+
+
+<!-- =====================================================
+     Breadcrumb
+===================================================== -->
+
+<nav id="breadcrumb"
+     class="breadcrumb"
+     aria-label="麵包屑">
+</nav>
+
+
+
+<main>
+
+
+    <!-- =================================================
+         Hero
+    ================================================= -->
+
+    <section class="competition-hero">
+
+        <h1>
+            第三屆台灣拼布大賽
+        </h1>
+
+        <p>
+            Taiwan Quilt Competition
+        </p>
+
+    </section>
+
+
+
+    <!-- =================================================
+         Introduction
+    ================================================= -->
+
+    <section class="competition-intro">
+
+        <div class="content-container">
+
+            <div class="competition-intro-content">
+
+                <h2>
+                    第三屆台灣拼布大賽作品募集
+                </h2>
+
+                <p>
+                    2021 年 11 月我們在疫情影響下，
+                    努力堅持舉辦第二屆的友好拼布手作節。
+                    疫情期間原本的拼布大賽，
+                    因考量大家生活步調受到影響，
+                    活動調整為入選參賽制。
+                </p>
+
+                <p>
+                    隨著疫情控制逐漸穩定、生活慢慢回到正軌，
+                    2023 年再次舉辦第三屆拼布大賽，
+                    並以「美好時光」為主題，
+                    邀請大家重拾對拼布的熱情，
+                    拿起針線、發揮創意。
+                </p>
+
+            </div>
+
+
+            <div class="archive-note">
+
+                <strong>
+                    歷史資料
+                </strong>
+
+                ｜本頁為 2023 年第三屆台灣拼布大賽活動紀錄，
+                當年度報名、徵件及評選均已結束。
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         Theme
+    ================================================= -->
+
+    <section class="competition-section alt">
+
+        <div class="content-container">
+
+            <div class="competition-theme">
+
+                <p class="competition-theme-label">
+                    Competition Theme
+                </p>
+
+                <h2>
+                    美好時光
+                </h2>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         Qualification
+    ================================================= -->
+
+    <section class="competition-section">
+
+        <div class="content-container">
+
+            <div class="competition-heading">
+
+                <p class="competition-label">
+                    Qualification
+                </p>
+
+                <h2>
+                    報名資格
+                </h2>
+
+            </div>
+
+
+            <div class="qualification">
+
+                <ol>
+
+                    <li>
+                        作品需為原創或延伸創作；
+                        若參考其他畫作、照片或其他拼布作品，
+                        需附上參考來源資料及其授權文件。
+                    </li>
+
+                    <li>
+                        作品為 2021 年 1 月以後完成；
+                        曾於 2021 友好拼布手作節入選之作品不在此限。
+                    </li>
+
+                    <li>
+                        每人可同時報名多項類別，
+                        但總數以三件為限。
+                    </li>
+
+                    <li>
+                        作品可由個人或團體報名參加；
+                        若為團體報名，
+                        所有參與製作者必須詳細列出。
+                    </li>
+
+                    <li>
+                        作品必須為表布、鋪棉、底布三層壓線而成，
+                        手縫或機縫皆可。
+                    </li>
+
+                    <li>
+                        作品表面裝飾物請緊密固定，
+                        並禁止使用任何會脫落或具有危險性的裝飾物。
+                    </li>
+
+                    <li>
+                        作品背面頂端需縫製 10cm 高之穿桿布，
+                        並於右下角縫製作者資料布標，
+                        包含作者姓名、作品名稱、聯絡電話及完成日期。
+                    </li>
+
+                </ol>
+
+            </div>
+
+
+
+            <!-- =============================================
+                 Competition Guide PDF
+            ============================================== -->
+
+            <div class="competition-downloads">
+
+
+                <!-- 繁體版 -->
+
+                <a class="competition-download"
+                   href="/events/2023/competition/competition-rules-zh-tw.pdf"
+                   target="_blank"
+                   rel="noopener">
+
+                    <div>
+
+                        <p class="competition-download-type">
+                            PDF｜繁體中文
+                        </p>
+
+                        <p class="competition-download-title">
+                            第三屆台灣拼布大賽簡章－繁體版
+                        </p>
+
+                    </div>
+
+                    <span class="competition-download-arrow"
+                          aria-hidden="true">
+                        ↓
+                    </span>
+
+                </a>
+
+
+
+                <!-- 簡體版 -->
+
+                <a class="competition-download"
+                   href="/events/2023/competition/competition-rules-zh-cn.pdf"
+                   target="_blank"
+                   rel="noopener">
+
+                    <div>
+
+                        <p class="competition-download-type">
+                            PDF｜简体中文
+                        </p>
+
+                        <p class="competition-download-title"
+                           lang="zh-Hans">
+                            第三届台湾拼布大赛简章－简体版
+                        </p>
+
+                    </div>
+
+                    <span class="competition-download-arrow"
+                          aria-hidden="true">
+                        ↓
+                    </span>
+
+                </a>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         Categories
+    ================================================= -->
+
+    <section class="competition-section alt">
+
+        <div class="content-container">
+
+            <div class="competition-heading">
+
+                <p class="competition-label">
+                    Categories
+                </p>
+
+                <h2>
+                    比賽類別
+                </h2>
+
+            </div>
+
+
+            <div class="category-grid">
+
+
+                <!-- 傳統壁飾 -->
+
+                <article class="category-card">
+
+                    <div class="category-card-header">
+
+                        <h3>
+                            傳統壁飾
+                        </h3>
+
+                    </div>
+
+
+                    <div class="category-card-body">
+
+                        <div class="category-row">
+
+                            <p class="category-row-title">
+                                尺寸
+                            </p>
+
+                            <p class="category-row-text">
+                                長：100～200cm<br>
+                                寬：100～200cm
+                            </p>
+
+                        </div>
+
+
+                        <div class="category-row">
+
+                            <p class="category-row-title">
+                                定義
+                            </p>
+
+                            <p class="category-row-text">
+                                以傳統圖形或構圖型態為設計主題，
+                                例如祖母花園、檸檬星或巴爾的摩等元素，
+                                或參考自古董拼布被的重新詮釋。
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- 創新壁飾 -->
+
+                <article class="category-card">
+
+                    <div class="category-card-header">
+
+                        <h3>
+                            創新壁飾
+                        </h3>
+
+                    </div>
+
+
+                    <div class="category-card-body">
+
+                        <div class="category-row">
+
+                            <p class="category-row-title">
+                                尺寸
+                            </p>
+
+                            <p class="category-row-text">
+                                長：100～200cm<br>
+                                寬：100～200cm
+                            </p>
+
+                        </div>
+
+
+                        <div class="category-row">
+
+                            <p class="category-row-title">
+                                定義
+                            </p>
+
+                            <p class="category-row-text">
+                                原創設計為主的構圖型態、
+                                抽象幾何或具象描繪的形式，
+                                或傳統圖形的變形設計皆可。
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- 青少年組 -->
+
+                <article class="category-card">
+
+                    <div class="category-card-header">
+
+                        <h3>
+                            青少年組壁飾
+                        </h3>
+
+                        <p>
+                            滿 15～18 歲
+                        </p>
+
+                    </div>
+
+
+                    <div class="category-card-body">
+
+                        <div class="category-row">
+
+                            <p class="category-row-title">
+                                尺寸
+                            </p>
+
+                            <p class="category-row-text">
+                                長：60～200cm<br>
+                                寬：60～200cm
+                            </p>
+
+                        </div>
+
+
+                        <div class="category-row">
+
+                            <p class="category-row-title">
+                                定義
+                            </p>
+
+                            <p class="category-row-text">
+                                以傳統圖形或構圖型態為設計主題，
+                                或原創設計的構圖型態如塗鴉或剪貼，
+                                並可呈現新一代趣味性的壁飾。
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         Awards
+    ================================================= -->
+
+    <section class="competition-section">
+
+        <div class="content-container">
+
+            <div class="competition-heading">
+
+                <p class="competition-label">
+                    Awards
+                </p>
+
+                <h2>
+                    獎項
+                </h2>
+
+            </div>
+
+
+            <!-- 共用首獎 -->
+
+            <div class="award-highlight">
+
+                <span>
+                    Grand Prize
+                </span>
+
+                <strong>
+                    首獎 1 名
+                </strong>
+
+            </div>
+
+
+            <div class="award-grid">
+
+
+                <article class="award-card">
+
+                    <h3>
+                        傳統壁飾
+                    </h3>
+
+                    <p>金獎：1 名</p>
+                    <p>銀獎：1 名</p>
+                    <p>銅獎：1 名</p>
+                    <p>企業賞：1 名</p>
+
+                </article>
+
+
+
+                <article class="award-card">
+
+                    <h3>
+                        創新壁飾
+                    </h3>
+
+                    <p>金獎：1 名</p>
+                    <p>銀獎：1 名</p>
+                    <p>銅獎：1 名</p>
+                    <p>企業賞：1 名</p>
+
+                </article>
+
+
+
+                <article class="award-card">
+
+                    <h3>
+                        青少年組壁飾
+                    </h3>
+
+                    <p>金獎：1 名</p>
+                    <p>銀獎：1 名</p>
+                    <p>銅獎：1 名</p>
+
+                </article>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         Fee
+    ================================================= -->
+
+    <section class="competition-section alt">
+
+        <div class="content-container">
+
+            <div class="competition-heading">
+
+                <p class="competition-label">
+                    Competition Fee
+                </p>
+
+                <h2>
+                    賽程事務處理費
+                </h2>
+
+            </div>
+
+
+            <p class="fee-description">
+                費用包含台灣區作品寄回郵資、保險、
+                活動門票乙張及優先入場邀請卡。
+            </p>
+
+
+            <div class="fee-grid">
+
+
+                <article class="fee-card">
+
+                    <h3>
+                        傳統壁飾
+                    </h3>
+
+                    <p class="fee-main">
+                        初審免費
+                    </p>
+
+                    <p class="fee-note">
+                        複審<br>
+                        會員：NT$2,000／件<br>
+                        非會員：NT$3,000／件
+                    </p>
+
+                    <p class="fee-note">
+                        第二件：NT$1,500／件<br>
+                        第三件：NT$1,000／件
+                    </p>
+
+                </article>
+
+
+
+                <article class="fee-card">
+
+                    <h3>
+                        創新壁飾
+                    </h3>
+
+                    <p class="fee-main">
+                        初審免費
+                    </p>
+
+                    <p class="fee-note">
+                        複審<br>
+                        會員：NT$2,000／件<br>
+                        非會員：NT$3,000／件
+                    </p>
+
+                    <p class="fee-note">
+                        第二件：NT$1,500／件<br>
+                        第三件：NT$1,000／件
+                    </p>
+
+                </article>
+
+
+
+                <article class="fee-card">
+
+                    <h3>
+                        青少年組壁飾
+                    </h3>
+
+                    <p class="fee-main">
+                        免費
+                    </p>
+
+                    <p class="fee-note">
+                        滿 15～18 歲
+                    </p>
+
+                </article>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         Timeline
+    ================================================= -->
+
+    <section class="competition-section">
+
+        <div class="content-container">
+
+            <div class="competition-heading">
+
+                <p class="competition-label">
+                    Competition Timeline
+                </p>
+
+                <h2>
+                    評選流程
+                </h2>
+
+            </div>
+
+
+            <div class="timeline">
+
+
+                <article class="timeline-item">
+
+                    <div class="timeline-date">
+                        2023/08/31
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <h3>
+                            初審－報名
+                        </h3>
+
+                        <p>
+                            填寫線上報名表；
+                            報名多件作品時，
+                            每件作品需填寫一份報名表。
+                            2021 友好拼布手作節入選作品
+                            可直接進入複審。
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+
+                <article class="timeline-item">
+
+                    <div class="timeline-date">
+                        2023/09/15
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <h3>
+                            初審－入選通知
+                        </h3>
+
+                        <p>
+                            入選作品將以郵件、
+                            Email 或電話通知。
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+
+                <article class="timeline-item">
+
+                    <div class="timeline-date">
+                        2023/09/30
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <h3>
+                            複審－寄件
+                        </h3>
+
+                        <p>
+                            入選作品依當年度競賽簡章規定，
+                            完成作品包裝及寄件作業。
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+
+                <article class="timeline-item">
+
+                    <div class="timeline-date">
+                        2023/11/17
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <h3>
+                            複審－獎項公布
+                        </h3>
+
+                        <p>
+                            進入複審之作品於
+                            2023 友好拼布手作節會場設置專區展示，
+                            獎項於開展當日在現場及活動官網同步公布。
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         Exhibition Information
+    ================================================= -->
+
+    <section class="competition-section alt">
+
+        <div class="content-container">
+
+            <div class="competition-heading">
+
+                <p class="competition-label">
+                    Exhibition Information
+                </p>
+
+                <h2>
+                    展覽資訊
+                </h2>
+
+            </div>
+
+
+            <div class="competition-event-info">
+
+
+                <div class="competition-event-row">
+
+                    <div class="competition-event-title">
+                        主辦單位
+                    </div>
+
+                    <div class="competition-event-value">
+                        台灣國際拼布友好會
+                    </div>
+
+                </div>
+
+
+
+                <div class="competition-event-row">
+
+                    <div class="competition-event-title">
+                        展覽地點
+                    </div>
+
+                    <div class="competition-event-value">
+                        台北市松山文創園區一號倉庫
+                    </div>
+
+                </div>
+
+
+
+                <div class="competition-event-row">
+
+                    <div class="competition-event-title">
+                        展覽期間
+                    </div>
+
+                    <div class="competition-event-value">
+                        2023/11/17－11/19
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         Back
+    ================================================= -->
+
+    <section class="competition-back">
+
+        <a href="/events/2023/">
+            ← 返回 2023 友好拼布手作節
+        </a>
+
+    </section>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     Footer
+===================================================== -->
+
+<div id="site-footer"></div>
+
+
+
+<!-- =====================================================
+     共用 JavaScript
+===================================================== -->
+
+<script src="/assets/js/include.js"></script>
+
+
+
+<!-- =====================================================
+     Breadcrumb Data
+===================================================== -->
+
+<script>
+
+    window.breadcrumbData = [
+
+        {
+            title: "首頁",
+            url: "/"
+        },
+
+        {
+            title: "歷年活動",
+            url: "/events/"
+        },
+
+        {
+            title: "2023 友好拼布手作節",
+            url: "/events/2023/"
+        },
+
+        {
+            title: "第三屆台灣拼布大賽"
+        }
+
+    ];
+
+</script>
+
+
+<script src="/assets/js/breadcrumb.js"></script>
+
+
+</body>
+
+</html>
