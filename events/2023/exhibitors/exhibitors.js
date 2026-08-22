@@ -1,6 +1,6 @@
 /* =========================================================
    2023 友好拼布手作節
-   Exhibitors Renderer
+   參展攤位 Renderer
 ========================================================= */
 
 (function () {
@@ -23,29 +23,416 @@
 
 
     /* =====================================================
-       HTML Encode
+       工作室 / 個人
     ===================================================== */
 
-    function escapeHtml(value) {
+    function createStudioCard(item) {
 
-        return String(value || "")
-            .replace(/&/g, "&amp;")
-            .replace(/</g, "&lt;")
-            .replace(/>/g, "&gt;")
-            .replace(/"/g, "&quot;")
-            .replace(/'/g, "&#039;");
+        const article =
+            document.createElement(
+                "article"
+            );
+
+        article.className =
+            "studio-card";
+
+
+        /* Header */
+
+        const header =
+            document.createElement(
+                "div"
+            );
+
+        header.className =
+            "studio-card-header";
+
+
+        const title =
+            document.createElement(
+                "h3"
+            );
+
+        title.className =
+            "studio-card-title";
+
+        title.textContent =
+            item.name || "";
+
+
+        header.appendChild(
+            title
+        );
+
+
+        if (
+            Array.isArray(item.links) &&
+            item.links.length
+        ) {
+
+            const links =
+                document.createElement(
+                    "div"
+                );
+
+            links.className =
+                "studio-links";
+
+
+            item.links.forEach(
+                function (linkItem) {
+
+                    if (
+                        !linkItem ||
+                        !linkItem.label ||
+                        !linkItem.url
+                    ) {
+                        return;
+                    }
+
+
+                    const link =
+                        document.createElement(
+                            "a"
+                        );
+
+                    link.textContent =
+                        linkItem.label;
+
+                    link.href =
+                        linkItem.url;
+
+
+                    if (
+                        /^https?:\/\//i.test(
+                            linkItem.url
+                        )
+                    ) {
+
+                        link.target =
+                            "_blank";
+
+                        link.rel =
+                            "noopener";
+
+                    }
+
+
+                    links.appendChild(
+                        link
+                    );
+
+                }
+            );
+
+
+            header.appendChild(
+                links
+            );
+
+        }
+
+
+        article.appendChild(
+            header
+        );
+
+
+        /* Body */
+
+        const body =
+            document.createElement(
+                "div"
+            );
+
+        body.className =
+            "studio-card-body";
+
+
+        /* Gallery */
+
+        const gallery =
+            document.createElement(
+                "div"
+            );
+
+        gallery.className =
+            "studio-gallery";
+
+
+        const mainWrap =
+            document.createElement(
+                "div"
+            );
+
+        mainWrap.className =
+            "studio-gallery-main";
+
+
+        const mainImage =
+            document.createElement(
+                "img"
+            );
+
+        mainImage.alt =
+            item.name || "參展單位";
+
+        mainImage.loading =
+            "lazy";
+
+
+        const images =
+            Array.isArray(item.images)
+                ? item.images.filter(Boolean)
+                : [];
+
+
+        if (images.length) {
+
+            mainImage.src =
+                images[0];
+
+        }
+
+
+        mainWrap.appendChild(
+            mainImage
+        );
+
+        gallery.appendChild(
+            mainWrap
+        );
+
+
+        if (images.length > 1) {
+
+            const thumbnailWrap =
+                document.createElement(
+                    "div"
+                );
+
+            thumbnailWrap.className =
+                "studio-thumbnails";
+
+
+            images.forEach(
+                function (src, index) {
+
+                    const button =
+                        document.createElement(
+                            "button"
+                        );
+
+                    button.type =
+                        "button";
+
+                    button.className =
+                        "studio-thumbnail" +
+                        (
+                            index === 0
+                                ? " is-active"
+                                : ""
+                        );
+
+                    button.setAttribute(
+                        "aria-label",
+                        "查看 " +
+                        (item.name || "參展單位") +
+                        " 圖片 " +
+                        (index + 1)
+                    );
+
+
+                    const thumb =
+                        document.createElement(
+                            "img"
+                        );
+
+                    thumb.src =
+                        src;
+
+                    thumb.alt =
+                        "";
+
+                    thumb.loading =
+                        "lazy";
+
+
+                    button.appendChild(
+                        thumb
+                    );
+
+
+                    button.addEventListener(
+                        "click",
+                        function () {
+
+                            mainImage.src =
+                                src;
+
+
+                            thumbnailWrap
+                                .querySelectorAll(
+                                    ".studio-thumbnail"
+                                )
+                                .forEach(
+                                    function (btn) {
+
+                                        btn.classList.remove(
+                                            "is-active"
+                                        );
+
+                                    }
+                                );
+
+
+                            button.classList.add(
+                                "is-active"
+                            );
+
+                        }
+                    );
+
+
+                    thumbnailWrap.appendChild(
+                        button
+                    );
+
+                }
+            );
+
+
+            gallery.appendChild(
+                thumbnailWrap
+            );
+
+        }
+
+
+        body.appendChild(
+            gallery
+        );
+
+
+        /* Description */
+
+        const description =
+            document.createElement(
+                "div"
+            );
+
+        description.className =
+            "studio-description";
+
+
+        const paragraphs =
+            Array.isArray(item.description)
+                ? item.description
+                : [item.description];
+
+
+        paragraphs
+            .filter(Boolean)
+            .forEach(
+                function (text) {
+
+                    const p =
+                        document.createElement(
+                            "p"
+                        );
+
+                    p.textContent =
+                        text;
+
+
+                    description.appendChild(
+                        p
+                    );
+
+                }
+            );
+
+
+        body.appendChild(
+            description
+        );
+
+
+        article.appendChild(
+            body
+        );
+
+
+        return article;
+
+    }
+
+
+    function renderStudios() {
+
+        const container =
+            document.getElementById(
+                "studio-list"
+            );
+
+
+        if (!container) {
+            return;
+        }
+
+
+        container.innerHTML =
+            "";
+
+
+        if (
+            !Array.isArray(
+                exhibitorsData.studios
+            ) ||
+            !exhibitorsData.studios.length
+        ) {
+
+            const empty =
+                document.createElement(
+                    "div"
+                );
+
+            empty.className =
+                "exhibitors-empty";
+
+            empty.textContent =
+                "此分類資料整理中。";
+
+
+            container.appendChild(
+                empty
+            );
+
+            return;
+
+        }
+
+
+        exhibitorsData.studios.forEach(
+            function (item) {
+
+                container.appendChild(
+                    createStudioCard(item)
+                );
+
+            }
+        );
 
     }
 
 
     /* =====================================================
-       建立單一參展單位
+       品牌 / 廠商
     ===================================================== */
 
-    function createExhibitorCard(
+    function createBrandCard(
         item,
-        index,
-        categoryLabel
+        index
     ) {
 
         const article =
@@ -55,7 +442,7 @@
 
 
         article.className =
-            "exhibitor-card" +
+            "brand-card" +
             (
                 index % 2 === 1
                     ? " reverse"
@@ -63,15 +450,13 @@
             );
 
 
-        /* Media */
-
         const media =
             document.createElement(
                 "div"
             );
 
         media.className =
-            "exhibitor-media";
+            "brand-media";
 
 
         const img =
@@ -83,7 +468,7 @@
             item.image || "";
 
         img.alt =
-            item.name || "參展單位";
+            item.name || "參展品牌";
 
         img.loading =
             "lazy";
@@ -94,27 +479,13 @@
         );
 
 
-        /* Content */
-
         const content =
             document.createElement(
                 "div"
             );
 
         content.className =
-            "exhibitor-content";
-
-
-        const category =
-            document.createElement(
-                "p"
-            );
-
-        category.className =
-            "exhibitor-category";
-
-        category.textContent =
-            categoryLabel;
+            "brand-content";
 
 
         const title =
@@ -132,15 +503,11 @@
             );
 
         description.className =
-            "exhibitor-description";
+            "brand-description";
 
         description.textContent =
             item.description || "";
 
-
-        content.appendChild(
-            category
-        );
 
         content.appendChild(
             title
@@ -150,8 +517,6 @@
             description
         );
 
-
-        /* Meta */
 
         if (
             Array.isArray(item.meta) &&
@@ -164,7 +529,7 @@
                 );
 
             metaList.className =
-                "exhibitor-meta";
+                "brand-meta";
 
 
             item.meta.forEach(
@@ -232,26 +597,16 @@
     }
 
 
-    /* =====================================================
-       建立列表
-    ===================================================== */
-
-    function renderList(
-        containerId,
-        items,
-        categoryLabel
-    ) {
+    function renderBrands() {
 
         const container =
             document.getElementById(
-                containerId
+                "brand-list"
             );
 
 
         if (!container) {
-
             return;
-
         }
 
 
@@ -260,8 +615,10 @@
 
 
         if (
-            !Array.isArray(items) ||
-            !items.length
+            !Array.isArray(
+                exhibitorsData.brands
+            ) ||
+            !exhibitorsData.brands.length
         ) {
 
             const empty =
@@ -285,14 +642,13 @@
         }
 
 
-        items.forEach(
+        exhibitorsData.brands.forEach(
             function (item, index) {
 
                 container.appendChild(
-                    createExhibitorCard(
+                    createBrandCard(
                         item,
-                        index,
-                        categoryLabel
+                        index
                     )
                 );
 
@@ -306,18 +662,9 @@
        Init
     ===================================================== */
 
-    renderList(
-        "studio-list",
-        exhibitorsData.studios,
-        "Studio / Creator"
-    );
+    renderStudios();
 
-
-    renderList(
-        "brand-list",
-        exhibitorsData.brands,
-        "Brand / Vendor"
-    );
+    renderBrands();
 
 
 })();

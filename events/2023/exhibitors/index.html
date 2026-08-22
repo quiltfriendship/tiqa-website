@@ -13,23 +13,16 @@
     <meta name="description"
           content="2023 友好拼布手作節參展攤位介紹，包含拼布教室、個人工作室、創作者及相關品牌廠商。">
 
-    <!-- 全站共用 CSS -->
     <link rel="stylesheet"
           href="/assets/css/style.css">
 
-    <!-- 歷年活動共用 CSS -->
     <link rel="stylesheet"
           href="/assets/css/events.css">
 
-    <!-- 共用 HEAD -->
     <script src="/assets/js/head-common.js"></script>
 
 
     <style>
-
-        /* =====================================================
-           Hero
-        ===================================================== */
 
         .exhibitors-hero {
             padding: 48px 20px 42px;
@@ -67,11 +60,6 @@
             background: #b98d96;
             transform: translateX(-50%);
         }
-
-
-        /* =====================================================
-           Intro
-        ===================================================== */
 
         .exhibitors-intro {
             padding: 60px 0 65px;
@@ -113,11 +101,6 @@
             color: #8f656f;
             font-weight: 500;
         }
-
-
-        /* =====================================================
-           Section
-        ===================================================== */
 
         .exhibitors-section {
             padding: 70px 0 80px;
@@ -162,72 +145,181 @@
             letter-spacing: 0.1em;
         }
 
+        /* 工作室 / 個人 */
+        .studio-list {
+            max-width: 1080px;
+            margin: 0 auto;
+        }
 
-        /* =====================================================
-           Exhibitor List
-        ===================================================== */
+        .studio-card {
+            padding: 38px 0;
+            border-bottom: 1px solid #e6e0de;
+        }
 
-        .exhibitor-list {
+        .studio-card:first-child {
+            padding-top: 0;
+        }
+
+        .studio-card:last-child {
+            border-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .studio-card-header {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            gap: 10px 18px;
+            margin-bottom: 28px;
+        }
+
+        .studio-card-title {
+            margin: 0;
+            color: #455267;
+            font-size: 23px;
+            font-weight: 500;
+            line-height: 1.5;
+        }
+
+        .studio-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0;
+        }
+
+        .studio-links a {
+            color: #a47c84;
+            font-size: 13px;
+            text-decoration: none;
+        }
+
+        .studio-links a + a::before {
+            content: "｜";
+            margin: 0 7px;
+            color: #bbb;
+        }
+
+        .studio-links a:hover {
+            color: #7c555f;
+        }
+
+        .studio-card-body {
+            display: grid;
+            grid-template-columns:
+                minmax(280px, 0.9fr)
+                minmax(0, 1.25fr);
+            gap: 48px;
+            align-items: start;
+        }
+
+        .studio-gallery-main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 360px;
+            padding: 14px;
+            border: 1px solid #e6e0de;
+            background: #fff;
+        }
+
+        .studio-gallery-main img {
+            display: block;
+            width: 100%;
+            max-height: 500px;
+            object-fit: contain;
+        }
+
+        .studio-thumbnails {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .studio-thumbnail {
+            width: 72px;
+            height: 72px;
+            padding: 0;
+            overflow: hidden;
+            border: 1px solid #ddd;
+            background: #fff;
+            cursor: pointer;
+        }
+
+        .studio-thumbnail img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .studio-thumbnail.is-active {
+            border-color: #9b6f78;
+            box-shadow: 0 0 0 2px rgba(155,111,120,0.12);
+        }
+
+        .studio-description p {
+            margin: 0 0 14px;
+            color: #666;
+            font-size: 15px;
+            line-height: 1.95;
+        }
+
+        .studio-description p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* 品牌 */
+        .brand-list {
             max-width: 1050px;
             margin: 0 auto;
         }
 
-        .exhibitor-card {
+        .brand-card {
             display: grid;
             grid-template-columns:
                 minmax(260px, 0.9fr)
                 minmax(0, 1.1fr);
             gap: 48px;
             align-items: center;
-
             padding: 36px 0;
             border-bottom: 1px solid #e8e2df;
         }
 
-        .exhibitor-card:first-child {
+        .brand-card:first-child {
             padding-top: 0;
         }
 
-        .exhibitor-card:last-child {
+        .brand-card:last-child {
             padding-bottom: 0;
             border-bottom: 0;
         }
 
-        .exhibitor-card.reverse .exhibitor-media {
+        .brand-card.reverse .brand-media {
             order: 2;
         }
 
-        .exhibitor-card.reverse .exhibitor-content {
+        .brand-card.reverse .brand-content {
             order: 1;
         }
 
-        .exhibitor-media {
+        .brand-media {
             display: flex;
             align-items: center;
             justify-content: center;
-
-            min-height: 230px;
+            min-height: 220px;
             padding: 18px;
-
             background: #fff;
             border: 1px solid #e7e1de;
         }
 
-        .exhibitor-media img {
+        .brand-media img {
             display: block;
             width: 100%;
-            max-height: 360px;
+            max-height: 340px;
             object-fit: contain;
         }
 
-        .exhibitor-category {
-            margin: 0 0 7px;
-            color: #a98a91;
-            font-size: 11px;
-            letter-spacing: 0.12em;
-        }
-
-        .exhibitor-content h3 {
+        .brand-content h3 {
             margin: 0 0 15px;
             color: #455267;
             font-size: 23px;
@@ -235,36 +327,31 @@
             line-height: 1.5;
         }
 
-        .exhibitor-description {
-            margin: 0 0 18px;
+        .brand-description {
+            margin: 0 0 16px;
             color: #666;
             font-size: 15px;
             line-height: 1.95;
             white-space: pre-line;
         }
 
-        .exhibitor-meta {
+        .brand-meta {
             margin: 0;
             padding: 0;
             list-style: none;
         }
 
-        .exhibitor-meta li {
+        .brand-meta li {
             margin-top: 7px;
             color: #777;
             font-size: 13px;
             line-height: 1.8;
         }
 
-        .exhibitor-meta strong {
+        .brand-meta strong {
             color: #8f656f;
             font-weight: 500;
         }
-
-
-        /* =====================================================
-           Empty / Notice
-        ===================================================== */
 
         .exhibitors-empty {
             padding: 40px 25px;
@@ -275,22 +362,22 @@
             line-height: 1.9;
         }
 
+        @media (max-width: 850px) {
 
-        /* =====================================================
-           RWD
-        ===================================================== */
-
-        @media (max-width: 800px) {
-
-            .exhibitor-card,
-            .exhibitor-card.reverse {
+            .studio-card-body,
+            .brand-card,
+            .brand-card.reverse {
                 grid-template-columns: 1fr;
                 gap: 24px;
             }
 
-            .exhibitor-card.reverse .exhibitor-media,
-            .exhibitor-card.reverse .exhibitor-content {
+            .brand-card.reverse .brand-media,
+            .brand-card.reverse .brand-content {
                 order: initial;
+            }
+
+            .studio-gallery-main {
+                min-height: 280px;
             }
 
         }
@@ -318,16 +405,22 @@
                 font-size: 23px;
             }
 
-            .exhibitor-card {
-                padding: 28px 0;
+            .studio-card {
+                padding: 30px 0;
             }
 
-            .exhibitor-media {
-                min-height: 180px;
-            }
-
-            .exhibitor-content h3 {
+            .studio-card-title,
+            .brand-content h3 {
                 font-size: 21px;
+            }
+
+            .studio-gallery-main {
+                min-height: 220px;
+            }
+
+            .studio-thumbnail {
+                width: 62px;
+                height: 62px;
             }
 
         }
@@ -339,17 +432,7 @@
 
 <body>
 
-
-<!-- =====================================================
-     Header
-===================================================== -->
-
 <div id="site-header"></div>
-
-
-<!-- =====================================================
-     Breadcrumb
-===================================================== -->
 
 <nav id="breadcrumb"
      class="breadcrumb"
@@ -358,11 +441,6 @@
 
 
 <main>
-
-
-    <!-- =================================================
-         Hero
-    ================================================= -->
 
     <section class="exhibitors-hero">
 
@@ -376,11 +454,6 @@
 
     </section>
 
-
-
-    <!-- =================================================
-         Intro
-    ================================================= -->
 
     <section class="exhibitors-intro">
 
@@ -406,7 +479,6 @@
 
             </div>
 
-
             <div class="archive-note">
 
                 <strong>
@@ -422,11 +494,6 @@
 
     </section>
 
-
-
-    <!-- =================================================
-         拼布教室 / 工作室
-    ================================================= -->
 
     <section class="exhibitors-section alt">
 
@@ -444,20 +511,14 @@
 
             </div>
 
-
             <div id="studio-list"
-                 class="exhibitor-list">
+                 class="studio-list">
             </div>
 
         </div>
 
     </section>
 
-
-
-    <!-- =================================================
-         品牌 / 廠商
-    ================================================= -->
 
     <section class="exhibitors-section">
 
@@ -475,20 +536,14 @@
 
             </div>
 
-
             <div id="brand-list"
-                 class="exhibitor-list">
+                 class="brand-list">
             </div>
 
         </div>
 
     </section>
 
-
-
-    <!-- =================================================
-         返回 2023 活動首頁
-    ================================================= -->
 
     <section class="event-return-banner">
 
@@ -512,20 +567,11 @@
 
     </section>
 
-
 </main>
 
 
-<!-- =====================================================
-     Footer
-===================================================== -->
-
 <div id="site-footer"></div>
 
-
-<!-- =====================================================
-     JavaScript
-===================================================== -->
 
 <script src="/assets/js/include.js"></script>
 
@@ -560,12 +606,8 @@
 
 <script src="/assets/js/breadcrumb.js"></script>
 
-
-<!-- 參展攤位 DATA -->
 <script src="/events/2023/exhibitors/exhibitors-data.js"></script>
 
-
-<!-- 產生參展攤位 -->
 <script src="/events/2023/exhibitors/exhibitors.js"></script>
 
 
