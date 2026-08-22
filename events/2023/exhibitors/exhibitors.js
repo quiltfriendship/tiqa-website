@@ -7,18 +7,49 @@
 
     "use strict";
 
-
     if (
         typeof exhibitorsData === "undefined" ||
         !exhibitorsData
     ) {
-
-        console.error(
-            "exhibitorsData 資料不存在"
-        );
-
+        console.error("exhibitorsData 資料不存在");
         return;
+    }
 
+
+    /* =====================================================
+       共用：建立連結列
+    ===================================================== */
+
+    function createLinks(links, className) {
+
+        if (!Array.isArray(links) || !links.length) {
+            return null;
+        }
+
+        const wrap = document.createElement("div");
+        wrap.className = className;
+
+        links.forEach(function (item) {
+
+            if (!item || !item.label || !item.url) {
+                return;
+            }
+
+            const a = document.createElement("a");
+
+            a.textContent = item.label;
+            a.href = item.url;
+
+            if (/^https?:\/\//i.test(item.url)) {
+                a.target = "_blank";
+                a.rel = "noopener";
+            }
+
+            wrap.appendChild(a);
+
+        });
+
+        return wrap;
     }
 
 
@@ -28,298 +59,141 @@
 
     function createStudioCard(item) {
 
-        const article =
-            document.createElement(
-                "article"
-            );
+        const article = document.createElement("article");
+        article.className = "studio-card";
 
-        article.className =
-            "studio-card";
+        const header = document.createElement("div");
+        header.className = "studio-card-header";
 
+        const title = document.createElement("h3");
+        title.className = "studio-card-title";
+        title.textContent = item.name || "";
 
-        /* Header */
+        header.appendChild(title);
 
-        const header =
-            document.createElement(
-                "div"
-            );
-
-        header.className =
-            "studio-card-header";
-
-
-        const title =
-            document.createElement(
-                "h3"
-            );
-
-        title.className =
-            "studio-card-title";
-
-        title.textContent =
-            item.name || "";
-
-
-        header.appendChild(
-            title
+        const links = createLinks(
+            item.links,
+            "studio-links"
         );
 
-
-        if (
-            Array.isArray(item.links) &&
-            item.links.length
-        ) {
-
-            const links =
-                document.createElement(
-                    "div"
-                );
-
-            links.className =
-                "studio-links";
-
-
-            item.links.forEach(
-                function (linkItem) {
-
-                    if (
-                        !linkItem ||
-                        !linkItem.label ||
-                        !linkItem.url
-                    ) {
-                        return;
-                    }
-
-
-                    const link =
-                        document.createElement(
-                            "a"
-                        );
-
-                    link.textContent =
-                        linkItem.label;
-
-                    link.href =
-                        linkItem.url;
-
-
-                    if (
-                        /^https?:\/\//i.test(
-                            linkItem.url
-                        )
-                    ) {
-
-                        link.target =
-                            "_blank";
-
-                        link.rel =
-                            "noopener";
-
-                    }
-
-
-                    links.appendChild(
-                        link
-                    );
-
-                }
-            );
-
-
-            header.appendChild(
-                links
-            );
-
+        if (links) {
+            header.appendChild(links);
         }
 
-
-        article.appendChild(
-            header
-        );
+        article.appendChild(header);
 
 
-        /* Body */
-
-        const body =
-            document.createElement(
-                "div"
-            );
-
-        body.className =
-            "studio-card-body";
+        const body = document.createElement("div");
+        body.className = "studio-card-body";
 
 
-        /* Gallery */
+        const gallery = document.createElement("div");
+        gallery.className = "studio-gallery";
 
-        const gallery =
-            document.createElement(
-                "div"
-            );
+        const mainWrap = document.createElement("div");
+        mainWrap.className = "studio-gallery-main";
 
-        gallery.className =
-            "studio-gallery";
-
-
-        const mainWrap =
-            document.createElement(
-                "div"
-            );
-
-        mainWrap.className =
-            "studio-gallery-main";
-
-
-        const mainImage =
-            document.createElement(
-                "img"
-            );
-
-        mainImage.alt =
-            item.name || "參展單位";
-
-        mainImage.loading =
-            "lazy";
-
+        const mainImage = document.createElement("img");
+        mainImage.alt = item.name || "參展單位";
+        mainImage.loading = "lazy";
 
         const images =
             Array.isArray(item.images)
                 ? item.images.filter(Boolean)
                 : [];
 
-
         if (images.length) {
-
-            mainImage.src =
-                images[0];
-
+            mainImage.src = images[0];
         }
 
-
-        mainWrap.appendChild(
-            mainImage
-        );
-
-        gallery.appendChild(
-            mainWrap
-        );
+        mainWrap.appendChild(mainImage);
+        gallery.appendChild(mainWrap);
 
 
         if (images.length > 1) {
 
-            const thumbnailWrap =
-                document.createElement(
-                    "div"
-                );
+            const thumbnails =
+                document.createElement("div");
 
-            thumbnailWrap.className =
+            thumbnails.className =
                 "studio-thumbnails";
 
 
-            images.forEach(
-                function (src, index) {
+            images.forEach(function (src, index) {
 
-                    const button =
-                        document.createElement(
-                            "button"
-                        );
+                const button =
+                    document.createElement("button");
 
-                    button.type =
-                        "button";
+                button.type = "button";
 
-                    button.className =
-                        "studio-thumbnail" +
-                        (
-                            index === 0
-                                ? " is-active"
-                                : ""
-                        );
+                button.className =
+                    "studio-thumbnail" +
+                    (index === 0 ? " is-active" : "");
 
-                    button.setAttribute(
-                        "aria-label",
-                        "查看 " +
-                        (item.name || "參展單位") +
-                        " 圖片 " +
-                        (index + 1)
-                    );
+                button.setAttribute(
+                    "aria-label",
+                    "查看 " +
+                    (item.name || "參展單位") +
+                    " 圖片 " +
+                    (index + 1)
+                );
 
 
-                    const thumb =
-                        document.createElement(
-                            "img"
-                        );
+                const thumb =
+                    document.createElement("img");
 
-                    thumb.src =
-                        src;
+                thumb.src = src;
+                thumb.alt = "";
+                thumb.loading = "lazy";
 
-                    thumb.alt =
-                        "";
-
-                    thumb.loading =
-                        "lazy";
+                button.appendChild(thumb);
 
 
-                    button.appendChild(
-                        thumb
-                    );
+                button.addEventListener(
+                    "click",
+                    function () {
 
+                        mainImage.src = src;
 
-                    button.addEventListener(
-                        "click",
-                        function () {
-
-                            mainImage.src =
-                                src;
-
-
-                            thumbnailWrap
-                                .querySelectorAll(
-                                    ".studio-thumbnail"
-                                )
-                                .forEach(
-                                    function (btn) {
-
-                                        btn.classList.remove(
-                                            "is-active"
-                                        );
-
-                                    }
-                                );
-
-
-                            button.classList.add(
-                                "is-active"
+                        thumbnails
+                            .querySelectorAll(
+                                ".studio-thumbnail"
+                            )
+                            .forEach(
+                                function (btn) {
+                                    btn.classList.remove(
+                                        "is-active"
+                                    );
+                                }
                             );
 
-                        }
-                    );
+                        button.classList.add(
+                            "is-active"
+                        );
+
+                    }
+                );
 
 
-                    thumbnailWrap.appendChild(
-                        button
-                    );
+                thumbnails.appendChild(
+                    button
+                );
 
-                }
-            );
+            });
 
 
             gallery.appendChild(
-                thumbnailWrap
+                thumbnails
             );
 
         }
 
 
-        body.appendChild(
-            gallery
-        );
+        body.appendChild(gallery);
 
-
-        /* Description */
 
         const description =
-            document.createElement(
-                "div"
-            );
+            document.createElement("div");
 
         description.className =
             "studio-description";
@@ -333,35 +207,21 @@
 
         paragraphs
             .filter(Boolean)
-            .forEach(
-                function (text) {
+            .forEach(function (text) {
 
-                    const p =
-                        document.createElement(
-                            "p"
-                        );
+                const p =
+                    document.createElement("p");
 
-                    p.textContent =
-                        text;
+                p.textContent = text;
 
+                description.appendChild(p);
 
-                    description.appendChild(
-                        p
-                    );
-
-                }
-            );
+            });
 
 
-        body.appendChild(
-            description
-        );
+        body.appendChild(description);
 
-
-        article.appendChild(
-            body
-        );
-
+        article.appendChild(body);
 
         return article;
 
@@ -375,15 +235,11 @@
                 "studio-list"
             );
 
-
         if (!container) {
             return;
         }
 
-
-        container.innerHTML =
-            "";
-
+        container.innerHTML = "";
 
         if (
             !Array.isArray(
@@ -393,9 +249,7 @@
         ) {
 
             const empty =
-                document.createElement(
-                    "div"
-                );
+                document.createElement("div");
 
             empty.className =
                 "exhibitors-empty";
@@ -403,23 +257,17 @@
             empty.textContent =
                 "此分類資料整理中。";
 
-
-            container.appendChild(
-                empty
-            );
+            container.appendChild(empty);
 
             return;
-
         }
 
 
         exhibitorsData.studios.forEach(
             function (item) {
-
                 container.appendChild(
                     createStudioCard(item)
                 );
-
             }
         );
 
@@ -430,93 +278,116 @@
        品牌 / 廠商
     ===================================================== */
 
-    function createBrandCard(
-        item,
-        index
-    ) {
+    function createBrandCard(item, index) {
 
         const article =
-            document.createElement(
-                "article"
-            );
-
+            document.createElement("article");
 
         article.className =
             "brand-card" +
-            (
-                index % 2 === 1
-                    ? " reverse"
-                    : ""
-            );
+            (index % 2 === 1 ? " reverse" : "");
 
+
+        /* 圖片 */
 
         const media =
-            document.createElement(
-                "div"
-            );
+            document.createElement("div");
 
         media.className =
             "brand-media";
 
-
         const img =
-            document.createElement(
-                "img"
-            );
+            document.createElement("img");
 
         img.src =
             item.image || "";
 
         img.alt =
-            item.name || "參展品牌";
+            item.brandName
+                ? item.name + " " + item.brandName
+                : item.name || "參展品牌";
 
-        img.loading =
-            "lazy";
+        img.loading = "lazy";
+
+        media.appendChild(img);
 
 
-        media.appendChild(
-            img
-        );
-
+        /* 文字 */
 
         const content =
-            document.createElement(
-                "div"
-            );
+            document.createElement("div");
 
         content.className =
             "brand-content";
 
 
         const title =
-            document.createElement(
-                "h3"
-            );
+            document.createElement("h3");
 
         title.textContent =
             item.name || "";
 
+        content.appendChild(title);
+
+
+        if (item.brandName) {
+
+            const sub =
+                document.createElement("p");
+
+            sub.className =
+                "brand-name";
+
+            sub.textContent =
+                item.brandName;
+
+            content.appendChild(sub);
+
+        }
+
+
+        const links =
+            createLinks(
+                item.links,
+                "brand-links"
+            );
+
+        if (links) {
+            content.appendChild(links);
+        }
+
 
         const description =
-            document.createElement(
-                "p"
-            );
+            document.createElement("div");
 
         description.className =
             "brand-description";
 
-        description.textContent =
-            item.description || "";
+
+        const paragraphs =
+            Array.isArray(item.description)
+                ? item.description
+                : [item.description];
 
 
-        content.appendChild(
-            title
-        );
+        paragraphs
+            .filter(Boolean)
+            .forEach(function (text) {
 
-        content.appendChild(
-            description
-        );
+                const p =
+                    document.createElement("p");
 
+                p.textContent = text;
+
+                description.appendChild(p);
+
+            });
+
+
+        content.appendChild(description);
+
+
+        /* 補充資訊 */
 
         if (
             Array.isArray(item.meta) &&
@@ -524,9 +395,7 @@
         ) {
 
             const metaList =
-                document.createElement(
-                    "ul"
-                );
+                document.createElement("ul");
 
             metaList.className =
                 "brand-meta";
@@ -536,61 +405,36 @@
                 function (meta) {
 
                     const li =
-                        document.createElement(
-                            "li"
-                        );
-
+                        document.createElement("li");
 
                     const strong =
-                        document.createElement(
-                            "strong"
-                        );
+                        document.createElement("strong");
 
                     strong.textContent =
-                        (meta.label || "") +
-                        "：";
-
+                        (meta.label || "") + "：";
 
                     const span =
-                        document.createElement(
-                            "span"
-                        );
+                        document.createElement("span");
 
                     span.textContent =
                         meta.value || "";
 
+                    li.appendChild(strong);
+                    li.appendChild(span);
 
-                    li.appendChild(
-                        strong
-                    );
-
-                    li.appendChild(
-                        span
-                    );
-
-                    metaList.appendChild(
-                        li
-                    );
+                    metaList.appendChild(li);
 
                 }
             );
 
 
-            content.appendChild(
-                metaList
-            );
+            content.appendChild(metaList);
 
         }
 
 
-        article.appendChild(
-            media
-        );
-
-        article.appendChild(
-            content
-        );
-
+        article.appendChild(media);
+        article.appendChild(content);
 
         return article;
 
@@ -604,14 +448,11 @@
                 "brand-list"
             );
 
-
         if (!container) {
             return;
         }
 
-
-        container.innerHTML =
-            "";
+        container.innerHTML = "";
 
 
         if (
@@ -622,9 +463,7 @@
         ) {
 
             const empty =
-                document.createElement(
-                    "div"
-                );
+                document.createElement("div");
 
             empty.className =
                 "exhibitors-empty";
@@ -632,13 +471,9 @@
             empty.textContent =
                 "此分類資料整理中。";
 
-
-            container.appendChild(
-                empty
-            );
+            container.appendChild(empty);
 
             return;
-
         }
 
 
@@ -663,8 +498,6 @@
     ===================================================== */
 
     renderStudios();
-
     renderBrands();
-
 
 })();
