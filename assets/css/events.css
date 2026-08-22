@@ -1,14 +1,199 @@
 /* =========================================================
-   TIQA Events
-   活動頁共用樣式
-   - 共用頁尾
-   - 2023 主題聯合作品
-   - 2023 參展攤位介紹
+   TIQA 歷年活動首頁
 ========================================================= */
+
+.events-hero {
+    padding: 55px 20px;
+    background: #f7f3f4;
+    text-align: center;
+}
+
+.events-hero h1 {
+    margin: 0;
+    color: #444;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.18em;
+}
+
+.events-hero p {
+    margin: 7px 0 0;
+    color: #999;
+    font-size: 14px;
+    line-height: 1.6;
+    letter-spacing: 0.08em;
+}
+
+.events-section-heading {
+    position: relative;
+    margin-bottom: 45px;
+    padding-bottom: 22px;
+    text-align: center;
+}
+
+.events-section-heading::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 42px;
+    height: 2px;
+    background: #b98d96;
+    transform: translateX(-50%);
+}
+
+.events-label {
+    margin: 0 0 8px;
+    color: #a98a91;
+    font-size: 12px;
+    line-height: 1.6;
+    letter-spacing: 0.14em;
+}
+
+.events-section-heading h2 {
+    margin: 0;
+    color: #3f3f3f;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.12em;
+}
+
+.events-intro {
+    padding: 78px 0 82px;
+    background: #fff;
+}
+
+.events-intro-content {
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.events-intro-content p {
+    margin: 0 0 15px;
+    color: #666;
+    font-size: 16px;
+    line-height: 2;
+}
+
+.events-intro-content p:last-child {
+    margin-bottom: 0;
+}
+
+.events-list-section {
+    padding: 78px 0 95px;
+    background: #faf8f8;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.event-card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid #e5dfe1;
+    background: #fff;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.07);
+}
+
+.event-card-image {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    background: #eee;
+}
+
+.event-card-image img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    transition: transform 0.35s ease;
+}
+
+.event-card:hover .event-card-image img {
+    transform: scale(1.025);
+}
+
+.event-card-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 27px 28px 30px;
+}
+
+.event-card-year {
+    margin: 0 0 6px;
+    color: #b88d96;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.13em;
+}
+
+.event-card h3 {
+    margin: 0 0 14px;
+    color: #3f3f3f;
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.06em;
+}
+
+.event-card h3 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.event-card h3 a:hover {
+    color: #9b6f78;
+}
+
+.event-card-description {
+    margin: 0 0 25px;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.85;
+}
+
+.event-card-more {
+    display: inline-block;
+    align-self: flex-start;
+    margin-top: auto;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #b98d96;
+    color: #91656f;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.event-card-more:hover {
+    color: #6f4851;
+    border-color: #6f4851;
+}
+
+.event-card:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    max-width: calc(50% - 16px);
+}
 
 
 /* =========================================================
-   共用頁尾－返回年度活動首頁橫幅
+   共用頁尾
 ========================================================= */
 
 .event-return-banner {
@@ -26,9 +211,7 @@
     overflow: hidden;
     border: 1px solid #e2d9d5;
     background: #fff;
-    transition:
-        transform .25s ease,
-        box-shadow .25s ease;
+    transition: transform .25s ease, box-shadow .25s ease;
 }
 
 .event-return-banner-link:hover {
@@ -60,11 +243,6 @@
 /* =========================================================
    2023 主題聯合作品
 ========================================================= */
-
-
-/* ---------------------------------------------------------
-   Hero
---------------------------------------------------------- */
 
 .theme-hero {
     padding: 48px 20px 42px;
@@ -102,11 +280,6 @@
     background: #b98d96;
     transform: translateX(-50%);
 }
-
-
-/* ---------------------------------------------------------
-   Intro
---------------------------------------------------------- */
 
 .theme-intro {
     padding: 60px 0 65px;
@@ -149,11 +322,6 @@
     font-weight: 500;
 }
 
-
-/* ---------------------------------------------------------
-   Section
---------------------------------------------------------- */
-
 .theme-section {
     padding: 70px 0 80px;
 }
@@ -162,16 +330,9 @@
     background: #faf8f8;
 }
 
-
-/* ---------------------------------------------------------
-   Theme Feature
---------------------------------------------------------- */
-
 .theme-feature {
     display: grid;
-    grid-template-columns:
-        minmax(300px, 1fr)
-        minmax(0, 1fr);
+    grid-template-columns: minmax(300px, 1fr) minmax(0, 1fr);
     gap: 55px;
     align-items: center;
     max-width: 1050px;
@@ -198,11 +359,6 @@
     font-size: 16px;
     line-height: 2;
 }
-
-
-/* ---------------------------------------------------------
-   Section Heading
---------------------------------------------------------- */
 
 .theme-heading {
     position: relative;
@@ -238,11 +394,6 @@
     line-height: 1.5;
     letter-spacing: .08em;
 }
-
-
-/* ---------------------------------------------------------
-   製作原則
---------------------------------------------------------- */
 
 .theme-rules-grid {
     display: grid;
@@ -280,11 +431,6 @@
     line-height: 1.9;
 }
 
-
-/* ---------------------------------------------------------
-   配色規範
---------------------------------------------------------- */
-
 .color-grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -308,21 +454,10 @@
     border-radius: 50%;
 }
 
-.color-white {
-    background: #fff;
-}
-
-.color-green {
-    background: #789a74;
-}
-
-.color-black {
-    background: #2f2f2f;
-}
-
-.color-brown {
-    background: #8a6047;
-}
+.color-white { background: #fff; }
+.color-green { background: #789a74; }
+.color-black { background: #2f2f2f; }
+.color-brown { background: #8a6047; }
 
 .color-card h3 {
     margin: 0 0 6px;
@@ -336,11 +471,6 @@
     color: #888;
     font-size: 13px;
 }
-
-
-/* ---------------------------------------------------------
-   製作範例
---------------------------------------------------------- */
 
 .example-grid {
     display: grid;
@@ -373,11 +503,6 @@
     text-align: center;
 }
 
-
-/* ---------------------------------------------------------
-   PDF
---------------------------------------------------------- */
-
 .theme-download {
     display: flex;
     align-items: center;
@@ -390,19 +515,6 @@
     background: #fff;
     color: inherit;
     text-decoration: none;
-    transition:
-        transform .2s ease,
-        box-shadow .2s ease;
-}
-
-.theme-download:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 7px 20px rgba(0, 0, 0, .08);
-}
-
-.theme-download:focus-visible {
-    outline: 3px solid #b98d96;
-    outline-offset: 4px;
 }
 
 .theme-download-type {
@@ -420,15 +532,9 @@
 }
 
 .theme-download-arrow {
-    flex: 0 0 auto;
     color: #a97882;
     font-size: 25px;
 }
-
-
-/* ---------------------------------------------------------
-   展出資訊
---------------------------------------------------------- */
 
 .historical-info {
     max-width: 850px;
@@ -461,11 +567,6 @@
    2023 參展攤位介紹
 ========================================================= */
 
-
-/* ---------------------------------------------------------
-   Hero
---------------------------------------------------------- */
-
 .exhibitors-hero {
     padding: 48px 20px 42px;
     background: #f8f3f4;
@@ -482,31 +583,11 @@
 }
 
 .exhibitors-hero p {
-    position: relative;
-    display: inline-block;
     margin: 8px 0 0;
-    padding-bottom: 17px;
     color: #999;
     font-size: 13px;
-    line-height: 1.6;
     letter-spacing: .12em;
 }
-
-.exhibitors-hero p::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    width: 42px;
-    height: 2px;
-    background: #b98d96;
-    transform: translateX(-50%);
-}
-
-
-/* ---------------------------------------------------------
-   Intro
---------------------------------------------------------- */
 
 .exhibitors-intro {
     padding: 60px 0 65px;
@@ -523,7 +604,6 @@
     color: #444;
     font-size: 27px;
     font-weight: 500;
-    line-height: 1.5;
 }
 
 .exhibitors-intro-content p {
@@ -532,11 +612,6 @@
     font-size: 16px;
     line-height: 2;
 }
-
-
-/* ---------------------------------------------------------
-   Section
---------------------------------------------------------- */
 
 .exhibitors-section {
     padding: 70px 0 80px;
@@ -568,7 +643,6 @@
     margin: 0 0 7px;
     color: #a98a91;
     font-size: 12px;
-    line-height: 1.5;
     letter-spacing: .14em;
 }
 
@@ -577,16 +651,10 @@
     color: #444;
     font-size: 28px;
     font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: .1em;
 }
 
-
-/* ---------------------------------------------------------
-   工作室 / 個人
---------------------------------------------------------- */
-
-.studio-list {
+.studio-list,
+.brand-list {
     max-width: 1080px;
     margin: 0 auto;
 }
@@ -594,15 +662,6 @@
 .studio-card {
     padding: 38px 0;
     border-bottom: 1px solid #e6e0de;
-}
-
-.studio-card:first-child {
-    padding-top: 0;
-}
-
-.studio-card:last-child {
-    padding-bottom: 0;
-    border-bottom: 0;
 }
 
 .studio-card-header {
@@ -618,19 +677,16 @@
     color: #455267;
     font-size: 23px;
     font-weight: 500;
-    line-height: 1.5;
 }
 
 .studio-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 0;
 }
 
 .studio-links a {
     color: #a47c84;
     font-size: 13px;
-    line-height: 1.6;
     text-decoration: none;
 }
 
@@ -640,20 +696,9 @@
     color: #bbb;
 }
 
-.studio-links a:hover {
-    color: #7c555f;
-}
-
-.studio-links a:focus-visible {
-    outline: 3px solid rgba(185, 141, 150, .28);
-    outline-offset: 2px;
-}
-
 .studio-card-body {
     display: grid;
-    grid-template-columns:
-        minmax(280px, .9fr)
-        minmax(0, 1.25fr);
+    grid-template-columns: minmax(280px, .9fr) minmax(0, 1.25fr);
     gap: 48px;
     align-items: start;
 }
@@ -693,20 +738,9 @@
 }
 
 .studio-thumbnail img {
-    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.studio-thumbnail.is-active {
-    border-color: #9b6f78;
-    box-shadow: 0 0 0 2px rgba(155, 111, 120, .12);
-}
-
-.studio-thumbnail:focus-visible {
-    outline: 3px solid rgba(185, 141, 150, .28);
-    outline-offset: 2px;
 }
 
 .studio-description p {
@@ -716,38 +750,13 @@
     line-height: 1.95;
 }
 
-.studio-description p:last-child {
-    margin-bottom: 0;
-}
-
-
-/* ---------------------------------------------------------
-   品牌 / 廠商
---------------------------------------------------------- */
-
-.brand-list {
-    max-width: 1050px;
-    margin: 0 auto;
-}
-
 .brand-card {
     display: grid;
-    grid-template-columns:
-        minmax(260px, .9fr)
-        minmax(0, 1.1fr);
+    grid-template-columns: minmax(260px, .9fr) minmax(0, 1.1fr);
     gap: 48px;
     align-items: center;
     padding: 36px 0;
     border-bottom: 1px solid #e8e2df;
-}
-
-.brand-card:first-child {
-    padding-top: 0;
-}
-
-.brand-card:last-child {
-    padding-bottom: 0;
-    border-bottom: 0;
 }
 
 .brand-card.reverse .brand-media {
@@ -780,15 +789,12 @@
     color: #455267;
     font-size: 23px;
     font-weight: 500;
-    line-height: 1.5;
 }
 
 .brand-name {
     margin: -8px 0 12px;
     color: #999;
     font-size: 13px;
-    line-height: 1.6;
-    letter-spacing: .06em;
 }
 
 .brand-links {
@@ -805,27 +811,7 @@
     color: #946d75;
     background: #fff;
     font-size: 13px;
-    line-height: 1.5;
     text-decoration: none;
-    transition:
-        border-color .2s ease,
-        background .2s ease,
-        color .2s ease;
-}
-
-.brand-links a:hover {
-    border-color: #b98d96;
-    color: #7d555e;
-    background: #faf6f7;
-}
-
-.brand-links a:focus-visible {
-    outline: 3px solid rgba(185, 141, 150, .28);
-    outline-offset: 2px;
-}
-
-.brand-description {
-    margin: 0 0 16px;
 }
 
 .brand-description p {
@@ -833,10 +819,6 @@
     color: #666;
     font-size: 15px;
     line-height: 1.95;
-}
-
-.brand-description p:last-child {
-    margin-bottom: 0;
 }
 
 .brand-meta {
@@ -857,48 +839,31 @@
     font-weight: 500;
 }
 
-
-/* ---------------------------------------------------------
-   Empty
---------------------------------------------------------- */
-
 .exhibitors-empty {
     padding: 40px 25px;
     border: 1px solid #e7e1de;
     background: #fff;
     color: #777;
     text-align: center;
-    line-height: 1.9;
 }
 
 
 /* =========================================================
-   Tablet
+   RWD
 ========================================================= */
 
 @media (max-width: 900px) {
-
-    .theme-feature {
-        grid-template-columns: 1fr;
-        gap: 32px;
+    .events-grid {
+        gap: 24px;
     }
 
-    .theme-feature-image {
-        max-width: 650px;
-        margin: 0 auto;
+    .event-card-content {
+        padding: 24px 23px 27px;
     }
 
-    .color-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .example-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
+    .theme-feature,
     .studio-card-body,
-    .brand-card,
-    .brand-card.reverse {
+    .brand-card {
         grid-template-columns: 1fr;
         gap: 24px;
     }
@@ -908,164 +873,76 @@
         order: initial;
     }
 
-    .studio-gallery-main {
-        min-height: 280px;
+    .color-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
+    .example-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 }
 
-
-/* =========================================================
-   Mobile
-========================================================= */
-
 @media (max-width: 650px) {
+    .events-hero {
+        padding: 40px 18px;
+    }
 
-    /* 共用頁尾 */
+    .events-hero h1 {
+        font-size: 27px;
+    }
+
+    .events-intro,
+    .events-list-section {
+        padding: 55px 0 65px;
+    }
+
+    .events-section-heading {
+        margin-bottom: 35px;
+        padding-bottom: 18px;
+    }
+
+    .events-section-heading h2 {
+        font-size: 24px;
+    }
+
+    .events-intro-content {
+        text-align: left;
+    }
+
+    .events-intro-content p {
+        font-size: 15px;
+    }
+
+    .events-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .event-card:last-child:nth-child(odd) {
+        grid-column: auto;
+        max-width: none;
+    }
+
+    .theme-rules-grid,
+    .example-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .color-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 
     .event-return-banner {
         padding: 30px 15px 40px;
     }
 
-    .event-return-hint {
-        margin-top: 10px;
-        font-size: 12px;
-    }
-
-
-    /* Theme Quilt */
-
-    .theme-hero {
-        padding: 38px 18px 34px;
-    }
-
-    .theme-hero h1 {
-        font-size: 25px;
-    }
-
-    .theme-intro {
-        padding: 45px 0 55px;
-    }
-
-    .theme-intro-content h2,
-    .theme-feature-content h2,
-    .theme-heading h2 {
-        font-size: 23px;
-    }
-
-    .theme-intro-content p {
-        font-size: 15px;
-        line-height: 1.9;
-    }
-
-    .archive-note {
-        margin-top: 28px;
-        padding: 16px 18px;
-    }
-
+    .exhibitors-section,
     .theme-section {
         padding: 50px 0 60px;
-    }
-
-    .theme-feature {
-        gap: 25px;
-    }
-
-    .theme-rules-grid {
-        grid-template-columns: 1fr;
-        gap: 14px;
-    }
-
-    .theme-rule-card {
-        padding: 25px 22px;
-    }
-
-    .color-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 12px;
-    }
-
-    .color-card {
-        padding: 22px 12px;
-    }
-
-    .color-dot {
-        width: 48px;
-        height: 48px;
-    }
-
-    .example-grid {
-        grid-template-columns: 1fr;
-        gap: 18px;
-    }
-
-    .theme-download {
-        padding: 21px 20px;
-    }
-
-    .historical-row {
-        grid-template-columns: 1fr;
-        gap: 5px;
-        padding: 16px 0;
-    }
-
-
-    /* Exhibitors */
-
-    .exhibitors-hero {
-        padding: 38px 18px 34px;
-    }
-
-    .exhibitors-hero h1 {
-        font-size: 25px;
-    }
-
-    .exhibitors-section {
-        padding: 50px 0 60px;
-    }
-
-    .exhibitors-intro {
-        padding: 45px 0 55px;
-    }
-
-    .exhibitors-intro-content h2,
-    .exhibitors-heading h2 {
-        font-size: 23px;
-    }
-
-    .studio-card {
-        padding: 30px 0;
-    }
-
-    .studio-card-title,
-    .brand-content h3 {
-        font-size: 21px;
-    }
-
-    .studio-card-body {
-        gap: 22px;
-    }
-
-    .studio-gallery-main {
-        min-height: 220px;
     }
 
     .studio-thumbnail {
         width: 62px;
         height: 62px;
     }
-
-    .brand-card {
-        padding: 28px 0;
-    }
-
-    .brand-links {
-        gap: 7px 8px;
-    }
-
-    .brand-links a {
-        padding: 5px 9px;
-        font-size: 12px;
-    }
-
 }
