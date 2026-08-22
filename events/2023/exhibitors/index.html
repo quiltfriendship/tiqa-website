@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>參展攤位介紹｜2023 友好拼布手作節｜台灣國際拼布友好會 TIQA</title>
+
+    <meta name="description"
+          content="2023 友好拼布手作節參展攤位介紹，包含拼布教室、個人工作室、創作者及相關品牌廠商。">
+
+    <!-- 全站共用 CSS -->
+    <link rel="stylesheet"
+          href="/assets/css/style.css">
+
+    <!-- 歷年活動共用 CSS -->
+    <link rel="stylesheet"
+          href="/assets/css/events.css">
+
+    <!-- 共用 HEAD -->
+    <script src="/assets/js/head-common.js"></script>
+
+
+    <style>
+
+        /* =====================================================
+           Hero
+        ===================================================== */
+
+        .exhibitors-hero {
+            padding: 48px 20px 42px;
+            background: #f8f3f4;
+            text-align: center;
+        }
+
+        .exhibitors-hero h1 {
+            margin: 0;
+            color: #444;
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 1.5;
+            letter-spacing: 0.1em;
+        }
+
+        .exhibitors-hero p {
+            position: relative;
+            display: inline-block;
+            margin: 8px 0 0;
+            padding-bottom: 17px;
+            color: #999;
+            font-size: 13px;
+            line-height: 1.6;
+            letter-spacing: 0.12em;
+        }
+
+        .exhibitors-hero p::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            width: 42px;
+            height: 2px;
+            background: #b98d96;
+            transform: translateX(-50%);
+        }
+
+
+        /* =====================================================
+           Intro
+        ===================================================== */
+
+        .exhibitors-intro {
+            padding: 60px 0 65px;
+            background: #fff;
+        }
+
+        .exhibitors-intro-content {
+            max-width: 880px;
+            margin: 0 auto;
+        }
+
+        .exhibitors-intro-content h2 {
+            margin: 0 0 20px;
+            color: #444;
+            font-size: 27px;
+            font-weight: 500;
+            line-height: 1.5;
+        }
+
+        .exhibitors-intro-content p {
+            margin: 0 0 18px;
+            color: #666;
+            font-size: 16px;
+            line-height: 2;
+        }
+
+        .archive-note {
+            max-width: 880px;
+            margin: 35px auto 0;
+            padding: 18px 22px;
+            border-left: 3px solid #b98d96;
+            background: #faf8f8;
+            color: #666;
+            font-size: 14px;
+            line-height: 1.9;
+        }
+
+        .archive-note strong {
+            color: #8f656f;
+            font-weight: 500;
+        }
+
+
+        /* =====================================================
+           Section
+        ===================================================== */
+
+        .exhibitors-section {
+            padding: 70px 0 80px;
+        }
+
+        .exhibitors-section.alt {
+            background: #faf8f8;
+        }
+
+        .exhibitors-heading {
+            position: relative;
+            margin-bottom: 45px;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+
+        .exhibitors-heading::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            width: 42px;
+            height: 2px;
+            background: #b98d96;
+            transform: translateX(-50%);
+        }
+
+        .exhibitors-label {
+            margin: 0 0 7px;
+            color: #a98a91;
+            font-size: 12px;
+            line-height: 1.5;
+            letter-spacing: 0.14em;
+        }
+
+        .exhibitors-heading h2 {
+            margin: 0;
+            color: #444;
+            font-size: 28px;
+            font-weight: 500;
+            line-height: 1.5;
+            letter-spacing: 0.1em;
+        }
+
+
+        /* =====================================================
+           Exhibitor List
+        ===================================================== */
+
+        .exhibitor-list {
+            max-width: 1050px;
+            margin: 0 auto;
+        }
+
+        .exhibitor-card {
+            display: grid;
+            grid-template-columns:
+                minmax(260px, 0.9fr)
+                minmax(0, 1.1fr);
+            gap: 48px;
+            align-items: center;
+
+            padding: 36px 0;
+            border-bottom: 1px solid #e8e2df;
+        }
+
+        .exhibitor-card:first-child {
+            padding-top: 0;
+        }
+
+        .exhibitor-card:last-child {
+            padding-bottom: 0;
+            border-bottom: 0;
+        }
+
+        .exhibitor-card.reverse .exhibitor-media {
+            order: 2;
+        }
+
+        .exhibitor-card.reverse .exhibitor-content {
+            order: 1;
+        }
+
+        .exhibitor-media {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            min-height: 230px;
+            padding: 18px;
+
+            background: #fff;
+            border: 1px solid #e7e1de;
+        }
+
+        .exhibitor-media img {
+            display: block;
+            width: 100%;
+            max-height: 360px;
+            object-fit: contain;
+        }
+
+        .exhibitor-category {
+            margin: 0 0 7px;
+            color: #a98a91;
+            font-size: 11px;
+            letter-spacing: 0.12em;
+        }
+
+        .exhibitor-content h3 {
+            margin: 0 0 15px;
+            color: #455267;
+            font-size: 23px;
+            font-weight: 500;
+            line-height: 1.5;
+        }
+
+        .exhibitor-description {
+            margin: 0 0 18px;
+            color: #666;
+            font-size: 15px;
+            line-height: 1.95;
+            white-space: pre-line;
+        }
+
+        .exhibitor-meta {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .exhibitor-meta li {
+            margin-top: 7px;
+            color: #777;
+            font-size: 13px;
+            line-height: 1.8;
+        }
+
+        .exhibitor-meta strong {
+            color: #8f656f;
+            font-weight: 500;
+        }
+
+
+        /* =====================================================
+           Empty / Notice
+        ===================================================== */
+
+        .exhibitors-empty {
+            padding: 40px 25px;
+            border: 1px solid #e7e1de;
+            background: #fff;
+            color: #777;
+            text-align: center;
+            line-height: 1.9;
+        }
+
+
+        /* =====================================================
+           RWD
+        ===================================================== */
+
+        @media (max-width: 800px) {
+
+            .exhibitor-card,
+            .exhibitor-card.reverse {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            .exhibitor-card.reverse .exhibitor-media,
+            .exhibitor-card.reverse .exhibitor-content {
+                order: initial;
+            }
+
+        }
+
+        @media (max-width: 650px) {
+
+            .exhibitors-hero {
+                padding: 38px 18px 34px;
+            }
+
+            .exhibitors-hero h1 {
+                font-size: 25px;
+            }
+
+            .exhibitors-section {
+                padding: 50px 0 60px;
+            }
+
+            .exhibitors-intro {
+                padding: 45px 0 55px;
+            }
+
+            .exhibitors-intro-content h2,
+            .exhibitors-heading h2 {
+                font-size: 23px;
+            }
+
+            .exhibitor-card {
+                padding: 28px 0;
+            }
+
+            .exhibitor-media {
+                min-height: 180px;
+            }
+
+            .exhibitor-content h3 {
+                font-size: 21px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     Header
+===================================================== -->
+
+<div id="site-header"></div>
+
+
+<!-- =====================================================
+     Breadcrumb
+===================================================== -->
+
+<nav id="breadcrumb"
+     class="breadcrumb"
+     aria-label="麵包屑">
+</nav>
+
+
+<main>
+
+
+    <!-- =================================================
+         Hero
+    ================================================= -->
+
+    <section class="exhibitors-hero">
+
+        <h1>
+            參展攤位介紹
+        </h1>
+
+        <p>
+            Exhibitors
+        </p>
+
+    </section>
+
+
+
+    <!-- =================================================
+         Intro
+    ================================================= -->
+
+    <section class="exhibitors-intro">
+
+        <div class="content-container">
+
+            <div class="exhibitors-intro-content">
+
+                <h2>
+                    2023 友好拼布手作節參展單位
+                </h2>
+
+                <p>
+                    2023 友好拼布手作節除作品展與相關活動外，
+                    亦邀請拼布教室、個人工作室、創作者，
+                    以及材料、工具、設備等相關品牌共同參展。
+                </p>
+
+                <p>
+                    本頁將原網站分開呈現的參展資訊整合為一頁，
+                    並依參展性質分為「拼布教室・工作室」與
+                    「品牌・相關廠商」兩大類。
+                </p>
+
+            </div>
+
+
+            <div class="archive-note">
+
+                <strong>
+                    歷史資料
+                </strong>
+
+                ｜本頁為 2023 年友好拼布手作節參展攤位紀錄，
+                相關聯絡及販售資訊請以各單位目前公告為準。
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         拼布教室 / 工作室
+    ================================================= -->
+
+    <section class="exhibitors-section alt">
+
+        <div class="content-container">
+
+            <div class="exhibitors-heading">
+
+                <p class="exhibitors-label">
+                    Studios &amp; Creators
+                </p>
+
+                <h2>
+                    拼布教室・工作室
+                </h2>
+
+            </div>
+
+
+            <div id="studio-list"
+                 class="exhibitor-list">
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         品牌 / 廠商
+    ================================================= -->
+
+    <section class="exhibitors-section">
+
+        <div class="content-container">
+
+            <div class="exhibitors-heading">
+
+                <p class="exhibitors-label">
+                    Brands &amp; Vendors
+                </p>
+
+                <h2>
+                    品牌・相關廠商
+                </h2>
+
+            </div>
+
+
+            <div id="brand-list"
+                 class="exhibitor-list">
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         返回 2023 活動首頁
+    ================================================= -->
+
+    <section class="event-return-banner">
+
+        <div class="content-container">
+
+            <a href="/events/2023/"
+               class="event-return-banner-link"
+               aria-label="返回 2023 友好拼布手作節首頁">
+
+                <img
+                    src="/events/2023/event-footer.jpg"
+                    alt="2023 友好拼布手作節，2023年11月17日至11月19日，臺北松山文創園區一號倉庫">
+
+            </a>
+
+            <p class="event-return-hint">
+                點擊圖片返回 2023 友好拼布手作節
+            </p>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<!-- =====================================================
+     Footer
+===================================================== -->
+
+<div id="site-footer"></div>
+
+
+<!-- =====================================================
+     JavaScript
+===================================================== -->
+
+<script src="/assets/js/include.js"></script>
+
+
+<script>
+
+    window.breadcrumbData = [
+
+        {
+            title: "首頁",
+            url: "/"
+        },
+
+        {
+            title: "歷年活動",
+            url: "/events/"
+        },
+
+        {
+            title: "2023 友好拼布手作節",
+            url: "/events/2023/"
+        },
+
+        {
+            title: "參展攤位介紹"
+        }
+
+    ];
+
+</script>
+
+
+<script src="/assets/js/breadcrumb.js"></script>
+
+
+<!-- 參展攤位 DATA -->
+<script src="/events/2023/exhibitors/exhibitors-data.js"></script>
+
+
+<!-- 產生參展攤位 -->
+<script src="/events/2023/exhibitors/exhibitors.js"></script>
+
+
+</body>
+
+</html>
