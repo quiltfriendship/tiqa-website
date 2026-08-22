@@ -19,7 +19,17 @@ const exhibitorsData = {
         {
             name: "一個小袋子工作室",
 
-            links: [],
+            links: [
+			    {
+                    label: "Facebook",
+                    url: "https://www.facebook.com/people/%E4%B8%80%E5%80%8B%E5%B0%8F%E8%A2%8B%E5%AD%90%E5%B7%A5%E4%BD%9C%E5%AE%A4/100064331545911/?mibextid=LQQJ4d"
+                },
+
+                {
+                    label: "Instagram",
+                    url: "https://www.instagram.com/p/CU7kfsUJsND/?utm_medium=copy_link"
+                }
+			],
 
             images: [
                 "/events/2023/exhibitors/studio-01-bag-01.jpg",
@@ -66,7 +76,7 @@ const exhibitorsData = {
             ],
 
             images: [
-                "/events/2023/exhibitors/studio-02-4inlove.jpg"
+                "/events/2023/exhibitors/default.jpg"
             ],
 
             description: [
