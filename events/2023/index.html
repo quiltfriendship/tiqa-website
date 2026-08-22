@@ -18,6 +18,9 @@
     <link rel="stylesheet"
           href="/assets/css/style.css">
 
+    <link rel="stylesheet"
+          href="/assets/css/events.css">
+
 
     <!-- 共用 HEAD -->
     <script src="/assets/js/head-common.js"></script>
@@ -245,8 +248,8 @@
             display: grid;
 
             grid-template-columns:
-                minmax(300px, 1.15fr)
-                minmax(280px, 0.85fr);
+                minmax(280px, 0.85fr)
+                minmax(300px, 1.15fr);
 
             gap: 45px;
 
@@ -292,7 +295,7 @@
 
 
         .event-exhibition-content {
-            padding-right: 15px;
+            padding-left: 15px;
         }
 
 
@@ -487,44 +490,6 @@
 
 
 
-        /* =====================================================
-           返回歷年活動
-        ===================================================== */
-
-        .event-year-back {
-            padding: 40px 0 50px;
-
-            background: #faf8f8;
-
-            text-align: center;
-        }
-
-
-        .event-year-back a {
-            display: inline-block;
-
-            padding: 9px 22px;
-
-            border: 1px solid #aaa;
-
-            color: #555;
-
-            background: #fff;
-
-            font-size: 14px;
-
-            text-decoration: none;
-        }
-
-
-        .event-year-back a:hover {
-            color: #fff;
-
-            border-color: #8f656f;
-
-            background: #8f656f;
-        }
-
 
 
         /* =====================================================
@@ -548,7 +513,7 @@
 
 
             .event-exhibition-content {
-                padding-right: 0;
+                padding-left: 0;
             }
 
         }
@@ -759,15 +724,6 @@
 
             <article class="event-exhibition-card">
 
-                <div class="event-exhibition-image">
-
-                    <img id="exhibition-image"
-                         src="/events/2023/exhibition.jpg"
-                         alt="2023 作品展">
-
-                </div>
-
-
                 <div class="event-exhibition-content">
 
                     <p id="exhibition-description"
@@ -781,6 +737,15 @@
                         瀏覽作品展 →
 
                     </a>
+
+                </div>
+
+
+                <div class="event-exhibition-image">
+
+                    <img id="exhibition-image"
+                         src="/events/2023/exhibition.jpg"
+                         alt="2023 作品展">
 
                 </div>
 
