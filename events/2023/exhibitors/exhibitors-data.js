@@ -115,8 +115,43 @@ https://www.facebook.com/ClaireLinHandmade?mibextid=ZbWKwL"
 
             ]
 
-        }
+        },
+		
+        {
+            name: "小野布房拼布教室",
 
+            links: [
+                {
+                    label: "官方網站",
+                    url: "https://www.onoyaa.com/"
+                },
+
+                {
+                    label: "Facebook",
+                    url: "https://www.facebook.com/people/%E5%B0%8F%E9%87%8E%E5%B8%83%E6%88%BF%E6%8B%BC%E5%B8%83%E6%95%99%E5%AE%A4/100066306737142/"
+                },
+
+                {
+                    label: "Instagram",
+                    url: "https://www.instagram.com/lins___house/"
+                },
+
+                {
+                    label: "Line",
+                    url: "https://line.me/R/ti/p/@ufj4107u?from=page&liff.referrer=https%3A%2F%2Ftiqa2023.weebly.com%2F&searchId=ufj4107u"
+                }
+            ],
+
+            images: [
+                "/events/2023/exhibitors/sstudio-03-01.jpg"
+            ],
+
+            description: [
+                "小野布房成立於2007年，教室擁有色彩繽紛的印花布、各種各樣的工具及課程，源源不斷地激發創作能量，不遺餘力地追求美感，堅持藝術本身的純粹性，並延續一貫簡單、舒適且有型的風格。
+",
+                "課程包含證書認證班、手縫課程、機縫課程及簡易洋裁，有適合無經驗朋友的客製化入門課程，也有進階研修課程。"
+            ]
+        }
         /*
         ,
         {
@@ -151,6 +186,16 @@ https://www.facebook.com/ClaireLinHandmade?mibextid=ZbWKwL"
     brands: [
 
         {
+            name: "RICCAR 立家手創館",
+
+            image:
+                "/events/2023/exhibitors/brand-riccar.jpg",
+
+            description:
+                "2023 友好拼布手作節參展品牌。",
+
+            meta: []
+        },{
             name: "Sew Mate",
 
             image:
