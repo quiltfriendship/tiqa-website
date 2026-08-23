@@ -2685,3 +2685,307 @@ a.ticket-outlet-name:hover {
     }
 
 }
+
+/* =========================================================
+   2025 會員專屬 50×50 作品徵件
+========================================================= */
+
+.member-quilt-hero {
+    padding: 50px 20px 44px;
+    background: #f8f3f4;
+    text-align: center;
+}
+.member-quilt-eyebrow,
+.member-quilt-kicker,
+.member-quilt-heading > p {
+    margin: 0 0 8px;
+    color: #b18a92;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: .14em;
+}
+.member-quilt-hero h1 {
+    margin: 0;
+    color: #444;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: .08em;
+}
+.member-quilt-theme {
+    position: relative;
+    display: inline-block;
+    margin: 9px 0 0;
+    padding-bottom: 18px;
+    color: #777;
+    font-size: 15px;
+    letter-spacing: .08em;
+}
+.member-quilt-theme::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 42px;
+    height: 2px;
+    background: #b98d96;
+    transform: translateX(-50%);
+}
+.member-quilt-intro {
+    padding: 62px 0 68px;
+}
+.member-quilt-intro-inner {
+    max-width: 880px;
+    margin: 0 auto;
+    text-align: center;
+}
+.member-quilt-intro-inner h2 {
+    margin: 0 0 22px;
+    color: #444;
+    font-size: 28px;
+    font-weight: 500;
+}
+.member-quilt-intro-inner > p:not(.member-quilt-kicker) {
+    margin: 0 0 15px;
+    color: #666;
+    font-size: 16px;
+    line-height: 2;
+}
+.member-quilt-archive-note {
+    max-width: 880px;
+    margin: 34px auto 0;
+    padding: 17px 21px;
+    border-left: 3px solid #b98d96;
+    background: #faf8f8;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.9;
+}
+.member-quilt-archive-note strong {
+    color: #8f656f;
+}
+.member-quilt-section {
+    padding: 70px 0 82px;
+    background: #fff;
+}
+.member-quilt-section.alt {
+    background: #faf8f8;
+}
+.member-quilt-heading {
+    position: relative;
+    margin-bottom: 42px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.member-quilt-heading::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 42px;
+    height: 2px;
+    background: #b98d96;
+    transform: translateX(-50%);
+}
+.member-quilt-heading h2 {
+    margin: 0;
+    color: #444;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: .06em;
+}
+.member-quilt-summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    max-width: 1000px;
+    margin: 0 auto 28px;
+}
+.member-quilt-summary article {
+    padding: 27px 25px;
+    border: 1px solid #e5dddb;
+    background: #fff;
+}
+.member-quilt-summary span {
+    color: #b98d96;
+    font-family: Georgia, serif;
+    font-size: 27px;
+}
+.member-quilt-summary h3 {
+    margin: 12px 0 9px;
+    color: #455267;
+    font-size: 19px;
+    font-weight: 500;
+}
+.member-quilt-summary p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.8;
+}
+.member-quilt-rules {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 25px 30px 25px 55px;
+    background: #fff;
+    border: 1px solid #e5dddb;
+}
+.member-quilt-rules li {
+    margin-bottom: 10px;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.9;
+}
+.member-quilt-registration {
+    display: grid;
+    grid-template-columns: 1.15fr .85fr;
+    gap: 40px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+.member-quilt-registration-text h3 {
+    margin: 0 0 16px;
+    color: #455267;
+    font-size: 22px;
+    font-weight: 500;
+}
+.member-quilt-registration-text p,
+.member-quilt-registration-text li {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.9;
+}
+.member-quilt-registration-text ul {
+    margin: 20px 0 0;
+    padding-left: 20px;
+}
+.member-quilt-status {
+    padding: 28px;
+    background: #faf6f7;
+    border: 1px solid #e4dcde;
+}
+.member-quilt-status-label {
+    margin: 0 0 7px;
+    color: #b18a92;
+    font-size: 11px;
+    letter-spacing: .12em;
+}
+.member-quilt-status h3 {
+    margin: 0 0 20px;
+    color: #8f656f;
+    font-size: 23px;
+    font-weight: 500;
+}
+.member-quilt-status dl,
+.member-quilt-status dd {
+    margin: 0;
+}
+.member-quilt-status dl > div {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 11px 0;
+    border-top: 1px solid #e4dcde;
+}
+.member-quilt-status dt,
+.member-quilt-status dd {
+    color: #666;
+    font-size: 14px;
+}
+.member-quilt-exhibition {
+    display: grid;
+    grid-template-columns: 1.3fr .8fr 1fr;
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 1px solid #e5dddb;
+    background: #fff;
+}
+.member-quilt-exhibition > div {
+    padding: 27px 25px;
+    border-right: 1px solid #e5dddb;
+}
+.member-quilt-exhibition > div:last-child {
+    border-right: 0;
+}
+.member-quilt-exhibition span {
+    color: #b18a92;
+    font-size: 11px;
+    letter-spacing: .12em;
+}
+.member-quilt-exhibition h3 {
+    margin: 10px 0 0;
+    color: #455267;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.6;
+}
+.member-quilt-download {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 25px 28px;
+    border: 1px solid #e5dddb;
+    background: #faf8f8;
+}
+.member-quilt-download-type {
+    margin: 0 0 5px;
+    color: #b18a92;
+    font-size: 11px;
+    letter-spacing: .14em;
+}
+.member-quilt-download-title {
+    margin: 0;
+    color: #455267;
+    font-size: 17px;
+}
+.member-quilt-download a {
+    flex: 0 0 auto;
+    padding: 12px 19px;
+    background: #a97983;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+.member-quilt-download a:hover,
+.member-quilt-download a:focus {
+    opacity: .88;
+}
+
+@media (max-width: 800px) {
+    .member-quilt-summary,
+    .member-quilt-registration,
+    .member-quilt-exhibition {
+        grid-template-columns: 1fr;
+    }
+    .member-quilt-exhibition > div {
+        border-right: 0;
+        border-bottom: 1px solid #e5dddb;
+    }
+    .member-quilt-exhibition > div:last-child {
+        border-bottom: 0;
+    }
+}
+
+@media (max-width: 650px) {
+    .member-quilt-hero h1 {
+        font-size: 25px;
+    }
+    .member-quilt-intro,
+    .member-quilt-section {
+        padding: 48px 0 58px;
+    }
+    .member-quilt-intro-inner h2,
+    .member-quilt-heading h2 {
+        font-size: 23px;
+    }
+    .member-quilt-download {
+        display: block;
+    }
+    .member-quilt-download a {
+        display: inline-block;
+        margin-top: 18px;
+    }
+}
