@@ -4935,3 +4935,253 @@ a.ticket-outlet-name:hover {
         min-height: 100px;
     }
 }
+
+/* =========================================================
+   2021 最新消息
+========================================================= */
+
+.news2021-hero {
+    padding: 50px 20px 44px;
+    background: #f8f3f4;
+    text-align: center;
+}
+
+.news2021-eyebrow,
+.news2021-kicker,
+.news2021-heading > p {
+    margin: 0 0 8px;
+    color: #b18a92;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: .14em;
+}
+
+.news2021-hero h1 {
+    margin: 0;
+    color: #444;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: .08em;
+}
+
+.news2021-subtitle {
+    position: relative;
+    display: inline-block;
+    margin: 9px 0 0;
+    padding-bottom: 18px;
+    color: #777;
+    font-size: 15px;
+    letter-spacing: .06em;
+}
+
+.news2021-subtitle::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 42px;
+    height: 2px;
+    background: #b98d96;
+    transform: translateX(-50%);
+}
+
+.news2021-intro {
+    padding: 62px 0 64px;
+    background: #fff;
+}
+
+.news2021-intro-inner {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.news2021-intro-inner h2 {
+    margin: 0 0 20px;
+    color: #444;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.news2021-intro-inner > p:not(.news2021-kicker) {
+    margin: 0;
+    color: #666;
+    font-size: 16px;
+    line-height: 2;
+}
+
+.news2021-archive-note {
+    max-width: 850px;
+    margin: 32px auto 0;
+    padding: 17px 21px;
+    border-left: 3px solid #b98d96;
+    background: #faf8f8;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.news2021-archive-note strong {
+    color: #8f656f;
+}
+
+.news2021-section {
+    padding: 70px 0 82px;
+    background: #faf8f8;
+}
+
+.news2021-heading {
+    position: relative;
+    margin-bottom: 42px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.news2021-heading::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 42px;
+    height: 2px;
+    background: #b98d96;
+    transform: translateX(-50%);
+}
+
+.news2021-heading h2 {
+    margin: 0;
+    color: #444;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: .06em;
+}
+
+.news2021-list {
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+.news2021-item {
+    margin-bottom: 18px;
+    padding: 28px 30px;
+    border: 1px solid #e5dddb;
+    background: #fff;
+}
+
+.news2021-item:last-child {
+    margin-bottom: 0;
+}
+
+.news2021-item-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 12px;
+    margin-bottom: 10px;
+}
+
+.news2021-item-meta time {
+    color: #9b747c;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 13px;
+}
+
+.news2021-item-meta span {
+    padding: 2px 8px;
+    background: #faf6f7;
+    color: #8f656f;
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+.news2021-item h3 {
+    margin: 0 0 12px;
+    color: #455267;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 1.55;
+}
+
+.news2021-item-summary {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.news2021-item-body {
+    margin-top: 24px;
+    padding-top: 22px;
+    border-top: 1px solid #eee7e5;
+}
+
+.news2021-item-body[hidden] {
+    display: none;
+}
+
+.news2021-item-image {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.news2021-item-image img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    max-height: 560px;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+.news2021-item-body > p {
+    margin: 0 0 14px;
+    color: #5f5b59;
+    font-size: 15px;
+    line-height: 1.95;
+}
+
+.news2021-item-body > p:last-child {
+    margin-bottom: 0;
+}
+
+.news2021-toggle {
+    margin-top: 20px;
+    padding: 0 0 3px;
+    border: 0;
+    border-bottom: 1px solid #b98d96;
+    background: transparent;
+    color: #91656f;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.news2021-toggle:hover,
+.news2021-toggle:focus {
+    color: #6f4851;
+    border-color: #6f4851;
+}
+
+@media (max-width: 650px) {
+    .news2021-hero h1 {
+        font-size: 25px;
+    }
+
+    .news2021-intro,
+    .news2021-section {
+        padding: 48px 0 58px;
+    }
+
+    .news2021-intro-inner h2,
+    .news2021-heading h2 {
+        font-size: 23px;
+    }
+
+    .news2021-item {
+        padding: 23px 20px;
+    }
+
+    .news2021-item h3 {
+        font-size: 18px;
+    }
+}
