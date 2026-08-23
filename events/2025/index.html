@@ -8,10 +8,10 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <title>2025 友好拼布手作節｜台灣國際拼布友好會 TIQA</title>
+    <title>關於友好拼布手作節｜2025 友好拼布手作節｜台灣國際拼布友好會 TIQA</title>
 
     <meta name="description"
-          content="2025 友好拼布手作節以青春之歌為主題，活動於臺北松山文創園區1號倉庫與文創大街舉行，包含拼布大賽、主題聯合作品、會員徵件、創意市集、工作坊及文創大街活動。">
+          content="認識 2025 友好拼布手作節「青春之歌」的活動緣起、目標與策展理念，以及台灣拼布文化的發展與未來願景。">
 
     <!-- 全站共用 CSS -->
     <link rel="stylesheet"
@@ -21,428 +21,8 @@
     <link rel="stylesheet"
           href="/assets/css/events.css">
 
+    <!-- 共用 HEAD -->
     <script src="/assets/js/head-common.js"></script>
-
-
-    <style>
-
-        /* =====================================================
-           2025 年度標題
-        ===================================================== */
-
-        .event-year-header {
-            padding: 48px 20px 42px;
-            background: #f8f3f4;
-            text-align: center;
-        }
-
-        .event-year-header h1 {
-            margin: 0;
-            color: #444;
-            font-size: 32px;
-            font-weight: 400;
-            line-height: 1.5;
-            letter-spacing: .12em;
-        }
-
-        .event-year-header-subtitle {
-            position: relative;
-            display: inline-block;
-            margin: 8px 0 0;
-            padding-bottom: 17px;
-            color: #888;
-            font-size: 14px;
-            line-height: 1.6;
-            letter-spacing: .05em;
-        }
-
-        .event-year-header-subtitle::after {
-            content: "";
-            position: absolute;
-            left: 50%;
-            bottom: 0;
-            width: 42px;
-            height: 2px;
-            background: #b98d96;
-            transform: translateX(-50%);
-        }
-
-
-        /* =====================================================
-           主視覺＋介紹
-        ===================================================== */
-
-        .event-overview {
-            padding: 55px 0 70px;
-            background: #fff;
-        }
-
-        .event-overview-card {
-            display: grid;
-            grid-template-columns:
-                minmax(280px, .85fr)
-                minmax(0, 1.15fr);
-            gap: 55px;
-            align-items: center;
-            max-width: 980px;
-            margin: 0 auto;
-            padding: 28px;
-            background: #faf8f8;
-            border-radius: 6px;
-        }
-
-        .event-overview-image {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .event-overview-image img {
-            display: block;
-            width: auto;
-            max-width: 100%;
-            max-height: 560px;
-            object-fit: contain;
-        }
-
-        .event-overview-kicker {
-            margin: 0 0 8px;
-            color: #b18a92;
-            font-size: 12px;
-            line-height: 1.5;
-            letter-spacing: .14em;
-        }
-
-        .event-overview-content h2 {
-            margin: 0 0 18px;
-            color: #444;
-            font-size: 29px;
-            font-weight: 400;
-            line-height: 1.5;
-            letter-spacing: .08em;
-        }
-
-        .event-overview-content > p:not(.event-overview-kicker) {
-            margin: 0;
-            color: #666;
-            font-size: 17px;
-            line-height: 2;
-        }
-
-
-        /* =====================================================
-           活動基本資訊
-        ===================================================== */
-
-        .event-facts {
-            margin: 30px 0 0;
-            padding: 0;
-            list-style: none;
-            border-top: 1px solid #e5dcde;
-        }
-
-        .event-facts li {
-            display: grid;
-            grid-template-columns: 92px minmax(0, 1fr);
-            gap: 18px;
-            padding: 11px 0;
-            border-bottom: 1px solid #e5dcde;
-        }
-
-        .event-facts-label {
-            color: #986d76;
-            font-size: 13px;
-            font-weight: 500;
-            line-height: 1.7;
-        }
-
-        .event-facts-value {
-            color: #555;
-            font-size: 14px;
-            line-height: 1.7;
-        }
-
-
-        /* =====================================================
-           作品展
-        ===================================================== */
-
-        .event-exhibition {
-            padding: 60px 0 75px;
-            background: #fff;
-        }
-
-        .event-exhibition-card {
-            display: grid;
-            grid-template-columns:
-                minmax(0, 1.1fr)
-                minmax(280px, .9fr);
-            gap: 45px;
-            align-items: center;
-            max-width: 980px;
-            margin: 0 auto;
-            padding: 22px;
-            border: 1px solid #e4dcde;
-            background: #fff;
-        }
-
-        .event-exhibition-image {
-            overflow: hidden;
-            background: #f3f3f3;
-        }
-
-        .event-exhibition-image img {
-            display: block;
-            width: 100%;
-            aspect-ratio: 16 / 10;
-            object-fit: cover;
-            transition: transform .35s ease;
-        }
-
-        .event-exhibition-card:hover
-        .event-exhibition-image img {
-            transform: scale(1.02);
-        }
-
-        .event-exhibition-content {
-            padding: 5px 10px;
-        }
-
-        .event-exhibition-description {
-            margin: 0 0 24px;
-            color: #666;
-            font-size: 15px;
-            line-height: 1.95;
-        }
-
-        .event-exhibition-button {
-            display: inline-block;
-            padding: 10px 24px;
-            border: 1px solid #9b6f78;
-            color: #fff;
-            background: #9b6f78;
-            font-size: 14px;
-            text-decoration: none;
-            transition:
-                background .2s ease,
-                border-color .2s ease,
-                transform .2s ease;
-        }
-
-        .event-exhibition-button:hover {
-            background: #7f5962;
-            border-color: #7f5962;
-            transform: translateY(-1px);
-        }
-
-
-        /* =====================================================
-           活動內容
-        ===================================================== */
-
-        .event-archive {
-            padding: 65px 0 90px;
-            background: #faf8f8;
-        }
-
-        .event-section-heading {
-            position: relative;
-            margin-bottom: 38px;
-            padding-bottom: 20px;
-            text-align: center;
-        }
-
-        .event-section-heading::after {
-            content: "";
-            position: absolute;
-            left: 50%;
-            bottom: 0;
-            width: 42px;
-            height: 2px;
-            background: #b98d96;
-            transform: translateX(-50%);
-        }
-
-        .event-section-label {
-            margin: 0 0 7px;
-            color: #a98a91;
-            font-size: 12px;
-            line-height: 1.5;
-            letter-spacing: .14em;
-        }
-
-        .event-section-heading h2 {
-            margin: 0;
-            color: #3f3f3f;
-            font-size: 28px;
-            font-weight: 500;
-            line-height: 1.5;
-            letter-spacing: .12em;
-        }
-
-        .event-archive-grid {
-            display: grid;
-            grid-template-columns:
-                repeat(2, minmax(0, 1fr));
-            gap: 18px;
-            max-width: 960px;
-            margin: 0 auto;
-        }
-
-        .event-archive-card {
-            display: flex;
-            flex-direction: column;
-            min-height: 190px;
-            padding: 23px 24px;
-            border: 1px solid #e6e0e2;
-            background: #fff;
-            transition:
-                transform .25s ease,
-                box-shadow .25s ease,
-                border-color .25s ease;
-        }
-
-        .event-archive-card:hover {
-            transform: translateY(-3px);
-            border-color: #d9c6ca;
-            box-shadow: 0 8px 22px rgba(0, 0, 0, .05);
-        }
-
-        .event-archive-label {
-            margin: 0 0 6px;
-            color: #b18a92;
-            font-size: 11px;
-            line-height: 1.5;
-            letter-spacing: .12em;
-        }
-
-        .event-archive-card h3 {
-            margin: 0 0 10px;
-            color: #444;
-            font-size: 19px;
-            font-weight: 500;
-            line-height: 1.5;
-            letter-spacing: .04em;
-        }
-
-        .event-archive-description {
-            margin: 0 0 18px;
-            color: #666;
-            font-size: 13px;
-            line-height: 1.8;
-        }
-
-        .event-archive-link {
-            display: inline-block;
-            align-self: flex-start;
-            margin-top: auto;
-            padding-bottom: 2px;
-            border-bottom: 1px solid #b98d96;
-            color: #91656f;
-            font-size: 13px;
-            text-decoration: none;
-        }
-
-        .event-archive-link:hover {
-            color: #6f4851;
-            border-color: #6f4851;
-        }
-
-
-        /* 最後一張單數卡片 */
-
-        .event-archive-card:last-child:nth-child(odd) {
-            grid-column: 1 / -1;
-            width: calc(50% - 9px);
-        }
-
-
-        /* =====================================================
-           Tablet
-        ===================================================== */
-
-        @media (max-width: 850px) {
-
-            .event-overview-card,
-            .event-exhibition-card {
-                grid-template-columns: 1fr;
-                gap: 30px;
-            }
-
-            .event-overview-image img {
-                max-height: 650px;
-            }
-
-        }
-
-
-        /* =====================================================
-           Mobile
-        ===================================================== */
-
-        @media (max-width: 650px) {
-
-            .event-year-header {
-                padding: 38px 18px 34px;
-            }
-
-            .event-year-header h1 {
-                font-size: 26px;
-                letter-spacing: .08em;
-            }
-
-            .event-overview {
-                padding: 35px 0 50px;
-            }
-
-            .event-overview-card {
-                padding: 18px;
-            }
-
-            .event-overview-content h2 {
-                font-size: 23px;
-            }
-
-            .event-overview-content > p:not(.event-overview-kicker) {
-                font-size: 16px;
-            }
-
-            .event-facts li {
-                grid-template-columns: 1fr;
-                gap: 2px;
-            }
-
-            .event-archive {
-                padding: 50px 0 65px;
-            }
-
-            .event-section-heading {
-                margin-bottom: 30px;
-                padding-bottom: 17px;
-            }
-
-            .event-section-heading h2 {
-                font-size: 24px;
-            }
-
-            .event-archive-grid {
-                grid-template-columns: 1fr;
-                gap: 14px;
-            }
-
-            .event-archive-card {
-                min-height: 0;
-                padding: 21px 20px;
-            }
-
-            .event-archive-card:last-child:nth-child(odd) {
-                grid-column: auto;
-                width: auto;
-            }
-
-        }
-
-    </style>
 
 </head>
 
@@ -471,20 +51,19 @@
 
 
     <!-- =================================================
-         年度標題
+         Page Hero
     ================================================= -->
 
-    <section class="event-year-header">
+    <section class="about-event-hero">
 
         <div class="content-container">
 
-            <h1 id="event-title">
-                2025 友好拼布手作節
+            <h1>
+                關於友好拼布手作節
             </h1>
 
-            <p id="event-header-subtitle"
-               class="event-year-header-subtitle">
-                青春之歌｜松菸1號倉庫＋文創大街
+            <p>
+                About the Festival
             </p>
 
         </div>
@@ -494,40 +73,68 @@
 
 
     <!-- =================================================
-         主視覺＋介紹
+         活動主視覺＋基本資料
     ================================================= -->
 
-    <section class="event-overview">
+    <section class="about-event-overview">
 
         <div class="content-container">
 
-            <article class="event-overview-card">
+            <article class="about-event-overview-card">
 
-                <div class="event-overview-image">
+                <div class="about-event-poster">
 
-                    <img id="event-image"
-                         src="/events/2025/2025.jpg"
-                         alt="2025 友好拼布手作節－青春之歌">
+                    <img
+                        src="/events/2025/2025.jpg"
+                        alt="2025 友好拼布手作節－青春之歌">
 
                 </div>
 
 
-                <div class="event-overview-content">
+                <div class="about-event-summary">
 
-                    <p class="event-overview-kicker">
-                        Song of Youth
+                    <p class="about-event-kicker">
+                        2025 Friendly Quilt &amp; Handmade Festival
                     </p>
 
-                    <h2 id="event-overview-title">
+                    <h2>
                         青春之歌
                     </h2>
 
-                    <p id="event-description">
+                    <p class="about-event-lead">
+                        2025 友好拼布手作節以「青春之歌」為主題，
+                        將拼布與青春的熱情相結合，展現手作的活力與無限創意。
                     </p>
 
-                    <ul id="event-facts"
-                        class="event-facts">
-                    </ul>
+
+                    <dl class="about-event-meta">
+
+                        <div>
+                            <dt>活動名稱</dt>
+                            <dd>2025 友好拼布手作節</dd>
+                        </div>
+
+                        <div>
+                            <dt>活動主題</dt>
+                            <dd>青春之歌</dd>
+                        </div>
+
+                        <div>
+                            <dt>1號倉庫</dt>
+                            <dd>2025/11/21（五）－11/23（日）</dd>
+                        </div>
+
+                        <div>
+                            <dt>文創大街</dt>
+                            <dd>2025/11/22（六）－11/23（日）</dd>
+                        </div>
+
+                        <div>
+                            <dt>活動地點</dt>
+                            <dd>臺北松山文創園區 1號倉庫＋文創大街</dd>
+                        </div>
+
+                    </dl>
 
                 </div>
 
@@ -540,54 +147,187 @@
 
 
     <!-- =================================================
-         作品展
+         緣起與目標
     ================================================= -->
 
-    <section class="event-exhibition">
+    <section class="about-event-story">
 
         <div class="content-container">
 
-            <div class="event-section-heading">
+            <div class="about-event-heading">
 
-                <p class="event-section-label">
-                    Exhibition
+                <p class="about-event-label">
+                    Origins &amp; Goals
                 </p>
 
                 <h2>
-                    作品展
+                    緣起與目標
                 </h2>
 
             </div>
 
 
-            <article class="event-exhibition-card">
-
-                <div class="event-exhibition-content">
-
-                    <p id="exhibition-description"
-                       class="event-exhibition-description">
-                    </p>
-
-                    <a id="exhibition-link"
-                       href="/events/2025/exhibition/"
-                       class="event-exhibition-button">
-
-                        瀏覽作品展 →
-
-                    </a>
-
-                </div>
+            <div class="about-event-story-list">
 
 
-                <div class="event-exhibition-image">
+                <!-- 01 -->
 
-                    <img id="exhibition-image"
-                         src="/events/2025/exhibition.jpg"
-                         alt="2025 友好拼布手作節作品展">
+                <article class="about-event-story-item">
 
-                </div>
+                    <div class="about-event-story-number">
+                        01
+                    </div>
 
-            </article>
+                    <div class="about-event-story-content">
+
+                        <h3>
+                            台灣拼布文化的發展
+                        </h3>
+
+                        <p>
+                            拼布不只是布料的拼接，更是情感與記憶的溫柔軌跡。
+                            自 1990 年代從日本引入，台灣拼布文化在這片土地上悄然綻放，
+                            三十年來以細膩與豐盈的美感訴說生活的故事。
+                            從溫暖日常的家庭手作，到多元探索的藝術創作，
+                            拼布在時光洗禮下，已成為文化與美學交融的象徵。
+                        </p>
+
+                        <p>
+                            台灣創作者憑藉敏銳的美學眼光與精湛技藝，
+                            在國際賽事與展覽中屢屢獲獎，
+                            讓台灣拼布藝術躍上國際舞台，
+                            為這片土地贏得無數掌聲與肯定。
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- 02 -->
+
+                <article class="about-event-story-item">
+
+                    <div class="about-event-story-number">
+                        02
+                    </div>
+
+                    <div class="about-event-story-content">
+
+                        <h3>
+                            台灣拼布面臨的挑戰
+                        </h3>
+
+                        <p>
+                            然而，在這些耀眼成就的背後，
+                            台灣的拼布文化仍面臨諸多挑戰。
+                            產業鏈的不完整，使資源共享與技術傳承受限；
+                            缺乏穩定的交流平台，也讓許多珍貴的靈感與技法難以深耕延續。
+                        </p>
+
+                        <p>
+                            美、日、韓、法、英、澳等國早已透過大型拼布展，
+                            推動拼布藝術的國際交流與產業發展，
+                            並成為文化與觀光的驅動核心。
+                            相較之下，台灣拼布創作者雖熱情投入，
+                            卻仍需遠赴國外展會汲取養分，
+                            至今尚缺乏一個完整呈現本地創意、串聯產業鏈、
+                            推動國際接軌的專屬舞台。
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- 03 -->
+
+                <article class="about-event-story-item">
+
+                    <div class="about-event-story-number">
+                        03
+                    </div>
+
+                    <div class="about-event-story-content">
+
+                        <h3>
+                            友好拼布手作節的誕生
+                        </h3>
+
+                        <p>
+                            基於這樣的背景，台灣國際拼布友好會懷抱對拼布藝術的熱愛與願景，
+                            自 2019 年起策劃友好拼布手作節，
+                            並於 2021、2023 年接連舉辦。
+                            如同精心縫製的拼布作品，
+                            活動逐步縫合台灣拼布文化與國際交流的裂隙，
+                            為本地創作者搭建發光發熱的平台。
+                        </p>
+
+                        <p>
+                            這三屆手作節不僅象徵台灣拼布的一次次突破，
+                            也為台灣拼布的未來描繪了一幅理想藍圖。
+                            在展會中，一件件作品訴說著創作者的情感與故事，
+                            而現場的技術交流，更激盪出文化融合的火花，
+                            讓拼布藝術的扎根與傳承更具深遠影響力。
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- 04 -->
+
+                <article class="about-event-story-item is-highlight">
+
+                    <div class="about-event-story-number">
+                        04
+                    </div>
+
+                    <div class="about-event-story-content">
+
+                        <h3>
+                            2025「青春之歌」
+                        </h3>
+
+                        <p>
+                            如今，這些努力如同初升的朝陽，
+                            照亮了台灣拼布藝術的可能性。
+                            2025 友好拼布手作節以「青春之歌」為主題，
+                            將拼布與青春的熱情相結合，
+                            展現手作的活力與無限創意。
+                        </p>
+
+                        <p>
+                            本屆活動將首度跨足拼布以外的手作領域，
+                            融入編織、刺繡、羊毛氈、布盒工藝等多元技法，
+                            讓拼布與其他手作工藝相互交織，
+                            創造更豐富的藝術盛會。
+                        </p>
+
+                        <p>
+                            我們期望透過這場展會，串聯產業鏈、促進創作交流，
+                            讓台灣的拼布與手作文化更深厚地紮根、更廣泛地傳播，
+                            並激發更多人對拼布與手作的熱愛。
+                            這些源於日常生活的藝術，不僅是記憶的延續，
+                            更是文化傳承的橋樑；
+                            透過一針一線，凝聚情感、傳遞創意，
+                            開啟屬於台灣拼布的新篇章。
+                        </p>
+
+                        <p class="about-event-closing">
+                            2025 友好拼布手作節——
+                            讓青春的熱情與拼布交織，
+                            縫製時光的鮮活記憶，
+                            為台灣拼布文化拓展更寬廣的未來！
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+            </div>
 
         </div>
 
@@ -596,30 +336,74 @@
 
 
     <!-- =================================================
-         活動內容
+         English
     ================================================= -->
 
-    <section class="event-archive">
+    <section class="about-event-english">
 
         <div class="content-container">
 
-            <div class="event-section-heading">
+            <div class="about-event-heading">
 
-                <p class="event-section-label">
-                    Event Archive
+                <p class="about-event-label">
+                    English
                 </p>
 
                 <h2>
-                    活動內容
+                    2025 Friendly Quilt &amp; Handmade Festival
                 </h2>
 
             </div>
 
 
-            <div id="event-section-list"
-                 class="event-archive-grid">
+            <div class="about-event-english-content">
 
-                <!-- JS 自動產生 -->
+                <h3>
+                    Theme: Song of Youth
+                </h3>
+
+                <p>
+                    Quilting is more than just stitching fabric together—it is a gentle trace
+                    of emotions and memories. Since its introduction from Japan in the 1990s,
+                    quilting culture has quietly flourished in Taiwan. For over 30 years, it has
+                    woven together intricate beauty and heartfelt stories, evolving from cozy,
+                    homemade crafts to a dynamic form of artistic expression.
+                </p>
+
+                <p>
+                    Through time, quilting has become a symbol of cultural and aesthetic fusion.
+                    Taiwanese creators, with their keen artistic sensibility and remarkable craftsmanship,
+                    have won numerous international awards, bringing Taiwan’s quilting artistry
+                    to the global stage and earning widespread recognition.
+                </p>
+
+                <p>
+                    However, Taiwan's quilting culture still faces challenges.
+                    The incomplete industry chain limits resource sharing and technical inheritance,
+                    while the lack of a stable communication platform hinders the long-term development
+                    of valuable inspiration and craftsmanship.
+                </p>
+
+                <p>
+                    With this vision in mind, the Taiwan International Quilting Friendship Association
+                    has been devoted to promoting quilting arts since 2019.
+                    The Friendly Quilt &amp; Handmade Festival, held in 2021 and 2023,
+                    was designed to bridge Taiwan’s quilting culture with global interactions
+                    and provide creators with a platform to shine.
+                </p>
+
+                <p>
+                    The 2025 Friendly Quilt &amp; Handmade Festival, themed “Song of Youth”,
+                    blends the passion of youth with the creativity of quilting.
+                    For the first time, the event extends beyond quilting to include weaving,
+                    embroidery, wool felting, fabric box crafts and other diverse handmade techniques.
+                </p>
+
+                <p>
+                    Through this event, we aim to connect the industry, foster creative exchange,
+                    deepen the roots of Taiwan’s quilting and handmade culture,
+                    and open a new chapter for quilting in Taiwan.
+                </p>
 
             </div>
 
@@ -630,25 +414,25 @@
 
 
     <!-- =================================================
-         返回歷年活動
+         返回 2025 首頁
     ================================================= -->
 
     <section class="event-return-banner">
 
         <div class="content-container">
 
-            <a href="/events/"
+            <a href="/events/2025/"
                class="event-return-banner-link"
-               aria-label="返回歷年活動">
+               aria-label="返回 2025 友好拼布手作節首頁">
 
                 <img
                     src="/events/2025/event-footer.jpg"
-                    alt="2025 友好拼布手作節－青春之歌，臺北松山文創園區1號倉庫與文創大街">
+                    alt="2025 友好拼布手作節－青春之歌">
 
             </a>
 
             <p class="event-return-hint">
-                點擊圖片返回歷年活動
+                點擊圖片返回 2025 友好拼布手作節
             </p>
 
         </div>
@@ -688,7 +472,12 @@
         },
 
         {
-            title: "2025 友好拼布手作節"
+            title: "2025 友好拼布手作節",
+            url: "/events/2025/"
+        },
+
+        {
+            title: "關於友好拼布手作節"
         }
 
     ];
@@ -697,299 +486,6 @@
 
 
 <script src="/assets/js/breadcrumb.js"></script>
-
-
-<!-- 2025 DATA -->
-<script src="/events/2025/event-data.js"></script>
-
-
-<script>
-
-(function () {
-
-    "use strict";
-
-
-    if (
-        typeof eventData === "undefined" ||
-        !eventData
-    ) {
-
-        console.error(
-            "eventData 資料不存在"
-        );
-
-        return;
-
-    }
-
-
-    /* =====================================================
-       基本資料
-    ===================================================== */
-
-    const eventTitle =
-        document.getElementById(
-            "event-title"
-        );
-
-    const eventSubtitle =
-        document.getElementById(
-            "event-header-subtitle"
-        );
-
-    const eventImage =
-        document.getElementById(
-            "event-image"
-        );
-
-    const eventOverviewTitle =
-        document.getElementById(
-            "event-overview-title"
-        );
-
-    const eventDescription =
-        document.getElementById(
-            "event-description"
-        );
-
-
-    if (eventTitle) {
-        eventTitle.textContent =
-            eventData.title || "";
-    }
-
-
-    if (eventSubtitle) {
-        eventSubtitle.textContent =
-            eventData.subtitle || "";
-    }
-
-
-    if (eventImage) {
-
-        eventImage.src =
-            eventData.image || "";
-
-        eventImage.alt =
-            eventData.title || "2025 友好拼布手作節";
-
-    }
-
-
-    if (eventOverviewTitle) {
-        eventOverviewTitle.textContent =
-            "青春之歌";
-    }
-
-
-    if (eventDescription) {
-        eventDescription.textContent =
-            eventData.description || "";
-    }
-
-
-    /* =====================================================
-       活動資訊
-    ===================================================== */
-
-    const factsContainer =
-        document.getElementById(
-            "event-facts"
-        );
-
-
-    if (
-        factsContainer &&
-        Array.isArray(eventData.facts)
-    ) {
-
-        eventData.facts.forEach(
-            function (item) {
-
-                const li =
-                    document.createElement(
-                        "li"
-                    );
-
-                const label =
-                    document.createElement(
-                        "span"
-                    );
-
-                label.className =
-                    "event-facts-label";
-
-                label.textContent =
-                    item.label || "";
-
-
-                const value =
-                    document.createElement(
-                        "span"
-                    );
-
-                value.className =
-                    "event-facts-value";
-
-                value.textContent =
-                    item.value || "";
-
-
-                li.appendChild(label);
-                li.appendChild(value);
-
-                factsContainer.appendChild(li);
-
-            }
-        );
-
-    }
-
-
-    /* =====================================================
-       作品展
-    ===================================================== */
-
-    if (eventData.exhibition) {
-
-        const exhibitionImage =
-            document.getElementById(
-                "exhibition-image"
-            );
-
-        const exhibitionDescription =
-            document.getElementById(
-                "exhibition-description"
-            );
-
-        const exhibitionLink =
-            document.getElementById(
-                "exhibition-link"
-            );
-
-
-        if (exhibitionImage) {
-
-            exhibitionImage.src =
-                eventData.exhibition.image || "";
-
-            exhibitionImage.alt =
-                (eventData.exhibition.title || "作品展");
-
-        }
-
-
-        if (exhibitionDescription) {
-
-            exhibitionDescription.textContent =
-                eventData.exhibition.description || "";
-
-        }
-
-
-        if (exhibitionLink) {
-
-            exhibitionLink.href =
-                eventData.exhibition.url || "#";
-
-        }
-
-    }
-
-
-
-    /* =====================================================
-       活動內容卡片
-    ===================================================== */
-
-    const sectionList =
-        document.getElementById(
-            "event-section-list"
-        );
-
-
-    if (
-        sectionList &&
-        Array.isArray(eventData.sections)
-    ) {
-
-        eventData.sections.forEach(
-            function (item) {
-
-                const article =
-                    document.createElement(
-                        "article"
-                    );
-
-                article.className =
-                    "event-archive-card";
-
-
-                const label =
-                    document.createElement(
-                        "p"
-                    );
-
-                label.className =
-                    "event-archive-label";
-
-                label.textContent =
-                    item.englishTitle || "";
-
-
-                const title =
-                    document.createElement(
-                        "h3"
-                    );
-
-                title.textContent =
-                    item.title || "";
-
-
-                const description =
-                    document.createElement(
-                        "p"
-                    );
-
-                description.className =
-                    "event-archive-description";
-
-                description.textContent =
-                    item.description || "";
-
-
-                const link =
-                    document.createElement(
-                        "a"
-                    );
-
-                link.className =
-                    "event-archive-link";
-
-                link.href =
-                    item.url || "#";
-
-                link.textContent =
-                    "查看內容 →";
-
-
-                article.appendChild(label);
-                article.appendChild(title);
-                article.appendChild(description);
-                article.appendChild(link);
-
-                sectionList.appendChild(article);
-
-            }
-        );
-
-    }
-
-
-})();
-
-</script>
 
 
 </body>

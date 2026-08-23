@@ -946,3 +946,371 @@
         height: 62px;
     }
 }
+
+/* =========================================================
+   2025 關於友好拼布手作節
+========================================================= */
+
+
+/* ---------------------------------------------------------
+   Hero
+--------------------------------------------------------- */
+
+.about-event-hero {
+    padding: 48px 20px 42px;
+    background: #f8f3f4;
+    text-align: center;
+}
+
+.about-event-hero h1 {
+    margin: 0;
+    color: #444;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: .1em;
+}
+
+.about-event-hero p {
+    position: relative;
+    display: inline-block;
+    margin: 8px 0 0;
+    padding-bottom: 17px;
+    color: #999;
+    font-size: 13px;
+    line-height: 1.6;
+    letter-spacing: .12em;
+}
+
+.about-event-hero p::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 42px;
+    height: 2px;
+    background: #b98d96;
+    transform: translateX(-50%);
+}
+
+
+/* ---------------------------------------------------------
+   Overview
+--------------------------------------------------------- */
+
+.about-event-overview {
+    padding: 60px 0 70px;
+    background: #fff;
+}
+
+.about-event-overview-card {
+    display: grid;
+    grid-template-columns:
+        minmax(280px, .9fr)
+        minmax(0, 1.1fr);
+    gap: 55px;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-event-poster {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-event-poster img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    max-height: 650px;
+    object-fit: contain;
+}
+
+.about-event-kicker {
+    margin: 0 0 8px;
+    color: #b18a92;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: .14em;
+}
+
+.about-event-summary h2 {
+    margin: 0 0 20px;
+    color: #444;
+    font-size: 31px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: .08em;
+}
+
+.about-event-lead {
+    margin: 0;
+    color: #666;
+    font-size: 17px;
+    line-height: 2;
+}
+
+.about-event-meta {
+    margin: 30px 0 0;
+    border-top: 1px solid #e5dcde;
+}
+
+.about-event-meta > div {
+    display: grid;
+    grid-template-columns: 105px minmax(0, 1fr);
+    gap: 18px;
+    padding: 12px 0;
+    border-bottom: 1px solid #e5dcde;
+}
+
+.about-event-meta dt {
+    color: #956a73;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.7;
+}
+
+.about-event-meta dd {
+    margin: 0;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* ---------------------------------------------------------
+   Heading
+--------------------------------------------------------- */
+
+.about-event-heading {
+    position: relative;
+    margin-bottom: 48px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.about-event-heading::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 42px;
+    height: 2px;
+    background: #b98d96;
+    transform: translateX(-50%);
+}
+
+.about-event-label {
+    margin: 0 0 7px;
+    color: #a98a91;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: .14em;
+}
+
+.about-event-heading h2 {
+    margin: 0;
+    color: #444;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: .08em;
+}
+
+
+/* ---------------------------------------------------------
+   Story
+--------------------------------------------------------- */
+
+.about-event-story {
+    padding: 72px 0 85px;
+    background: #faf8f8;
+}
+
+.about-event-story-list {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-event-story-item {
+    display: grid;
+    grid-template-columns: 72px minmax(0, 1fr);
+    gap: 28px;
+    padding: 34px 0;
+    border-bottom: 1px solid #e6dfe0;
+}
+
+.about-event-story-item:first-child {
+    padding-top: 0;
+}
+
+.about-event-story-item:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+.about-event-story-number {
+    color: #b98d96;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 29px;
+    line-height: 1.2;
+}
+
+.about-event-story-content h3 {
+    margin: 0 0 15px;
+    color: #455267;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.about-event-story-content p {
+    margin: 0 0 15px;
+    color: #5f5b59;
+    font-size: 16px;
+    line-height: 2;
+}
+
+.about-event-story-content p:last-child {
+    margin-bottom: 0;
+}
+
+.about-event-story-item.is-highlight {
+    margin-top: 10px;
+    padding: 38px 32px;
+    border: 0;
+    background: #fff;
+}
+
+.about-event-closing {
+    margin-top: 24px !important;
+    padding: 18px 20px;
+    border-left: 3px solid #b98d96;
+    background: #faf6f7;
+    color: #8b6069 !important;
+    font-weight: 500;
+}
+
+
+/* ---------------------------------------------------------
+   English
+--------------------------------------------------------- */
+
+.about-event-english {
+    padding: 72px 0 85px;
+    background: #fff;
+}
+
+.about-event-english-content {
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.about-event-english-content h3 {
+    margin: 0 0 22px;
+    color: #455267;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.about-event-english-content p {
+    margin: 0 0 17px;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.95;
+}
+
+
+/* ---------------------------------------------------------
+   Tablet
+--------------------------------------------------------- */
+
+@media (max-width: 850px) {
+
+    .about-event-overview-card {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .about-event-poster img {
+        max-height: 720px;
+    }
+
+}
+
+
+/* ---------------------------------------------------------
+   Mobile
+--------------------------------------------------------- */
+
+@media (max-width: 650px) {
+
+    .about-event-hero {
+        padding: 38px 18px 34px;
+    }
+
+    .about-event-hero h1 {
+        font-size: 25px;
+    }
+
+    .about-event-overview {
+        padding: 42px 0 55px;
+    }
+
+    .about-event-overview-card {
+        gap: 28px;
+    }
+
+    .about-event-summary h2 {
+        font-size: 25px;
+    }
+
+    .about-event-lead {
+        font-size: 16px;
+    }
+
+    .about-event-meta > div {
+        grid-template-columns: 1fr;
+        gap: 3px;
+    }
+
+    .about-event-story,
+    .about-event-english {
+        padding: 52px 0 62px;
+    }
+
+    .about-event-heading {
+        margin-bottom: 35px;
+    }
+
+    .about-event-heading h2 {
+        font-size: 24px;
+    }
+
+    .about-event-story-item {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        padding: 28px 0;
+    }
+
+    .about-event-story-number {
+        font-size: 24px;
+    }
+
+    .about-event-story-content h3 {
+        font-size: 20px;
+    }
+
+    .about-event-story-content p {
+        font-size: 15px;
+        line-height: 1.9;
+    }
+
+    .about-event-story-item.is-highlight {
+        padding: 28px 20px;
+    }
+
+}
