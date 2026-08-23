@@ -3379,3 +3379,316 @@ a.ticket-outlet-name:hover {
   .market-gallery-prev{left:9px}.market-gallery-next{right:9px}
   .market-gallery-thumb{flex-basis:78px;height:58px}
 }
+
+/* =========================================================
+   2025 轉角工作坊
+========================================================= */
+
+.workshop-event-hero {
+    padding: 50px 20px 44px;
+    background: #f8f3f4;
+    text-align: center;
+}
+.workshop-event-eyebrow,
+.workshop-event-kicker,
+.workshop-event-heading > p {
+    margin: 0 0 8px;
+    color: #b18a92;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: .14em;
+}
+.workshop-event-hero h1 {
+    margin: 0;
+    color: #444;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: .08em;
+}
+.workshop-event-theme {
+    position: relative;
+    display: inline-block;
+    margin: 9px 0 0;
+    padding-bottom: 18px;
+    color: #777;
+    font-size: 15px;
+    letter-spacing: .08em;
+}
+.workshop-event-theme::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 42px;
+    height: 2px;
+    background: #b98d96;
+    transform: translateX(-50%);
+}
+.workshop-event-intro {
+    padding: 62px 0 68px;
+    background: #fff;
+}
+.workshop-event-feature {
+    display: grid;
+    grid-template-columns: minmax(300px,.95fr) minmax(0,1.05fr);
+    gap: 50px;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.workshop-event-feature-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.workshop-event-feature-content h2 {
+    margin: 0 0 20px;
+    color: #444;
+    font-size: 28px;
+    font-weight: 500;
+}
+.workshop-event-feature-content > p:not(.workshop-event-kicker) {
+    margin: 0 0 15px;
+    color: #666;
+    font-size: 16px;
+    line-height: 2;
+}
+.workshop-archive-note {
+    max-width: 880px;
+    margin: 34px auto 0;
+    padding: 17px 21px;
+    border-left: 3px solid #b98d96;
+    background: #faf8f8;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.9;
+}
+.workshop-archive-note strong {
+    color: #8f656f;
+}
+.workshop-event-section {
+    padding: 70px 0 82px;
+    background: #fff;
+}
+.workshop-event-section.alt {
+    background: #faf8f8;
+}
+.workshop-event-heading {
+    position: relative;
+    margin-bottom: 42px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.workshop-event-heading::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 42px;
+    height: 2px;
+    background: #b98d96;
+    transform: translateX(-50%);
+}
+.workshop-event-heading h2 {
+    margin: 0;
+    color: #444;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: .06em;
+}
+.workshop-section-lead {
+    max-width: 820px;
+    margin: -10px auto 34px;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.9;
+    text-align: center;
+}
+.workshop-feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    gap: 16px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.workshop-feature-grid article {
+    padding: 28px 25px;
+    border: 1px solid #e5dddb;
+    background: #fff;
+}
+.workshop-feature-grid span {
+    color: #b98d96;
+    font-family: Georgia,serif;
+    font-size: 27px;
+}
+.workshop-feature-grid h3 {
+    margin: 12px 0 10px;
+    color: #455267;
+    font-size: 19px;
+    font-weight: 500;
+}
+.workshop-feature-grid p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.85;
+}
+.workshop-category-grid {
+    display: grid;
+    grid-template-columns: repeat(4,minmax(0,1fr));
+    gap: 14px;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+.workshop-category-grid article {
+    padding: 24px 20px;
+    border: 1px solid #e5dddb;
+    background: #fff;
+}
+.workshop-category-grid h3 {
+    margin: 0 0 9px;
+    color: #455267;
+    font-size: 18px;
+    font-weight: 500;
+}
+.workshop-category-grid p {
+    margin: 0;
+    color: #666;
+    font-size: 13px;
+    line-height: 1.8;
+}
+.workshop-schedule {
+    display: grid;
+    grid-template-columns: repeat(5,minmax(0,1fr));
+    gap: 12px;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+.workshop-schedule article {
+    padding: 22px 18px;
+    border: 1px solid #e5dddb;
+    background: #fff;
+}
+.workshop-schedule article > span {
+    color: #b98d96;
+    font-family: Georgia,serif;
+    font-size: 24px;
+}
+.workshop-schedule h3 {
+    margin: 11px 0 7px;
+    color: #455267;
+    font-size: 17px;
+    font-weight: 500;
+}
+.workshop-schedule p {
+    margin: 0;
+    color: #666;
+    font-size: 13px;
+    line-height: 1.7;
+}
+.workshop-schedule small {
+    display: block;
+    margin-top: 9px;
+    color: #a86c68;
+    font-size: 12px;
+}
+.workshop-schedule .is-full {
+    background: #faf6f7;
+}
+.workshop-fee-grid {
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    gap: 18px;
+    max-width: 850px;
+    margin: 0 auto;
+}
+.workshop-fee-card {
+    padding: 30px 28px;
+    border: 1px solid #e5dddb;
+    background: #fff;
+}
+.workshop-fee-label {
+    margin: 0 0 8px;
+    color: #b18a92;
+    font-size: 11px;
+    letter-spacing: .12em;
+}
+.workshop-fee-card h3 {
+    margin: 0 0 14px;
+    color: #a86c68;
+    font-size: 24px;
+    font-weight: 500;
+}
+.workshop-fee-card p:last-child {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.85;
+}
+.workshop-notice-list {
+    max-width: 880px;
+    margin: 0 auto;
+    padding-left: 27px;
+}
+.workshop-notice-list li {
+    margin-bottom: 14px;
+    padding-left: 8px;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.9;
+}
+.workshop-notice-list li::marker {
+    color: #b98d96;
+    font-weight: 600;
+}
+.workshop-closing {
+    max-width: 880px;
+    margin: 32px auto 0;
+    padding: 25px 28px;
+    border-left: 3px solid #b98d96;
+    background: #fff;
+}
+.workshop-closing p {
+    margin: 0 0 8px;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.85;
+}
+.workshop-closing strong {
+    color: #8f656f;
+    font-size: 15px;
+    line-height: 1.85;
+}
+
+@media (max-width: 900px) {
+    .workshop-event-feature {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .workshop-category-grid {
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+    .workshop-schedule {
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+}
+@media (max-width: 650px) {
+    .workshop-event-hero h1 {
+        font-size: 25px;
+    }
+    .workshop-event-intro,
+    .workshop-event-section {
+        padding: 48px 0 58px;
+    }
+    .workshop-event-feature-content h2,
+    .workshop-event-heading h2 {
+        font-size: 23px;
+    }
+    .workshop-feature-grid,
+    .workshop-category-grid,
+    .workshop-schedule,
+    .workshop-fee-grid {
+        grid-template-columns: 1fr;
+    }
+}
