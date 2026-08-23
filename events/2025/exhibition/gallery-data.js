@@ -1,181 +1,384 @@
 const eventGalleryData = {
-    year: "2023",
+    year: "2025",
 
-    title: "2023 作品展",
+    title: "2025 作品展",
 
-    subtitle: "Exhibition 2023",
+    subtitle: "Exhibition 2025",
 
     description:
-        "台灣國際拼布友好會 2023 年作品展紀錄。",
+        "台灣國際拼布友好會 2025 年作品展紀錄。",
 
     works: [
 
         {
-            image: "/events/2023/exhibition/work-01.jpg",
+            image: "/events/2025/exhibition/work-01.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2023/exhibition/work-02.jpg",
+            image: "/events/2025/exhibition/work-02.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2023/exhibition/work-03.jpeg",
+            image: "/events/2025/exhibition/work-03.jpeg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2023/exhibition/work-04.jpg",
+            image: "/events/2025/exhibition/work-04.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2023/exhibition/work-05.jpg",
+            image: "/events/2025/exhibition/work-05.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2023/exhibition/work-06.jpg",
+            image: "/events/2025/exhibition/work-06.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2023/exhibition/work-07.jpg",
+            image: "/events/2025/exhibition/work-07.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2023/exhibition/work-08.jpg",
+            image: "/events/2025/exhibition/work-08.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2023/exhibition/work-09.jpg",
+            image: "/events/2025/exhibition/work-09.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2023/exhibition/work-10.jpg",
+            image: "/events/2025/exhibition/work-10.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2023/exhibition/work-11.jpg",
+            image: "/events/2025/exhibition/work-11.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2023/exhibition/work-12.jpg",
+            image: "/events/2025/exhibition/work-12.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2023/exhibition/work-13.jpg",
+            image: "/events/2025/exhibition/work-13.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2023/exhibition/work-14.jpg",
+            image: "/events/2025/exhibition/work-14.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2023/exhibition/work-15.jpg",
+            image: "/events/2025/exhibition/work-15.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2023/exhibition/work-16.jpg",
+            image: "/events/2025/exhibition/work-16.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2023/exhibition/work-17.jpg",
+            image: "/events/2025/exhibition/work-17.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2023/exhibition/work-18.jpg",
+            image: "/events/2025/exhibition/work-18.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2023/exhibition/work-19.jpg",
+            image: "/events/2025/exhibition/work-19.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2023/exhibition/work-20.jpg",
+            image: "/events/2025/exhibition/work-20.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2023/exhibition/work-21.jpeg",
+            image: "/events/2025/exhibition/work-21.jpeg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2023/exhibition/work-22.jpeg",
+            image: "/events/2025/exhibition/work-22.jpeg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2023/exhibition/work-23.jpeg",
+            image: "/events/2025/exhibition/work-23.jpeg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2023/exhibition/work-24.jpg",
+            image: "/events/2025/exhibition/work-24.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2023/exhibition/work-25.jpg",
+            image: "/events/2025/exhibition/work-25.jpg",
             title: "",
             artist: ""
         },
         {
-            image: "/events/2023/exhibition/work-26.jpg",
+            image: "/events/2025/exhibition/work-26.jpg",
             title: "",
             artist: ""
         },
 		{
-            image: "/events/2023/exhibition/work-27.jpg",
+            image: "/events/2025/exhibition/work-27.jpg",
             title: "",
             artist: ""
         },
 		{
-            image: "/events/2023/exhibition/work-28.jpg",
+            image: "/events/2025/exhibition/work-28.jpg",
             title: "",
             artist: ""
         },
 		{
-            image: "/events/2023/exhibition/work-29.jpg",
+            image: "/events/2025/exhibition/work-29.jpg",
+            title: "",
+            artist: ""
+        },
+		{
+            image: "/events/2025/exhibition/work-30.jpg",
+            title: "",
+            artist: ""
+        },
+		{
+            image: "/events/2025/exhibition/work-31.jpg",
+            title: "",
+            artist: ""
+        },
+
+        {
+            image: "/events/2025/exhibition/work-32.jpg",
+            title: "",
+            artist: ""
+        },
+
+        {
+            image: "/events/2025/exhibition/work-33.jpeg",
+            title: "",
+            artist: ""
+        },
+
+        {
+            image: "/events/2025/exhibition/work-34.jpg",
+            title: "",
+            artist: ""
+        },
+
+        {
+            image: "/events/2025/exhibition/work-35.jpg",
+            title: "",
+            artist: ""
+        },
+
+        {
+            image: "/events/2025/exhibition/work-36.jpg",
+            title: "",
+            artist: ""
+        },
+
+        {
+            image: "/events/2025/exhibition/work-37.jpg",
+            title: "",
+            artist: ""
+        },
+
+        {
+            image: "/events/2025/exhibition/work-38.jpg",
+            title: "",
+            artist: ""
+        },
+
+        {
+            image: "/events/2025/exhibition/work-39.jpg",
+            title: "",
+            artist: ""
+        },
+
+        {
+            image: "/events/2025/exhibition/work-40.jpg",
+            title: "",
+            artist: ""
+        },
+
+        {
+            image: "/events/2025/exhibition/work-41.jpg",
+            title: "",
+            artist: ""
+        },
+
+        {
+            image: "/events/2025/exhibition/work-42.jpg",
+            title: "",
+            artist: ""
+        },
+
+        {
+            image: "/events/2025/exhibition/work-43.jpg",
+            title: "",
+            artist: ""
+        },
+
+        {
+            image: "/events/2025/exhibition/work-44.jpg",
+            title: "",
+            artist: ""
+        },
+
+        {
+            image: "/events/2025/exhibition/work-45.jpg",
+            title: "",
+            artist: ""
+        },
+
+        {
+            image: "/events/2025/exhibition/work-46.jpg",
+            title: "",
+            artist: ""
+        },
+
+        {
+            image: "/events/2025/exhibition/work-47.jpg",
+            title: "",
+            artist: ""
+        },
+
+        {
+            image: "/events/2025/exhibition/work-48.jpg",
+            title: "",
+            artist: ""
+        },
+
+        {
+            image: "/events/2025/exhibition/work-49.jpg",
+            title: "",
+            artist: ""
+        },
+
+        {
+            image: "/events/2025/exhibition/work-50.jpg",
+            title: "",
+            artist: ""
+        },
+
+        {
+            image: "/events/2025/exhibition/work-51.jpeg",
+            title: "",
+            artist: ""
+        },
+
+        {
+            image: "/events/2025/exhibition/work-52.jpeg",
+            title: "",
+            artist: ""
+        },
+
+        {
+            image: "/events/2025/exhibition/work-53.jpeg",
+            title: "",
+            artist: ""
+        },
+
+        {
+            image: "/events/2025/exhibition/work-54.jpg",
+            title: "",
+            artist: ""
+        },
+
+        {
+            image: "/events/2025/exhibition/work-55.jpg",
+            title: "",
+            artist: ""
+        },
+        {
+            image: "/events/2025/exhibition/work-56.jpg",
+            title: "",
+            artist: ""
+        },
+		{
+            image: "/events/2025/exhibition/work-57.jpg",
+            title: "",
+            artist: ""
+        },
+		{
+            image: "/events/2025/exhibition/work-58.jpg",
+            title: "",
+            artist: ""
+        },
+		{
+            image: "/events/2025/exhibition/work-59.jpg",
+            title: "",
+            artist: ""
+        },
+		{
+            image: "/events/2025/exhibition/work-60.jpg",
+            title: "",
+            artist: ""
+        },
+
+        {
+            image: "/events/2025/exhibition/work-61.jpeg",
+            title: "",
+            artist: ""
+        },
+
+        {
+            image: "/events/2025/exhibition/work-62.jpeg",
+            title: "",
+            artist: ""
+        },
+
+        {
+            image: "/events/2025/exhibition/work-63.jpeg",
+            title: "",
+            artist: ""
+        },
+
+        {
+            image: "/events/2025/exhibition/work-64.jpg",
             title: "",
             artist: ""
         }
