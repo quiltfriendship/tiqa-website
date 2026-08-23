@@ -5270,3 +5270,418 @@ a.ticket-outlet-name:hover {
         grid-template-columns: 1fr;
     }
 }
+
+/* =========================================================
+   2021 活動門票
+========================================================= */
+
+.ticket2021-hero {
+    padding: 50px 20px 44px;
+    background: #f8f3f4;
+    text-align: center;
+}
+
+.ticket2021-eyebrow,
+.ticket2021-kicker,
+.ticket2021-heading > p {
+    margin: 0 0 8px;
+    color: #b18a92;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: .14em;
+}
+
+.ticket2021-hero h1 {
+    margin: 0;
+    color: #444;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: .08em;
+}
+
+.ticket2021-subtitle {
+    position: relative;
+    display: inline-block;
+    margin: 9px 0 0;
+    padding-bottom: 18px;
+    color: #777;
+    font-size: 15px;
+    letter-spacing: .06em;
+}
+
+.ticket2021-subtitle::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 42px;
+    height: 2px;
+    background: #b98d96;
+    transform: translateX(-50%);
+}
+
+.ticket2021-intro {
+    padding: 62px 0 68px;
+    background: #fff;
+}
+
+.ticket2021-intro-inner {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.ticket2021-intro-inner h2 {
+    margin: 0 0 22px;
+    color: #444;
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.ticket2021-intro-inner > p {
+    margin: 0 0 16px;
+    color: #5f5b59;
+    font-size: 16px;
+    line-height: 2;
+}
+
+.ticket2021-intro-inner > strong {
+    display: block;
+    margin-top: 24px;
+    color: #8f656f;
+    font-size: 17px;
+}
+
+.ticket2021-archive-note {
+    max-width: 900px;
+    margin: 34px auto 0;
+    padding: 17px 21px;
+    border-left: 3px solid #b98d96;
+    background: #faf8f8;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.ticket2021-archive-note strong {
+    color: #8f656f;
+}
+
+.ticket2021-section {
+    padding: 70px 0 82px;
+    background: #fff;
+}
+
+.ticket2021-section.alt {
+    background: #faf8f8;
+}
+
+.ticket2021-heading {
+    position: relative;
+    margin-bottom: 42px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.ticket2021-heading::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 42px;
+    height: 2px;
+    background: #b98d96;
+    transform: translateX(-50%);
+}
+
+.ticket2021-heading h2 {
+    margin: 0;
+    color: #444;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: .06em;
+}
+
+.ticket2021-lead {
+    max-width: 820px;
+    margin: -10px auto 34px;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.9;
+    text-align: center;
+}
+
+.ticket2021-price-grid,
+.ticket2021-benefit-grid,
+.ticket2021-purchase-grid {
+    display: grid;
+    gap: 16px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.ticket2021-price-grid,
+.ticket2021-benefit-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.ticket2021-purchase-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.ticket2021-price-grid article,
+.ticket2021-benefit-grid article,
+.ticket2021-purchase-grid article {
+    padding: 27px 25px;
+    border: 1px solid #e5dddb;
+    background: #fff;
+}
+
+.ticket2021-price-label {
+    margin: 0 0 8px;
+    color: #b18a92;
+    font-size: 11px;
+    letter-spacing: .12em;
+}
+
+.ticket2021-price-grid h3,
+.ticket2021-benefit-grid h3,
+.ticket2021-purchase-grid h3 {
+    margin: 0 0 10px;
+    color: #455267;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.ticket2021-price-grid strong {
+    display: block;
+    margin-bottom: 8px;
+    color: #a86c68;
+    font-size: 26px;
+}
+
+.ticket2021-price-grid p:last-child,
+.ticket2021-benefit-grid p,
+.ticket2021-purchase-grid p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.85;
+}
+
+.ticket2021-benefits-image {
+    max-width: 1000px;
+    margin: 0 auto 28px;
+}
+
+.ticket2021-benefits-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.ticket2021-benefit-grid span,
+.ticket2021-purchase-grid span {
+    color: #b98d96;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 27px;
+}
+
+.ticket2021-sample-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.ticket2021-sample-grid figure {
+    margin: 0;
+    padding: 18px;
+    border: 1px solid #e5dddb;
+    background: #fff;
+}
+
+.ticket2021-sample-grid img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.ticket2021-sample-grid figcaption {
+    margin-top: 10px;
+    color: #777;
+    font-size: 13px;
+    text-align: center;
+}
+
+.ticket2021-outlets {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.ticket2021-outlet-group {
+    margin-bottom: 24px;
+    padding: 25px 27px;
+    border: 1px solid #e5dddb;
+    background: #fff;
+}
+
+.ticket2021-outlet-group:last-child {
+    margin-bottom: 0;
+}
+
+.ticket2021-outlet-group h3 {
+    margin: 0 0 18px;
+    color: #8f656f;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.ticket2021-outlet-group ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.ticket2021-outlet-group li {
+    display: grid;
+    grid-template-columns: minmax(230px, .9fr) minmax(0, 1.1fr) minmax(0, 1.5fr);
+    gap: 10px 18px;
+    padding: 10px 0;
+    border-top: 1px solid #eee7e5;
+}
+
+.ticket2021-outlet-name {
+    color: #455267;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.7;
+}
+
+.ticket2021-outlet-detail {
+    color: #666;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.ticket2021-notice-list {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-left: 28px;
+}
+
+.ticket2021-notice-list li {
+    margin-bottom: 13px;
+    padding-left: 7px;
+    color: #5f5b59;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.ticket2021-notice-list li::marker {
+    color: #b98d96;
+    font-weight: 600;
+}
+
+.ticket2021-faq {
+    max-width: 900px;
+    margin: 0 auto;
+    border-top: 1px solid #ddd5d7;
+}
+
+.ticket2021-faq-item {
+    padding: 18px 20px;
+    border-right: 1px solid #ddd5d7;
+    border-bottom: 1px solid #ddd5d7;
+    border-left: 1px solid #ddd5d7;
+    background: #fff;
+}
+
+.ticket2021-faq-item p {
+    margin: 0;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.ticket2021-event-info {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    max-width: 1050px;
+    margin: 0 auto;
+    border: 1px solid #e5dddb;
+}
+
+.ticket2021-event-info > div {
+    padding: 25px 20px;
+    border-right: 1px solid #e5dddb;
+    background: #fff;
+}
+
+.ticket2021-event-info > div:last-child {
+    border-right: 0;
+}
+
+.ticket2021-event-info span {
+    color: #b18a92;
+    font-size: 11px;
+    letter-spacing: .12em;
+}
+
+.ticket2021-event-info h3 {
+    margin: 9px 0 0;
+    color: #455267;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+
+    .ticket2021-event-info {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .ticket2021-event-info > div {
+        border-bottom: 1px solid #e5dddb;
+    }
+
+    .ticket2021-outlet-group li {
+        grid-template-columns: 1fr;
+        gap: 3px;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .ticket2021-hero h1 {
+        font-size: 25px;
+    }
+
+    .ticket2021-intro,
+    .ticket2021-section {
+        padding: 48px 0 58px;
+    }
+
+    .ticket2021-intro-inner h2,
+    .ticket2021-heading h2 {
+        font-size: 23px;
+    }
+
+    .ticket2021-price-grid,
+    .ticket2021-benefit-grid,
+    .ticket2021-purchase-grid,
+    .ticket2021-sample-grid,
+    .ticket2021-event-info {
+        grid-template-columns: 1fr;
+    }
+
+    .ticket2021-event-info > div {
+        border-right: 0;
+    }
+
+}
