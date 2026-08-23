@@ -1799,13 +1799,13 @@ a.ticket-outlet-name:hover {
    2025 主題聯合作品募集
 ========================================================= */
 
-.theme2025-hero {
+.collect-event-hero {
     padding: 48px 20px 42px;
     background: #f8f3f4;
     text-align: center;
 }
 
-.theme2025-hero h1 {
+.collect-event-hero h1 {
     margin: 0;
     color: #444;
     font-size: 32px;
@@ -1814,7 +1814,7 @@ a.ticket-outlet-name:hover {
     letter-spacing: .1em;
 }
 
-.theme2025-hero p {
+.collect-event-hero p {
     position: relative;
     display: inline-block;
     margin: 8px 0 0;
@@ -1825,7 +1825,7 @@ a.ticket-outlet-name:hover {
     letter-spacing: .12em;
 }
 
-.theme2025-hero p::after {
+.collect-event-hero p::after {
     content: "";
     position: absolute;
     left: 50%;
@@ -1836,22 +1836,29 @@ a.ticket-outlet-name:hover {
     transform: translateX(-50%);
 }
 
-
-/* Intro */
-
-.theme2025-intro {
-    padding: 62px 0 68px;
+.collect-event-intro {
+    padding: 60px 0 68px;
     background: #fff;
 }
 
-.theme2025-intro-content {
-    max-width: 860px;
+.collect-event-feature {
+    display: grid;
+    grid-template-columns:
+        minmax(300px, .95fr)
+        minmax(0, 1.05fr);
+    gap: 52px;
+    align-items: center;
+    max-width: 1000px;
     margin: 0 auto;
-    text-align: center;
 }
 
-.theme2025-kicker,
-.theme2025-label {
+.collect-event-feature-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.collect-event-kicker {
     margin: 0 0 8px;
     color: #b18a92;
     font-size: 12px;
@@ -1859,25 +1866,24 @@ a.ticket-outlet-name:hover {
     letter-spacing: .14em;
 }
 
-.theme2025-intro-content h2 {
-    margin: 0 0 22px;
+.collect-event-feature-content h2 {
+    margin: 0 0 20px;
     color: #444;
-    font-size: 30px;
+    font-size: 29px;
     font-weight: 500;
     line-height: 1.5;
-    letter-spacing: .08em;
 }
 
-.theme2025-intro-content > p:not(.theme2025-kicker) {
-    margin: 0 0 15px;
+.collect-event-feature-content > p:not(.collect-event-kicker) {
+    margin: 0 0 16px;
     color: #666;
     font-size: 16px;
     line-height: 2;
 }
 
-.theme2025-archive-note {
-    max-width: 860px;
-    margin: 35px auto 0;
+.collect-archive-note {
+    max-width: 880px;
+    margin: 36px auto 0;
     padding: 17px 21px;
     border-left: 3px solid #b98d96;
     background: #faf8f8;
@@ -1886,31 +1892,28 @@ a.ticket-outlet-name:hover {
     line-height: 1.9;
 }
 
-.theme2025-archive-note strong {
+.collect-archive-note strong {
     color: #8f656f;
     font-weight: 500;
 }
 
-
-/* Section */
-
-.theme2025-section {
-    padding: 72px 0 82px;
+.collect-event-section {
+    padding: 70px 0 82px;
     background: #fff;
 }
 
-.theme2025-section.alt {
+.collect-event-section.alt {
     background: #faf8f8;
 }
 
-.theme2025-heading {
+.collect-event-heading {
     position: relative;
-    margin-bottom: 44px;
+    margin-bottom: 45px;
     padding-bottom: 20px;
     text-align: center;
 }
 
-.theme2025-heading::after {
+.collect-event-heading::after {
     content: "";
     position: absolute;
     left: 50%;
@@ -1921,7 +1924,15 @@ a.ticket-outlet-name:hover {
     transform: translateX(-50%);
 }
 
-.theme2025-heading h2 {
+.collect-event-label {
+    margin: 0 0 7px;
+    color: #a98a91;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: .14em;
+}
+
+.collect-event-heading h2 {
     margin: 0;
     color: #444;
     font-size: 28px;
@@ -1931,67 +1942,45 @@ a.ticket-outlet-name:hover {
 }
 
 
-/* Feature */
+/* 使用規劃 / 參與資格 */
 
-.theme2025-feature {
+.collect-info-grid {
     display: grid;
-    grid-template-columns:
-        minmax(300px, 1fr)
-        minmax(0, 1fr);
-    gap: 52px;
-    align-items: center;
-    max-width: 1020px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    max-width: 950px;
     margin: 0 auto;
 }
 
-.theme2025-feature.reverse .theme2025-feature-image {
-    order: 2;
-}
-
-.theme2025-feature.reverse .theme2025-feature-content {
-    order: 1;
-}
-
-.theme2025-feature-image {
-    overflow: hidden;
-    border: 1px solid #e5dedc;
+.collect-info-card {
+    padding: 30px 32px;
+    border: 1px solid #e5dddb;
     background: #fff;
 }
 
-.theme2025-feature-image img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.theme2025-feature-content h2 {
-    margin: 0 0 22px;
-    color: #455267;
+.collect-info-number,
+.collect-rule-number {
+    margin: 0 0 14px;
+    color: #b98d96;
+    font-family: Georgia, "Times New Roman", serif;
     font-size: 27px;
-    font-weight: 500;
-    line-height: 1.5;
+    line-height: 1;
 }
 
-.theme2025-feature-content h3 {
-    margin: 28px 0 12px;
+.collect-info-card h3,
+.collect-rule-card h3 {
+    margin: 0 0 14px;
     color: #455267;
     font-size: 20px;
     font-weight: 500;
 }
 
-.theme2025-feature-content > p:not(.theme2025-label):not(.theme2025-history-note) {
-    margin: 0 0 15px;
-    color: #666;
-    font-size: 15px;
-    line-height: 1.95;
-}
-
-.theme2025-list {
+.collect-info-card ul {
     margin: 0;
-    padding-left: 22px;
+    padding-left: 20px;
 }
 
-.theme2025-list li {
+.collect-info-card li {
     margin: 0 0 10px;
     color: #666;
     font-size: 15px;
@@ -1999,177 +1988,173 @@ a.ticket-outlet-name:hover {
 }
 
 
-/* Rules */
+/* 作品條件 */
 
-.theme2025-rules-grid {
+.collect-rules-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 18px;
-    max-width: 960px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    max-width: 1050px;
     margin: 0 auto;
 }
 
-.theme2025-rule-card {
-    padding: 27px 29px;
-    border: 1px solid #e4dcde;
+.collect-rule-card {
+    padding: 27px 25px;
+    border: 1px solid #e5dddb;
     background: #fff;
 }
 
-.theme2025-rule-number {
-    margin: 0 0 13px;
-    color: #b98d96;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 27px;
-}
-
-.theme2025-rule-card h3 {
-    margin: 0 0 11px;
-    color: #455267;
-    font-size: 19px;
-    font-weight: 500;
-}
-
-.theme2025-rule-card > p:not(.theme2025-rule-number) {
+.collect-rule-card > p:not(.collect-rule-number) {
     margin: 0;
     color: #666;
     font-size: 14px;
     line-height: 1.85;
 }
 
-.theme2025-warning {
-    max-width: 900px;
-    margin: 28px auto 0;
-    padding: 18px 21px;
-    border-left: 3px solid #b98d96;
-    background: #faf6f7;
-    color: #79565e;
-    font-size: 14px;
-    line-height: 1.9;
-}
 
+/* 配色 */
 
-/* Color Guide */
-
-.theme2025-guide-image {
-    max-width: 820px;
+.collect-colour-layout {
+    display: grid;
+    grid-template-columns:
+        minmax(0, 1.2fr)
+        minmax(280px, .8fr);
+    gap: 45px;
+    align-items: center;
+    max-width: 1050px;
     margin: 0 auto;
-    padding: 14px;
-    border: 1px solid #e4dcde;
-    background: #fff;
 }
 
-.theme2025-guide-image img {
+.collect-colour-image img {
     display: block;
     width: 100%;
     height: auto;
 }
 
-.theme2025-guide-note {
-    max-width: 800px;
-    margin: 22px auto 0;
-    color: #777;
-    font-size: 14px;
-    line-height: 1.9;
-    text-align: center;
+.collect-colour-content h3 {
+    margin: 0 0 18px;
+    color: #455267;
+    font-size: 22px;
+    font-weight: 500;
 }
 
-
-/* Registration */
-
-.theme2025-registration {
-    max-width: 860px;
-    margin: 0 auto;
-}
-
-.theme2025-registration ol {
-    margin: 0;
-    padding-left: 28px;
-}
-
-.theme2025-registration li {
-    margin: 0 0 14px;
-    padding-left: 7px;
-    color: #5f5b59;
+.collect-colour-content p {
+    margin: 0 0 15px;
+    color: #666;
     font-size: 15px;
-    line-height: 1.9;
+    line-height: 1.95;
 }
 
-.theme2025-registration li::marker {
-    color: #b98d96;
-    font-weight: 600;
+.collect-colour-note {
+    margin-top: 22px !important;
+    padding: 14px 16px;
+    background: #fff;
+    border-left: 3px solid #b98d96;
+    color: #8f656f !important;
 }
 
-.theme2025-status {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px 15px;
-    max-width: 860px;
-    margin: 30px auto 0;
-    padding: 18px 21px;
+
+/* 報名 */
+
+.collect-registration {
+    display: grid;
+    grid-template-columns:
+        minmax(0, 1.15fr)
+        minmax(260px, .85fr);
+    gap: 45px;
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: start;
+}
+
+.collect-registration ol {
+    margin: 0;
+    padding-left: 25px;
+}
+
+.collect-registration li {
+    margin: 0 0 14px;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.95;
+}
+
+.collect-status-box {
+    padding: 28px 28px 26px;
+    border: 1px solid #e4dcde;
     background: #faf6f7;
 }
 
-.theme2025-status strong {
-    color: #8f656f;
-    font-size: 14px;
+.collect-status-label {
+    margin: 0 0 7px;
+    color: #b18a92;
+    font-size: 11px;
+    letter-spacing: .12em;
 }
 
-.theme2025-status span {
+.collect-status-box h3 {
+    margin: 0 0 12px;
+    color: #8f656f;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.collect-status-box p:not(.collect-status-label) {
+    margin: 0;
     color: #666;
     font-size: 14px;
+    line-height: 1.9;
 }
 
 
-/* Submission Information */
+/* 紙型書 */
 
-.theme2025-info-list {
-    margin: 27px 0 0;
-    border-top: 1px solid #e5dcde;
-}
-
-.theme2025-info-list > div {
+.collect-pattern-book {
     display: grid;
-    grid-template-columns: 135px minmax(0, 1fr);
-    gap: 16px;
-    padding: 11px 0;
-    border-bottom: 1px solid #e5dcde;
+    grid-template-columns:
+        minmax(280px, .85fr)
+        minmax(0, 1.15fr);
+    gap: 48px;
+    align-items: center;
+    max-width: 950px;
+    margin: 0 auto;
 }
 
-.theme2025-info-list dt {
-    color: #8f656f;
-    font-size: 13px;
+.collect-pattern-book-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.collect-pattern-book-content h3 {
+    margin: 0 0 18px;
+    color: #455267;
+    font-size: 23px;
     font-weight: 500;
-    line-height: 1.7;
 }
 
-.theme2025-info-list dd {
-    margin: 0;
-    color: #555;
-    font-size: 14px;
-    line-height: 1.7;
-}
-
-.theme2025-history-note {
-    margin: 23px 0 0;
-    color: #888;
-    font-size: 13px;
-    line-height: 1.8;
+.collect-pattern-book-content p {
+    margin: 0 0 15px;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.95;
 }
 
 
 /* Tablet */
 
-@media (max-width: 850px) {
+@media (max-width: 900px) {
 
-    .theme2025-feature,
-    .theme2025-feature.reverse {
+    .collect-event-feature,
+    .collect-colour-layout,
+    .collect-registration,
+    .collect-pattern-book {
         grid-template-columns: 1fr;
-        gap: 32px;
+        gap: 30px;
     }
 
-    .theme2025-feature.reverse .theme2025-feature-image,
-    .theme2025-feature.reverse .theme2025-feature-content {
-        order: initial;
+    .collect-rules-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
 }
@@ -2179,45 +2164,524 @@ a.ticket-outlet-name:hover {
 
 @media (max-width: 650px) {
 
-    .theme2025-hero {
+    .collect-event-hero {
         padding: 38px 18px 34px;
     }
 
-    .theme2025-hero h1 {
+    .collect-event-hero h1 {
         font-size: 25px;
     }
 
-    .theme2025-intro {
+    .collect-event-intro {
         padding: 45px 0 55px;
     }
 
-    .theme2025-intro-content h2,
-    .theme2025-heading h2,
-    .theme2025-feature-content h2 {
+    .collect-event-feature-content h2,
+    .collect-event-heading h2 {
         font-size: 23px;
     }
 
-    .theme2025-intro-content > p:not(.theme2025-kicker) {
+    .collect-event-feature-content > p:not(.collect-event-kicker) {
         font-size: 15px;
         line-height: 1.9;
     }
 
-    .theme2025-section {
+    .collect-event-section {
         padding: 52px 0 62px;
     }
 
-    .theme2025-rules-grid {
+    .collect-info-grid,
+    .collect-rules-grid {
         grid-template-columns: 1fr;
-        gap: 13px;
     }
 
-    .theme2025-rule-card {
-        padding: 24px 21px;
+    .collect-info-card,
+    .collect-rule-card {
+        padding: 24px 22px;
     }
 
-    .theme2025-info-list > div {
+}
+
+/* =========================================================
+   2025 第四屆台灣拼布大賽
+========================================================= */
+
+.contest-event-hero {
+    padding: 52px 20px 46px;
+    background: #f8f3f4;
+    text-align: center;
+}
+
+.contest-event-edition {
+    margin: 0 0 8px;
+    color: #b18a92;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: .14em;
+}
+
+.contest-event-hero h1 {
+    margin: 0;
+    color: #444;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: .1em;
+}
+
+.contest-event-theme {
+    position: relative;
+    display: inline-block;
+    margin: 10px 0 0;
+    padding-bottom: 18px;
+    color: #777;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: .08em;
+}
+
+.contest-event-theme::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 42px;
+    height: 2px;
+    background: #b98d96;
+    transform: translateX(-50%);
+}
+
+.contest-event-intro {
+    padding: 62px 0 68px;
+    background: #fff;
+}
+
+.contest-event-intro-inner {
+    max-width: 880px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contest-event-kicker {
+    margin: 0 0 8px;
+    color: #b18a92;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: .14em;
+}
+
+.contest-event-intro-inner h2 {
+    margin: 0 0 22px;
+    color: #444;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.contest-event-intro-inner > p:not(.contest-event-kicker) {
+    margin: 0 0 15px;
+    color: #666;
+    font-size: 16px;
+    line-height: 2;
+}
+
+.contest-archive-note {
+    max-width: 880px;
+    margin: 34px auto 0;
+    padding: 17px 21px;
+    border-left: 3px solid #b98d96;
+    background: #faf8f8;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.contest-archive-note strong {
+    color: #8f656f;
+    font-weight: 500;
+}
+
+.contest-event-section {
+    padding: 70px 0 82px;
+    background: #fff;
+}
+
+.contest-event-section.alt {
+    background: #faf8f8;
+}
+
+.contest-event-heading {
+    position: relative;
+    margin-bottom: 45px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.contest-event-heading::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 42px;
+    height: 2px;
+    background: #b98d96;
+    transform: translateX(-50%);
+}
+
+.contest-event-label {
+    margin: 0 0 7px;
+    color: #a98a91;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: .14em;
+}
+
+.contest-event-heading h2 {
+    margin: 0;
+    color: #444;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: .08em;
+}
+
+
+/* 競賽組別 */
+
+.contest-category-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contest-category-card {
+    padding: 30px 30px 28px;
+    border: 1px solid #e5dddb;
+    background: #fff;
+}
+
+.contest-category-number {
+    margin: 0 0 12px;
+    color: #b98d96;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 28px;
+    line-height: 1;
+}
+
+.contest-category-card h3 {
+    margin: 0 0 8px;
+    color: #455267;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.contest-category-size {
+    margin: 0 0 14px !important;
+    color: #a86c68 !important;
+    font-size: 14px !important;
+    font-weight: 600;
+}
+
+.contest-category-card > p:last-child {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+
+/* 報名規範 */
+
+.contest-rule-list {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-left: 27px;
+}
+
+.contest-rule-list li {
+    margin: 0 0 15px;
+    padding-left: 8px;
+    color: #5f5b59;
+    font-size: 15px;
+    line-height: 1.95;
+}
+
+.contest-rule-list li::marker {
+    color: #b98d96;
+    font-weight: 600;
+}
+
+
+/* 獎項 */
+
+.contest-award-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.contest-award-card {
+    padding: 26px 22px;
+    border: 1px solid #e4dcde;
+    background: #fff;
+}
+
+.contest-award-card h3 {
+    min-height: 54px;
+    margin: 0 0 15px;
+    color: #455267;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.contest-award-card ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.contest-award-card li {
+    margin: 0 0 7px;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.contest-extra-award {
+    max-width: 1050px;
+    margin: 22px auto 0;
+    padding: 16px 20px;
+    background: #fff;
+    border-left: 3px solid #b98d96;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.contest-extra-award strong {
+    color: #8f656f;
+}
+
+
+/* 費用 */
+
+.contest-fee-intro {
+    max-width: 850px;
+    margin: -5px auto 30px;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.9;
+    text-align: center;
+}
+
+.contest-fee-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.contest-fee-card {
+    padding: 30px 28px;
+    border: 1px solid #e5dddb;
+    background: #fff;
+    text-align: center;
+}
+
+.contest-fee-step {
+    margin: 0 0 10px;
+    color: #b18a92;
+    font-size: 12px;
+    letter-spacing: .12em;
+}
+
+.contest-fee-card h3 {
+    margin: 0 0 15px;
+    color: #a86c68;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.contest-fee-card p:not(.contest-fee-step) {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.contest-fee-card small {
+    display: block;
+    margin-top: 13px;
+    color: #8f656f;
+    font-size: 13px;
+}
+
+
+/* 時程 */
+
+.contest-timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contest-timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 145px;
+    width: 1px;
+    background: #ded5d3;
+}
+
+.contest-timeline-item {
+    position: relative;
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 50px;
+    padding: 0 0 34px;
+}
+
+.contest-timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+.contest-timeline-item::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 139px;
+    width: 13px;
+    height: 13px;
+    border: 3px solid #faf8f8;
+    border-radius: 50%;
+    background: #b98d96;
+    box-sizing: border-box;
+}
+
+.contest-timeline-date {
+    padding-top: 1px;
+    color: #9c747c;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: right;
+}
+
+.contest-timeline-content h3 {
+    margin: 0 0 8px;
+    color: #455267;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.contest-timeline-content p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+
+/* 展出 */
+
+.contest-exhibition-box {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 28px 30px;
+    border: 1px solid #e5dddb;
+    background: #faf8f8;
+}
+
+.contest-exhibition-box p {
+    margin: 0 0 14px;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.95;
+}
+
+.contest-exhibition-box p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Tablet */
+
+@media (max-width: 900px) {
+
+    .contest-award-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 650px) {
+
+    .contest-event-hero {
+        padding: 40px 18px 36px;
+    }
+
+    .contest-event-hero h1 {
+        font-size: 25px;
+    }
+
+    .contest-event-theme {
+        font-size: 14px;
+    }
+
+    .contest-event-intro {
+        padding: 46px 0 55px;
+    }
+
+    .contest-event-intro-inner h2,
+    .contest-event-heading h2 {
+        font-size: 23px;
+    }
+
+    .contest-event-intro-inner > p:not(.contest-event-kicker) {
+        font-size: 15px;
+        line-height: 1.9;
+    }
+
+    .contest-event-section {
+        padding: 52px 0 62px;
+    }
+
+    .contest-category-grid,
+    .contest-award-grid,
+    .contest-fee-grid {
         grid-template-columns: 1fr;
-        gap: 3px;
+    }
+
+    .contest-award-card h3 {
+        min-height: 0;
+    }
+
+    .contest-timeline::before {
+        left: 6px;
+    }
+
+    .contest-timeline-item {
+        grid-template-columns: 1fr;
+        gap: 7px;
+        padding-left: 28px;
+    }
+
+    .contest-timeline-item::before {
+        left: 0;
+    }
+
+    .contest-timeline-date {
+        text-align: left;
     }
 
 }
