@@ -3692,3 +3692,354 @@ a.ticket-outlet-name:hover {
         grid-template-columns: 1fr;
     }
 }
+
+/* =========================================================
+   2025 廣場曬被・大方走秀＆愛的零錢包
+========================================================= */
+
+.show-purse-hero {
+    padding: 50px 20px 44px;
+    background: #f8f3f4;
+    text-align: center;
+}
+
+.show-purse-eyebrow,
+.show-purse-kicker,
+.show-purse-heading > p {
+    margin: 0 0 8px;
+    color: #b18a92;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: .14em;
+}
+
+.show-purse-hero h1 {
+    margin: 0;
+    color: #444;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: .08em;
+}
+
+.show-purse-theme {
+    position: relative;
+    display: inline-block;
+    margin: 9px 0 0;
+    padding-bottom: 18px;
+    color: #777;
+    font-size: 15px;
+    letter-spacing: .06em;
+}
+
+.show-purse-theme::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 42px;
+    height: 2px;
+    background: #b98d96;
+    transform: translateX(-50%);
+}
+
+.show-purse-intro {
+    padding: 62px 0 68px;
+    background: #fff;
+}
+
+.show-purse-intro-inner {
+    max-width: 880px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.show-purse-intro-inner h2 {
+    margin: 0 0 22px;
+    color: #444;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.show-purse-intro-inner > p:not(.show-purse-kicker) {
+    margin: 0 0 15px;
+    color: #666;
+    font-size: 16px;
+    line-height: 2;
+}
+
+.show-purse-archive-note {
+    max-width: 880px;
+    margin: 34px auto 0;
+    padding: 17px 21px;
+    border-left: 3px solid #b98d96;
+    background: #faf8f8;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.show-purse-archive-note strong {
+    color: #8f656f;
+}
+
+.show-purse-section {
+    padding: 70px 0 82px;
+    background: #fff;
+}
+
+.show-purse-section.alt {
+    background: #faf8f8;
+}
+
+.show-purse-heading {
+    position: relative;
+    margin-bottom: 42px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.show-purse-heading::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 42px;
+    height: 2px;
+    background: #b98d96;
+    transform: translateX(-50%);
+}
+
+.show-purse-heading h2 {
+    margin: 0;
+    color: #444;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: .06em;
+}
+
+
+/* 活動資訊 */
+
+.show-purse-info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 1px solid #e5dddb;
+    background: #fff;
+}
+
+.show-purse-info-grid article {
+    padding: 27px 25px;
+    border-right: 1px solid #e5dddb;
+}
+
+.show-purse-info-grid article:last-child {
+    border-right: 0;
+}
+
+.show-purse-info-grid span {
+    color: #b18a92;
+    font-size: 11px;
+    letter-spacing: .12em;
+}
+
+.show-purse-info-grid h3 {
+    margin: 10px 0 0;
+    color: #455267;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.show-purse-note {
+    max-width: 850px;
+    margin: 20px auto 0;
+    color: #777;
+    font-size: 13px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+
+/* 三大活動 */
+
+.show-purse-activity-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 17px;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.show-purse-activity-card {
+    padding: 29px 25px;
+    border: 1px solid #e5dddb;
+    background: #fff;
+}
+
+.show-purse-activity-card > span,
+.purse-rule-grid article > span,
+.purse-process-grid article > span {
+    color: #b98d96;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 28px;
+}
+
+.show-purse-activity-card h3,
+.purse-rule-grid h3,
+.purse-process-grid h3 {
+    margin: 12px 0 10px;
+    color: #455267;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.show-purse-activity-card p,
+.purse-rule-grid p,
+.purse-process-grid p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.85;
+}
+
+.show-purse-gift-box {
+    max-width: 850px;
+    margin: 30px auto 0;
+    padding: 22px 25px;
+    border-left: 3px solid #b98d96;
+    background: #faf6f7;
+}
+
+.show-purse-gift-box strong {
+    color: #8f656f;
+    font-size: 16px;
+}
+
+.show-purse-gift-box p {
+    margin: 8px 0 0;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* 愛的零錢包 */
+
+.purse-intro {
+    max-width: 880px;
+    margin: 0 auto 34px;
+}
+
+.purse-intro p {
+    margin: 0 0 14px;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.95;
+}
+
+.purse-process-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 15px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.purse-process-grid article {
+    padding: 24px 22px;
+    border: 1px solid #e5dddb;
+    background: #fff;
+    text-align: center;
+}
+
+
+/* 製作規範 */
+
+.purse-rule-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.purse-rule-grid article {
+    padding: 27px 24px;
+    border: 1px solid #e5dddb;
+    background: #fff;
+}
+
+
+/* Reminder */
+
+.show-purse-reminder {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 29px 31px;
+    border: 1px solid #e5dddb;
+    background: #fff;
+}
+
+.show-purse-reminder p {
+    margin: 0 0 15px;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.95;
+}
+
+.show-purse-reminder p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Tablet */
+
+@media (max-width: 850px) {
+
+    .show-purse-activity-grid,
+    .purse-rule-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 650px) {
+
+    .show-purse-hero h1 {
+        font-size: 25px;
+    }
+
+    .show-purse-intro,
+    .show-purse-section {
+        padding: 48px 0 58px;
+    }
+
+    .show-purse-intro-inner h2,
+    .show-purse-heading h2 {
+        font-size: 23px;
+    }
+
+    .show-purse-info-grid,
+    .show-purse-activity-grid,
+    .purse-process-grid,
+    .purse-rule-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .show-purse-info-grid article {
+        border-right: 0;
+        border-bottom: 1px solid #e5dddb;
+    }
+
+    .show-purse-info-grid article:last-child {
+        border-bottom: 0;
+    }
+
+}
