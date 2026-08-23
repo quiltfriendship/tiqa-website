@@ -4380,3 +4380,113 @@ a.ticket-outlet-name:hover {
     }
 
 }
+
+/* =========================================================
+   2021 年度首頁－活動紀錄攤平版
+========================================================= */
+
+.event2021-archive {
+    padding: 72px 0 88px;
+    background: #fff;
+}
+
+.event2021-archive-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.event2021-archive-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 205px;
+    padding: 24px 25px;
+    border: 1px solid #e5dddb;
+    background: #fff;
+    transition:
+        transform .22s ease,
+        box-shadow .22s ease;
+}
+
+.event2021-archive-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, .05);
+}
+
+.event2021-archive-label {
+    margin: 0 0 7px;
+    color: #b18a92;
+    font-size: 11px;
+    line-height: 1.5;
+    letter-spacing: .12em;
+}
+
+.event2021-archive-card h3 {
+    margin: 0 0 11px;
+    color: #444;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.event2021-archive-description {
+    margin: 0 0 14px;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.85;
+}
+
+.event2021-archive-date {
+    margin: 0 0 17px;
+    padding: 10px 12px;
+    background: #faf6f7;
+    color: #8f656f;
+    font-size: 12px;
+    line-height: 1.75;
+}
+
+.event2021-archive-link {
+    display: inline-block;
+    align-self: flex-start;
+    margin-top: auto;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #b98d96;
+    color: #91656f;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.event2021-archive-link:hover {
+    color: #6f4851;
+    border-color: #6f4851;
+}
+
+/* 11 張卡片時，最後一張維持左側半寬，與 2023 卡片邏輯一致 */
+.event2021-archive-card:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    max-width: calc(50% - 9px);
+}
+
+@media (max-width: 650px) {
+
+    .event2021-archive {
+        padding: 52px 0 65px;
+    }
+
+    .event2021-archive-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .event2021-archive-card {
+        min-height: 0;
+    }
+
+    .event2021-archive-card:last-child:nth-child(odd) {
+        grid-column: auto;
+        max-width: none;
+    }
+
+}

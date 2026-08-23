@@ -16,19 +16,30 @@
 <body>
 
 <div id="site-header"></div>
-<nav id="breadcrumb" class="breadcrumb" aria-label="麵包屑"></nav>
+
+<nav id="breadcrumb"
+     class="breadcrumb"
+     aria-label="麵包屑">
+</nav>
 
 <main>
 
+    <!-- 年度標題 -->
     <section class="event2021-year-header">
         <div class="content-container">
             <h1 id="event-title">2021 友好拼布手作節</h1>
-            <p id="event-header-subtitle" class="event2021-year-subtitle">在松菸 1 號倉庫</p>
+            <p id="event-header-subtitle"
+               class="event2021-year-subtitle">
+                在松菸 1 號倉庫
+            </p>
         </div>
     </section>
 
+
+    <!-- 主視覺＋活動資訊 -->
     <section class="event2021-overview">
         <div class="content-container">
+
             <article class="event2021-overview-card">
 
                 <div class="event2021-overview-image">
@@ -38,16 +49,32 @@
                 </div>
 
                 <div class="event2021-overview-content">
-                    <p class="event2021-kicker">Taiwan Friendly Quilt &amp; Craft Festival 2021</p>
-                    <h2>2021 友好拼布手作節</h2>
-                    <p id="event-description" class="event2021-description"></p>
-                    <ul id="event-facts" class="event2021-facts"></ul>
+
+                    <p class="event2021-kicker">
+                        Taiwan Friendly Quilt &amp; Craft Festival 2021
+                    </p>
+
+                    <h2>
+                        2021 友好拼布手作節
+                    </h2>
+
+                    <p id="event-description"
+                       class="event2021-description">
+                    </p>
+
+                    <ul id="event-facts"
+                        class="event2021-facts">
+                    </ul>
+
                 </div>
 
             </article>
+
         </div>
     </section>
 
+
+    <!-- 作品展 -->
     <section class="event2021-exhibition">
         <div class="content-container">
 
@@ -59,20 +86,25 @@
             <article class="event2021-exhibition-card">
 
                 <div class="event2021-exhibition-content">
+
                     <p id="exhibition-description"
-                       class="event2021-exhibition-description"></p>
+                       class="event2021-exhibition-description">
+                    </p>
 
                     <a id="exhibition-link"
                        href="/events/2021/exhibition/"
                        class="event2021-button">
                         瀏覽作品展 →
                     </a>
+
                 </div>
 
                 <div class="event2021-exhibition-image">
+
                     <img id="exhibition-image"
                          src="/events/2021/exhibition.jpg"
                          alt="2021 友好拼布手作節作品展">
+
                 </div>
 
             </article>
@@ -80,84 +112,42 @@
         </div>
     </section>
 
-    <section class="event2021-section alt">
+
+    <!-- 活動紀錄：全部攤平 -->
+    <section class="event2021-archive">
         <div class="content-container">
 
             <div class="event2021-section-heading">
-                <p class="event2021-section-label">Event Information</p>
-                <h2>活動介紹</h2>
+
+                <p class="event2021-section-label">
+                    Event Archive
+                </p>
+
+                <h2>
+                    活動紀錄
+                </h2>
+
             </div>
 
-            <div id="event-info-list"
-                 class="event2021-grid event2021-grid-two"></div>
+            <div id="event-section-list"
+                 class="event2021-archive-grid">
+            </div>
 
         </div>
     </section>
 
-    <section class="event2021-section">
-        <div class="content-container">
 
-            <div class="event2021-section-heading">
-                <p class="event2021-section-label">Participation</p>
-                <h2>活動參與</h2>
-            </div>
-
-            <div id="event-participation-list"
-                 class="event2021-grid event2021-grid-two"></div>
-
-        </div>
-    </section>
-
-    <section class="event2021-section alt">
-        <div class="content-container">
-
-            <div class="event2021-section-heading">
-                <p class="event2021-section-label">Exhibitors</p>
-                <h2>市集展位介紹</h2>
-            </div>
-
-            <div id="event-exhibitors-list"
-                 class="event2021-grid event2021-grid-one"></div>
-
-        </div>
-    </section>
-
-    <section class="event2021-section">
-        <div class="content-container">
-
-            <div class="event2021-section-heading">
-                <p class="event2021-section-label">Call for Entries</p>
-                <h2>徵件及展出類別</h2>
-            </div>
-
-            <div id="event-entry-list"
-                 class="event2021-grid"></div>
-
-        </div>
-    </section>
-
-    <section class="event2021-section alt">
-        <div class="content-container">
-
-            <div class="event2021-section-heading">
-                <p class="event2021-section-label">English</p>
-                <h2>English</h2>
-            </div>
-
-            <div id="event-english-list"
-                 class="event2021-grid event2021-grid-two"></div>
-
-        </div>
-    </section>
-
+    <!-- 返回歷年活動 -->
     <section class="event-return-banner">
         <div class="content-container">
 
             <a href="/events/"
                class="event-return-banner-link"
                aria-label="返回歷年活動">
+
                 <img src="/events/2021/event-footer.jpg"
                      alt="2021 友好拼布手作節">
+
             </a>
 
             <p class="event-return-hint">
@@ -169,7 +159,9 @@
 
 </main>
 
+
 <div id="site-footer"></div>
+
 
 <script src="/assets/js/include.js"></script>
 
@@ -186,162 +178,217 @@ window.breadcrumbData = [
 
 <script>
 (function () {
+
     "use strict";
 
-    if (typeof eventData === "undefined" || !eventData) {
+    if (
+        typeof eventData === "undefined" ||
+        !eventData
+    ) {
         console.error("eventData 資料不存在");
         return;
     }
 
-    const eventTitle = document.getElementById("event-title");
-    const eventSubtitle = document.getElementById("event-header-subtitle");
-    const eventImage = document.getElementById("event-image");
-    const eventDescription = document.getElementById("event-description");
 
-    if (eventTitle) eventTitle.textContent = eventData.title || "";
-    if (eventSubtitle) eventSubtitle.textContent = eventData.subtitle || "";
+    /* 基本資料 */
+
+    const eventTitle =
+        document.getElementById("event-title");
+
+    const eventSubtitle =
+        document.getElementById("event-header-subtitle");
+
+    const eventImage =
+        document.getElementById("event-image");
+
+    const eventDescription =
+        document.getElementById("event-description");
+
+
+    if (eventTitle) {
+        eventTitle.textContent =
+            eventData.title || "";
+    }
+
+    if (eventSubtitle) {
+        eventSubtitle.textContent =
+            eventData.subtitle || "";
+    }
 
     if (eventImage) {
-        eventImage.src = eventData.image || "";
-        eventImage.alt = eventData.title || "";
+        eventImage.src =
+            eventData.image || "";
+        eventImage.alt =
+            eventData.title || "";
     }
 
     if (eventDescription) {
-        eventDescription.textContent = eventData.description || "";
+        eventDescription.textContent =
+            eventData.description || "";
     }
 
-    const factsContainer = document.getElementById("event-facts");
 
-    if (factsContainer && Array.isArray(eventData.facts)) {
+    /* 活動基本資訊 */
+
+    const factsContainer =
+        document.getElementById("event-facts");
+
+    if (
+        factsContainer &&
+        Array.isArray(eventData.facts)
+    ) {
+
         eventData.facts.forEach(function (item) {
-            const li = document.createElement("li");
 
-            const label = document.createElement("span");
-            label.className = "event2021-facts-label";
-            label.textContent = item.label || "";
+            const li =
+                document.createElement("li");
 
-            const value = document.createElement("span");
-            value.className = "event2021-facts-value";
-            value.textContent = item.value || "";
+            const label =
+                document.createElement("span");
+
+            label.className =
+                "event2021-facts-label";
+
+            label.textContent =
+                item.label || "";
+
+            const value =
+                document.createElement("span");
+
+            value.className =
+                "event2021-facts-value";
+
+            value.textContent =
+                item.value || "";
 
             li.appendChild(label);
             li.appendChild(value);
+
             factsContainer.appendChild(li);
+
         });
+
     }
+
+
+    /* 作品展 */
 
     if (eventData.exhibition) {
-        const exhibitionImage = document.getElementById("exhibition-image");
-        const exhibitionDescription = document.getElementById("exhibition-description");
-        const exhibitionLink = document.getElementById("exhibition-link");
 
-        if (exhibitionImage) exhibitionImage.src = eventData.exhibition.image || "";
-        if (exhibitionDescription) exhibitionDescription.textContent = eventData.exhibition.description || "";
-        if (exhibitionLink) exhibitionLink.href = eventData.exhibition.url || "#";
-    }
+        const exhibitionImage =
+            document.getElementById("exhibition-image");
 
-    function createCard(item) {
-        const article = document.createElement("article");
-        article.className = "event2021-card";
+        const exhibitionDescription =
+            document.getElementById("exhibition-description");
 
-        const label = document.createElement("p");
-        label.className = "event2021-card-label";
-        label.textContent = item.englishTitle || "";
+        const exhibitionLink =
+            document.getElementById("exhibition-link");
 
-        const title = document.createElement("h3");
-        title.textContent = item.title || "";
-
-        const description = document.createElement("p");
-        description.className = "event2021-card-description";
-        description.textContent = item.description || "";
-
-        article.appendChild(label);
-        article.appendChild(title);
-        article.appendChild(description);
-
-        if (item.date) {
-            const date = document.createElement("p");
-            date.className = "event2021-card-date";
-            date.textContent = item.date;
-            article.appendChild(date);
+        if (exhibitionImage) {
+            exhibitionImage.src =
+                eventData.exhibition.image || "";
         }
 
-        const link = document.createElement("a");
-        link.className = "event2021-card-link";
-        link.href = item.url || "#";
-        link.textContent = "查看內容 →";
-
-        article.appendChild(link);
-        return article;
-    }
-
-    function renderSection(containerId, titles) {
-        const container = document.getElementById(containerId);
-
-        if (!container || !Array.isArray(eventData.sections)) {
-            return;
+        if (exhibitionDescription) {
+            exhibitionDescription.textContent =
+                eventData.exhibition.description || "";
         }
 
-        eventData.sections
-            .filter(function (item) {
-                return titles.includes(item.title);
-            })
-            .forEach(function (item) {
-                container.appendChild(createCard(item));
-            });
+        if (exhibitionLink) {
+            exhibitionLink.href =
+                eventData.exhibition.url || "#";
+        }
+
     }
 
-    renderSection("event-info-list", [
-        "關於活動",
-        "最新消息"
-    ]);
 
-    renderSection("event-participation-list", [
-        "活動門票",
-        "徵求志工"
-    ]);
+    /* 活動紀錄卡片 */
 
-    renderSection("event-exhibitors-list", [
-        "參展攤位介紹"
-    ]);
+    const sectionList =
+        document.getElementById("event-section-list");
 
-    renderSection("event-entry-list", [
-        "展覽作品徵選",
-        "代表作徵件",
-        "會員專屬 50×50 作品徵召",
-        "萬紫千紅－主題作品募集"
-    ]);
+    if (
+        sectionList &&
+        Array.isArray(eventData.sections)
+    ) {
 
-    const englishContainer = document.getElementById("event-english-list");
+        eventData.sections.forEach(function (item) {
 
-    if (englishContainer && Array.isArray(eventData.englishSections)) {
-        eventData.englishSections.forEach(function (item) {
-            const article = document.createElement("article");
-            article.className = "event2021-card";
+            const article =
+                document.createElement("article");
 
-            const label = document.createElement("p");
-            label.className = "event2021-card-label";
-            label.textContent = "English";
+            article.className =
+                "event2021-archive-card";
 
-            const title = document.createElement("h3");
-            title.textContent = item.title || "";
 
-            const description = document.createElement("p");
-            description.className = "event2021-card-description";
-            description.textContent = item.description || "";
+            const label =
+                document.createElement("p");
 
-            const link = document.createElement("a");
-            link.className = "event2021-card-link";
-            link.href = item.url || "#";
-            link.textContent = "View →";
+            label.className =
+                "event2021-archive-label";
+
+            label.textContent =
+                item.englishTitle || "";
+
+
+            const title =
+                document.createElement("h3");
+
+            title.textContent =
+                item.title || "";
+
+
+            const description =
+                document.createElement("p");
+
+            description.className =
+                "event2021-archive-description";
+
+            description.textContent =
+                item.description || "";
+
 
             article.appendChild(label);
             article.appendChild(title);
             article.appendChild(description);
+
+
+            if (item.date) {
+
+                const date =
+                    document.createElement("p");
+
+                date.className =
+                    "event2021-archive-date";
+
+                date.textContent =
+                    item.date;
+
+                article.appendChild(date);
+
+            }
+
+
+            const link =
+                document.createElement("a");
+
+            link.className =
+                "event2021-archive-link";
+
+            link.href =
+                item.url || "#";
+
+            link.textContent =
+                item.englishTitle === "English"
+                    ? "View →"
+                    : "查看內容 →";
+
             article.appendChild(link);
 
-            englishContainer.appendChild(article);
+            sectionList.appendChild(article);
+
         });
+
     }
 
 })();

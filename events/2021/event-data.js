@@ -51,10 +51,10 @@ const eventData = {
             url: "/events/2021/ticket/"
         },
         {
-            title: "參展攤位介紹",
-            englishTitle: "Exhibitors",
-            description: "介紹「品牌廠商區」及「教室／工作室專區」參展攤位。",
-            url: "/events/2021/exhibitors/"
+            title: "徵求志工",
+            englishTitle: "Volunteers",
+            description: "查看 2021 友好拼布手作節志工招募與活動協力資訊。",
+            url: "/events/2021/volunteer/"
         },
         {
             title: "展覽作品徵選",
@@ -85,21 +85,20 @@ const eventData = {
             url: "/events/2021/theme-quilt/"
         },
         {
-            title: "徵求志工",
-            englishTitle: "Volunteers",
-            description: "查看 2021 友好拼布手作節志工招募與活動協力資訊。",
-            url: "/events/2021/volunteer/"
-        }
-    ],
-
-    englishSections: [
+            title: "參展攤位介紹",
+            englishTitle: "Exhibitors",
+            description: "介紹「品牌廠商區」及「教室／工作室專區」參展攤位。",
+            url: "/events/2021/exhibitors/"
+        },
         {
             title: "About the Event",
+            englishTitle: "English",
             description: "English introduction to the 2021 Taiwan Friendly Quilt & Craft Festival.",
             url: "/events/2021/en/about/"
         },
         {
             title: "Taiwan Friendly Quilt & Craft Festival 2021",
+            englishTitle: "English",
             description: "English event information and archive.",
             url: "/events/2021/en/"
         }
