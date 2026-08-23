@@ -23,7 +23,7 @@ const eventGalleryData = {
         },
 
         {
-            image: "/events/2025/exhibition/work-03.jpeg",
+            image: "/events/2025/exhibition/work-03.jpg",
             title: "",
             artist: ""
         },
@@ -131,19 +131,19 @@ const eventGalleryData = {
         },
 
         {
-            image: "/events/2025/exhibition/work-21.jpeg",
+            image: "/events/2025/exhibition/work-21.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2025/exhibition/work-22.jpeg",
+            image: "/events/2025/exhibition/work-22.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2025/exhibition/work-23.jpeg",
+            image: "/events/2025/exhibition/work-23.jpg",
             title: "",
             artist: ""
         },
@@ -197,7 +197,7 @@ const eventGalleryData = {
         },
 
         {
-            image: "/events/2025/exhibition/work-33.jpeg",
+            image: "/events/2025/exhibition/work-33.jpg",
             title: "",
             artist: ""
         },
@@ -305,19 +305,19 @@ const eventGalleryData = {
         },
 
         {
-            image: "/events/2025/exhibition/work-51.jpeg",
+            image: "/events/2025/exhibition/work-51.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2025/exhibition/work-52.jpeg",
+            image: "/events/2025/exhibition/work-52.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2025/exhibition/work-53.jpeg",
+            image: "/events/2025/exhibition/work-53.jpg",
             title: "",
             artist: ""
         },
@@ -360,19 +360,19 @@ const eventGalleryData = {
         },
 
         {
-            image: "/events/2025/exhibition/work-61.jpeg",
+            image: "/events/2025/exhibition/work-61.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2025/exhibition/work-62.jpeg",
+            image: "/events/2025/exhibition/work-62.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2025/exhibition/work-63.jpeg",
+            image: "/events/2025/exhibition/work-63.jpg",
             title: "",
             artist: ""
         },

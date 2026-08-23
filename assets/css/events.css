@@ -1794,3 +1794,430 @@ a.ticket-outlet-name:hover {
     }
 
 }
+
+/* =========================================================
+   2025 主題聯合作品募集
+========================================================= */
+
+.theme2025-hero {
+    padding: 48px 20px 42px;
+    background: #f8f3f4;
+    text-align: center;
+}
+
+.theme2025-hero h1 {
+    margin: 0;
+    color: #444;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: .1em;
+}
+
+.theme2025-hero p {
+    position: relative;
+    display: inline-block;
+    margin: 8px 0 0;
+    padding-bottom: 17px;
+    color: #999;
+    font-size: 13px;
+    line-height: 1.6;
+    letter-spacing: .12em;
+}
+
+.theme2025-hero p::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 42px;
+    height: 2px;
+    background: #b98d96;
+    transform: translateX(-50%);
+}
+
+
+/* Intro */
+
+.theme2025-intro {
+    padding: 62px 0 68px;
+    background: #fff;
+}
+
+.theme2025-intro-content {
+    max-width: 860px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.theme2025-kicker,
+.theme2025-label {
+    margin: 0 0 8px;
+    color: #b18a92;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: .14em;
+}
+
+.theme2025-intro-content h2 {
+    margin: 0 0 22px;
+    color: #444;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: .08em;
+}
+
+.theme2025-intro-content > p:not(.theme2025-kicker) {
+    margin: 0 0 15px;
+    color: #666;
+    font-size: 16px;
+    line-height: 2;
+}
+
+.theme2025-archive-note {
+    max-width: 860px;
+    margin: 35px auto 0;
+    padding: 17px 21px;
+    border-left: 3px solid #b98d96;
+    background: #faf8f8;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.theme2025-archive-note strong {
+    color: #8f656f;
+    font-weight: 500;
+}
+
+
+/* Section */
+
+.theme2025-section {
+    padding: 72px 0 82px;
+    background: #fff;
+}
+
+.theme2025-section.alt {
+    background: #faf8f8;
+}
+
+.theme2025-heading {
+    position: relative;
+    margin-bottom: 44px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.theme2025-heading::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 42px;
+    height: 2px;
+    background: #b98d96;
+    transform: translateX(-50%);
+}
+
+.theme2025-heading h2 {
+    margin: 0;
+    color: #444;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: .08em;
+}
+
+
+/* Feature */
+
+.theme2025-feature {
+    display: grid;
+    grid-template-columns:
+        minmax(300px, 1fr)
+        minmax(0, 1fr);
+    gap: 52px;
+    align-items: center;
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+.theme2025-feature.reverse .theme2025-feature-image {
+    order: 2;
+}
+
+.theme2025-feature.reverse .theme2025-feature-content {
+    order: 1;
+}
+
+.theme2025-feature-image {
+    overflow: hidden;
+    border: 1px solid #e5dedc;
+    background: #fff;
+}
+
+.theme2025-feature-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.theme2025-feature-content h2 {
+    margin: 0 0 22px;
+    color: #455267;
+    font-size: 27px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.theme2025-feature-content h3 {
+    margin: 28px 0 12px;
+    color: #455267;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.theme2025-feature-content > p:not(.theme2025-label):not(.theme2025-history-note) {
+    margin: 0 0 15px;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.95;
+}
+
+.theme2025-list {
+    margin: 0;
+    padding-left: 22px;
+}
+
+.theme2025-list li {
+    margin: 0 0 10px;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+
+/* Rules */
+
+.theme2025-rules-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.theme2025-rule-card {
+    padding: 27px 29px;
+    border: 1px solid #e4dcde;
+    background: #fff;
+}
+
+.theme2025-rule-number {
+    margin: 0 0 13px;
+    color: #b98d96;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 27px;
+}
+
+.theme2025-rule-card h3 {
+    margin: 0 0 11px;
+    color: #455267;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.theme2025-rule-card > p:not(.theme2025-rule-number) {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.85;
+}
+
+.theme2025-warning {
+    max-width: 900px;
+    margin: 28px auto 0;
+    padding: 18px 21px;
+    border-left: 3px solid #b98d96;
+    background: #faf6f7;
+    color: #79565e;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+
+/* Color Guide */
+
+.theme2025-guide-image {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 14px;
+    border: 1px solid #e4dcde;
+    background: #fff;
+}
+
+.theme2025-guide-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.theme2025-guide-note {
+    max-width: 800px;
+    margin: 22px auto 0;
+    color: #777;
+    font-size: 14px;
+    line-height: 1.9;
+    text-align: center;
+}
+
+
+/* Registration */
+
+.theme2025-registration {
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.theme2025-registration ol {
+    margin: 0;
+    padding-left: 28px;
+}
+
+.theme2025-registration li {
+    margin: 0 0 14px;
+    padding-left: 7px;
+    color: #5f5b59;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.theme2025-registration li::marker {
+    color: #b98d96;
+    font-weight: 600;
+}
+
+.theme2025-status {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 15px;
+    max-width: 860px;
+    margin: 30px auto 0;
+    padding: 18px 21px;
+    background: #faf6f7;
+}
+
+.theme2025-status strong {
+    color: #8f656f;
+    font-size: 14px;
+}
+
+.theme2025-status span {
+    color: #666;
+    font-size: 14px;
+}
+
+
+/* Submission Information */
+
+.theme2025-info-list {
+    margin: 27px 0 0;
+    border-top: 1px solid #e5dcde;
+}
+
+.theme2025-info-list > div {
+    display: grid;
+    grid-template-columns: 135px minmax(0, 1fr);
+    gap: 16px;
+    padding: 11px 0;
+    border-bottom: 1px solid #e5dcde;
+}
+
+.theme2025-info-list dt {
+    color: #8f656f;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.7;
+}
+
+.theme2025-info-list dd {
+    margin: 0;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.theme2025-history-note {
+    margin: 23px 0 0;
+    color: #888;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+
+/* Tablet */
+
+@media (max-width: 850px) {
+
+    .theme2025-feature,
+    .theme2025-feature.reverse {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .theme2025-feature.reverse .theme2025-feature-image,
+    .theme2025-feature.reverse .theme2025-feature-content {
+        order: initial;
+    }
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 650px) {
+
+    .theme2025-hero {
+        padding: 38px 18px 34px;
+    }
+
+    .theme2025-hero h1 {
+        font-size: 25px;
+    }
+
+    .theme2025-intro {
+        padding: 45px 0 55px;
+    }
+
+    .theme2025-intro-content h2,
+    .theme2025-heading h2,
+    .theme2025-feature-content h2 {
+        font-size: 23px;
+    }
+
+    .theme2025-intro-content > p:not(.theme2025-kicker) {
+        font-size: 15px;
+        line-height: 1.9;
+    }
+
+    .theme2025-section {
+        padding: 52px 0 62px;
+    }
+
+    .theme2025-rules-grid {
+        grid-template-columns: 1fr;
+        gap: 13px;
+    }
+
+    .theme2025-rule-card {
+        padding: 24px 21px;
+    }
+
+    .theme2025-info-list > div {
+        grid-template-columns: 1fr;
+        gap: 3px;
+    }
+
+}
