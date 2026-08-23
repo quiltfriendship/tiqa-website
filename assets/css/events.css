@@ -4043,3 +4043,340 @@ a.ticket-outlet-name:hover {
     }
 
 }
+
+/* =========================================================
+   2021 年度首頁
+========================================================= */
+
+.event2021-year-header {
+    padding: 48px 20px 42px;
+    background: #f8f3f4;
+    text-align: center;
+}
+
+.event2021-year-header h1 {
+    margin: 0;
+    color: #444;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: .12em;
+}
+
+.event2021-year-subtitle {
+    position: relative;
+    display: inline-block;
+    margin: 8px 0 0;
+    padding-bottom: 17px;
+    color: #888;
+    font-size: 14px;
+    line-height: 1.6;
+    letter-spacing: .05em;
+}
+
+.event2021-year-subtitle::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 42px;
+    height: 2px;
+    background: #b98d96;
+    transform: translateX(-50%);
+}
+
+.event2021-overview {
+    padding: 58px 0 70px;
+    background: #fff;
+}
+
+.event2021-overview-card {
+    display: grid;
+    grid-template-columns: minmax(280px,.85fr) minmax(0,1.15fr);
+    gap: 52px;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.event2021-overview-image {
+    display: flex;
+    justify-content: center;
+}
+
+.event2021-overview-image img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    max-height: 650px;
+    object-fit: contain;
+}
+
+.event2021-kicker {
+    margin: 0 0 8px;
+    color: #b18a92;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: .14em;
+}
+
+.event2021-overview-content h2 {
+    margin: 0 0 18px;
+    color: #444;
+    font-size: 29px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.event2021-description {
+    margin: 0;
+    color: #666;
+    font-size: 16px;
+    line-height: 2;
+}
+
+.event2021-facts {
+    margin: 28px 0 0;
+    padding: 0;
+    list-style: none;
+    border-top: 1px solid #e5dcde;
+}
+
+.event2021-facts li {
+    display: grid;
+    grid-template-columns: 92px minmax(0,1fr);
+    gap: 18px;
+    padding: 11px 0;
+    border-bottom: 1px solid #e5dcde;
+}
+
+.event2021-facts-label {
+    color: #986d76;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.7;
+}
+
+.event2021-facts-value {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.event2021-section-heading {
+    position: relative;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.event2021-section-heading::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 42px;
+    height: 2px;
+    background: #b98d96;
+    transform: translateX(-50%);
+}
+
+.event2021-section-label {
+    margin: 0 0 7px;
+    color: #a98a91;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: .14em;
+}
+
+.event2021-section-heading h2 {
+    margin: 0;
+    color: #444;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: .08em;
+}
+
+.event2021-exhibition {
+    padding: 62px 0 75px;
+    background: #faf8f8;
+}
+
+.event2021-exhibition-card {
+    display: grid;
+    grid-template-columns: minmax(0,1fr) minmax(300px,1fr);
+    gap: 45px;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 25px;
+    border: 1px solid #e5dddb;
+    background: #fff;
+}
+
+.event2021-exhibition-content {
+    padding: 8px 12px;
+}
+
+.event2021-exhibition-description {
+    margin: 0 0 24px;
+    color: #666;
+    font-size: 16px;
+    line-height: 1.95;
+}
+
+.event2021-button {
+    display: inline-block;
+    padding: 11px 21px;
+    background: #a97983;
+    border: 1px solid #a97983;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.event2021-button:hover,
+.event2021-button:focus {
+    background: #8d646d;
+    border-color: #8d646d;
+}
+
+.event2021-exhibition-image img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+}
+
+.event2021-section {
+    padding: 68px 0 80px;
+    background: #fff;
+}
+
+.event2021-section.alt {
+    background: #faf8f8;
+}
+
+.event2021-grid {
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    gap: 18px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.event2021-grid-one {
+    grid-template-columns: 1fr;
+    max-width: 820px;
+}
+
+.event2021-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 205px;
+    padding: 24px 25px;
+    border: 1px solid #e5dddb;
+    background: #fff;
+    transition: transform .22s ease, box-shadow .22s ease;
+}
+
+.event2021-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 22px rgba(0,0,0,.05);
+}
+
+.event2021-card-label {
+    margin: 0 0 7px;
+    color: #b18a92;
+    font-size: 11px;
+    line-height: 1.5;
+    letter-spacing: .12em;
+}
+
+.event2021-card h3 {
+    margin: 0 0 11px;
+    color: #444;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.event2021-card-description {
+    margin: 0 0 14px;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.85;
+}
+
+.event2021-card-date {
+    margin: 0 0 17px;
+    padding: 10px 12px;
+    background: #faf6f7;
+    color: #8f656f;
+    font-size: 12px;
+    line-height: 1.75;
+}
+
+.event2021-card-link {
+    display: inline-block;
+    align-self: flex-start;
+    margin-top: auto;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #b98d96;
+    color: #91656f;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.event2021-card-link:hover {
+    color: #6f4851;
+    border-color: #6f4851;
+}
+
+@media (max-width: 850px) {
+
+    .event2021-overview-card,
+    .event2021-exhibition-card {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .event2021-year-header {
+        padding: 38px 18px 34px;
+    }
+
+    .event2021-year-header h1 {
+        font-size: 25px;
+    }
+
+    .event2021-overview,
+    .event2021-exhibition,
+    .event2021-section {
+        padding: 48px 0 58px;
+    }
+
+    .event2021-overview-content h2,
+    .event2021-section-heading h2 {
+        font-size: 23px;
+    }
+
+    .event2021-facts li {
+        grid-template-columns: 1fr;
+        gap: 3px;
+    }
+
+    .event2021-grid,
+    .event2021-grid-two {
+        grid-template-columns: 1fr;
+    }
+
+    .event2021-card {
+        min-height: 0;
+    }
+
+}
