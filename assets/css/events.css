@@ -2989,3 +2989,328 @@ a.ticket-outlet-name:hover {
         margin-top: 18px;
     }
 }
+
+/* =========================================================
+   2025 代表作徵件
+========================================================= */
+
+.representative-event-hero {
+    padding: 50px 20px 44px;
+    background: #f8f3f4;
+    text-align: center;
+}
+.representative-event-eyebrow,
+.representative-event-kicker,
+.representative-event-heading > p {
+    margin: 0 0 8px;
+    color: #b18a92;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: .14em;
+}
+.representative-event-hero h1 {
+    margin: 0;
+    color: #444;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: .08em;
+}
+.representative-event-theme {
+    position: relative;
+    display: inline-block;
+    margin: 9px 0 0;
+    padding-bottom: 18px;
+    color: #777;
+    font-size: 15px;
+    letter-spacing: .08em;
+}
+.representative-event-theme::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 42px;
+    height: 2px;
+    background: #b98d96;
+    transform: translateX(-50%);
+}
+.representative-event-intro {
+    padding: 62px 0 68px;
+    background: #fff;
+}
+.representative-event-intro-inner {
+    max-width: 880px;
+    margin: 0 auto;
+    text-align: center;
+}
+.representative-event-intro-inner h2 {
+    margin: 0 0 22px;
+    color: #444;
+    font-size: 28px;
+    font-weight: 500;
+}
+.representative-event-intro-inner > p:not(.representative-event-kicker) {
+    margin: 0 0 15px;
+    color: #666;
+    font-size: 16px;
+    line-height: 2;
+}
+.representative-archive-note {
+    max-width: 880px;
+    margin: 34px auto 0;
+    padding: 17px 21px;
+    border-left: 3px solid #b98d96;
+    background: #faf8f8;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.9;
+}
+.representative-archive-note strong {
+    color: #8f656f;
+}
+.representative-event-section {
+    padding: 70px 0 82px;
+    background: #fff;
+}
+.representative-event-section.alt {
+    background: #faf8f8;
+}
+.representative-event-heading {
+    position: relative;
+    margin-bottom: 42px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.representative-event-heading::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 42px;
+    height: 2px;
+    background: #b98d96;
+    transform: translateX(-50%);
+}
+.representative-event-heading h2 {
+    margin: 0;
+    color: #444;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: .06em;
+}
+
+.representative-eligibility-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.representative-eligibility-grid article,
+.representative-rule-grid article {
+    padding: 27px 25px;
+    border: 1px solid #e5dddb;
+    background: #fff;
+}
+.representative-eligibility-grid span,
+.representative-rule-grid span {
+    color: #b98d96;
+    font-family: Georgia, serif;
+    font-size: 27px;
+}
+.representative-eligibility-grid h3,
+.representative-rule-grid h3 {
+    margin: 12px 0 9px;
+    color: #455267;
+    font-size: 19px;
+    font-weight: 500;
+}
+.representative-eligibility-grid p,
+.representative-rule-grid p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.85;
+}
+.representative-eligibility-note {
+    max-width: 1000px;
+    margin: 18px auto 0;
+    padding: 15px 18px;
+    border-left: 3px solid #b98d96;
+    background: #fff;
+    color: #8f656f;
+    font-size: 14px;
+}
+
+.representative-rule-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.representative-fee-schedule {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+    max-width: 920px;
+    margin: 0 auto;
+}
+.representative-fee-card,
+.representative-status-card {
+    padding: 28px;
+    border: 1px solid #e5dddb;
+    background: #fff;
+}
+.representative-fee-label {
+    margin: 0 0 7px;
+    color: #b18a92;
+    font-size: 11px;
+    letter-spacing: .12em;
+}
+.representative-fee-card h3,
+.representative-status-card h3 {
+    margin: 0 0 18px;
+    color: #455267;
+    font-size: 21px;
+    font-weight: 500;
+}
+.representative-fee-card dl,
+.representative-status-card dl {
+    margin: 0;
+}
+.representative-fee-card dl > div,
+.representative-status-card dl > div {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 11px 0;
+    border-top: 1px solid #e5dddb;
+}
+.representative-fee-card dt,
+.representative-fee-card dd,
+.representative-status-card dt,
+.representative-status-card dd {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+}
+.representative-fee-card dd {
+    color: #a86c68;
+    font-weight: 600;
+}
+.representative-fee-note,
+.representative-status-card > p:last-child {
+    margin: 17px 0 0;
+    color: #777;
+    font-size: 13px;
+    line-height: 1.85;
+}
+
+.representative-exhibition-grid {
+    display: grid;
+    grid-template-columns: 1.3fr .8fr 1fr;
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 1px solid #e5dddb;
+    background: #fff;
+}
+.representative-exhibition-grid > div {
+    padding: 27px 25px;
+    border-right: 1px solid #e5dddb;
+}
+.representative-exhibition-grid > div:last-child {
+    border-right: 0;
+}
+.representative-exhibition-grid span {
+    color: #b18a92;
+    font-size: 11px;
+    letter-spacing: .12em;
+}
+.representative-exhibition-grid h3 {
+    margin: 10px 0 0;
+    color: #455267;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.representative-download {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 25px 28px;
+    border: 1px solid #e5dddb;
+    background: #fff;
+}
+.representative-download-type {
+    margin: 0 0 5px;
+    color: #b18a92;
+    font-size: 11px;
+    letter-spacing: .14em;
+}
+.representative-download-title {
+    margin: 0;
+    color: #455267;
+    font-size: 17px;
+}
+.representative-download a {
+    flex: 0 0 auto;
+    padding: 12px 19px;
+    background: #a97983;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+.representative-download a:hover,
+.representative-download a:focus {
+    opacity: .88;
+}
+
+@media (max-width: 850px) {
+    .representative-eligibility-grid,
+    .representative-rule-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .representative-fee-schedule {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 650px) {
+    .representative-event-hero h1 {
+        font-size: 25px;
+    }
+    .representative-event-intro,
+    .representative-event-section {
+        padding: 48px 0 58px;
+    }
+    .representative-event-intro-inner h2,
+    .representative-event-heading h2 {
+        font-size: 23px;
+    }
+    .representative-eligibility-grid,
+    .representative-rule-grid,
+    .representative-exhibition-grid {
+        grid-template-columns: 1fr;
+    }
+    .representative-exhibition-grid > div {
+        border-right: 0;
+        border-bottom: 1px solid #e5dddb;
+    }
+    .representative-exhibition-grid > div:last-child {
+        border-bottom: 0;
+    }
+    .representative-download {
+        display: block;
+    }
+    .representative-download a {
+        display: inline-block;
+        margin-top: 18px;
+    }
+}
