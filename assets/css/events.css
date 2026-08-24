@@ -5685,3 +5685,75 @@ a.ticket-outlet-name:hover {
     }
 
 }
+
+/* =========================================================
+   2021 活動門票－Q&A 展開版
+========================================================= */
+
+.ticket2021-faq-item {
+    padding: 0;
+}
+
+.ticket2021-faq-question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    padding: 19px 21px;
+    border: 0;
+    background: #fff;
+    color: #455267;
+    font: inherit;
+    font-size: 15px;
+    line-height: 1.7;
+    text-align: left;
+    cursor: pointer;
+}
+
+.ticket2021-faq-question:hover,
+.ticket2021-faq-question:focus {
+    background: #faf8f8;
+}
+
+.ticket2021-faq-question[aria-expanded="true"] {
+    color: #8f656f;
+}
+
+.ticket2021-faq-icon {
+    flex: 0 0 auto;
+    color: #b98d96;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 23px;
+    line-height: 1;
+}
+
+.ticket2021-faq-answer {
+    padding: 0 21px 22px;
+    border-top: 1px solid #eee7e5;
+    background: #fff;
+}
+
+.ticket2021-faq-answer[hidden] {
+    display: none;
+}
+
+.ticket2021-faq-answer p {
+    margin: 15px 0 0;
+    color: #5f5b59;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.ticket2021-faq-answer a {
+    color: #8f656f;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.ticket2021-faq-note {
+    padding: 11px 13px;
+    background: #faf6f7;
+    color: #8f656f !important;
+    font-size: 12px !important;
+}
