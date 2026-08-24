@@ -6089,3 +6089,419 @@ a.ticket-outlet-name:hover {
     }
 
 }
+
+/* =========================================================
+   2021 展覽作品徵選
+========================================================= */
+
+.competition2021-hero {
+    padding: 48px 20px 42px;
+    background: #f8f3f4;
+    text-align: center;
+}
+
+.competition2021-eyebrow,
+.competition2021-heading > p {
+    margin: 0 0 7px;
+    color: #a98a91;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: .14em;
+}
+
+.competition2021-hero h1 {
+    margin: 0;
+    color: #444;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: .1em;
+}
+
+.competition2021-subtitle {
+    position: relative;
+    display: inline-block;
+    margin: 8px 0 0;
+    padding-bottom: 17px;
+    color: #999;
+    font-size: 13px;
+    line-height: 1.6;
+    letter-spacing: .12em;
+}
+
+.competition2021-subtitle::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 42px;
+    height: 2px;
+    background: #b98d96;
+    transform: translateX(-50%);
+}
+
+.competition2021-deadline {
+    padding: 55px 0 62px;
+    background: #fff;
+}
+
+.competition2021-date-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.competition2021-date-grid article {
+    padding: 25px 28px;
+    border: 1px solid #e5dddb;
+    background: #fff;
+    text-align: center;
+}
+
+.competition2021-date-grid span {
+    display: block;
+    margin-bottom: 7px;
+    color: #a98a91;
+    font-size: 11px;
+    letter-spacing: .12em;
+}
+
+.competition2021-date-grid h2 {
+    margin: 0 0 8px;
+    color: #455267;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.competition2021-date-grid p {
+    margin: 0;
+    color: #8f656f;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.competition2021-archive-note {
+    max-width: 850px;
+    margin: 28px auto 0;
+    padding: 17px 21px;
+    border-left: 3px solid #b98d96;
+    background: #faf8f8;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.competition2021-archive-note strong {
+    color: #8f656f;
+    font-weight: 500;
+}
+
+.competition2021-section {
+    padding: 70px 0 82px;
+    background: #fff;
+}
+
+.competition2021-section.alt {
+    background: #faf8f8;
+}
+
+.competition2021-heading {
+    position: relative;
+    margin-bottom: 45px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.competition2021-heading::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 42px;
+    height: 2px;
+    background: #b98d96;
+    transform: translateX(-50%);
+}
+
+.competition2021-heading h2 {
+    margin: 0;
+    color: #444;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: .08em;
+}
+
+.competition2021-story {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.competition2021-story p {
+    margin: 0 0 18px;
+    color: #5f5b59;
+    font-size: 16px;
+    line-height: 2;
+}
+
+.competition2021-story p:last-child {
+    margin-bottom: 0;
+}
+
+.competition2021-theme {
+    max-width: 620px;
+    margin: 0 auto;
+    padding: 35px 30px;
+    border: 1px solid #e5dddb;
+    background: #fff;
+    text-align: center;
+}
+
+.competition2021-theme strong {
+    color: #8f656f;
+    font-size: 27px;
+    font-weight: 500;
+    letter-spacing: .12em;
+}
+
+.competition2021-rule-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.competition2021-rule-grid article {
+    padding: 27px 26px;
+    border: 1px solid #e5dddb;
+    background: #fff;
+}
+
+.competition2021-rule-grid article > span {
+    display: block;
+    margin: 0 0 15px;
+    color: #b98d96;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 27px;
+    line-height: 1;
+}
+
+.competition2021-rule-grid article > p {
+    margin: 0;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.competition2021-rule-grid article:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+}
+
+.competition2021-image-note {
+    max-width: 850px;
+    margin: -5px auto 30px;
+    color: #777;
+    font-size: 14px;
+    line-height: 1.9;
+    text-align: center;
+}
+
+.competition2021-table-image {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 14px;
+    border: 1px solid #e5dddb;
+    background: #fff;
+}
+
+.competition2021-table-image a {
+    display: block;
+}
+
+.competition2021-table-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.competition2021-fee-note {
+    max-width: 850px;
+    margin: 30px auto 0;
+    padding: 24px 27px;
+    border-left: 3px solid #b98d96;
+    background: #faf6f7;
+}
+
+.competition2021-fee-note h3 {
+    margin: 0 0 12px;
+    color: #8f656f;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.competition2021-fee-note ol {
+    margin: 0;
+    padding-left: 23px;
+}
+
+.competition2021-fee-note li {
+    margin-bottom: 8px;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.competition2021-fee-note li:last-child {
+    margin-bottom: 0;
+}
+
+.competition2021-download {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 25px 28px;
+    border: 1px solid #e1d9d6;
+    background: #fff;
+    color: inherit;
+    text-decoration: none;
+}
+
+.competition2021-download:hover {
+    border-color: #b98d96;
+}
+
+.competition2021-download p {
+    margin: 0 0 7px;
+    color: #a98a91;
+    font-size: 12px;
+    letter-spacing: .12em;
+}
+
+.competition2021-download h3 {
+    margin: 0;
+    color: #455267;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.competition2021-download > span {
+    color: #a97882;
+    font-size: 25px;
+}
+
+.competition2021-ended {
+    max-width: 780px;
+    margin: 25px auto 0;
+    padding: 19px 22px;
+    background: #faf6f7;
+    color: #666;
+}
+
+.competition2021-ended strong {
+    display: block;
+    margin-bottom: 6px;
+    color: #8f656f;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.competition2021-ended p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.competition2021-info {
+    max-width: 850px;
+    margin: 0 auto;
+    border-top: 1px solid #e4dcda;
+}
+
+.competition2021-info > div {
+    display: grid;
+    grid-template-columns: 150px minmax(0, 1fr);
+    gap: 30px;
+    padding: 19px 0;
+    border-bottom: 1px solid #e4dcda;
+}
+
+.competition2021-info span {
+    color: #8f656f;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.competition2021-info strong {
+    color: #555;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+@media (max-width: 700px) {
+
+    .competition2021-date-grid,
+    .competition2021-rule-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .competition2021-rule-grid article:last-child:nth-child(odd) {
+        grid-column: auto;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .competition2021-hero {
+        padding: 38px 18px 34px;
+    }
+
+    .competition2021-hero h1 {
+        font-size: 25px;
+    }
+
+    .competition2021-deadline,
+    .competition2021-section {
+        padding: 52px 0 62px;
+    }
+
+    .competition2021-heading {
+        margin-bottom: 35px;
+    }
+
+    .competition2021-heading h2 {
+        font-size: 23px;
+    }
+
+    .competition2021-story p {
+        font-size: 15px;
+        line-height: 1.9;
+    }
+
+    .competition2021-rule-grid article {
+        padding: 24px 22px;
+    }
+
+    .competition2021-table-image {
+        padding: 8px;
+    }
+
+    .competition2021-download {
+        padding: 22px 20px;
+    }
+
+    .competition2021-info > div {
+        grid-template-columns: 1fr;
+        gap: 4px;
+    }
+
+}
