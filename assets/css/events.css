@@ -6505,3 +6505,66 @@ a.ticket-outlet-name:hover {
     }
 
 }
+
+/* =========================================================
+   2021 代表作徵件
+========================================================= */
+.representative2021-hero{padding:48px 20px 42px;background:#f8f3f4;text-align:center}
+.representative2021-eyebrow,.representative2021-heading>p{margin:0 0 7px;color:#a98a91;font-size:12px;line-height:1.5;letter-spacing:.14em}
+.representative2021-hero h1{margin:0;color:#444;font-size:32px;font-weight:400;line-height:1.5;letter-spacing:.1em}
+.representative2021-subtitle{position:relative;display:inline-block;margin:8px 0 0;padding-bottom:17px;color:#999;font-size:13px;line-height:1.6;letter-spacing:.12em}
+.representative2021-subtitle::after{content:"";position:absolute;left:50%;bottom:0;width:42px;height:2px;background:#b98d96;transform:translateX(-50%)}
+.representative2021-deadline{padding:55px 0 62px;background:#fff}
+.representative2021-date-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;max-width:850px;margin:0 auto}
+.representative2021-date-grid article{padding:25px 28px;border:1px solid #e5dddb;background:#fff;text-align:center}
+.representative2021-date-grid span{display:block;margin-bottom:7px;color:#a98a91;font-size:11px;letter-spacing:.12em}
+.representative2021-date-grid h2{margin:0 0 8px;color:#455267;font-size:18px;font-weight:500}
+.representative2021-date-grid p{margin:0;color:#8f656f;font-size:16px;line-height:1.7}
+.representative2021-archive-note{max-width:850px;margin:28px auto 0;padding:17px 21px;border-left:3px solid #b98d96;background:#faf8f8;color:#666;font-size:14px;line-height:1.9}
+.representative2021-section{padding:70px 0 82px;background:#fff}
+.representative2021-section.alt{background:#faf8f8}
+.representative2021-heading{position:relative;margin-bottom:45px;padding-bottom:20px;text-align:center}
+.representative2021-heading::after{content:"";position:absolute;left:50%;bottom:0;width:42px;height:2px;background:#b98d96;transform:translateX(-50%)}
+.representative2021-heading h2{margin:0;color:#444;font-size:28px;font-weight:500;line-height:1.5;letter-spacing:.08em}
+.representative2021-story{max-width:900px;margin:0 auto}
+.representative2021-story p{margin:0 0 18px;color:#5f5b59;font-size:16px;line-height:2}
+.representative2021-qualification-grid,.representative2021-rule-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;max-width:1000px;margin:0 auto}
+.representative2021-qualification-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.representative2021-qualification-grid article,.representative2021-rule-grid article{padding:27px 26px;border:1px solid #e5dddb;background:#fff}
+.representative2021-qualification-grid span,.representative2021-rule-grid span{display:block;margin:0 0 15px;color:#b98d96;font-family:Georgia,"Times New Roman",serif;font-size:27px;line-height:1}
+.representative2021-qualification-grid p,.representative2021-rule-grid p{margin:0;color:#666;font-size:15px;line-height:1.9}
+.representative2021-rule-grid article:last-child:nth-child(odd){grid-column:1/-1}
+.representative2021-center-note{margin:25px 0 0;color:#8f656f;font-size:14px;line-height:1.8;text-align:center}
+.representative2021-fee-card,.representative2021-account,.representative2021-address,.representative2021-deadline-detail{max-width:850px;margin:0 auto}
+.representative2021-fee-card{padding:28px 30px;border:1px solid #e5dddb;background:#fff}
+.representative2021-fee-prices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-bottom:20px}
+.representative2021-fee-prices>div{padding:22px;background:#faf6f7;text-align:center}
+.representative2021-fee-prices span{display:block;margin-bottom:6px;color:#8f656f;font-size:13px}
+.representative2021-fee-prices strong{color:#455267;font-size:26px;font-weight:500}
+.representative2021-fee-card>p,.representative2021-account p,.representative2021-address p,.representative2021-deadline-detail p{color:#666;font-size:14px;line-height:1.9}
+.representative2021-account{margin-top:25px;padding:24px 27px;border-left:3px solid #b98d96;background:#faf8f8}
+.representative2021-account h3{margin:0 0 12px;color:#8f656f;font-size:18px;font-weight:500}
+.representative2021-account a,.representative2021-address a{color:#8f656f;text-decoration:underline;text-underline-offset:3px}
+.representative2021-deadline-detail{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.representative2021-deadline-detail article{padding:26px 28px;border:1px solid #e5dddb;background:#fff}
+.representative2021-deadline-detail h3{margin:0 0 15px;color:#455267;font-size:18px;font-weight:500;line-height:1.6}
+.representative2021-address{padding:28px 30px;border:1px solid #e5dddb;background:#fff}
+.representative2021-address dl{margin:24px 0 0;border-top:1px solid #e5dcde}
+.representative2021-address dl>div{display:grid;grid-template-columns:110px 1fr;gap:20px;padding:14px 0;border-bottom:1px solid #e5dcde}
+.representative2021-address dt{color:#8f656f;font-size:13px}
+.representative2021-address dd{margin:0;color:#555;font-size:14px}
+.representative2021-download{display:flex;align-items:center;justify-content:space-between;gap:25px;max-width:780px;margin:0 auto;padding:25px 28px;border:1px solid #e1d9d6;background:#fff;color:inherit;text-decoration:none}
+.representative2021-download:hover{border-color:#b98d96}
+.representative2021-download p{margin:0 0 7px;color:#a98a91;font-size:12px;letter-spacing:.12em}
+.representative2021-download h3{margin:0;color:#455267;font-size:18px;font-weight:500}
+.representative2021-download>span{color:#a97882;font-size:25px}
+.representative2021-ended{max-width:780px;margin:25px auto 0;padding:19px 22px;background:#faf6f7;color:#666}
+.representative2021-ended strong{display:block;margin-bottom:6px;color:#8f656f;font-size:15px;font-weight:500}
+.representative2021-ended p{margin:0;font-size:14px;line-height:1.8}
+.representative2021-info{max-width:850px;margin:0 auto;border-top:1px solid #e4dcda}
+.representative2021-info>div{display:grid;grid-template-columns:150px minmax(0,1fr);gap:30px;padding:19px 0;border-bottom:1px solid #e4dcda}
+.representative2021-info span{color:#8f656f;font-size:14px}
+.representative2021-info strong{color:#555;font-size:15px;font-weight:400}
+@media(max-width:800px){.representative2021-qualification-grid,.representative2021-deadline-detail{grid-template-columns:1fr}}
+@media(max-width:700px){.representative2021-date-grid,.representative2021-rule-grid,.representative2021-fee-prices{grid-template-columns:1fr}.representative2021-rule-grid article:last-child:nth-child(odd){grid-column:auto}}
+@media(max-width:650px){.representative2021-hero{padding:38px 18px 34px}.representative2021-hero h1{font-size:25px}.representative2021-deadline,.representative2021-section{padding:52px 0 62px}.representative2021-heading h2{font-size:23px}.representative2021-story p{font-size:15px;line-height:1.9}.representative2021-address dl>div,.representative2021-info>div{grid-template-columns:1fr;gap:4px}}
