@@ -6568,3 +6568,62 @@ a.ticket-outlet-name:hover {
 @media(max-width:800px){.representative2021-qualification-grid,.representative2021-deadline-detail{grid-template-columns:1fr}}
 @media(max-width:700px){.representative2021-date-grid,.representative2021-rule-grid,.representative2021-fee-prices{grid-template-columns:1fr}.representative2021-rule-grid article:last-child:nth-child(odd){grid-column:auto}}
 @media(max-width:650px){.representative2021-hero{padding:38px 18px 34px}.representative2021-hero h1{font-size:25px}.representative2021-deadline,.representative2021-section{padding:52px 0 62px}.representative2021-heading h2{font-size:23px}.representative2021-story p{font-size:15px;line-height:1.9}.representative2021-address dl>div,.representative2021-info>div{grid-template-columns:1fr;gap:4px}}
+
+/* =========================================================
+   2021 會員專屬 50×50 作品徵召
+========================================================= */
+.memberquilt2021-hero{padding:48px 20px 42px;background:#f8f3f4;text-align:center}
+.memberquilt2021-eyebrow,.memberquilt2021-heading>p{margin:0 0 7px;color:#a98a91;font-size:12px;line-height:1.5;letter-spacing:.14em}
+.memberquilt2021-hero h1{margin:0;color:#444;font-size:32px;font-weight:400;line-height:1.5;letter-spacing:.08em}
+.memberquilt2021-subtitle{position:relative;display:inline-block;margin:8px 0 0;padding-bottom:17px;color:#999;font-size:13px;line-height:1.6;letter-spacing:.12em}
+.memberquilt2021-subtitle::after{content:"";position:absolute;left:50%;bottom:0;width:42px;height:2px;background:#b98d96;transform:translateX(-50%)}
+.memberquilt2021-deadline{padding:55px 0 62px;background:#fff}
+.memberquilt2021-date-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;max-width:850px;margin:0 auto}
+.memberquilt2021-date-grid article{padding:25px 28px;border:1px solid #e5dddb;background:#fff;text-align:center}
+.memberquilt2021-date-grid span{display:block;margin-bottom:7px;color:#a98a91;font-size:11px;letter-spacing:.12em}
+.memberquilt2021-date-grid h2{margin:0 0 8px;color:#455267;font-size:18px;font-weight:500}
+.memberquilt2021-date-grid p{margin:0;color:#8f656f;font-size:16px;line-height:1.7}
+.memberquilt2021-archive-note,.memberquilt2021-source-note{max-width:850px;margin:28px auto 0;padding:17px 21px;border-left:3px solid #b98d96;background:#faf8f8;color:#666;font-size:14px;line-height:1.9}
+.memberquilt2021-source-note{margin-top:12px;border-left-color:#c8b2a0;background:#fbf8f4}
+.memberquilt2021-archive-note strong,.memberquilt2021-source-note strong{color:#8f656f;font-weight:500}
+.memberquilt2021-section{padding:70px 0 82px;background:#fff}
+.memberquilt2021-section.alt{background:#faf8f8}
+.memberquilt2021-heading{position:relative;margin-bottom:45px;padding-bottom:20px;text-align:center}
+.memberquilt2021-heading::after{content:"";position:absolute;left:50%;bottom:0;width:42px;height:2px;background:#b98d96;transform:translateX(-50%)}
+.memberquilt2021-heading h2{margin:0;color:#444;font-size:28px;font-weight:500;line-height:1.5;letter-spacing:.08em}
+.memberquilt2021-story{max-width:900px;margin:0 auto}
+.memberquilt2021-story p{margin:0 0 18px;color:#5f5b59;font-size:16px;line-height:2}
+.memberquilt2021-story p:last-child{margin-bottom:0}
+.memberquilt2021-benefit-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;max-width:1000px;margin:0 auto}
+.memberquilt2021-benefit-grid article,.memberquilt2021-rule-grid article{padding:27px 26px;border:1px solid #e5dddb;background:#fff}
+.memberquilt2021-benefit-grid span,.memberquilt2021-rule-grid span{display:block;margin:0 0 15px;color:#b98d96;font-family:Georgia,"Times New Roman",serif;font-size:27px;line-height:1}
+.memberquilt2021-benefit-grid h3,.memberquilt2021-rule-grid h3{margin:0 0 10px;color:#455267;font-size:18px;font-weight:500;line-height:1.5}
+.memberquilt2021-benefit-grid p,.memberquilt2021-rule-grid p{margin:0;color:#666;font-size:15px;line-height:1.9}
+.memberquilt2021-rule-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;max-width:1000px;margin:0 auto}
+.memberquilt2021-rule-grid article:last-child:nth-child(odd){grid-column:1/-1}
+.memberquilt2021-deadline-detail,.memberquilt2021-address{max-width:850px;margin:0 auto}
+.memberquilt2021-deadline-detail{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.memberquilt2021-deadline-detail article{padding:26px 28px;border:1px solid #e5dddb;background:#fff}
+.memberquilt2021-deadline-detail h3{margin:0 0 15px;color:#455267;font-size:18px;font-weight:500;line-height:1.6}
+.memberquilt2021-deadline-detail p,.memberquilt2021-address p{color:#666;font-size:14px;line-height:1.9}
+.memberquilt2021-address{padding:28px 30px;border:1px solid #e5dddb;background:#fff}
+.memberquilt2021-address dl{margin:24px 0 0;border-top:1px solid #e5dcde}
+.memberquilt2021-address dl>div{display:grid;grid-template-columns:110px 1fr;gap:20px;padding:14px 0;border-bottom:1px solid #e5dcde}
+.memberquilt2021-address dt{color:#8f656f;font-size:13px}
+.memberquilt2021-address dd{margin:0;color:#555;font-size:14px}
+.memberquilt2021-address a{color:#8f656f;text-decoration:underline;text-underline-offset:3px}
+.memberquilt2021-download{display:flex;align-items:center;justify-content:space-between;gap:25px;max-width:780px;margin:0 auto;padding:25px 28px;border:1px solid #e1d9d6;background:#fff;color:inherit;text-decoration:none}
+.memberquilt2021-download:hover{border-color:#b98d96}
+.memberquilt2021-download p{margin:0 0 7px;color:#a98a91;font-size:12px;letter-spacing:.12em}
+.memberquilt2021-download h3{margin:0;color:#455267;font-size:18px;font-weight:500;line-height:1.6}
+.memberquilt2021-download>span{color:#a97882;font-size:25px}
+.memberquilt2021-ended{max-width:780px;margin:25px auto 0;padding:19px 22px;background:#faf6f7;color:#666}
+.memberquilt2021-ended strong{display:block;margin-bottom:6px;color:#8f656f;font-size:15px;font-weight:500}
+.memberquilt2021-ended p{margin:0;font-size:14px;line-height:1.8}
+.memberquilt2021-info{max-width:850px;margin:0 auto;border-top:1px solid #e4dcda}
+.memberquilt2021-info>div{display:grid;grid-template-columns:150px minmax(0,1fr);gap:30px;padding:19px 0;border-bottom:1px solid #e4dcda}
+.memberquilt2021-info span{color:#8f656f;font-size:14px}
+.memberquilt2021-info strong{color:#555;font-size:15px;font-weight:400}
+@media(max-width:800px){.memberquilt2021-benefit-grid,.memberquilt2021-deadline-detail{grid-template-columns:1fr}}
+@media(max-width:700px){.memberquilt2021-date-grid,.memberquilt2021-rule-grid{grid-template-columns:1fr}.memberquilt2021-rule-grid article:last-child:nth-child(odd){grid-column:auto}}
+@media(max-width:650px){.memberquilt2021-hero{padding:38px 18px 34px}.memberquilt2021-hero h1{font-size:25px}.memberquilt2021-deadline,.memberquilt2021-section{padding:52px 0 62px}.memberquilt2021-heading h2{font-size:23px}.memberquilt2021-story p{font-size:15px;line-height:1.9}.memberquilt2021-address dl>div,.memberquilt2021-info>div{grid-template-columns:1fr;gap:4px}}
