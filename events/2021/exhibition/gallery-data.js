@@ -1,211 +1,211 @@
 const eventGalleryData = {
-    year: "2023",
+    year: "2021",
 
-    title: "2023 作品展",
+    title: "2021 作品展",
 
-    subtitle: "Exhibition 2023",
+    subtitle: "Exhibition 2021",
 
     description:
-        "台灣國際拼布友好會 2023 年作品展紀錄。",
+        "台灣國際拼布友好會 2021 年作品展紀錄。",
 
     works: [
 
         {
-            image: "/events/2023/exhibition/work-01.jpg",
+            image: "/events/2021/exhibition/work-01.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2023/exhibition/work-02.jpg",
+            image: "/events/2021/exhibition/work-02.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2023/exhibition/work-03.jpg",
+            image: "/events/2021/exhibition/work-03.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2023/exhibition/work-04.jpg",
+            image: "/events/2021/exhibition/work-04.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2023/exhibition/work-05.jpg",
+            image: "/events/2021/exhibition/work-05.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2023/exhibition/work-06.jpg",
+            image: "/events/2021/exhibition/work-06.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2023/exhibition/work-07.jpg",
+            image: "/events/2021/exhibition/work-07.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2023/exhibition/work-08.jpg",
+            image: "/events/2021/exhibition/work-08.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2023/exhibition/work-09.jpg",
+            image: "/events/2021/exhibition/work-09.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2023/exhibition/work-10.jpg",
+            image: "/events/2021/exhibition/work-10.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2023/exhibition/work-11.jpg",
+            image: "/events/2021/exhibition/work-11.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2023/exhibition/work-12.jpg",
+            image: "/events/2021/exhibition/work-12.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2023/exhibition/work-13.jpg",
+            image: "/events/2021/exhibition/work-13.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2023/exhibition/work-14.jpg",
+            image: "/events/2021/exhibition/work-14.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2023/exhibition/work-15.jpg",
+            image: "/events/2021/exhibition/work-15.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2023/exhibition/work-16.jpg",
+            image: "/events/2021/exhibition/work-16.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2023/exhibition/work-17.jpg",
+            image: "/events/2021/exhibition/work-17.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2023/exhibition/work-18.jpg",
+            image: "/events/2021/exhibition/work-18.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2023/exhibition/work-19.jpg",
+            image: "/events/2021/exhibition/work-19.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2023/exhibition/work-20.jpg",
+            image: "/events/2021/exhibition/work-20.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2023/exhibition/work-21.jpg",
+            image: "/events/2021/exhibition/work-21.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2023/exhibition/work-22.jpg",
+            image: "/events/2021/exhibition/work-22.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2023/exhibition/work-23.jpg",
+            image: "/events/2021/exhibition/work-23.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2023/exhibition/work-24.jpg",
+            image: "/events/2021/exhibition/work-24.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2023/exhibition/work-25.jpg",
+            image: "/events/2021/exhibition/work-25.jpg",
             title: "",
             artist: ""
         },
         {
-            image: "/events/2023/exhibition/work-26.jpg",
+            image: "/events/2021/exhibition/work-26.jpg",
             title: "",
             artist: ""
         },
 		{
-            image: "/events/2023/exhibition/work-27.jpg",
+            image: "/events/2021/exhibition/work-27.jpg",
             title: "",
             artist: ""
         },
 		{
-            image: "/events/2023/exhibition/work-28.jpg",
+            image: "/events/2021/exhibition/work-28.jpg",
             title: "",
             artist: ""
         },
 		{
-            image: "/events/2023/exhibition/work-29.jpg",
+            image: "/events/2021/exhibition/work-29.jpg",
             title: "",
             artist: ""
         },
 		{
-            image: "/events/2023/exhibition/work-30.jpg",
+            image: "/events/2021/exhibition/work-30.jpg",
             title: "",
             artist: ""
         },
 		{
-            image: "/events/2023/exhibition/work-31.jpg",
+            image: "/events/2021/exhibition/work-31.jpg",
             title: "",
             artist: ""
         },
 		{
-            image: "/events/2023/exhibition/work-32.jpg",
+            image: "/events/2021/exhibition/work-32.jpg",
             title: "",
             artist: ""
         },
 		{
-            image: "/events/2023/exhibition/work-33.jpg",
+            image: "/events/2021/exhibition/work-33.jpg",
             title: "",
             artist: ""
         },
 		{
-            image: "/events/2023/exhibition/work-34.jpg",
+            image: "/events/2021/exhibition/work-34.jpg",
             title: "",
             artist: ""
         },
 		{
-            image: "/events/2023/exhibition/work-35.jpg",
+            image: "/events/2021/exhibition/work-35.jpg",
             title: "",
             artist: ""
         }
