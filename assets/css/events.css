@@ -6627,3 +6627,465 @@ a.ticket-outlet-name:hover {
 @media(max-width:800px){.memberquilt2021-benefit-grid,.memberquilt2021-deadline-detail{grid-template-columns:1fr}}
 @media(max-width:700px){.memberquilt2021-date-grid,.memberquilt2021-rule-grid{grid-template-columns:1fr}.memberquilt2021-rule-grid article:last-child:nth-child(odd){grid-column:auto}}
 @media(max-width:650px){.memberquilt2021-hero{padding:38px 18px 34px}.memberquilt2021-hero h1{font-size:25px}.memberquilt2021-deadline,.memberquilt2021-section{padding:52px 0 62px}.memberquilt2021-heading h2{font-size:23px}.memberquilt2021-story p{font-size:15px;line-height:1.9}.memberquilt2021-address dl>div,.memberquilt2021-info>div{grid-template-columns:1fr;gap:4px}}
+
+/* =========================================================
+   2021 萬紫千紅－主題作品募集
+========================================================= */
+
+.themequilt2021-hero {
+    padding: 48px 20px 42px;
+    background: #f8f3f4;
+    text-align: center;
+}
+
+.themequilt2021-eyebrow,
+.themequilt2021-heading > p {
+    margin: 0 0 7px;
+    color: #a98a91;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: .14em;
+}
+
+.themequilt2021-hero h1 {
+    margin: 0;
+    color: #444;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: .08em;
+}
+
+.themequilt2021-subtitle {
+    position: relative;
+    display: inline-block;
+    margin: 8px 0 0;
+    padding-bottom: 17px;
+    color: #999;
+    font-size: 13px;
+    line-height: 1.6;
+    letter-spacing: .12em;
+}
+
+.themequilt2021-subtitle::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 42px;
+    height: 2px;
+    background: #b98d96;
+    transform: translateX(-50%);
+}
+
+.themequilt2021-deadline {
+    padding: 55px 0 62px;
+    background: #fff;
+}
+
+.themequilt2021-date-card {
+    max-width: 520px;
+    margin: 0 auto;
+    padding: 28px;
+    border: 1px solid #e5dddb;
+    text-align: center;
+}
+
+.themequilt2021-date-card span,
+.themequilt2021-submission-grid span {
+    display: block;
+    margin-bottom: 8px;
+    color: #a98a91;
+    font-size: 11px;
+    letter-spacing: .12em;
+}
+
+.themequilt2021-date-card h2 {
+    margin: 0 0 8px;
+    color: #455267;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.themequilt2021-date-card p {
+    margin: 0;
+    color: #8f656f;
+    font-size: 19px;
+}
+
+.themequilt2021-archive-note {
+    max-width: 850px;
+    margin: 28px auto 0;
+    padding: 17px 21px;
+    border-left: 3px solid #b98d96;
+    background: #faf8f8;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.themequilt2021-archive-note strong {
+    color: #8f656f;
+}
+
+.themequilt2021-section {
+    padding: 70px 0 82px;
+    background: #fff;
+}
+
+.themequilt2021-section.alt {
+    background: #faf8f8;
+}
+
+.themequilt2021-heading {
+    position: relative;
+    margin-bottom: 45px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.themequilt2021-heading::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 42px;
+    height: 2px;
+    background: #b98d96;
+    transform: translateX(-50%);
+}
+
+.themequilt2021-heading h2 {
+    margin: 0;
+    color: #444;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: .08em;
+}
+
+.themequilt2021-story,
+.themequilt2021-registration,
+.themequilt2021-support,
+.themequilt2021-description {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.themequilt2021-story p,
+.themequilt2021-registration p,
+.themequilt2021-support p,
+.themequilt2021-description li {
+    color: #5f5b59;
+    font-size: 15px;
+    line-height: 2;
+}
+
+.themequilt2021-story p {
+    margin: 0 0 18px;
+}
+
+.themequilt2021-goal-grid,
+.themequilt2021-eligibility,
+.themequilt2021-rule-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.themequilt2021-goal-grid article,
+.themequilt2021-eligibility article,
+.themequilt2021-rule-grid article {
+    padding: 27px 26px;
+    border: 1px solid #e5dddb;
+    background: #fff;
+}
+
+.themequilt2021-goal-grid span,
+.themequilt2021-eligibility span,
+.themequilt2021-rule-grid span {
+    display: block;
+    margin-bottom: 15px;
+    color: #b98d96;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 27px;
+    line-height: 1;
+}
+
+.themequilt2021-goal-grid p,
+.themequilt2021-eligibility p,
+.themequilt2021-rule-grid p {
+    margin: 0;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.themequilt2021-rule-grid article:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+}
+
+.themequilt2021-example-grid,
+.themequilt2021-design-grid {
+    display: grid;
+    gap: 20px;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.themequilt2021-example-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.themequilt2021-design-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-top: 34px;
+}
+
+.themequilt2021-example-grid figure,
+.themequilt2021-design-grid figure {
+    margin: 0;
+    padding: 12px;
+    border: 1px solid #e5dddb;
+    background: #fff;
+}
+
+.themequilt2021-example-grid img,
+.themequilt2021-design-grid img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    background: #fafafa;
+}
+
+.themequilt2021-example-grid figcaption,
+.themequilt2021-design-grid figcaption {
+    margin-top: 10px;
+    color: #777;
+    font-size: 13px;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.themequilt2021-description ol {
+    margin: 0;
+    padding-left: 24px;
+}
+
+.themequilt2021-description li {
+    margin-bottom: 10px;
+}
+
+.themequilt2021-registration h3 {
+    margin: 0 0 18px;
+    color: #455267;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.themequilt2021-address-card {
+    margin: 22px 0;
+    padding: 18px 21px;
+    border-left: 3px solid #b98d96;
+    background: #fff;
+}
+
+.themequilt2021-address-card p {
+    margin: 0;
+}
+
+.themequilt2021-support {
+    padding: 28px 30px;
+    border: 1px solid #e5dddb;
+    background: #fff;
+}
+
+.themequilt2021-support dl {
+    margin: 24px 0 0;
+    border-top: 1px solid #e5dcde;
+}
+
+.themequilt2021-support dl > div {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    gap: 20px;
+    padding: 14px 0;
+    border-bottom: 1px solid #e5dcde;
+}
+
+.themequilt2021-support dt {
+    color: #8f656f;
+    font-size: 13px;
+}
+
+.themequilt2021-support dd {
+    margin: 0;
+    color: #555;
+    font-size: 14px;
+}
+
+.themequilt2021-submission-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.themequilt2021-submission-grid article {
+    padding: 27px 28px;
+    border: 1px solid #e5dddb;
+    background: #fff;
+}
+
+.themequilt2021-submission-grid h3 {
+    margin: 0 0 10px;
+    color: #455267;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.themequilt2021-submission-grid p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.themequilt2021-download {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 25px 28px;
+    border: 1px solid #e1d9d6;
+    background: #fff;
+    color: inherit;
+    text-decoration: none;
+}
+
+.themequilt2021-download:hover {
+    border-color: #b98d96;
+}
+
+.themequilt2021-download p {
+    margin: 0 0 7px;
+    color: #a98a91;
+    font-size: 12px;
+    letter-spacing: .12em;
+}
+
+.themequilt2021-download h3 {
+    margin: 0;
+    color: #455267;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.themequilt2021-download > span {
+    color: #a97882;
+    font-size: 25px;
+}
+
+.themequilt2021-ended {
+    max-width: 780px;
+    margin: 25px auto 0;
+    padding: 19px 22px;
+    background: #faf6f7;
+    color: #666;
+}
+
+.themequilt2021-ended strong {
+    display: block;
+    margin-bottom: 6px;
+    color: #8f656f;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.themequilt2021-ended p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.themequilt2021-info {
+    max-width: 850px;
+    margin: 0 auto;
+    border-top: 1px solid #e4dcda;
+}
+
+.themequilt2021-info > div {
+    display: grid;
+    grid-template-columns: 150px minmax(0, 1fr);
+    gap: 30px;
+    padding: 19px 0;
+    border-bottom: 1px solid #e4dcda;
+}
+
+.themequilt2021-info span {
+    color: #8f656f;
+    font-size: 14px;
+}
+
+.themequilt2021-info strong {
+    color: #555;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+@media (max-width: 850px) {
+    .themequilt2021-example-grid,
+    .themequilt2021-design-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .themequilt2021-example-grid img,
+    .themequilt2021-design-grid img {
+        height: auto;
+        max-height: 520px;
+    }
+}
+
+@media (max-width: 700px) {
+    .themequilt2021-goal-grid,
+    .themequilt2021-eligibility,
+    .themequilt2021-rule-grid,
+    .themequilt2021-submission-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .themequilt2021-rule-grid article:last-child:nth-child(odd) {
+        grid-column: auto;
+    }
+}
+
+@media (max-width: 650px) {
+    .themequilt2021-hero {
+        padding: 38px 18px 34px;
+    }
+
+    .themequilt2021-hero h1 {
+        font-size: 25px;
+    }
+
+    .themequilt2021-deadline,
+    .themequilt2021-section {
+        padding: 52px 0 62px;
+    }
+
+    .themequilt2021-heading h2 {
+        font-size: 23px;
+    }
+
+    .themequilt2021-support dl > div,
+    .themequilt2021-info > div {
+        grid-template-columns: 1fr;
+        gap: 4px;
+    }
+}
