@@ -7417,3 +7417,333 @@ a.ticket-outlet-name:hover {
         margin-bottom: 2px;
     }
 }
+
+/* =========================================================
+   2021 English - About the Event
+========================================================= */
+
+.englishabout2021-hero {
+    padding: 54px 20px 48px;
+    background: #f8f3f4;
+    text-align: center;
+}
+
+.englishabout2021-eyebrow,
+.englishabout2021-heading > p {
+    margin: 0 0 8px;
+    color: #a98a91;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+}
+
+.englishabout2021-hero h1 {
+    margin: 0;
+    color: #444;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 1.45;
+    letter-spacing: .04em;
+}
+
+.englishabout2021-subtitle {
+    position: relative;
+    display: inline-block;
+    margin: 9px 0 0;
+    padding-bottom: 17px;
+    color: #999;
+    font-size: 13px;
+    line-height: 1.6;
+    letter-spacing: .08em;
+}
+
+.englishabout2021-subtitle::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 42px;
+    height: 2px;
+    background: #b98d96;
+    transform: translateX(-50%);
+}
+
+.englishabout2021-section {
+    padding: 72px 0 82px;
+    background: #fff;
+}
+
+.englishabout2021-section.alt {
+    background: #faf8f8;
+}
+
+.englishabout2021-narrow {
+    max-width: 980px;
+}
+
+.englishabout2021-heading {
+    position: relative;
+    margin-bottom: 42px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.englishabout2021-heading::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 42px;
+    height: 2px;
+    background: #b98d96;
+    transform: translateX(-50%);
+}
+
+.englishabout2021-heading.left {
+    text-align: left;
+}
+
+.englishabout2021-heading.left::after {
+    left: 0;
+    transform: none;
+}
+
+.englishabout2021-heading h2 {
+    margin: 0;
+    color: #444;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.englishabout2021-copy p {
+    margin: 0 0 20px;
+    color: #5f5b59;
+    font-size: 15px;
+    line-height: 2;
+}
+
+.englishabout2021-copy p:last-child {
+    margin-bottom: 0;
+}
+
+.englishabout2021-partners {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.englishabout2021-partners article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 300px;
+    padding: 26px 24px;
+    border: 1px solid #e5dddb;
+    background: #fff;
+    text-align: center;
+}
+
+.englishabout2021-partners article > span {
+    margin-bottom: 20px;
+    color: #a98a91;
+    font-size: 11px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+}
+
+.englishabout2021-partners a,
+.englishabout2021-partner-image {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.englishabout2021-partners img {
+    display: block;
+    width: 100%;
+    max-width: 280px;
+    max-height: 180px;
+    object-fit: contain;
+}
+
+.englishabout2021-partners h3 {
+    margin: 20px 0 0;
+    color: #455267;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.englishabout2021-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.englishabout2021-info-grid article {
+    padding: 28px 30px;
+    border: 1px solid #e5dddb;
+    background: #fff;
+}
+
+.englishabout2021-info-grid span {
+    display: block;
+    margin-bottom: 10px;
+    color: #a98a91;
+    font-size: 11px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+}
+
+.englishabout2021-info-grid h3 {
+    margin: 0;
+    color: #455267;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 1.65;
+}
+
+.englishabout2021-info-grid a {
+    display: inline-block;
+    margin-top: 14px;
+    color: #8f656f;
+    font-size: 13px;
+    text-decoration: none;
+    border-bottom: 1px solid #b98d96;
+}
+
+.englishabout2021-program {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.englishabout2021-program article {
+    padding: 28px 27px;
+    border: 1px solid #e5dddb;
+    background: #fff;
+}
+
+.englishabout2021-program article:nth-child(5) {
+    grid-column: 1 / -1;
+}
+
+.englishabout2021-program article > span {
+    display: block;
+    margin-bottom: 13px;
+    color: #b98d96;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 27px;
+    line-height: 1;
+}
+
+.englishabout2021-program h3 {
+    margin: 0 0 11px;
+    color: #455267;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.55;
+}
+
+.englishabout2021-program ul {
+    margin: 0;
+    padding-left: 21px;
+}
+
+.englishabout2021-program li {
+    margin-bottom: 7px;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.englishabout2021-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.englishabout2021-gallery-item {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 4 / 3;
+    background: #eee;
+}
+
+.englishabout2021-gallery-item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .25s ease;
+}
+
+.englishabout2021-gallery-item:hover img {
+    transform: scale(1.03);
+}
+
+@media (max-width: 900px) {
+    .englishabout2021-partners {
+        grid-template-columns: 1fr;
+    }
+
+    .englishabout2021-partners article {
+        min-height: auto;
+    }
+
+    .englishabout2021-gallery {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 700px) {
+    .englishabout2021-info-grid,
+    .englishabout2021-program {
+        grid-template-columns: 1fr;
+    }
+
+    .englishabout2021-program article:nth-child(5) {
+        grid-column: auto;
+    }
+
+    .englishabout2021-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 650px) {
+    .englishabout2021-hero {
+        padding: 40px 18px 36px;
+    }
+
+    .englishabout2021-hero h1 {
+        font-size: 27px;
+    }
+
+    .englishabout2021-section {
+        padding: 54px 0 64px;
+    }
+
+    .englishabout2021-heading {
+        margin-bottom: 34px;
+    }
+
+    .englishabout2021-heading h2 {
+        font-size: 23px;
+    }
+
+    .englishabout2021-copy p {
+        font-size: 14px;
+        line-height: 1.9;
+    }
+}
