@@ -7089,3 +7089,235 @@ a.ticket-outlet-name:hover {
         gap: 4px;
     }
 }
+
+/* =========================================================
+   2021 參展攤位介紹
+========================================================= */
+
+.exhibitors2021-hero {
+    padding: 48px 20px 42px;
+    background: #f8f3f4;
+    text-align: center;
+}
+
+.exhibitors2021-eyebrow,
+.exhibitors2021-heading > p {
+    margin: 0 0 7px;
+    color: #a98a91;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: .14em;
+}
+
+.exhibitors2021-hero h1 {
+    margin: 0;
+    color: #444;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: .08em;
+}
+
+.exhibitors2021-subtitle {
+    position: relative;
+    display: inline-block;
+    margin: 8px 0 0;
+    padding-bottom: 17px;
+    color: #999;
+    font-size: 13px;
+    line-height: 1.6;
+    letter-spacing: .12em;
+}
+
+.exhibitors2021-subtitle::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 42px;
+    height: 2px;
+    background: #b98d96;
+    transform: translateX(-50%);
+}
+
+.exhibitors2021-nav {
+    padding: 24px 0;
+    border-bottom: 1px solid #eee7e5;
+    background: #fff;
+}
+
+.exhibitors2021-nav .content-container {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.exhibitors2021-nav a {
+    min-width: 180px;
+    padding: 11px 22px;
+    border: 1px solid #d8c7ca;
+    color: #7f6268;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.exhibitors2021-nav a:hover {
+    background: #faf5f6;
+    border-color: #b98d96;
+}
+
+.exhibitors2021-section {
+    padding: 70px 0 82px;
+    background: #fff;
+}
+
+.exhibitors2021-section.alt {
+    background: #faf8f8;
+}
+
+.exhibitors2021-heading {
+    position: relative;
+    margin-bottom: 45px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.exhibitors2021-heading::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 42px;
+    height: 2px;
+    background: #b98d96;
+    transform: translateX(-50%);
+}
+
+.exhibitors2021-heading h2 {
+    margin: 0;
+    color: #444;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: .08em;
+}
+
+.exhibitors2021-heading span {
+    display: block;
+    margin-top: 8px;
+    color: #999;
+    font-size: 12px;
+}
+
+.exhibitors2021-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.exhibitors2021-card {
+    overflow: hidden;
+    border: 1px solid #e5dddb;
+    background: #fff;
+}
+
+.exhibitors2021-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 220px;
+    padding: 18px;
+    background: #fff;
+}
+
+.exhibitors2021-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.exhibitors2021-card-body {
+    padding: 21px 22px 24px;
+    border-top: 1px solid #eee8e6;
+}
+
+.exhibitors2021-card-body h3 {
+    margin: 0 0 10px;
+    color: #455267;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.exhibitors2021-card-body p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.85;
+}
+
+.exhibitors2021-note {
+    padding: 42px 0;
+    background: #fff;
+}
+
+.exhibitors2021-note .content-container > div {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 18px 22px;
+    border-left: 3px solid #b98d96;
+    background: #faf8f8;
+}
+
+.exhibitors2021-note strong {
+    color: #8f656f;
+    font-size: 14px;
+}
+
+.exhibitors2021-note p {
+    margin: 5px 0 0;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+@media (max-width: 900px) {
+    .exhibitors2021-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 650px) {
+    .exhibitors2021-hero {
+        padding: 38px 18px 34px;
+    }
+
+    .exhibitors2021-hero h1 {
+        font-size: 25px;
+    }
+
+    .exhibitors2021-section {
+        padding: 52px 0 62px;
+    }
+
+    .exhibitors2021-heading h2 {
+        font-size: 23px;
+    }
+
+    .exhibitors2021-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .exhibitors2021-image {
+        height: auto;
+        min-height: 200px;
+    }
+
+    .exhibitors2021-nav a {
+        flex: 1 1 150px;
+        min-width: 0;
+    }
+}
