@@ -375,8 +375,15 @@ window.breadcrumbData = [
             link.className =
                 "event2021-archive-link";
 
-            link.href =
-                item.url || "#";
+            /*
+             * 2021 英文頁路徑統一使用 /en/
+             * English 卡片直接連到第二頁 Taiwan Quilt Contest 2021。
+             */
+            if (item.englishTitle === "English") {
+                link.href = "/events/2021/en/quilt-contest/";
+            } else {
+                link.href = item.url || "#";
+            }
 
             link.textContent =
                 item.englishTitle === "English"
