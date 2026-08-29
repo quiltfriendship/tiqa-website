@@ -7125,7 +7125,6 @@ a.ticket-outlet-name:hover {
     padding-bottom: 17px;
     color: #999;
     font-size: 13px;
-    line-height: 1.6;
     letter-spacing: .12em;
 }
 
@@ -7154,7 +7153,7 @@ a.ticket-outlet-name:hover {
 }
 
 .exhibitors2021-nav a {
-    min-width: 180px;
+    min-width: 190px;
     padding: 11px 22px;
     border: 1px solid #d8c7ca;
     color: #7f6268;
@@ -7211,52 +7210,135 @@ a.ticket-outlet-name:hover {
     font-size: 12px;
 }
 
-.exhibitors2021-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 22px;
+.exhibitors2021-list {
+    max-width: 1080px;
+    margin: 0 auto;
 }
 
 .exhibitors2021-card {
-    overflow: hidden;
+    display: grid;
+    grid-template-columns: minmax(220px, 32%) minmax(0, 68%);
+    gap: 34px;
+    margin-bottom: 28px;
+    padding: 30px;
     border: 1px solid #e5dddb;
     background: #fff;
 }
 
-.exhibitors2021-image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 220px;
-    padding: 18px;
-    background: #fff;
+.exhibitors2021-card:last-child {
+    margin-bottom: 0;
 }
 
-.exhibitors2021-image img {
+.exhibitors2021-media {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.exhibitors2021-media img {
     display: block;
     width: 100%;
-    height: 100%;
+    max-width: 320px;
+    height: auto;
+    max-height: 300px;
     object-fit: contain;
 }
 
-.exhibitors2021-card-body {
-    padding: 21px 22px 24px;
-    border-top: 1px solid #eee8e6;
-}
-
-.exhibitors2021-card-body h3 {
-    margin: 0 0 10px;
+.exhibitors2021-content h3 {
+    margin: 0 0 16px;
     color: #455267;
-    font-size: 17px;
+    font-size: 21px;
     font-weight: 500;
-    line-height: 1.6;
+    line-height: 1.55;
 }
 
-.exhibitors2021-card-body p {
-    margin: 0;
-    color: #666;
+.exhibitors2021-description p {
+    margin: 0 0 12px;
+    color: #5f5b59;
     font-size: 14px;
-    line-height: 1.85;
+    line-height: 1.95;
+}
+
+.exhibitors2021-description p:last-child {
+    margin-bottom: 0;
+}
+
+.exhibitors2021-contact {
+    margin: 0 0 18px;
+    padding: 13px 15px;
+    background: #faf8f8;
+}
+
+.exhibitors2021-contact > div {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
+    color: #666;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.exhibitors2021-contact > div:last-child {
+    margin-bottom: 0;
+}
+
+.exhibitors2021-contact strong {
+    flex: 0 0 auto;
+    color: #8f656f;
+    font-weight: 500;
+}
+
+.exhibitors2021-special {
+    margin-top: 20px;
+    padding: 17px 19px;
+    border-left: 3px solid #b98d96;
+    background: #faf6f7;
+}
+
+.exhibitors2021-special h4 {
+    margin: 0 0 9px;
+    color: #8f656f;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.exhibitors2021-special ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.exhibitors2021-special li {
+    margin-bottom: 5px;
+    color: #666;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.exhibitors2021-special li:last-child {
+    margin-bottom: 0;
+}
+
+.exhibitors2021-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 10px;
+    margin-top: 20px;
+}
+
+.exhibitors2021-links a {
+    display: inline-block;
+    padding: 7px 11px;
+    border: 1px solid #d9cacc;
+    color: #8f656f;
+    font-size: 12px;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+.exhibitors2021-links a:hover,
+.exhibitors2021-links a:focus {
+    background: #faf5f6;
+    border-color: #b98d96;
 }
 
 .exhibitors2021-note {
@@ -7265,7 +7347,7 @@ a.ticket-outlet-name:hover {
 }
 
 .exhibitors2021-note .content-container > div {
-    max-width: 850px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 18px 22px;
     border-left: 3px solid #b98d96;
@@ -7284,9 +7366,15 @@ a.ticket-outlet-name:hover {
     line-height: 1.8;
 }
 
-@media (max-width: 900px) {
-    .exhibitors2021-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+@media (max-width: 800px) {
+    .exhibitors2021-card {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .exhibitors2021-media img {
+        max-width: 420px;
+        max-height: none;
     }
 }
 
@@ -7307,17 +7395,25 @@ a.ticket-outlet-name:hover {
         font-size: 23px;
     }
 
-    .exhibitors2021-grid {
-        grid-template-columns: 1fr;
+    .exhibitors2021-card {
+        padding: 22px 18px;
     }
 
-    .exhibitors2021-image {
-        height: auto;
-        min-height: 200px;
+    .exhibitors2021-content h3 {
+        font-size: 19px;
     }
 
     .exhibitors2021-nav a {
         flex: 1 1 150px;
         min-width: 0;
+    }
+
+    .exhibitors2021-contact > div {
+        display: block;
+    }
+
+    .exhibitors2021-contact strong {
+        display: block;
+        margin-bottom: 2px;
     }
 }
