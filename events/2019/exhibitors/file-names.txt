@@ -1,9 +1,8 @@
-2019 參展攤位介紹－圖片命名
+2019 參展攤位介紹－圖片命名 v2
 
 Hero：
 20190726-3_orig.jpg → hero.jpg
 
-參展品牌：
 logo-01_orig.png → exhibitor-01.png　臺灣喜佳股份有限公司
 logo_orig.jpg → exhibitor-02.jpg　隆德貿易有限公司／布能布玩拼布生活工坊
 logo-matshshiba_orig.gif → exhibitor-03.gif　松芝車樂美有限公司

@@ -9737,3 +9737,74 @@ body.representative2019-lightbox-open {
 
 /* 2019 Exhibitors */
 .exhibitor2019-intro{padding:62px 0 20px}.exhibitor2019-narrow{max-width:900px}.exhibitor2019-intro p{margin:0;color:#666;font-size:15px;line-height:2}.exhibitor2019-section{padding:45px 0 75px}.exhibitor2019-heading{text-align:center;margin-bottom:36px}.exhibitor2019-heading>p{margin:0 0 7px;color:#a98a91;font-size:12px;letter-spacing:.14em;text-transform:uppercase}.exhibitor2019-heading h2{margin:0;color:#444;font-size:28px;font-weight:500}.exhibitor2019-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}.exhibitor2019-card{overflow:hidden;border:1px solid #e7e0de;background:#fff}.exhibitor2019-image{display:flex;width:100%;height:210px;padding:18px;border:0;background:#faf9f8;align-items:center;justify-content:center;cursor:zoom-in}.exhibitor2019-image img{display:block;max-width:100%;max-height:100%;object-fit:contain}.exhibitor2019-card-body{padding:22px}.exhibitor2019-no{margin:0 0 8px!important;color:#b59aa0!important;font-size:11px!important;letter-spacing:.14em}.exhibitor2019-card h2{margin:0 0 13px;color:#4f4f4f;font-size:18px;font-weight:600;line-height:1.5}.exhibitor2019-card-body>p{color:#707070;font-size:14px;line-height:1.8}.exhibitor2019-link{display:inline-block;margin-top:8px;color:#8f656f;text-decoration:none;border-bottom:1px solid #c9aeb4}.exhibitor2019-note{max-width:900px;margin:48px auto 0;padding:20px 24px;background:#faf8f8;border-left:3px solid #b98d96;color:#777;font-size:13px;line-height:1.8}.exhibitor2019-note p{margin:6px 0 0}dialog.exhibitor2019-lightbox{width:100%;max-width:none;height:100%;max-height:none;margin:0;padding:60px 24px 24px;border:0;background:rgba(20,20,20,.92)}.exhibitor2019-lightbox>div{display:flex;width:100%;height:100%;align-items:center;justify-content:center}.exhibitor2019-lightbox img{max-width:92vw;max-height:84vh;object-fit:contain}.exhibitor2019-close{position:fixed;top:16px;right:22px;border:0;background:none;color:#fff;font-size:36px;cursor:pointer}@media(max-width:900px){.exhibitor2019-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:600px){.exhibitor2019-grid{grid-template-columns:1fr}.exhibitor2019-image{height:230px}.exhibitor2019-section{padding-bottom:55px}}
+
+
+/* =========================================================
+   2019 Exhibitors v2 - 左圖右文字 / 完整原始說明
+========================================================= */
+.exhibitor2019-intro{padding:64px 0 38px}
+.exhibitor2019-narrow{max-width:920px}
+.exhibitor2019-heading{text-align:center;margin-bottom:34px}
+.exhibitor2019-heading>p{margin:0 0 7px;color:#a98a91;font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+.exhibitor2019-heading h2{margin:0;color:#444;font-size:28px;font-weight:500}
+.exhibitor2019-intro>.content-container>p{margin:0;color:#666;font-size:15px;line-height:2.05}
+.exhibitor2019-section{padding:20px 0 78px}
+.exhibitor2019-list{max-width:1080px}
+.exhibitor2019-row{
+  display:grid;
+  grid-template-columns:34% 1fr;
+  gap:38px;
+  align-items:start;
+  padding:38px 0;
+  border-bottom:1px solid #e9e2e0;
+}
+.exhibitor2019-row:first-child{border-top:1px solid #e9e2e0}
+.exhibitor2019-row-image{position:sticky;top:92px}
+.exhibitor2019-row .exhibitor2019-image{
+  display:flex;
+  width:100%;
+  min-height:220px;
+  height:auto;
+  padding:18px;
+  border:1px solid #e7e0de;
+  background:#faf9f8;
+  align-items:center;
+  justify-content:center;
+  cursor:zoom-in;
+}
+.exhibitor2019-row .exhibitor2019-image img{
+  display:block;
+  width:auto;
+  max-width:100%;
+  height:auto;
+  max-height:300px;
+  object-fit:contain;
+}
+.exhibitor2019-row-content{padding:4px 0 0}
+.exhibitor2019-row-content .exhibitor2019-no{
+  margin:0 0 8px!important;
+  color:#b59aa0!important;
+  font-size:12px!important;
+  letter-spacing:.15em
+}
+.exhibitor2019-row-content h2{
+  margin:0 0 18px;
+  color:#4d4948;
+  font-size:22px;
+  font-weight:600;
+  line-height:1.5
+}
+.exhibitor2019-description{color:#666;font-size:14px;line-height:1.95}
+.exhibitor2019-description p{margin:0 0 13px}
+.exhibitor2019-description ul{margin:0 0 13px;padding-left:1.4em}
+.exhibitor2019-description .exhibitor2019-lead{color:#8f656f;font-size:15px;font-weight:600}
+.exhibitor2019-description a{color:#8f656f;text-decoration:underline;text-underline-offset:3px}
+.exhibitor2019-links{display:flex;flex-wrap:wrap;gap:9px 16px;margin-top:14px}
+.exhibitor2019-links a{display:inline-block}
+@media(max-width:760px){
+ .exhibitor2019-row{grid-template-columns:1fr;gap:22px;padding:30px 0}
+ .exhibitor2019-row-image{position:static}
+ .exhibitor2019-row .exhibitor2019-image{min-height:0}
+ .exhibitor2019-row .exhibitor2019-image img{max-height:none}
+ .exhibitor2019-row-content h2{font-size:20px}
+}
