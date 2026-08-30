@@ -1,0 +1,20 @@
+2019《代表作》徵件頁圖片檔名
+
+頁面資料夾：
+/events/2019/representative/
+
+必要檔案：
+index.html
+hero.jpg
+representative-01.jpg
+representative-02.jpg
+representative-03.jpg
+
+原始圖片對應：
+20190417-banner-1_2_orig.jpg → representative-01.jpg
+20190417-banner-1_3_orig.jpg → representative-02.jpg
+20190417-banner-1_4_orig.jpg → representative-03.jpg
+
+共用：
+/assets/css/events.css
+/events/2019/event-footer.jpg

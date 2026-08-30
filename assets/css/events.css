@@ -9391,3 +9391,344 @@ dialog.members2019-lightbox[open] {
     }
 
 }
+
+
+/* =========================================================
+   2019 Representative Quilt
+========================================================= */
+
+.representative2019-section {
+    padding: 70px 0;
+}
+
+.representative2019-section.alt {
+    background: #faf8f8;
+}
+
+.representative2019-narrow {
+    max-width: 900px;
+}
+
+.representative2019-heading {
+    position: relative;
+    margin-bottom: 38px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.representative2019-heading::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 42px;
+    height: 2px;
+    background: #b98d96;
+    transform: translateX(-50%);
+}
+
+.representative2019-heading > p {
+    margin: 0 0 7px;
+    color: #a98a91;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+}
+
+.representative2019-heading h2 {
+    margin: 0;
+    color: #444;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: .08em;
+}
+
+.representative2019-intro {
+    color: #666;
+    font-size: 15px;
+    line-height: 2.1;
+}
+
+.representative2019-intro p {
+    margin: 0;
+}
+
+.representative2019-closed {
+    margin-top: 34px;
+    padding: 22px 26px;
+    border-left: 3px solid #b98d96;
+    background: #faf8f8;
+}
+
+.representative2019-closed span {
+    display: block;
+    margin-bottom: 5px;
+    color: #a98a91;
+    font-size: 12px;
+    letter-spacing: .12em;
+}
+
+.representative2019-closed strong {
+    color: #8f656f;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.8;
+}
+
+.representative2019-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.representative2019-card {
+    position: relative;
+    padding: 30px 30px 32px;
+    border: 1px solid #e7e0de;
+    background: #fff;
+}
+
+.representative2019-card-wide {
+    grid-column: 1 / -1;
+}
+
+.representative2019-number {
+    margin-bottom: 15px;
+    color: #c4a5ab;
+    font-size: 13px;
+    letter-spacing: .12em;
+}
+
+.representative2019-card h3 {
+    margin: 0 0 20px;
+    color: #4c4748;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.representative2019-content {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.95;
+}
+
+.representative2019-content ol,
+.representative2019-content ul {
+    margin: 0;
+    padding-left: 1.45em;
+}
+
+.representative2019-content li + li {
+    margin-top: 7px;
+}
+
+.representative2019-content p {
+    margin: 12px 0 0;
+}
+
+.representative2019-content h4 {
+    margin: 24px 0 8px;
+    color: #8f656f;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.representative2019-content h4:first-child {
+    margin-top: 0;
+}
+
+.representative2019-content a,
+.representative2019-contact a {
+    color: #8f656f;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.representative2019-bank {
+    margin: 15px 0;
+    padding: 17px 20px;
+    background: #faf8f8;
+}
+
+.representative2019-bank p {
+    margin: 0;
+}
+
+.representative2019-bank p + p {
+    margin-top: 4px;
+}
+
+.representative2019-stop {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.representative2019-stop p {
+    margin: 0 0 8px;
+}
+
+.representative2019-stop strong {
+    color: #8f656f;
+    font-weight: 600;
+}
+
+.representative2019-contact {
+    margin-top: 34px;
+    padding: 28px 30px;
+    background: #faf8f8;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.representative2019-contact h3 {
+    margin: 20px 0 8px;
+    color: #555;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.representative2019-contact h3:first-child {
+    margin-top: 0;
+}
+
+.representative2019-contact p {
+    margin: 2px 0;
+}
+
+.representative2019-gallery-note {
+    margin: -15px 0 28px;
+    color: #888;
+    font-size: 13px;
+    text-align: center;
+}
+
+.representative2019-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.representative2019-gallery-item {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0 0 18px;
+    overflow: hidden;
+    border: 1px solid #e7e0de;
+    background: #fff;
+    color: #666;
+    font: inherit;
+    cursor: zoom-in;
+}
+
+.representative2019-gallery-item img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.representative2019-gallery-item span {
+    display: block;
+    padding: 16px 15px 0;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+dialog.representative2019-lightbox {
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    max-height: none;
+    margin: 0;
+    padding: 60px 24px 24px;
+    border: 0;
+    background: rgba(20, 20, 20, .92);
+}
+
+dialog.representative2019-lightbox::backdrop {
+    background: rgba(20, 20, 20, .92);
+}
+
+.representative2019-lightbox-dialog {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.representative2019-lightbox-dialog img {
+    display: block;
+    max-width: min(1100px, 92vw);
+    max-height: 84vh;
+    object-fit: contain;
+}
+
+.representative2019-lightbox-close {
+    position: fixed;
+    z-index: 2;
+    top: 16px;
+    right: 22px;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: #fff;
+    font-size: 36px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+body.representative2019-lightbox-open {
+    overflow: hidden;
+}
+
+@media (max-width: 800px) {
+    .representative2019-info-grid,
+    .representative2019-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .representative2019-card-wide {
+        grid-column: auto;
+    }
+}
+
+@media (max-width: 650px) {
+    .representative2019-section {
+        padding: 52px 0 62px;
+    }
+
+    .representative2019-heading h2 {
+        font-size: 23px;
+    }
+
+    .representative2019-card {
+        padding: 23px 20px 25px;
+    }
+
+    .representative2019-contact {
+        padding: 23px 20px;
+    }
+
+    dialog.representative2019-lightbox {
+        padding: 58px 14px 18px;
+    }
+
+    .representative2019-lightbox-close {
+        top: 10px;
+        right: 12px;
+    }
+}
