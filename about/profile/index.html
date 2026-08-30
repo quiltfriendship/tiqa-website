@@ -19,6 +19,48 @@
           href="/assets/css/about.css">
 
     <script src="/assets/js/head-common.js"></script>
+
+    <style>
+        .about-hero-image {
+            position: relative;
+            overflow: hidden;
+            min-height: 360px;
+            display: flex;
+            align-items: center;
+        }
+
+        .about-hero-image .about-hero-bg {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .about-hero-image .about-hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.30);
+        }
+
+        .about-hero-image .content-container {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+        }
+
+        .about-hero-image h1,
+        .about-hero-image p {
+            color: #fff;
+        }
+
+        @media (max-width: 768px) {
+            .about-hero-image {
+                min-height: 280px;
+            }
+        }
+    </style>
+
 </head>
 
 
@@ -47,7 +89,13 @@
 
         <!-- Page Hero -->
 
-        <section class="about-hero">
+        <section class="about-hero about-hero-image">
+
+            <img src="./hero.jpg"
+                 alt="台灣國際拼布友好會協會簡介"
+                 class="about-hero-bg">
+
+            <div class="about-hero-overlay"></div>
 
             <div class="content-container">
 

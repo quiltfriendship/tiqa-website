@@ -11,22 +11,19 @@ document.addEventListener(
             return;
         }
 
-
         if (
             typeof directorsData === "undefined" ||
             !Array.isArray(directorsData)
         ) {
-
             console.error(
-                "directorsData 資料不存在"
+                "directorsData 資料不存在或格式錯誤。"
             );
 
             return;
         }
 
-
         /*
-         * 分組順序
+         * 分組顯示順序
          */
         const groupOrder = [
             "主要幹部",
@@ -54,10 +51,9 @@ document.addEventListener(
                 }
 
 
-                /* =========================
-                   分組區塊
-                ========================= */
-
+                /*
+                 * 分組區塊
+                 */
                 const group =
                     document.createElement(
                         "section"
@@ -67,10 +63,9 @@ document.addEventListener(
                     "directors-group";
 
 
-                /* =========================
-                   分組標題
-                ========================= */
-
+                /*
+                 * 分組標題
+                 */
                 const groupTitle =
                     document.createElement(
                         "h3"
@@ -88,10 +83,9 @@ document.addEventListener(
                 );
 
 
-                /* =========================
-                   Grid
-                ========================= */
-
+                /*
+                 * Grid
+                 */
                 const grid =
                     document.createElement(
                         "div"
@@ -162,48 +156,35 @@ function createDirectorCard(item) {
             "img"
         );
 
-
-    /*
-     * 如果 DATA 沒有指定圖片，
-     * 直接使用 default.jpg
-     */
     image.src =
         item.image ||
-        "/assets/images/directors/default.jpg";
-
+        "./default.jpg";
 
     image.alt =
         item.name || "理監事會成員";
-
 
     image.loading =
         "lazy";
 
 
     /*
-     * 找不到圖片時使用預設圖
+     * 找不到圖片時顯示預設圖
      */
     image.addEventListener(
         "error",
         function () {
 
-            /*
-             * 防止 default.jpg 本身不存在時
-             * 產生無限 error
-             */
             if (
                 image.dataset.fallback === "true"
             ) {
                 return;
             }
 
-
             image.dataset.fallback =
                 "true";
 
-
             image.src =
-                "/assets/images/directors/default.jpg";
+                "./default.jpg";
 
         }
     );
@@ -227,10 +208,9 @@ function createDirectorCard(item) {
         "director-info";
 
 
-    /* =====================================================
-       職稱
-    ===================================================== */
-
+    /*
+     * 職稱
+     */
     const position =
         document.createElement(
             "p"
@@ -239,20 +219,17 @@ function createDirectorCard(item) {
     position.className =
         "director-position";
 
-
     position.textContent =
         item.position || "";
 
 
-    /* =====================================================
-       姓名
-    ===================================================== */
-
+    /*
+     * 姓名
+     */
     const name =
         document.createElement(
             "h3"
         );
-
 
     name.textContent =
         item.name || "";
@@ -261,7 +238,6 @@ function createDirectorCard(item) {
     info.appendChild(
         position
     );
-
 
     info.appendChild(
         name
@@ -291,48 +267,26 @@ function createDirectorCard(item) {
                 "a"
             );
 
-
-        /*
-         * Facebook 網址
-         */
         facebook.href =
             item.facebook;
 
-
-        /*
-         * 另開新視窗
-         */
         facebook.target =
             "_blank";
-
 
         facebook.rel =
             "noopener noreferrer";
 
-
         facebook.className =
             "director-facebook";
 
-
-        /*
-         * 不再使用 SVG
-         *
-         * 避免 SVG 被其他 CSS
-         * 放大造成版面異常
-         */
         facebook.textContent =
             "f";
 
-
-        /*
-         * 無障礙文字
-         */
         facebook.setAttribute(
             "aria-label",
             (item.name || "") +
             "的 Facebook（另開新視窗）"
         );
-
 
         facebook.title =
             "Facebook";
@@ -351,13 +305,12 @@ function createDirectorCard(item) {
 
 
     /* =====================================================
-       組合人物卡片
+       組合
     ===================================================== */
 
     card.appendChild(
         photo
     );
-
 
     card.appendChild(
         info
