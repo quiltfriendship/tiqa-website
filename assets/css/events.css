@@ -8105,28 +8105,31 @@ a.ticket-outlet-name:hover {
     font-weight: 500;
 }
 
-/* 作品展：完整顯示圖片，不裁切 */
+/* 作品展：左側文字、右側圖片；圖片完整顯示不裁切 */
 .event2019-exhibition {
     padding: 62px 0 75px;
     background: #faf8f8;
 }
 
 .event2019-exhibition-card {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(300px, 1fr);
+    gap: 45px;
+    align-items: center;
     max-width: 1000px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 25px;
     border: 1px solid #e5dddb;
     background: #fff;
 }
 
 .event2019-exhibition-content {
-    margin-bottom: 22px;
-    text-align: center;
+    padding: 8px 12px;
+    text-align: left;
 }
 
 .event2019-exhibition-description {
-    max-width: 760px;
-    margin: 0 auto 18px;
+    margin: 0 0 24px;
     color: #666;
     font-size: 15px;
     line-height: 1.9;
@@ -8141,18 +8144,28 @@ a.ticket-outlet-name:hover {
     text-decoration: none;
 }
 
+.event2019-button:hover,
+.event2019-button:focus {
+    color: #6f4851;
+    border-color: #6f4851;
+}
+
 .event2019-exhibition-image {
     display: flex;
+    align-items: center;
     justify-content: center;
     width: 100%;
+    min-height: 280px;
+    background: #fff;
 }
 
 .event2019-exhibition-image img {
     display: block;
     width: 100%;
     height: auto;
-    max-height: 760px;
+    max-height: 420px;
     object-fit: contain;
+    object-position: center;
 }
 
 /* 活動紀錄：跟前幾年度一樣的兩欄簡潔卡片 */
@@ -8247,9 +8260,20 @@ a.ticket-outlet-name:hover {
 }
 
 @media (max-width: 850px) {
-    .event2019-overview-card {
+    .event2019-overview-card,
+    .event2019-exhibition-card {
         grid-template-columns: 1fr;
         gap: 30px;
+    }
+
+    .event2019-exhibition-image {
+        min-height: 0;
+    }
+
+    .event2019-exhibition-image img {
+        width: 100%;
+        height: auto;
+        max-height: none;
     }
 }
 
