@@ -8671,3 +8671,13 @@ dialog.about2019-lightbox[open]{display:flex;align-items:center;justify-content:
  .crowd2019-summary>div+div{border-left:0;border-top:1px solid #e3dbd9}
  .crowd2019-preview-grid{grid-template-columns:repeat(2,1fr)}
 }
+
+.crowd2019-about-grid{display:grid;grid-template-columns:minmax(280px,42%) minmax(0,1fr);gap:46px;align-items:start}
+.crowd2019-about-image img{display:block;width:100%;height:auto;border:1px solid #eee}
+.crowd2019-about-copy .crowd2019-actions{text-align:left}
+.crowd2019-lightbox{display:block;cursor:zoom-in}
+.crowd2019-modal[hidden]{display:none}
+.crowd2019-modal{position:fixed;z-index:99999;inset:0;display:flex;align-items:center;justify-content:center;padding:32px;background:rgba(20,20,20,.88)}
+.crowd2019-modal img{max-width:min(94vw,1500px);max-height:90vh;width:auto;height:auto;object-fit:contain;box-shadow:0 8px 40px rgba(0,0,0,.35)}
+.crowd2019-modal-close{position:fixed;top:18px;right:24px;width:46px;height:46px;border:0;border-radius:50%;background:rgba(255,255,255,.94);color:#444;font-size:30px;cursor:pointer}
+@media(max-width:760px){.crowd2019-about-grid{grid-template-columns:1fr;gap:28px}.crowd2019-about-image{max-width:520px;margin:auto}.crowd2019-about-copy .crowd2019-actions{text-align:center}.crowd2019-modal{padding:18px}}
