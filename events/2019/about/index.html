@@ -199,6 +199,17 @@
             <figure class="about2019-gallery-item">
                 <button type="button"
                         class="about2019-gallery-button"
+                        data-image="./intro-en-01.jpg"
+                        aria-label="放大圖片：2019 友好拼布手作節英文活動介紹 1">
+                    <img src="./intro-en-01.jpg"
+                         alt="2019 友好拼布手作節英文活動介紹 1"
+                         loading="lazy">
+                </button>
+            </figure>
+
+            <figure class="about2019-gallery-item">
+                <button type="button"
+                        class="about2019-gallery-button"
                         data-image="./intro-en-02.jpg"
                         aria-label="放大圖片：2019 友好拼布手作節英文活動介紹 2">
                     <img src="./intro-en-02.jpg"
@@ -225,17 +236,6 @@
                         aria-label="放大圖片：2019 友好拼布手作節英文活動介紹 4">
                     <img src="./intro-en-04.jpg"
                          alt="2019 友好拼布手作節英文活動介紹 4"
-                         loading="lazy">
-                </button>
-            </figure>
-
-            <figure class="about2019-gallery-item">
-                <button type="button"
-                        class="about2019-gallery-button"
-                        data-image="./intro-en-05.jpg"
-                        aria-label="放大圖片：2019 友好拼布手作節英文活動介紹 5">
-                    <img src="./intro-en-05.jpg"
-                         alt="2019 友好拼布手作節英文活動介紹 5"
                          loading="lazy">
                 </button>
             </figure>
@@ -315,29 +315,13 @@
 </main>
 
 
-<!-- 圖片燈箱 -->
-<div id="about2019-lightbox"
-     class="about2019-lightbox"
-     hidden
-     aria-hidden="true">
-
-    <button type="button"
-            class="about2019-lightbox-close"
-            aria-label="關閉放大圖片">
-        ×
-    </button>
-
-    <div class="about2019-lightbox-dialog"
-         role="dialog"
-         aria-modal="true"
-         aria-label="放大圖片">
-
-        <img id="about2019-lightbox-image"
-             src=""
-             alt="">
-
+<!-- 圖片燈箱：就地覆蓋目前畫面 -->
+<dialog id="about2019-lightbox" class="about2019-lightbox" aria-label="放大圖片">
+    <button type="button" class="about2019-lightbox-close" aria-label="關閉放大圖片">×</button>
+    <div class="about2019-lightbox-dialog">
+        <img id="about2019-lightbox-image" src="" alt="">
     </div>
-</div>
+</dialog>
 
 <div id="site-footer"></div>
 
@@ -356,62 +340,37 @@ window.breadcrumbData = [
 
 <script>
 (function () {
-    "use strict";
-
-    const lightbox = document.getElementById("about2019-lightbox");
-    const lightboxImage = document.getElementById("about2019-lightbox-image");
-    const closeButton = lightbox.querySelector(".about2019-lightbox-close");
-    const buttons = document.querySelectorAll(".about2019-gallery-button");
+    const dialog = document.getElementById("about2019-lightbox");
+    const image = document.getElementById("about2019-lightbox-image");
+    const closeBtn = dialog.querySelector(".about2019-lightbox-close");
     let lastTrigger = null;
 
-    function openLightbox(button) {
-        const image = button.getAttribute("data-image");
-        const thumb = button.querySelector("img");
-
-        lastTrigger = button;
-        lightboxImage.src = image;
-        lightboxImage.alt = thumb ? thumb.alt : "";
-
-        lightbox.hidden = false;
-        lightbox.setAttribute("aria-hidden", "false");
-        document.body.classList.add("about2019-lightbox-open");
-        closeButton.focus();
-    }
-
-    function closeLightbox() {
-        lightbox.hidden = true;
-        lightbox.setAttribute("aria-hidden", "true");
-        lightboxImage.src = "";
-        lightboxImage.alt = "";
-        document.body.classList.remove("about2019-lightbox-open");
-
-        if (lastTrigger) {
-            lastTrigger.focus();
-        }
-    }
-
-    buttons.forEach(function (button) {
-        button.addEventListener("click", function () {
-            openLightbox(button);
+    document.querySelectorAll(".about2019-gallery-button").forEach(function (button) {
+        button.addEventListener("click", function (e) {
+            e.preventDefault();
+            lastTrigger = button;
+            const thumb = button.querySelector("img");
+            image.src = button.dataset.image;
+            image.alt = thumb ? thumb.alt : "";
+            dialog.showModal();
+            document.body.classList.add("about2019-lightbox-open");
         });
     });
 
-    closeButton.addEventListener("click", closeLightbox);
-
-    lightbox.addEventListener("click", function (event) {
-        if (event.target === lightbox ||
-            event.target.classList.contains("about2019-lightbox-dialog")) {
-            closeLightbox();
-        }
+    closeBtn.addEventListener("click", function () {
+        dialog.close();
     });
 
-    document.addEventListener("keydown", function (event) {
-        if (event.key === "Escape" && !lightbox.hidden) {
-            closeLightbox();
-        }
+    dialog.addEventListener("click", function (e) {
+        if (e.target === dialog) dialog.close();
+    });
+
+    dialog.addEventListener("close", function () {
+        image.src = "";
+        document.body.classList.remove("about2019-lightbox-open");
+        if (lastTrigger) lastTrigger.focus();
     });
 })();
 </script>
-
 </body>
 </html>
