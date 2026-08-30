@@ -8628,3 +8628,46 @@ dialog.about2019-lightbox[open]{display:flex;align-items:center;justify-content:
  .ticket2019-benefit-ticket{max-width:240px;margin:auto}
  .ticket2019-faq-item summary{padding-left:14px}
 }
+
+
+/* =========================================================
+   2019 眾籌・出版紀念集
+========================================================= */
+.crowd2019-section{padding:72px 0 82px;background:#fff}
+.crowd2019-section.alt{background:#faf8f8}
+.crowd2019-narrow{max-width:920px}
+.crowd2019-heading{position:relative;margin-bottom:38px;padding-bottom:20px;text-align:center}
+.crowd2019-heading:after{content:"";position:absolute;left:50%;bottom:0;width:42px;height:2px;background:#b98d96;transform:translateX(-50%)}
+.crowd2019-heading>p{margin:0 0 7px;color:#a98a91;font-size:12px;letter-spacing:.14em}
+.crowd2019-heading h2{margin:0;color:#444;font-size:28px;font-weight:500;letter-spacing:.06em}
+.crowd2019-summary{display:grid;grid-template-columns:1fr 1fr;max-width:680px;margin:0 auto 28px;border:1px solid #e3dbd9;background:#fff}
+.crowd2019-summary>div{padding:25px;text-align:center}
+.crowd2019-summary>div+div{border-left:1px solid #e3dbd9}
+.crowd2019-summary span,.crowd2019-summary strong{display:block}
+.crowd2019-summary span{margin-bottom:8px;color:#9a777e;font-size:13px;letter-spacing:.08em}
+.crowd2019-summary strong{color:#555;font-size:20px;font-weight:500}
+.crowd2019-actions{text-align:center;margin-top:28px}
+.crowd2019-button{display:inline-block;padding:13px 28px;border:1px solid #956b74;background:#956b74;color:#fff!important;text-decoration:none;letter-spacing:.06em;transition:.2s}
+.crowd2019-button:hover{background:#7e5961}
+.crowd2019-button.secondary{background:transparent;color:#805e66!important}
+.crowd2019-button.secondary:hover{background:#956b74;color:#fff!important}
+.crowd2019-prose{color:#5f5b59;font-size:16px;line-height:2}
+.crowd2019-prose strong{color:#805e66}
+.crowd2019-cover{max-width:760px;margin:0 auto 34px;text-align:center}
+.crowd2019-cover img{max-width:100%;height:auto}
+.crowd2019-preview-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;max-width:1080px;margin:auto}
+.crowd2019-preview-grid img{display:block;width:100%;height:auto;border:1px solid #eee;background:#fff}
+.crowd2019-gift{display:grid;grid-template-columns:minmax(260px,420px) minmax(0,1fr);gap:42px;align-items:center}
+.crowd2019-gift>img{display:block;width:100%;height:auto}
+.crowd2019-list{margin:0;padding-left:1.4em;color:#5f5b59;font-size:16px;line-height:2}
+.crowd2019-contacts{display:grid;grid-template-columns:1fr 1fr;gap:0 36px}
+.crowd2019-contacts p{margin:0;padding:17px 0;border-bottom:1px solid #e8e1df;color:#666;line-height:1.75}
+.crowd2019-contacts strong{color:#625c5a;font-weight:500}
+.crowd2019-more{grid-column:1/-1;text-align:right}
+@media(max-width:760px){
+ .crowd2019-section{padding:52px 0 62px}
+ .crowd2019-heading h2{font-size:23px}
+ .crowd2019-summary,.crowd2019-gift,.crowd2019-contacts{grid-template-columns:1fr}
+ .crowd2019-summary>div+div{border-left:0;border-top:1px solid #e3dbd9}
+ .crowd2019-preview-grid{grid-template-columns:repeat(2,1fr)}
+}
