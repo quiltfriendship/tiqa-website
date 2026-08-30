@@ -8315,3 +8315,229 @@ a.ticket-outlet-name:hover {
         height: 105px;
     }
 }
+
+/* =========================================================
+   2019 內頁共用 Hero
+========================================================= */
+
+.event2019-page-hero {
+    position: relative;
+    min-height: 360px;
+    overflow: hidden;
+    background: #222;
+}
+
+.event2019-page-hero > img {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.event2019-page-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, .34);
+}
+
+.event2019-page-hero-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    min-height: 360px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 55px 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.event2019-page-hero-content p {
+    margin: 0 0 4px;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: .12em;
+}
+
+.event2019-page-hero-content span {
+    display: block;
+    margin-bottom: 16px;
+    font-size: 12px;
+    line-height: 1.6;
+    letter-spacing: .08em;
+}
+
+.event2019-page-hero-content h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.45;
+    letter-spacing: .1em;
+    text-shadow: 0 2px 8px rgba(0,0,0,.28);
+}
+
+
+/* =========================================================
+   2019 關於活動
+========================================================= */
+
+.about2019-section {
+    padding: 72px 0 82px;
+    background: #fff;
+}
+
+.about2019-section.alt {
+    background: #faf8f8;
+}
+
+.about2019-narrow {
+    max-width: 920px;
+}
+
+.about2019-heading {
+    position: relative;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.about2019-heading::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 42px;
+    height: 2px;
+    background: #b98d96;
+    transform: translateX(-50%);
+}
+
+.about2019-heading > p {
+    margin: 0 0 7px;
+    color: #a98a91;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: .14em;
+}
+
+.about2019-heading h2 {
+    margin: 0;
+    color: #444;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: .08em;
+}
+
+.about2019-intro {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.about2019-intro p {
+    margin: 0;
+    color: #5f5b59;
+    font-size: 16px;
+    line-height: 2;
+}
+
+.about2019-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.about2019-gallery-item {
+    margin: 0;
+    padding: 10px;
+    border: 1px solid #e5dddb;
+    background: #fff;
+}
+
+.about2019-gallery-item a {
+    display: block;
+}
+
+.about2019-gallery-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1100 / 777;
+    object-fit: contain;
+    background: #fff;
+}
+
+.about2019-info {
+    max-width: 820px;
+    margin: 0 auto;
+    border-top: 1px solid #e4dcda;
+}
+
+.about2019-info > div {
+    display: grid;
+    grid-template-columns: 140px minmax(0, 1fr);
+    gap: 30px;
+    padding: 18px 0;
+    border-bottom: 1px solid #e4dcda;
+}
+
+.about2019-info span {
+    color: #8f656f;
+    font-size: 14px;
+}
+
+.about2019-info strong {
+    color: #555;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+@media (max-width: 850px) {
+    .about2019-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 650px) {
+    .event2019-page-hero,
+    .event2019-page-hero-content {
+        min-height: 280px;
+    }
+
+    .event2019-page-hero-content {
+        padding: 42px 18px;
+    }
+
+    .event2019-page-hero-content p {
+        font-size: 15px;
+    }
+
+    .event2019-page-hero-content h1 {
+        font-size: 29px;
+    }
+
+    .about2019-section {
+        padding: 52px 0 62px;
+    }
+
+    .about2019-heading h2 {
+        font-size: 23px;
+    }
+
+    .about2019-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .about2019-info > div {
+        grid-template-columns: 1fr;
+        gap: 4px;
+    }
+}
