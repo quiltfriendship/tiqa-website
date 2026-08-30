@@ -1,124 +1,112 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
-
 <head>
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>最新消息｜台灣國際拼布友好會 TIQA</title>
+    <meta name="description" content="台灣國際拼布友好會最新消息，包含展覽活動、會務公告及拼布相關資訊。">
 
-    <meta name="description"
-          content="台灣國際拼布友好會最新消息、展覽資訊與活動公告">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/news.css">
 
-    <link rel="stylesheet"
-          href="/assets/css/style.css">
-
-    <link rel="stylesheet"
-          href="/assets/css/news.css">
     <script src="/assets/js/head-common.js"></script>
 </head>
 
-
 <body>
 
-    <div id="site-header"></div>
+<div id="site-header"></div>
 
-    <!-- =====================================================
-         Breadcrumb
-    ===================================================== -->
+<nav id="breadcrumb"
+     class="breadcrumb"
+     aria-label="麵包屑">
+</nav>
 
-    <nav id="breadcrumb"
-         class="breadcrumb"
-         aria-label="麵包屑">
-    </nav>
+<main>
 
-    <main>
+    <!-- =================================================
+         Hero
+         圖片獨立放在 /news/hero.jpg
+    ================================================= -->
+    <section class="news-hero">
+
+        <img src="./hero.jpg"
+             alt=""
+             class="news-hero-image">
+
+        <div class="news-hero-overlay"></div>
+
+        <div class="content-container news-hero-content">
+            <h1>最新消息</h1>
+            <p>News & Updates</p>
+        </div>
+
+    </section>
 
 
-        <section class="news-hero">
+    <!-- =================================================
+         Intro
+    ================================================= -->
+    <section class="news-intro">
 
-            <div class="news-hero-inner">
+        <div class="content-container">
 
-                <img src="https://tiqa-hello.weebly.com/uploads/1/2/0/0/120024501/863937201_orig.jpg"
-                     alt=""
-                     class="news-hero-image">
+            <p class="news-section-label">
+                TIQA News
+            </p>
+
+            <h2>
+                最新活動與會務訊息
+            </h2>
+
+            <p class="news-intro-text">
+                分享台灣國際拼布友好會的展覽活動、會務公告，
+                以及與拼布、手作相關的最新資訊。
+            </p>
+
+        </div>
+
+    </section>
 
 
-                <div class="news-hero-overlay"
-                     aria-hidden="true">
-                </div>
+    <!-- =================================================
+         News List
+    ================================================= -->
+    <section class="news-list-section">
 
+        <div class="content-container">
 
-                <div class="news-hero-content">
-
-                    <h1 class="news-hero-title">
-                        最新消息
-                    </h1>
-
-                    <p class="news-hero-description">
-                        掌握台灣國際拼布友好會最新活動、展覽及會務動態，<br>
-                        歡迎喜愛拼布與手作的朋友參考。
-                    </p>
-
-                </div>
-
+            <div id="news-list"
+                 class="news-list"
+                 aria-live="polite">
             </div>
 
-        </section>
+        </div>
 
+    </section>
 
+</main>
 
-        <section class="news-section">
+<div id="site-footer"></div>
 
-            <div class="content-container">
+<script src="/assets/js/include.js"></script>
 
-                <p class="news-note">
-                    依發布日期排序
-                </p>
+<script>
+window.breadcrumbData = [
+    {
+        title: "首頁",
+        url: "/"
+    },
+    {
+        title: "最新消息"
+    }
+];
+</script>
 
+<script src="/assets/js/breadcrumb.js"></script>
 
-                <div id="news-list"
-                     class="news-grid">
-                </div>
-
-            </div>
-
-        </section>
-
-
-    </main>
-
-
-
-    <div id="site-footer"></div>
-
-    <script src="/assets/js/include.js"></script>
-    <!-- Breadcrumb DATA -->
-    <script>
-        window.breadcrumbData = [
-
-            {
-                title: "首頁",
-                url: "/"
-            },
-
-            {
-                title: "最新消息"
-            }
-
-        ];
-    </script>
-
-    <!-- 共用 Breadcrumb -->
-    <script src="/assets/js/breadcrumb.js"></script>
-
-
-    <script src="/news/news-data.js"></script>
-
-    <script src="/news/news.js"></script>
-
+<script src="./news-data.js"></script>
+<script src="./news.js"></script>
 
 </body>
 </html>
