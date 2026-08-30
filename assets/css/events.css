@@ -8681,3 +8681,349 @@ dialog.about2019-lightbox[open]{display:flex;align-items:center;justify-content:
 .crowd2019-modal img{max-width:min(94vw,1500px);max-height:90vh;width:auto;height:auto;object-fit:contain;box-shadow:0 8px 40px rgba(0,0,0,.35)}
 .crowd2019-modal-close{position:fixed;top:18px;right:24px;width:46px;height:46px;border:0;border-radius:50%;background:rgba(255,255,255,.94);color:#444;font-size:30px;cursor:pointer}
 @media(max-width:760px){.crowd2019-about-grid{grid-template-columns:1fr;gap:28px}.crowd2019-about-image{max-width:520px;margin:auto}.crowd2019-about-copy .crowd2019-actions{text-align:center}.crowd2019-modal{padding:18px}}
+
+/* =========================================================
+   2019 名師工作坊 - 完整版
+========================================================= */
+
+.workshop2019-section {
+    padding: 72px 0 82px;
+    background: #fff;
+}
+
+.workshop2019-section.alt {
+    background: #faf8f8;
+}
+
+.workshop2019-narrow {
+    max-width: 920px;
+}
+
+.workshop2019-heading {
+    position: relative;
+    margin-bottom: 34px;
+    padding-bottom: 18px;
+}
+
+.workshop2019-heading::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 42px;
+    height: 2px;
+    background: #b98d96;
+}
+
+.workshop2019-heading > p {
+    margin: 0 0 7px;
+    color: #a98a91;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: .14em;
+}
+
+.workshop2019-heading h2 {
+    margin: 0;
+    color: #444;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: .05em;
+}
+
+.workshop2019-heading > span {
+    display: block;
+    margin-top: 6px;
+    color: #999;
+    font-size: 12px;
+}
+
+.workshop2019-intro {
+    margin-bottom: 24px;
+}
+
+.workshop2019-intro p {
+    margin: 0 0 7px;
+    color: #5f5b59;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.workshop2019-table-wrap {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.workshop2019-table {
+    width: 100%;
+    min-width: 1050px;
+    border-collapse: collapse;
+    table-layout: fixed;
+    background: #fff;
+    border: 1px solid #d8d0ce;
+}
+
+.workshop2019-table th,
+.workshop2019-table td {
+    border: 1px solid #d8d0ce;
+    padding: 16px 12px;
+    vertical-align: top;
+    text-align: center;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.workshop2019-table tr:first-child th {
+    background: #f6f1f1;
+    color: #6f5b60;
+    font-weight: 500;
+}
+
+.workshop2019-table tr:not(:first-child) th:first-child {
+    background: #faf7f7;
+    color: #6b5c5f;
+    font-weight: 500;
+}
+
+.workshop2019-table a {
+    color: #2b6f9d;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.workshop2019-table a:hover,
+.workshop2019-table a:focus {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.workshop2019-subsection {
+    margin-top: 36px;
+    padding: 26px 28px 30px;
+    border: 1px solid #e7d8d8;
+    background: #fffafa;
+}
+
+.workshop2019-subtitle {
+    margin-bottom: 18px;
+}
+
+.workshop2019-subtitle p {
+    margin: 0 0 4px;
+    color: #a98a91;
+    font-size: 11px;
+    letter-spacing: .12em;
+}
+
+.workshop2019-subtitle h3 {
+    margin: 0;
+    color: #444;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.workshop2019-subtitle span {
+    display: block;
+    margin-top: 4px;
+    color: #888;
+    font-size: 13px;
+}
+
+.workshop2019-table-wrap-small .workshop2019-table {
+    min-width: 620px;
+}
+
+.workshop2019-prose {
+    color: #5f5b59;
+    font-size: 15px;
+    line-height: 1.95;
+}
+
+.workshop2019-prose ol {
+    margin: 0 0 30px;
+    padding-left: 1.6em;
+}
+
+.workshop2019-prose li {
+    margin-bottom: 10px;
+}
+
+.workshop2019-qa {
+    margin-top: 28px;
+}
+
+.workshop2019-qa h3 {
+    position: relative;
+    margin: 26px 0 7px;
+    padding-left: 28px;
+    color: #8b5964;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.workshop2019-qa h3::before {
+    content: "Q";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #b05e6c;
+    font-weight: 700;
+}
+
+.workshop2019-qa p {
+    position: relative;
+    margin: 0;
+    padding-left: 28px;
+}
+
+.workshop2019-qa p::before {
+    content: "A";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #b05e6c;
+    font-weight: 700;
+}
+
+.workshop2019-message {
+    margin-top: 30px;
+    padding: 18px 22px;
+    border-left: 3px solid #bf7a84;
+    background: #f9eeee;
+    color: #965c67;
+    line-height: 1.85;
+}
+
+/* 講師：圖片與文字左右並排 */
+.workshop2019-teacher-list {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.workshop2019-teacher {
+    display: grid;
+    grid-template-columns: minmax(260px, 36%) minmax(0, 64%);
+    gap: 0;
+    margin-bottom: 24px;
+    border: 1px solid #e1d9d7;
+    background: #fff;
+}
+
+.workshop2019-teacher-media {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    background: #f7f4f3;
+}
+
+.workshop2019-teacher-media img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.workshop2019-teacher-content {
+    padding: 28px 30px;
+}
+
+.workshop2019-teacher-content h3 {
+    margin: 0 0 8px;
+    color: #444;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.workshop2019-teacher-course {
+    margin-bottom: 20px;
+    color: #356f9d;
+    font-size: 15px;
+    line-height: 1.75;
+}
+
+.workshop2019-teacher-course a,
+.workshop2019-teacher-bio a {
+    color: #2b6f9d;
+    text-decoration: none;
+}
+
+.workshop2019-teacher-course a:hover,
+.workshop2019-teacher-bio a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.workshop2019-teacher-bio {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.workshop2019-teacher-bio br {
+    content: "";
+    display: block;
+    margin-top: 5px;
+}
+
+.workshop2019-rules {
+    margin-top: 32px;
+    padding: 24px 28px;
+    border: 1px solid #e5dddb;
+    background: #fff;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.workshop2019-rules h3 {
+    margin: 18px 0 7px;
+    color: #7b6066;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.workshop2019-rules p {
+    margin: 0 0 8px;
+}
+
+@media (max-width: 850px) {
+    .workshop2019-teacher {
+        grid-template-columns: 1fr;
+    }
+
+    .workshop2019-teacher-media img {
+        width: 100%;
+        height: auto;
+        min-height: 0;
+        max-height: 520px;
+        object-fit: contain;
+    }
+}
+
+@media (max-width: 650px) {
+    .workshop2019-section {
+        padding: 52px 0 62px;
+    }
+
+    .workshop2019-heading h2 {
+        font-size: 23px;
+    }
+
+    .workshop2019-subsection {
+        padding: 22px 16px 24px;
+    }
+
+    .workshop2019-teacher-content {
+        padding: 22px 18px;
+    }
+
+    .workshop2019-teacher-content h3 {
+        font-size: 20px;
+    }
+}
