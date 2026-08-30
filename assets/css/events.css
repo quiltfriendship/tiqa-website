@@ -8575,3 +8575,56 @@ dialog.about2019-lightbox[open]{display:flex;align-items:center;justify-content:
 .about2019-lightbox-close{position:fixed;top:16px;right:22px;z-index:2;width:46px;height:46px;padding:0;border:1px solid rgba(255,255,255,.8);border-radius:50%;background:rgba(0,0,0,.55);color:#fff;font-size:32px;line-height:42px;cursor:pointer}
 .about2019-lightbox-close:hover,.about2019-lightbox-close:focus{background:rgba(255,255,255,.18)}
 @media(max-width:650px){.about2019-gallery-en{grid-template-columns:1fr}dialog.about2019-lightbox{padding:58px 14px 18px}.about2019-lightbox-close{top:10px;right:12px}}
+
+
+/* =========================================================
+   2019 活動門票
+========================================================= */
+.ticket2019-section{padding:72px 0 82px;background:#fff}
+.ticket2019-section.alt{background:#faf8f8}
+.ticket2019-narrow{max-width:920px}
+.ticket2019-heading{position:relative;margin-bottom:40px;padding-bottom:20px;text-align:center}
+.ticket2019-heading:after{content:"";position:absolute;left:50%;bottom:0;width:42px;height:2px;background:#b98d96;transform:translateX(-50%)}
+.ticket2019-heading>p{margin:0 0 7px;color:#a98a91;font-size:12px;letter-spacing:.14em}
+.ticket2019-heading h2{margin:0;color:#444;font-size:28px;font-weight:500;letter-spacing:.08em}
+.ticket2019-lead{color:#5f5b59;font-size:16px;line-height:2}
+.ticket2019-lead h3{color:#444;font-size:22px;font-weight:500}
+.ticket2019-callout{margin:38px 0;padding:28px 32px;border-left:3px solid #b98d96;background:#faf6f6;text-align:center}
+.ticket2019-callout h3{margin-top:0;color:#8f656f}
+.ticket2019-callout p{margin-bottom:0;line-height:1.9}
+.ticket2019-price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:34px}
+.ticket2019-price-grid>div{padding:24px 18px;border:1px solid #e5dddb;text-align:center;background:#fff}
+.ticket2019-price-grid span,.ticket2019-price-grid strong,.ticket2019-price-grid b{display:block}
+.ticket2019-price-grid span{color:#9b737b;font-size:13px}
+.ticket2019-price-grid strong{margin:8px 0;color:#555;font-weight:400}
+.ticket2019-price-grid b{color:#8f515e;font-size:20px}
+.ticket2019-benefit{display:grid;grid-template-columns:280px minmax(0,1fr);gap:50px;align-items:center;max-width:980px;margin:auto}
+.ticket2019-benefit-ticket img{display:block;width:100%;height:auto}
+.ticket2019-benefit h3{font-size:23px;font-weight:500}
+.ticket2019-benefit p{line-height:1.8}
+.ticket2019-map{display:block;max-width:100%;height:auto;margin-top:20px}
+.ticket2019-prize-title{margin:-8px 0 30px;text-align:center;color:#7f5961;font-size:19px;font-weight:500;line-height:1.7}
+.ticket2019-prize{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:38px;align-items:start}
+.ticket2019-prize img{display:block;width:100%;height:auto}
+.ticket2019-prize p,.ticket2019-prize li{color:#5f5b59;line-height:1.8}
+.ticket2019-note{padding:12px 15px;background:#faf6f6}
+.ticket2019-faq{border-top:1px solid #ddd3d1}
+.ticket2019-faq-item{border-bottom:1px solid #ddd3d1;background:#fff}
+.ticket2019-faq-item summary{position:relative;padding:20px 52px 20px 20px;cursor:pointer;color:#555;font-size:16px;font-weight:500;list-style:none}
+.ticket2019-faq-item summary::-webkit-details-marker{display:none}
+.ticket2019-faq-item summary:after{content:"＋";position:absolute;right:20px;top:16px;color:#9b737b;font-size:24px}
+.ticket2019-faq-item[open] summary:after{content:"－"}
+.ticket2019-faq-answer{padding:0 20px 22px;color:#5f5b59;line-height:1.8}
+.ticket2019-faq-answer p{margin:7px 0}
+.ticket2019-sellers{max-width:1000px;margin:auto;color:#5f5b59;font-size:15px;line-height:1.85}
+.ticket2019-sellers a{color:#6f7785;text-decoration:underline;text-underline-offset:3px}
+.ticket2019-sellers font{font:inherit;color:inherit}
+.ticket2019-sellers span[style*="font-weight"]{display:block;margin:30px 0 8px;color:#8f515e!important;font-size:20px!important}
+@media(max-width:760px){
+ .ticket2019-section{padding:52px 0 62px}
+ .ticket2019-heading h2{font-size:23px}
+ .ticket2019-price-grid{grid-template-columns:1fr}
+ .ticket2019-benefit,.ticket2019-prize{grid-template-columns:1fr}
+ .ticket2019-benefit-ticket{max-width:240px;margin:auto}
+ .ticket2019-faq-item summary{padding-left:14px}
+}
