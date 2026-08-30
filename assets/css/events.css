@@ -9027,3 +9027,367 @@ dialog.about2019-lightbox[open]{display:flex;align-items:center;justify-content:
         font-size: 20px;
     }
 }
+
+/* =========================================================
+   2019 會員專屬 50×50 徵召
+========================================================= */
+
+.members2019-section {
+    padding: 72px 0 82px;
+    background: #fff;
+}
+
+.members2019-section.alt {
+    background: #faf8f8;
+}
+
+.members2019-narrow {
+    max-width: 920px;
+}
+
+.members2019-heading {
+    position: relative;
+    margin-bottom: 38px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.members2019-heading::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 42px;
+    height: 2px;
+    background: #b98d96;
+    transform: translateX(-50%);
+}
+
+.members2019-heading > p {
+    margin: 0 0 7px;
+    color: #a98a91;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: .14em;
+}
+
+.members2019-heading h2 {
+    margin: 0;
+    color: #444;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: .06em;
+}
+
+.members2019-intro {
+    max-width: 880px;
+    margin: 0 auto;
+}
+
+.members2019-intro p {
+    margin: 0;
+    color: #5f5b59;
+    font-size: 16px;
+    line-height: 2;
+}
+
+.members2019-summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 860px;
+    margin: 38px auto 0;
+    border: 1px solid #e3dbd9;
+    background: #fff;
+}
+
+.members2019-summary > div {
+    padding: 23px 20px;
+    text-align: center;
+}
+
+.members2019-summary > div + div {
+    border-left: 1px solid #e3dbd9;
+}
+
+.members2019-summary span,
+.members2019-summary strong {
+    display: block;
+}
+
+.members2019-summary span {
+    margin-bottom: 8px;
+    color: #a37c84;
+    font-size: 12px;
+    letter-spacing: .08em;
+}
+
+.members2019-summary strong {
+    color: #555;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/* 徵件資訊 */
+
+.members2019-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.members2019-info-card {
+    position: relative;
+    padding: 27px 28px 30px;
+    border: 1px solid #e3dbd9;
+    background: #fff;
+}
+
+.members2019-info-card-wide {
+    grid-column: 1 / -1;
+}
+
+.members2019-info-number {
+    margin-bottom: 13px;
+    color: #c098a0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 25px;
+    line-height: 1;
+}
+
+.members2019-info-card h3 {
+    margin: 0 0 18px;
+    color: #4d4948;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.members2019-info-content {
+    color: #65605e;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.members2019-info-content p {
+    margin: 0 0 13px;
+}
+
+.members2019-info-content p:last-child {
+    margin-bottom: 0;
+}
+
+.members2019-info-content ol {
+    margin: 0;
+    padding-left: 1.5em;
+}
+
+.members2019-info-content li {
+    margin-bottom: 8px;
+}
+
+.members2019-deadline {
+    padding: 24px 20px;
+    background: #faf3f4;
+    text-align: center;
+}
+
+.members2019-deadline strong {
+    color: #975c67;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: .08em;
+}
+
+.members2019-action-link {
+    display: inline-block;
+    margin-top: 8px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #aa7b84;
+    color: #8b5964;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.members2019-action-link:hover,
+.members2019-action-link:focus {
+    color: #70434c;
+    border-color: #70434c;
+}
+
+.members2019-address p {
+    margin: 0 0 7px;
+    color: #5f5b59;
+    font-size: 15px;
+    line-height: 1.75;
+}
+
+
+/* Gallery */
+
+.members2019-gallery-section {
+    background: #fff;
+}
+
+.members2019-gallery-note {
+    margin: -12px 0 28px;
+    color: #999;
+    font-size: 13px;
+    text-align: center;
+}
+
+.members2019-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.members2019-gallery-item {
+    display: block;
+    width: 100%;
+    padding: 9px;
+    border: 1px solid #e3dbd9;
+    background: #fff;
+    cursor: zoom-in;
+}
+
+.members2019-gallery-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 800 / 531;
+    object-fit: cover;
+    transition: transform .2s ease;
+}
+
+.members2019-gallery-item:hover img,
+.members2019-gallery-item:focus img {
+    transform: scale(1.012);
+}
+
+.members2019-gallery-item:focus-visible {
+    outline: 2px solid #a97983;
+    outline-offset: 3px;
+}
+
+
+/* Lightbox */
+
+body.members2019-lightbox-open {
+    overflow: hidden;
+}
+
+dialog.members2019-lightbox {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    max-width: none;
+    height: 100vh;
+    max-height: none;
+    margin: 0;
+    padding: 54px 60px 40px;
+    border: 0;
+    background: transparent;
+    overflow: hidden;
+}
+
+dialog.members2019-lightbox::backdrop {
+    background: rgba(0, 0, 0, .86);
+}
+
+dialog.members2019-lightbox[open] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.members2019-lightbox-dialog {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.members2019-lightbox-dialog img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    background: #fff;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, .35);
+}
+
+.members2019-lightbox-close {
+    position: fixed;
+    top: 16px;
+    right: 22px;
+    z-index: 2;
+    width: 46px;
+    height: 46px;
+    padding: 0;
+    border: 1px solid rgba(255, 255, 255, .8);
+    border-radius: 50%;
+    background: rgba(0, 0, 0, .55);
+    color: #fff;
+    font-size: 32px;
+    line-height: 42px;
+    cursor: pointer;
+}
+
+.members2019-lightbox-close:hover,
+.members2019-lightbox-close:focus {
+    background: rgba(255, 255, 255, .18);
+}
+
+
+@media (max-width: 760px) {
+
+    .members2019-summary,
+    .members2019-info-grid,
+    .members2019-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .members2019-summary > div + div {
+        border-left: 0;
+        border-top: 1px solid #e3dbd9;
+    }
+
+    .members2019-info-card-wide {
+        grid-column: auto;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .members2019-section {
+        padding: 52px 0 62px;
+    }
+
+    .members2019-heading h2 {
+        font-size: 23px;
+    }
+
+    .members2019-info-card {
+        padding: 23px 20px 25px;
+    }
+
+    dialog.members2019-lightbox {
+        padding: 58px 14px 18px;
+    }
+
+    .members2019-lightbox-close {
+        top: 10px;
+        right: 12px;
+    }
+
+}

@@ -1,0 +1,29 @@
+2019 會員專屬 50×50 徵召－檔案命名
+
+頁面目錄：
+/events/2019/member-quilt/
+
+頁面：
+index.html
+
+Hero：
+hero(2).jpg → hero.jpg
+
+徵召辦法及報名表：
+會員專屬-拼布作品徵召企劃.pdf → member-quilt-guidelines.pdf
+
+會員作品：
+20190417-banner-1_11.jpg → member-01.jpg
+20190417-banner-1_12.jpg → member-02.jpg
+20190417-banner-1_13.jpg → member-03.jpg
+20190417-banner-1_14.jpg → member-04.jpg
+
+完整目錄：
+/events/2019/member-quilt/
+├─ index.html
+├─ hero.jpg
+├─ member-quilt-guidelines.pdf
+├─ member-01.jpg
+├─ member-02.jpg
+├─ member-03.jpg
+└─ member-04.jpg
