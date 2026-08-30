@@ -8541,3 +8541,133 @@ a.ticket-outlet-name:hover {
         gap: 4px;
     }
 }
+
+/* =========================================================
+   2019 關於活動 - 圖片燈箱與英文介紹圖
+========================================================= */
+
+.about2019-gallery-button {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: zoom-in;
+}
+
+.about2019-gallery-button img {
+    transition: transform .2s ease;
+}
+
+.about2019-gallery-button:hover img,
+.about2019-gallery-button:focus img {
+    transform: scale(1.015);
+}
+
+.about2019-gallery-button:focus-visible {
+    outline: 2px solid #a97983;
+    outline-offset: 4px;
+}
+
+.about2019-subheading {
+    margin: 54px 0 28px;
+    text-align: center;
+}
+
+.about2019-subheading p {
+    margin: 0 0 6px;
+    color: #a98a91;
+    font-size: 11px;
+    line-height: 1.5;
+    letter-spacing: .14em;
+}
+
+.about2019-subheading h3 {
+    margin: 0;
+    color: #555;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: .06em;
+}
+
+.about2019-gallery-en {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 880px;
+}
+
+body.about2019-lightbox-open {
+    overflow: hidden;
+}
+
+.about2019-lightbox[hidden] {
+    display: none;
+}
+
+.about2019-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 42px 56px;
+    background: rgba(0, 0, 0, .86);
+}
+
+.about2019-lightbox-dialog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.about2019-lightbox-dialog img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    box-shadow: 0 10px 40px rgba(0,0,0,.3);
+}
+
+.about2019-lightbox-close {
+    position: fixed;
+    top: 18px;
+    right: 24px;
+    z-index: 2;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: 1px solid rgba(255,255,255,.65);
+    border-radius: 50%;
+    background: rgba(0,0,0,.25);
+    color: #fff;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.about2019-lightbox-close:hover,
+.about2019-lightbox-close:focus {
+    background: rgba(255,255,255,.16);
+}
+
+@media (max-width: 650px) {
+    .about2019-gallery-en {
+        grid-template-columns: 1fr;
+    }
+
+    .about2019-lightbox {
+        padding: 54px 14px 18px;
+    }
+
+    .about2019-lightbox-close {
+        top: 10px;
+        right: 12px;
+    }
+}
