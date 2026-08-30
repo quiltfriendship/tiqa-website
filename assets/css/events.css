@@ -9808,3 +9808,59 @@ body.representative2019-lightbox-open {
  .exhibitor2019-row .exhibitor2019-image img{max-height:none}
  .exhibitor2019-row-content h2{font-size:20px}
 }
+
+
+/* =========================================================
+   2019 策展工作小組及志工
+========================================================= */
+.staff2019-section{padding:70px 0}
+.staff2019-section.alt{background:#faf8f8}
+.staff2019-narrow{max-width:920px}
+.staff2019-heading{position:relative;margin-bottom:38px;padding-bottom:20px;text-align:center}
+.staff2019-heading::after{content:"";position:absolute;left:50%;bottom:0;width:42px;height:2px;background:#b98d96;transform:translateX(-50%)}
+.staff2019-heading>p{margin:0 0 7px;color:#a98a91;font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+.staff2019-heading h2{margin:0;color:#444;font-size:28px;font-weight:500;line-height:1.5;letter-spacing:.06em}
+.staff2019-intro{color:#666;font-size:15px;line-height:2.05}
+.staff2019-intro p{margin:0}
+.staff2019-intro p+p{margin-top:20px}
+
+.staff2019-members{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px;max-width:1080px;margin:0 auto}
+.staff2019-member{display:block;width:100%;padding:0 0 16px;overflow:hidden;border:1px solid #e5dedc;background:#fff;color:#555;cursor:zoom-in}
+.staff2019-member img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover}
+.staff2019-member-name{display:block;padding:15px 10px 3px;font-size:16px;font-weight:600;text-align:center}
+.staff2019-member-role{display:block;padding:0 10px;color:#8c8583;font-size:12px;line-height:1.6;text-align:center}
+.staff2019-member:hover img,.staff2019-member:focus img{opacity:.92}
+
+.staff2019-volunteer-copy{color:#666;font-size:15px;line-height:2}
+.staff2019-volunteer-copy p{margin:0}
+.staff2019-volunteer-copy p+p{margin-top:18px}
+.staff2019-volunteer-list{margin:28px 0;padding:0;list-style:none}
+.staff2019-volunteer-list li{position:relative;margin:0;padding:14px 18px 14px 42px;border-bottom:1px solid #eee6e4}
+.staff2019-volunteer-list li:first-child{border-top:1px solid #eee6e4}
+.staff2019-volunteer-list li::before{content:"●";position:absolute;left:17px;top:14px;color:#b98d96;font-size:10px}
+.staff2019-contact-box{margin:28px 0;padding:24px 28px;background:#faf8f8;border-left:3px solid #b98d96}
+.staff2019-contact-box p{margin:0}
+.staff2019-contact-box p+p{margin-top:8px}
+.staff2019-contact-box a{color:#8f656f;text-decoration:underline;text-underline-offset:3px}
+.staff2019-ending{margin-top:25px!important;color:#8f656f;font-weight:500;text-align:center}
+
+.staff2019-history-note{padding:26px 28px;border:1px solid #e5dedc;background:#fff;color:#666;font-size:14px;line-height:1.9}
+.staff2019-history-note strong{display:block;margin-bottom:7px;color:#8f656f;font-size:16px}
+.staff2019-history-note p{margin:0}
+
+dialog.staff2019-lightbox{width:100%;max-width:none;height:100%;max-height:none;margin:0;padding:60px 24px 24px;border:0;background:rgba(20,20,20,.92)}
+dialog.staff2019-lightbox::backdrop{background:rgba(20,20,20,.92)}
+.staff2019-lightbox-dialog{display:flex;width:100%;height:100%;align-items:center;justify-content:center}
+.staff2019-lightbox-dialog img{display:block;max-width:min(1000px,92vw);max-height:84vh;object-fit:contain}
+.staff2019-lightbox-close{position:fixed;z-index:2;top:16px;right:22px;width:42px;height:42px;padding:0;border:0;background:transparent;color:#fff;font-size:36px;line-height:1;cursor:pointer}
+body.staff2019-lightbox-open{overflow:hidden}
+
+@media(max-width:900px){
+  .staff2019-members{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(max-width:650px){
+  .staff2019-section{padding:52px 0 62px}
+  .staff2019-heading h2{font-size:23px}
+  .staff2019-members{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .staff2019-contact-box,.staff2019-history-note{padding:22px 20px}
+}
