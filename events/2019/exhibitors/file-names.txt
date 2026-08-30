@@ -1,0 +1,23 @@
+2019 參展攤位介紹－圖片命名
+
+Hero：
+20190726-3_orig.jpg → hero.jpg
+
+參展品牌：
+logo-01_orig.png → exhibitor-01.png　臺灣喜佳股份有限公司
+logo_orig.jpg → exhibitor-02.jpg　隆德貿易有限公司／布能布玩拼布生活工坊
+logo-matshshiba_orig.gif → exhibitor-03.gif　松芝車樂美有限公司
+kaori-280x150_orig.jpg → exhibitor-04.jpg　佳織縫紉有限公司
+12208817-507226149436599-8214587921531352245-n_orig.jpg → exhibitor-05.jpg　雅書堂文化
+mark_orig.png → exhibitor-06.png　台灣勝家縫紉機器股份有限公司
+content-0f143233-2677-4cc4-9be7-9023365e5dc6_orig.jpg → exhibitor-07.jpg　家合國際行銷股份有限公司
+1-7_orig.jpg → exhibitor-08.jpg　SED信義町針車【鴿子的窩】
+1354652930_orig.jpg → exhibitor-09.jpg　洋玉國際有限公司
+17632243-777820199041917-2485113862518726334-o_orig.jpg → exhibitor-10.jpg　蜜房子拼布藝術教室
+s-7577621-s_orig.jpg → exhibitor-11.jpg　快樂屋拼布才藝坊
+259805-116431385114115-8338122-n_orig.jpg → exhibitor-12.jpg　聯興拼布教室
+s-11305071-1000_orig.jpg → exhibitor-13.jpg　小野布房拼布教室
+177665s_orig.jpg → exhibitor-14.jpg　娜熊幻境拼布工作室
+223812_orig.jpg → exhibitor-15.jpg　川久屋拼布藝術工作室
+img-20190815-114012-1000_orig.jpg → exhibitor-16.jpg　Shinnie's Quilt House
+17539_orig.jpg → exhibitor-17.jpg　貝佳時尚布工坊
