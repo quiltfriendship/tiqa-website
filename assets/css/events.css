@@ -7992,7 +7992,6 @@ a.ticket-outlet-name:hover {
     color: #888;
     font-size: 14px;
     line-height: 1.6;
-    letter-spacing: .05em;
 }
 
 .event2019-year-subtitle::after {
@@ -8013,23 +8012,18 @@ a.ticket-outlet-name:hover {
 
 .event2019-overview-card {
     display: grid;
-    grid-template-columns: minmax(280px,.9fr) minmax(0,1.1fr);
+    grid-template-columns: minmax(280px, .95fr) minmax(0, 1.05fr);
     gap: 52px;
     align-items: center;
     max-width: 1000px;
     margin: 0 auto;
 }
 
-.event2019-overview-image {
-    display: flex;
-    justify-content: center;
-}
-
 .event2019-overview-image img {
     display: block;
-    width: auto;
-    max-width: 100%;
-    max-height: 650px;
+    width: 100%;
+    height: auto;
+    max-height: 560px;
     object-fit: contain;
 }
 
@@ -8037,7 +8031,6 @@ a.ticket-outlet-name:hover {
     margin: 0 0 8px;
     color: #b18a92;
     font-size: 12px;
-    line-height: 1.5;
     letter-spacing: .14em;
 }
 
@@ -8046,7 +8039,6 @@ a.ticket-outlet-name:hover {
     color: #444;
     font-size: 29px;
     font-weight: 500;
-    line-height: 1.5;
 }
 
 .event2019-description {
@@ -8065,7 +8057,7 @@ a.ticket-outlet-name:hover {
 
 .event2019-facts li {
     display: grid;
-    grid-template-columns: 92px minmax(0,1fr);
+    grid-template-columns: 92px minmax(0, 1fr);
     gap: 18px;
     padding: 11px 0;
     border-bottom: 1px solid #e5dcde;
@@ -8074,14 +8066,11 @@ a.ticket-outlet-name:hover {
 .event2019-facts-label {
     color: #986d76;
     font-size: 13px;
-    font-weight: 500;
-    line-height: 1.7;
 }
 
 .event2019-facts-value {
     color: #555;
     font-size: 14px;
-    line-height: 1.7;
 }
 
 .event2019-section-heading {
@@ -8106,7 +8095,6 @@ a.ticket-outlet-name:hover {
     margin: 0 0 7px;
     color: #a98a91;
     font-size: 12px;
-    line-height: 1.5;
     letter-spacing: .14em;
 }
 
@@ -8115,61 +8103,59 @@ a.ticket-outlet-name:hover {
     color: #444;
     font-size: 28px;
     font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: .08em;
 }
 
+/* 作品展：完整顯示圖片，不裁切 */
 .event2019-exhibition {
     padding: 62px 0 75px;
     background: #faf8f8;
 }
 
 .event2019-exhibition-card {
-    display: grid;
-    grid-template-columns: minmax(0,1fr) minmax(300px,1fr);
-    gap: 45px;
-    align-items: center;
     max-width: 1000px;
     margin: 0 auto;
-    padding: 25px;
+    padding: 20px;
     border: 1px solid #e5dddb;
     background: #fff;
 }
 
 .event2019-exhibition-content {
-    padding: 8px 12px;
+    margin-bottom: 22px;
+    text-align: center;
 }
 
 .event2019-exhibition-description {
-    margin: 0 0 24px;
+    max-width: 760px;
+    margin: 0 auto 18px;
     color: #666;
-    font-size: 16px;
-    line-height: 1.95;
+    font-size: 15px;
+    line-height: 1.9;
 }
 
 .event2019-button {
     display: inline-block;
-    padding: 11px 21px;
-    background: #a97983;
-    border: 1px solid #a97983;
-    color: #fff;
-    font-size: 14px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #b98d96;
+    color: #91656f;
+    font-size: 13px;
     text-decoration: none;
 }
 
-.event2019-button:hover,
-.event2019-button:focus {
-    background: #8d646d;
-    border-color: #8d646d;
+.event2019-exhibition-image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .event2019-exhibition-image img {
     display: block;
     width: 100%;
-    aspect-ratio: 16 / 10;
-    object-fit: cover;
+    height: auto;
+    max-height: 760px;
+    object-fit: contain;
 }
 
+/* 活動紀錄：跟前幾年度一樣的兩欄簡潔卡片 */
 .event2019-archive {
     padding: 72px 0 88px;
     background: #fff;
@@ -8186,23 +8172,16 @@ a.ticket-outlet-name:hover {
 .event2019-archive-card {
     display: flex;
     flex-direction: column;
-    min-height: 205px;
+    min-height: 190px;
     padding: 24px 25px;
     border: 1px solid #e5dddb;
     background: #fff;
-    transition: transform .22s ease, box-shadow .22s ease;
-}
-
-.event2019-archive-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 22px rgba(0,0,0,.05);
 }
 
 .event2019-archive-label {
     margin: 0 0 7px;
     color: #b18a92;
     font-size: 11px;
-    line-height: 1.5;
     letter-spacing: .12em;
 }
 
@@ -8211,7 +8190,6 @@ a.ticket-outlet-name:hover {
     color: #444;
     font-size: 20px;
     font-weight: 500;
-    line-height: 1.5;
 }
 
 .event2019-archive-description {
@@ -8241,14 +8219,35 @@ a.ticket-outlet-name:hover {
     text-decoration: none;
 }
 
-.event2019-archive-link:hover {
-    color: #6f4851;
-    border-color: #6f4851;
+/* 頁尾：扁長橫幅 */
+.event2019-footer-banner {
+    padding: 34px 0 38px;
+    background: #faf8f8;
+}
+
+.event2019-footer-banner-link {
+    display: block;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.event2019-footer-banner-link img {
+    display: block;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.event2019-footer-hint {
+    margin: 10px 0 0;
+    color: #999;
+    font-size: 12px;
+    text-align: center;
 }
 
 @media (max-width: 850px) {
-    .event2019-overview-card,
-    .event2019-exhibition-card {
+    .event2019-overview-card {
         grid-template-columns: 1fr;
         gap: 30px;
     }
@@ -8286,5 +8285,9 @@ a.ticket-outlet-name:hover {
 
     .event2019-archive-card {
         min-height: 0;
+    }
+
+    .event2019-footer-banner-link img {
+        height: 105px;
     }
 }
