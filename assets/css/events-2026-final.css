@@ -1,0 +1,684 @@
+/* =========================================================
+   2026 曬被節首頁
+   /assets/css/events-2026.css
+
+   第九屆曬被節｜拼布走進大稻埕
+========================================================= */
+
+
+/* =========================================================
+   Page Base
+========================================================= */
+
+.event2026-page main {
+    width: 100%;
+    overflow: hidden;
+}
+
+.event2026-page .content-container {
+    width: min(1180px, calc(100% - 48px));
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* =========================================================
+   Main Visual
+   主視覺完整呈現，不裁切文字
+========================================================= */
+
+.event2026-kv {
+    width: 100%;
+    padding: 36px 0 0;
+    background: #fff;
+}
+
+.event2026-kv-image {
+    display: block;
+
+    width: min(1380px, calc(100% - 48px));
+    height: auto;
+
+    margin: 0 auto;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   Summary
+========================================================= */
+
+.event2026-summary {
+    padding: 66px 0 74px;
+    background: #fff;
+    text-align: center;
+}
+
+.event2026-eyebrow,
+.event2026-label,
+.event2026-heading > p {
+    margin: 0 0 10px;
+
+    color: #9b6f78;
+
+    font-size: 12px;
+    line-height: 1.6;
+    letter-spacing: 0.14em;
+
+    text-transform: uppercase;
+}
+
+.event2026-summary h1 {
+    margin: 0;
+
+    color: #333;
+
+    font-size: clamp(30px, 3.2vw, 42px);
+    font-weight: 500;
+    line-height: 1.45;
+}
+
+.event2026-theme {
+    margin: 12px 0 0;
+
+    color: #9b6f78;
+
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.12em;
+}
+
+.event2026-lead {
+    max-width: 900px;
+    margin: 28px auto 0;
+
+    color: #666;
+
+    font-size: 16px;
+    line-height: 2;
+}
+
+.event2026-actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-top: 32px;
+}
+
+.event2026-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 46px;
+    padding: 10px 22px;
+
+    border: 1px solid #9b6f78;
+
+    background: #fff;
+    color: #8b6069;
+
+    font-size: 14px;
+    line-height: 1.5;
+
+    text-decoration: none;
+
+    transition:
+        color 0.2s ease,
+        background-color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.event2026-button:hover,
+.event2026-button:focus-visible {
+    border-color: #8f656f;
+    background: #8f656f;
+    color: #fff;
+}
+
+.event2026-button.primary {
+    border-color: #8f656f;
+    background: #8f656f;
+    color: #fff;
+}
+
+.event2026-button.primary:hover,
+.event2026-button.primary:focus-visible {
+    border-color: #724d56;
+    background: #724d56;
+}
+
+
+/* =========================================================
+   Section Base
+========================================================= */
+
+.event2026-section {
+    width: 100%;
+    padding: 76px 0 84px;
+    background: #fff;
+}
+
+.event2026-alt {
+    background: #faf8f7;
+}
+
+.event2026-heading {
+    margin-bottom: 38px;
+    text-align: center;
+}
+
+.event2026-heading h2 {
+    margin: 0;
+
+    color: #333;
+
+    font-size: clamp(26px, 2.8vw, 34px);
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   Event Information
+========================================================= */
+
+.event2026-info-section {
+    padding-top: 0;
+}
+
+.event2026-info-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    width: 100%;
+
+    border-top: 1px solid #e7dfdb;
+    border-left: 1px solid #e7dfdb;
+}
+
+.event2026-info-card {
+    min-width: 0;
+    min-height: 190px;
+
+    padding: 30px 30px 32px;
+
+    border-right: 1px solid #e7dfdb;
+    border-bottom: 1px solid #e7dfdb;
+
+    background: #fff;
+}
+
+.event2026-info-label {
+    margin: 0 0 13px;
+
+    color: #ad8b91;
+
+    font-size: 11px;
+    line-height: 1.5;
+    letter-spacing: 0.14em;
+}
+
+.event2026-info-card h3 {
+    margin: 0;
+
+    color: #333;
+
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.event2026-info-card p:last-child {
+    margin: 12px 0 0;
+
+    color: #6d6866;
+
+    font-size: 14px;
+    line-height: 1.85;
+}
+
+
+/* =========================================================
+   About
+========================================================= */
+
+.event2026-feature {
+    display: grid;
+
+    grid-template-columns:
+        minmax(280px, 0.85fr)
+        minmax(0, 1.4fr);
+
+    gap: 72px;
+
+    align-items: start;
+}
+
+.event2026-feature-title h2 {
+    margin: 0;
+
+    color: #333;
+
+    font-size: clamp(27px, 3vw, 36px);
+    font-weight: 500;
+    line-height: 1.55;
+}
+
+.event2026-feature-content {
+    min-width: 0;
+}
+
+.event2026-feature-content p {
+    margin: 0 0 18px;
+
+    color: #606060;
+
+    font-size: 15px;
+    line-height: 2;
+}
+
+.event2026-feature-content p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   Program
+========================================================= */
+
+.event2026-program-grid,
+.event2026-join-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 22px;
+
+    width: 100%;
+}
+
+.event2026-program-card {
+    min-width: 0;
+
+    padding: 30px 28px;
+
+    border: 1px solid #e4dcda;
+
+    background: #fff;
+}
+
+.event2026-program-card.highlight {
+    border-top: 3px solid #9b6f78;
+}
+
+.event2026-program-date {
+    margin: 0 0 18px;
+
+    color: #9b6f78;
+
+    font-size: 22px;
+    line-height: 1.4;
+    letter-spacing: 0.08em;
+}
+
+.event2026-program-card h3 {
+    margin: 0;
+
+    color: #333;
+
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.event2026-program-card p:last-child {
+    margin: 14px 0 0;
+
+    color: #666;
+
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.event2026-note {
+    margin: 24px 0 0;
+
+    color: #888;
+
+    font-size: 13px;
+    line-height: 1.8;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   How to Join
+========================================================= */
+
+.event2026-join-card {
+    position: relative;
+
+    min-width: 0;
+
+    padding: 34px 30px;
+
+    border: 1px solid #e7dfdb;
+
+    background: #fff;
+}
+
+.event2026-join-card > span {
+    display: block;
+
+    margin-bottom: 18px;
+
+    color: #c1a7ac;
+
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.15em;
+}
+
+.event2026-join-card h3 {
+    margin: 0;
+
+    color: #333;
+
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.event2026-join-card p {
+    margin: 16px 0 0;
+
+    color: #666;
+
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.event2026-join-card a {
+    display: inline-block;
+
+    margin-top: 22px;
+
+    color: #8f656f;
+
+    font-size: 14px;
+
+    text-decoration: none;
+}
+
+.event2026-join-card a:hover,
+.event2026-join-card a:focus-visible {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.event2026-coming {
+    color: #999 !important;
+    font-size: 13px !important;
+}
+
+
+/* =========================================================
+   Relay
+========================================================= */
+
+.event2026-relay {
+    width: 100%;
+
+    padding: 72px 0;
+
+    background: #8f656f;
+}
+
+.event2026-relay-inner {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(0, 1fr);
+
+    gap: 65px;
+
+    align-items: center;
+}
+
+.event2026-relay .event2026-label {
+    color: rgba(255, 255, 255, 0.72);
+}
+
+.event2026-relay h2 {
+    margin: 0;
+
+    color: #fff;
+
+    font-size: clamp(28px, 3.2vw, 40px);
+    font-weight: 500;
+    line-height: 1.55;
+}
+
+.event2026-relay-inner > p {
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.9);
+
+    font-size: 15px;
+    line-height: 2;
+}
+
+
+/* =========================================================
+   Organizers
+========================================================= */
+
+.event2026-organizers {
+    background: #fff;
+}
+
+.event2026-org-list {
+    max-width: 920px;
+
+    margin: 0 auto;
+
+    border-top: 1px solid #e5dedb;
+}
+
+.event2026-org-list > div {
+    display: grid;
+
+    grid-template-columns: 145px minmax(0, 1fr);
+
+    gap: 24px;
+
+    padding: 20px 0;
+
+    border-bottom: 1px solid #e5dedb;
+}
+
+.event2026-org-list dt {
+    color: #9b6f78;
+
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.event2026-org-list dd {
+    margin: 0;
+
+    color: #5f5b59;
+
+    font-size: 14px;
+    line-height: 1.85;
+}
+
+
+/* =========================================================
+   Bottom CTA
+========================================================= */
+
+.event2026-cta {
+    width: 100%;
+
+    padding: 70px 0 78px;
+
+    background: #f5f0ed;
+
+    text-align: center;
+}
+
+.event2026-cta > .content-container > p:first-child {
+    margin: 0 0 9px;
+
+    color: #9b6f78;
+
+    font-size: 12px;
+    line-height: 1.6;
+    letter-spacing: 0.14em;
+}
+
+.event2026-cta h2 {
+    margin: 0;
+
+    color: #333;
+
+    font-size: clamp(28px, 3vw, 38px);
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.event2026-cta-text {
+    max-width: 680px;
+
+    margin: 20px auto 26px;
+
+    color: #666;
+
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+
+/* =========================================================
+   Tablet
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .event2026-page .content-container {
+        width: min(100% - 40px, 1180px);
+    }
+
+    .event2026-kv {
+        padding-top: 24px;
+    }
+
+    .event2026-kv-image {
+        width: min(100% - 40px, 1380px);
+    }
+
+    .event2026-info-grid,
+    .event2026-program-grid,
+    .event2026-join-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .event2026-info-card {
+        min-height: 0;
+    }
+
+    .event2026-feature,
+    .event2026-relay-inner {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+}
+
+
+/* =========================================================
+   Mobile
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .event2026-page .content-container {
+        width: min(100% - 32px, 1180px);
+    }
+
+    .event2026-kv {
+        padding-top: 16px;
+    }
+
+    .event2026-kv-image {
+        width: calc(100% - 24px);
+    }
+
+    .event2026-summary {
+        padding: 48px 0 54px;
+    }
+
+    .event2026-summary h1 {
+        font-size: 28px;
+    }
+
+    .event2026-theme {
+        font-size: 17px;
+    }
+
+    .event2026-lead {
+        font-size: 15px;
+        line-height: 1.9;
+    }
+
+    .event2026-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .event2026-button {
+        width: 100%;
+    }
+
+    .event2026-section {
+        padding: 52px 0 60px;
+    }
+
+    .event2026-info-section {
+        padding-top: 0;
+    }
+
+    .event2026-heading {
+        margin-bottom: 30px;
+    }
+
+    .event2026-program-card,
+    .event2026-join-card {
+        padding: 26px 22px;
+    }
+
+    .event2026-org-list > div {
+        grid-template-columns: 1fr;
+        gap: 7px;
+    }
+
+    .event2026-relay {
+        padding: 52px 0;
+    }
+
+    .event2026-cta {
+        padding: 52px 0 58px;
+    }
+
+}
