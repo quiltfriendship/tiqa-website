@@ -5,6 +5,19 @@
 const eventsData = [
 
     {
+        year: "2026",
+
+        title: "2026 曬被節",
+
+        description:
+            "第八屆曬被節以「拼布走進大稻埕」串聯創作、街區與手作交流",
+
+        image:
+            "/events/2026.jpg",
+
+        url:
+            "/events/2026/"
+    },{
         year: "2025",
 
         title: "2025 友好拼布手作節",
