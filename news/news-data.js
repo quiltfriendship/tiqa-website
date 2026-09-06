@@ -107,6 +107,9 @@ https://tiqa.org.tw/`,
             {
                 label: "活動報名表",
                 url: "https://forms.gle/G2TnyimmSFQQ4xmq6"
+            },{
+                label: "活動場勘",
+                url: "https://www.facebook.com/share/p/1CBjsSDM5q/"
             }
         ]
     },{
