@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Technical / non-content folders
+Disallow: /components/
+Disallow: /.git/
+Disallow: /.vs/
+
+Sitemap: https://tiqa.org.tw/sitemap.xml
