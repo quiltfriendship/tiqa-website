@@ -361,95 +361,129 @@
 
 
 
+
 /* =========================================================
-   Detailed Three-Day Schedule
+   Compact Three-Day Program
 ========================================================= */
 
-.event2026-schedule-list {
+.event2026-program-compact {
     display: grid;
-    gap: 28px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
 }
 
-.event2026-schedule-day {
-    overflow: hidden;
+.event2026-day-card {
+    min-width: 0;
+    padding: 30px;
     border: 1px solid #e4dcda;
     background: #fff;
 }
 
-.event2026-schedule-day-main {
+.event2026-day-card-main {
+    grid-column: 1 / -1;
     border-top: 3px solid #9b6f78;
 }
 
-.event2026-schedule-dayhead {
-    display: grid;
-    grid-template-columns: 130px minmax(0, 1fr);
-    gap: 28px;
-    align-items: start;
-    padding: 30px 34px;
+.event2026-day-card-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 22px;
+    padding-bottom: 20px;
     border-bottom: 1px solid #eee7e4;
-    background: #fff;
 }
 
-.event2026-schedule-date {
-    margin: 0;
+.event2026-day-date {
+    margin: 0 0 5px;
     color: #9b6f78;
-    font-size: 25px;
-    line-height: 1.35;
-    letter-spacing: 0.08em;
+    font-size: 13px;
+    letter-spacing: .12em;
 }
 
-.event2026-schedule-dayhead h3 {
+.event2026-day-card h3 {
     margin: 0;
     color: #333;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 1.5;
 }
 
-.event2026-schedule-dayhead div > p {
-    margin: 10px 0 0;
+.event2026-day-intro {
+    margin: 20px 0;
     color: #666;
     font-size: 14px;
-    line-height: 1.9;
+    line-height: 1.85;
 }
 
-.event2026-timeline {
-    padding: 8px 34px 18px;
+.event2026-calendar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 6px 10px;
+    max-width: 235px;
+    text-align: right;
 }
 
-.event2026-time-row {
+.event2026-calendar span {
+    width: 100%;
+    color: #999;
+    font-size: 11px;
+    letter-spacing: .08em;
+}
+
+.event2026-calendar a {
+    color: #8f656f;
+    font-size: 12px;
+    line-height: 1.5;
+    text-decoration: none;
+    border-bottom: 1px solid #d2b8bd;
+}
+
+.event2026-calendar a:hover,
+.event2026-calendar a:focus-visible {
+    color: #6f4851;
+    border-color: #6f4851;
+}
+
+.event2026-mini-timeline > div,
+.event2026-main-column > div {
     display: grid;
-    grid-template-columns: 150px minmax(0, 1fr);
-    gap: 28px;
-    padding: 17px 0;
+    grid-template-columns: 105px minmax(0, 1fr);
+    gap: 15px;
+    padding: 11px 0;
     border-bottom: 1px solid #f0ebe8;
 }
 
-.event2026-time-row:last-child {
+.event2026-mini-timeline > div:last-child,
+.event2026-main-column > div:last-child {
     border-bottom: 0;
 }
 
-.event2026-time-row time {
+.event2026-mini-timeline time,
+.event2026-main-column time {
     color: #9b6f78;
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 12px;
     line-height: 1.7;
     white-space: nowrap;
 }
 
-.event2026-time-row strong {
-    display: block;
-    color: #333;
-    font-size: 15px;
-    font-weight: 500;
+.event2026-mini-timeline span,
+.event2026-main-column span {
+    color: #666;
+    font-size: 13px;
     line-height: 1.7;
 }
 
-.event2026-time-row p {
-    margin: 4px 0 0;
-    color: #666;
-    font-size: 14px;
-    line-height: 1.8;
+.event2026-mini-timeline strong,
+.event2026-main-column strong {
+    color: #333;
+    font-weight: 500;
+}
+
+.event2026-main-timeline {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 42px;
 }
 
 /* =========================================================
@@ -706,28 +740,41 @@
 @media (max-width: 650px) {
 
 
-    .event2026-schedule-dayhead {
+    .event2026-program-compact {
         grid-template-columns: 1fr;
-        gap: 8px;
-        padding: 24px 22px;
     }
 
-    .event2026-schedule-date {
-        font-size: 20px;
+    .event2026-day-card-main {
+        grid-column: auto;
     }
 
-    .event2026-timeline {
-        padding: 4px 22px 14px;
+    .event2026-day-card {
+        padding: 24px 20px;
     }
 
-    .event2026-time-row {
+    .event2026-day-card-head {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .event2026-calendar {
+        justify-content: flex-start;
+        max-width: none;
+        text-align: left;
+    }
+
+    .event2026-main-timeline {
         grid-template-columns: 1fr;
-        gap: 5px;
-        padding: 15px 0;
+        gap: 0;
     }
 
+    .event2026-mini-timeline > div,
+    .event2026-main-column > div {
+        grid-template-columns: 100px minmax(0, 1fr);
+        gap: 12px;
+    }
 
-    .event2026-page .content-container {
+.event2026-page .content-container {
         width: min(100% - 32px, 1180px);
     }
 

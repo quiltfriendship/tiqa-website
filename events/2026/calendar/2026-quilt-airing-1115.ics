@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Taiwan International Quilt Association//2026 Quilt Airing Festival//ZH-TW
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-quilt-airing-1115@tiqa.org.tw
+DTSTAMP:20260921T090000Z
+DTSTART;TZID=Asia/Taipei:20261115T090000
+DTEND;TZID=Asia/Taipei:20261115T180000
+SUMMARY:2026 曬被節｜曬被節主場
+LOCATION:大稻埕碼頭 → 永樂廣場
+DESCRIPTION:09:00 參加者報到；10:00–13:00 曬被展示、交流、拍照、午餐；13:00 貴賓報到；13:20 貴賓致詞及整隊；13:30 拼布遊行；14:10 抵達永樂廣場；15:00 拼布手作時尚走秀；16:00 抽獎活動；17:00–18:00 活動收尾。
+URL:https://tiqa.org.tw/events/2026/
+END:VEVENT
+END:VCALENDAR
