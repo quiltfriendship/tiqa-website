@@ -843,3 +843,165 @@
     }
 
 }
+
+
+/* =========================================================
+   Registration Guide
+========================================================= */
+
+.event2026-guide {
+    margin-top: 36px;
+    display: grid;
+    grid-template-columns: .82fr 1.18fr;
+    border: 1px solid #e4dcda;
+    background: #faf8f7;
+}
+
+.event2026-guide-intro {
+    padding: 34px;
+    border-right: 1px solid #e4dcda;
+}
+
+.event2026-guide-intro h3 {
+    margin: 0;
+    color: #333;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.event2026-guide-intro > p:not(.event2026-label) {
+    margin: 14px 0 0;
+    color: #696361;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.event2026-guide-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-top: 20px;
+}
+
+.event2026-guide-options button {
+    padding: 7px 10px;
+    border: 1px solid #e4dcda;
+    background: #fff;
+    color: #666;
+    font: inherit;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.event2026-guide-options button.is-active {
+    border-color: #9b6f78;
+    background: #9b6f78;
+    color: #fff;
+}
+
+.event2026-guide-result {
+    min-height: 270px;
+    padding: 34px;
+    display: flex;
+    align-items: center;
+}
+
+.event2026-guide-placeholder {
+    color: #999;
+}
+
+.event2026-guide-steps {
+    width: 100%;
+    display: grid;
+    gap: 13px;
+}
+
+.event2026-guide-step {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    gap: 12px;
+}
+
+.event2026-guide-step > span {
+    width: 28px;
+    height: 28px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: #9b6f78;
+    color: #fff;
+    font-size: 11px;
+}
+
+.event2026-guide-step h4 {
+    margin: 0 0 4px;
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.event2026-guide-step p {
+    margin: 0;
+    color: #696361;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.event2026-guide-actions {
+    margin-top: 4px;
+    padding-top: 17px;
+    border-top: 1px solid #e4dcda;
+}
+
+.event2026-guide-actions a {
+    display: inline-flex;
+    padding: 9px 15px;
+    background: #9b6f78;
+    color: #fff;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.event2026-guide-actions p {
+    margin: 10px 0 0;
+    color: #8a8381;
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+.event2026-guide-link {
+    margin-top: 18px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: #9b6f78;
+    font: inherit;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.event2026-guide-link:hover,
+.event2026-guide-link:focus-visible {
+    color: #6f4851;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+@media (max-width: 900px) {
+    .event2026-guide {
+        grid-template-columns: 1fr;
+    }
+
+    .event2026-guide-intro {
+        border-right: 0;
+        border-bottom: 1px solid #e4dcda;
+    }
+}
+
+@media (max-width: 650px) {
+    .event2026-guide-intro,
+    .event2026-guide-result {
+        padding: 26px 22px;
+    }
+}

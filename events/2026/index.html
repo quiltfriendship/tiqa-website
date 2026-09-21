@@ -86,8 +86,8 @@
                 </a>
 
                 <a class="event2026-button"
-                   href="#event-info">
-                    查看活動資訊
+                   href="#program">
+                    查看三日流程
                 </a>
 
             </div>
@@ -220,9 +220,8 @@
          三日活動
     ================================================= -->
 
-    <section class="event2026-section event2026-alt">
+    <section id="program" class="event2026-section event2026-alt">
         <div class="content-container">
-
             <div class="event2026-heading">
                 <p>Three-Day Program</p>
                 <h2>三日活動資訊</h2>
@@ -355,11 +354,7 @@
                         有無包邊皆可。
                     </p>
 
-                    <a href="https://forms.gle/G2TnyimmSFQQ4xmq6"
-                       target="_blank"
-                       rel="noopener noreferrer">
-                        前往報名 →
-                    </a>
+                    <button class="event2026-guide-link" type="button" data-open-guide="quilt">查看報名導覽 →</button>
 
                 </article>
 
@@ -381,7 +376,7 @@
                     </p>
 
                 
-                <a href="https://forms.gle/G2TnyimmSFQQ4xmq6" target="_blank" rel="noopener noreferrer">前往報名 →</a>
+                <button class="event2026-guide-link" type="button" data-open-guide="runway">查看報名導覽 →</button>
             </article>
 
 
@@ -403,9 +398,28 @@
                     </p>
 
                 
-                <a href="https://forms.gle/G2TnyimmSFQQ4xmq6" target="_blank" rel="noopener noreferrer">前往報名 →</a>
+                <button class="event2026-guide-link" type="button" data-open-guide="purse">查看報名導覽 →</button>
             </article>
 
+            </div>
+
+
+            <div class="event2026-guide" id="registration-guide">
+                <div class="event2026-guide-intro">
+                    <p class="event2026-label">Registration Guide</p>
+                    <h3 data-guide-title>報名資訊導覽</h3>
+                    <p data-guide-intro>選擇一項參與方式，就能查看作品、費用與登記步驟。</p>
+
+                    <div class="event2026-guide-options" role="group" aria-label="選擇參與方式">
+                        <button type="button" data-guide="quilt">曬被作品</button>
+                        <button type="button" data-guide="runway">創作走秀</button>
+                        <button type="button" data-guide="purse">零錢包交換</button>
+                    </div>
+                </div>
+
+                <div class="event2026-guide-result" data-guide-result>
+                    <span class="event2026-guide-placeholder">請先選擇一項參與方式</span>
+                </div>
             </div>
 
         </div>
@@ -530,6 +544,88 @@ window.breadcrumbData = [
 </script>
 
 <script src="/assets/js/breadcrumb.js"></script>
+
+
+<script>
+(() => {
+    const formUrl = "https://forms.gle/G2TnyimmSFQQ4xmq6";
+
+    const guides = {
+        quilt: {
+            title: "曬被作品募集",
+            intro: "準備一件 100 × 100 公分拼布作品，加入 11 月 15 日的曬被交流。",
+            steps: [
+                ["確認作品", "新作、舊作皆可；作品以 100 × 100 公分為原則，本活動不是比賽。"],
+                ["確認費用", "友好會會員每件 NT$350，非會員每件 NT$500。"],
+                ["完成登記", "開啟正式表單、填寫作品資料，並依主辦單位通知完成後續程序。"]
+            ]
+        },
+        runway: {
+            title: "拼布手作・創作走秀",
+            intro: "帶著自己製作的服飾、包包或手作配件，用動態方式分享創作。",
+            steps: [
+                ["選定作品", "挑選適合穿戴或攜帶的拼布服裝、包包、配件或纖維作品。"],
+                ["免費登記", "此項參與不收報名費，依表單提供走秀所需資料。"],
+                ["留意通知", "集合、動線與彩排資訊將由主辦單位後續通知。"]
+            ]
+        },
+        purse: {
+            title: "愛的零錢包交換禮物",
+            intro: "製作一只小零錢包，把手作心意帶到活動現場交換。",
+            steps: [
+                ["完成作品", "作品須可正常使用，最長邊不超過 15 公分。"],
+                ["期限前登記", "參與免費，請於 2026 年 10 月 31 日前完成報名。"],
+                ["帶到現場", "妥善包裝並依主辦單位通知，在指定時間帶到活動現場。"]
+            ]
+        }
+    };
+
+    function selectGuide(key, scrollToGuide = false) {
+        const guide = guides[key];
+        if (!guide) return;
+
+        document.querySelector("[data-guide-title]").textContent = guide.title;
+        document.querySelector("[data-guide-intro]").textContent = guide.intro;
+
+        document.querySelector("[data-guide-result]").innerHTML = `
+            <div class="event2026-guide-steps">
+                ${guide.steps.map((step, index) => `
+                    <div class="event2026-guide-step">
+                        <span>${index + 1}</span>
+                        <div>
+                            <h4>${step[0]}</h4>
+                            <p>${step[1]}</p>
+                        </div>
+                    </div>
+                `).join("")}
+                <div class="event2026-guide-actions">
+                    <a href="${formUrl}" target="_blank" rel="noopener noreferrer">開啟正式報名表 ↗</a>
+                    <p>三種參與方式皆使用同一份正式報名表。</p>
+                </div>
+            </div>
+        `;
+
+        document.querySelectorAll("[data-guide]").forEach(button => {
+            button.classList.toggle("is-active", button.dataset.guide === key);
+        });
+
+        if (scrollToGuide) {
+            document.querySelector("#registration-guide").scrollIntoView({
+                behavior: "smooth",
+                block: "center"
+            });
+        }
+    }
+
+    document.querySelectorAll("[data-guide]").forEach(button => {
+        button.addEventListener("click", () => selectGuide(button.dataset.guide));
+    });
+
+    document.querySelectorAll("[data-open-guide]").forEach(button => {
+        button.addEventListener("click", () => selectGuide(button.dataset.openGuide, true));
+    });
+})();
+</script>
 
 </body>
 
