@@ -360,6 +360,98 @@
 }
 
 
+
+/* =========================================================
+   Detailed Three-Day Schedule
+========================================================= */
+
+.event2026-schedule-list {
+    display: grid;
+    gap: 28px;
+}
+
+.event2026-schedule-day {
+    overflow: hidden;
+    border: 1px solid #e4dcda;
+    background: #fff;
+}
+
+.event2026-schedule-day-main {
+    border-top: 3px solid #9b6f78;
+}
+
+.event2026-schedule-dayhead {
+    display: grid;
+    grid-template-columns: 130px minmax(0, 1fr);
+    gap: 28px;
+    align-items: start;
+    padding: 30px 34px;
+    border-bottom: 1px solid #eee7e4;
+    background: #fff;
+}
+
+.event2026-schedule-date {
+    margin: 0;
+    color: #9b6f78;
+    font-size: 25px;
+    line-height: 1.35;
+    letter-spacing: 0.08em;
+}
+
+.event2026-schedule-dayhead h3 {
+    margin: 0;
+    color: #333;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.event2026-schedule-dayhead div > p {
+    margin: 10px 0 0;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.event2026-timeline {
+    padding: 8px 34px 18px;
+}
+
+.event2026-time-row {
+    display: grid;
+    grid-template-columns: 150px minmax(0, 1fr);
+    gap: 28px;
+    padding: 17px 0;
+    border-bottom: 1px solid #f0ebe8;
+}
+
+.event2026-time-row:last-child {
+    border-bottom: 0;
+}
+
+.event2026-time-row time {
+    color: #9b6f78;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.7;
+    white-space: nowrap;
+}
+
+.event2026-time-row strong {
+    display: block;
+    color: #333;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.7;
+}
+
+.event2026-time-row p {
+    margin: 4px 0 0;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
 /* =========================================================
    How to Join
 ========================================================= */
@@ -612,6 +704,28 @@
 ========================================================= */
 
 @media (max-width: 650px) {
+
+
+    .event2026-schedule-dayhead {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        padding: 24px 22px;
+    }
+
+    .event2026-schedule-date {
+        font-size: 20px;
+    }
+
+    .event2026-timeline {
+        padding: 4px 22px 14px;
+    }
+
+    .event2026-time-row {
+        grid-template-columns: 1fr;
+        gap: 5px;
+        padding: 15px 0;
+    }
+
 
     .event2026-page .content-container {
         width: min(100% - 32px, 1180px);
