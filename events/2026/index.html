@@ -411,14 +411,14 @@
                     <p data-guide-intro>選擇一項參與方式，就能查看作品、費用與登記步驟。</p>
 
                     <div class="event2026-guide-options" role="group" aria-label="選擇參與方式">
-                        <button type="button" data-guide="quilt">曬被作品</button>
+                        <button type="button" data-guide="quilt" class="is-active">曬被作品</button>
                         <button type="button" data-guide="runway">創作走秀</button>
                         <button type="button" data-guide="purse">零錢包交換</button>
                     </div>
                 </div>
 
                 <div class="event2026-guide-result" data-guide-result>
-                    <span class="event2026-guide-placeholder">請先選擇一項參與方式</span>
+                    
                 </div>
             </div>
 
@@ -477,35 +477,35 @@
 				<h2>主辦與合作單位</h2>
 			</div>
 
-			<div class="event2026-organizer-list">
+			<div class="event2026-org-list">
 
-				<div class="event2026-organizer-row">
-					<span>主辦單位</span>
-					<p>
+                <div>
+                    <dt>主辦單位</dt>
+                    <dd>
 						台灣國際拼布友好會、台北市永樂商圈發展協會
-					</p>
-				</div>
+                    </dd>
+                </div>
 
-				<div class="event2026-organizer-row">
-					<span>協辦單位</span>
-					<p>
+                <div>
+                    <dt>協辦單位</dt>
+                    <dd>
 						台北迪化商圈發展促進會、大稻埕創意街區發展協會、永樂布業商場二樓自治會、永樂布業商場三樓自治會、台北市大同士林婦女支持培力中心
-					</p>
-				</div>
+                    </dd>
+                </div>
 
-				<div class="event2026-organizer-row">
-					<span>輔導單位</span>
-					<p>
+                <div>
+                    <dt>輔導單位</dt>
+                    <dd>
 						臺北市商業處
-					</p>
-				</div>
+                    </dd>
+                </div>
 
-				<div class="event2026-organizer-row">
-					<span>贊助單位</span>
-					<p>
+                <div>
+                    <dt>贊助單位</dt>
+                    <dd>
 						隆德貿易有限公司、立欣針車實業有限公司、貝佳時尚布工坊、松芝有限公司、迷彩小物
-					</p>
-				</div>
+                    </dd>
+                </div>
 
 			</div>
 
@@ -626,6 +626,9 @@ window.breadcrumbData = [
     document.querySelectorAll("[data-open-guide]").forEach(button => {
         button.addEventListener("click", () => selectGuide(button.dataset.openGuide, true));
     });
+
+    // 預設顯示「曬被作品」，不再顯示「請先選擇一項參與方式」
+    selectGuide("quilt");
 })();
 </script>
 
