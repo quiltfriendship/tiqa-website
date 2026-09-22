@@ -543,6 +543,114 @@ select {
 }
 
 
+
+/* =========================================================
+   首頁 2026 當期活動
+========================================================= */
+.home-current-event {
+    padding: 62px 0 68px;
+    border-top: 1px solid #eee7e4;
+    background: #faf8f7;
+}
+.home-current-event-label {
+    margin: 0 0 24px;
+    color: #9b6f78;
+    font-size: 12px;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+}
+.home-current-event-layout {
+    display: grid;
+    grid-template-columns: minmax(0,.9fr) minmax(0,1.1fr);
+    gap: 70px;
+    align-items: center;
+}
+.home-current-event-title {
+    padding-right: 55px;
+    border-right: 1px solid #dfd4d2;
+}
+.home-current-event-year {
+    margin: 0 0 8px;
+    color: #9b6f78;
+    font-size: 15px;
+    letter-spacing: .08em;
+}
+.home-current-event-title h2 {
+    margin: 0;
+    color: #333;
+    font-size: clamp(28px,3vw,40px);
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: .08em;
+}
+.home-current-event-theme {
+    margin: 10px 0 0;
+    color: #555;
+    font-size: 18px;
+    letter-spacing: .08em;
+}
+.home-current-event-date {
+    margin: 0;
+    color: #333;
+    font-size: 22px;
+    font-weight: 500;
+}
+.home-current-event-place {
+    margin: 5px 0 0;
+    color: #9b6f78;
+    font-size: 15px;
+}
+.home-current-event-description {
+    margin: 22px 0 25px;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.9;
+}
+.home-current-event-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 11px 20px;
+    border: 1px solid #9b6f78;
+    color: #fff;
+    background: #9b6f78;
+    text-decoration: none;
+    transition: background-color .2s ease, border-color .2s ease, transform .2s ease;
+}
+.home-current-event-button:hover,
+.home-current-event-button:focus-visible {
+    border-color: #79535c;
+    background: #79535c;
+    transform: translateY(-1px);
+}
+.home-current-event-button:focus-visible {
+    outline: 3px solid rgba(155,111,120,.28);
+    outline-offset: 3px;
+}
+@media (max-width: 820px) {
+    .home-current-event { padding: 50px 0 55px; }
+    .home-current-event-layout { grid-template-columns: 1fr; gap: 30px; }
+    .home-current-event-title {
+        padding: 0 0 28px;
+        border-right: 0;
+        border-bottom: 1px solid #dfd4d2;
+    }
+    .home-current-event-title h2 { font-size: 30px; }
+}
+@media (max-width: 480px) {
+    .home-current-event { padding: 42px 0 48px; }
+    .home-current-event-label { margin-bottom: 18px; }
+    .home-current-event-title h2 { font-size: 27px; }
+    .home-current-event-theme { font-size: 16px; }
+    .home-current-event-date { font-size: 20px; }
+    .home-current-event-description br { display: none; }
+    .home-current-event-button {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
 /* =========================================================
    首頁 Contact
 ========================================================= */
