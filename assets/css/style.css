@@ -456,93 +456,181 @@ select {
 
 
 /* =========================================================
-   首頁 Hero
+   首頁 Hero / 滿版輪播
 ========================================================= */
 
 .hero {
-    width: min(100% - 48px, 1180px);
-    margin: 0 auto;
-    padding: 45px 0 50px;
-}
-
-
-/* =========================================================
-   Hero Image
-========================================================= */
-
-.hero-image-wrap {
     position: relative;
     width: 100%;
-    height: 260px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #f4f1ef;
+}
+
+.hero-carousel-track {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 2048 / 818;
     overflow: hidden;
 }
 
+.hero-slide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity .55s ease, visibility .55s ease;
+}
 
-.hero-image {
+.hero-slide.is-active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    z-index: 1;
+}
+
+.hero-image-wrap,
+.hero-event-link {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.hero-image,
+.hero-event-image {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
-    /*
-       稍微放大圖片，
-       避免模糊後邊緣出現白邊
-    */
+}
 
-    transform: scale(1.05);
+.hero-image {
+    transform: scale(1.04);
     filter: blur(6px);
 }
 
-
-/* =========================================================
-   Hero Overlay
-========================================================= */
+.hero-event-image {
+    transform: none;
+    filter: none;
+}
 
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.18);
+    background: rgba(0, 0, 0, .24);
     z-index: 1;
 }
-
-
-/* =========================================================
-   Hero Title
-========================================================= */
 
 .hero-title {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 90%;
+    width: min(90%, 1180px);
     transform: translate(-50%, -50%);
-    margin: 0;
-    padding: 0;
     text-align: center;
     z-index: 2;
 }
 
-
 .hero h1 {
     margin: 0;
     color: #fff;
-    font-size: clamp(24px, 2.4vw, 32px);
+    font-size: clamp(26px, 3vw, 42px);
     font-weight: 400;
     line-height: 1.5;
-    letter-spacing: 0.25em;
-    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.45);
+    letter-spacing: .25em;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, .45);
 }
-
 
 .english-name {
     margin: 8px 0 0;
-    color: rgba(255, 255, 255, 0.95);
-    font-size: 15px;
-    letter-spacing: 0.05em;
-    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
+    color: rgba(255, 255, 255, .96);
+    font-size: clamp(14px, 1.3vw, 18px);
+    letter-spacing: .05em;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, .45);
 }
 
+.hero-carousel-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    padding: 0;
+    border: 1px solid rgba(255,255,255,.55);
+    border-radius: 50%;
+    color: #fff;
+    background: rgba(0,0,0,.30);
+    font-size: 34px;
+    line-height: 1;
+    cursor: pointer;
+    transform: translateY(-50%);
+    transition: background-color .2s ease, opacity .2s ease;
+}
 
+.hero-carousel-arrow:hover,
+.hero-carousel-arrow:focus-visible {
+    background: rgba(0,0,0,.58);
+}
+
+.hero-carousel-arrow:focus-visible,
+.hero-carousel-dot:focus-visible {
+    outline: 3px solid #fff;
+    outline-offset: 3px;
+}
+
+.hero-carousel-prev { left: 24px; }
+.hero-carousel-next { right: 24px; }
+
+.hero-carousel-dots {
+    position: absolute;
+    left: 50%;
+    bottom: 18px;
+    z-index: 5;
+    display: flex;
+    gap: 9px;
+    transform: translateX(-50%);
+}
+
+.hero-carousel-dot {
+    width: 11px;
+    height: 11px;
+    padding: 0;
+    border: 1px solid rgba(255,255,255,.95);
+    border-radius: 50%;
+    background: rgba(0,0,0,.30);
+    cursor: pointer;
+}
+
+.hero-carousel-dot.is-active {
+    background: #fff;
+}
+
+@media (max-width: 820px) {
+    .hero-carousel-track { aspect-ratio: 16 / 7; }
+    .hero-carousel-arrow { width: 38px; height: 38px; font-size: 28px; }
+    .hero-carousel-prev { left: 12px; }
+    .hero-carousel-next { right: 12px; }
+    .hero-carousel-dots { bottom: 12px; }
+    .hero h1 { font-size: 24px; letter-spacing: .15em; }
+    .english-name { font-size: 14px; }
+}
+
+@media (max-width: 600px) {
+    .hero-carousel-track { aspect-ratio: 16 / 8; }
+    .hero h1 { font-size: 20px; letter-spacing: .08em; }
+    .english-name { font-size: 12px; }
+    .hero-carousel-arrow { width: 34px; height: 34px; }
+}
 
 /* =========================================================
    首頁 2026 當期活動
@@ -986,32 +1074,6 @@ select {
 
 
     /* =====================================================
-       Hero
-    ===================================================== */
-
-    .hero {
-        width: 100%;
-        padding: 20px 0 35px;
-    }
-
-
-    .hero-image-wrap {
-        height: 220px;
-    }
-
-
-    .hero h1 {
-        font-size: 24px;
-        letter-spacing: 0.15em;
-    }
-
-
-    .english-name {
-        font-size: 14px;
-    }
-
-
-    /* =====================================================
        Contact
     ===================================================== */
 
@@ -1106,26 +1168,6 @@ select {
         .breadcrumb-item:not(:last-child)::after {
             margin: 0 6px;
         }
-
-
-    /* =====================================================
-       Hero
-    ===================================================== */
-
-    .hero-image-wrap {
-        height: 190px;
-    }
-
-
-    .hero h1 {
-        font-size: 20px;
-        letter-spacing: 0.08em;
-    }
-
-
-    .english-name {
-        font-size: 13px;
-    }
 
 
     /* =====================================================

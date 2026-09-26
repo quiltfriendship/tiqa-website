@@ -61,30 +61,50 @@
              Hero 主視覺
         ================================================= -->
 
-        <section class="hero">
+        <section class="hero hero-carousel" aria-label="首頁主視覺輪播">
 
-            <div class="hero-image-wrap">
+            <div class="hero-carousel-track">
 
-                <img src="/assets/images/hero.jpg"
-                     alt=""
-                     class="hero-image">
-
-
-                <div class="hero-overlay"></div>
-
-
-                <div class="hero-title">
-
-                    <h1>
-                        台 灣 國 際 拼 布 友 好 會
-                    </h1>
-
-                    <p class="english-name">
-                        Taiwan International Quilt Association
-                    </p>
-
+                <div class="hero-slide is-active" data-hero-slide aria-hidden="false">
+                    <div class="hero-image-wrap">
+                        <img src="/assets/images/hero.jpg"
+                             alt=""
+                             class="hero-image">
+                        <div class="hero-overlay"></div>
+                        <div class="hero-title">
+                            <h1>台 灣 國 際 拼 布 友 好 會</h1>
+                            <p class="english-name">Taiwan International Quilt Association</p>
+                        </div>
+                    </div>
                 </div>
 
+                <div class="hero-slide" data-hero-slide aria-hidden="true">
+                    <a href="/events/2026/"
+                       class="hero-event-link"
+                       aria-label="前往 2026 曬被節活動頁面">
+                        <img src="/assets/images/home-2026-quilt-festival.jpg"
+                             alt="2026 曬被節開始報名，活動日期 2026 年 11 月 13 日至 11 月 15 日，報名截止日期 2026 年 10 月 31 日"
+                             class="hero-event-image">
+                    </a>
+                </div>
+
+            </div>
+
+            <button class="hero-carousel-arrow hero-carousel-prev"
+                    type="button"
+                    aria-label="上一張主視覺">
+                <span aria-hidden="true">‹</span>
+            </button>
+
+            <button class="hero-carousel-arrow hero-carousel-next"
+                    type="button"
+                    aria-label="下一張主視覺">
+                <span aria-hidden="true">›</span>
+            </button>
+
+            <div class="hero-carousel-dots" aria-label="主視覺切換">
+                <button type="button" class="hero-carousel-dot is-active" data-hero-dot="0" aria-label="顯示第 1 張主視覺" aria-current="true"></button>
+                <button type="button" class="hero-carousel-dot" data-hero-dot="1" aria-label="顯示第 2 張主視覺"></button>
             </div>
 
         </section>
@@ -162,6 +182,7 @@
     ===================================================== -->
 
     <script src="/assets/js/include.js"></script>
+    <script src="/assets/js/main.js"></script>
 
 
 </body>

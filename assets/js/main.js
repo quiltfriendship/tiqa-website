@@ -150,4 +150,77 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     );
 
+
+    /*
+     * 首頁主視覺輪播
+     */
+    const heroCarousel = document.querySelector(".hero-carousel");
+
+    if (heroCarousel) {
+        const slides = Array.from(heroCarousel.querySelectorAll("[data-hero-slide]"));
+        const dots = Array.from(heroCarousel.querySelectorAll("[data-hero-dot]"));
+        const prevButton = heroCarousel.querySelector(".hero-carousel-prev");
+        const nextButton = heroCarousel.querySelector(".hero-carousel-next");
+        const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        let currentIndex = 0;
+        let timer = null;
+
+        function showSlide(index) {
+            if (!slides.length) return;
+            currentIndex = (index + slides.length) % slides.length;
+            slides.forEach(function (slide, i) {
+                const active = i === currentIndex;
+                slide.classList.toggle("is-active", active);
+                slide.setAttribute("aria-hidden", active ? "false" : "true");
+            });
+            dots.forEach(function (dot, i) {
+                const active = i === currentIndex;
+                dot.classList.toggle("is-active", active);
+                if (active) dot.setAttribute("aria-current", "true");
+                else dot.removeAttribute("aria-current");
+            });
+        }
+
+        function stopAutoPlay() {
+            if (timer) {
+                window.clearInterval(timer);
+                timer = null;
+            }
+        }
+
+        function startAutoPlay() {
+            stopAutoPlay();
+            if (!reduceMotion && slides.length > 1) {
+                timer = window.setInterval(function () {
+                    showSlide(currentIndex + 1);
+                }, 5000);
+            }
+        }
+
+        if (prevButton) prevButton.addEventListener("click", function () {
+            showSlide(currentIndex - 1);
+            startAutoPlay();
+        });
+
+        if (nextButton) nextButton.addEventListener("click", function () {
+            showSlide(currentIndex + 1);
+            startAutoPlay();
+        });
+
+        dots.forEach(function (dot) {
+            dot.addEventListener("click", function () {
+                showSlide(Number(dot.dataset.heroDot));
+                startAutoPlay();
+            });
+        });
+
+        heroCarousel.addEventListener("mouseenter", stopAutoPlay);
+        heroCarousel.addEventListener("mouseleave", startAutoPlay);
+        heroCarousel.addEventListener("focusin", stopAutoPlay);
+        heroCarousel.addEventListener("focusout", startAutoPlay);
+
+        showSlide(0);
+        startAutoPlay();
+    }
+
 });
