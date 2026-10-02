@@ -1005,3 +1005,12 @@
         padding: 26px 22px;
     }
 }
+
+/* 贊助單位排序註記 */
+.event2026-org-note {
+    display: inline-block;
+    margin-top: 5px;
+    color: #8a8381;
+    font-size: 12px;
+    line-height: 1.7;
+}
