@@ -3,6 +3,41 @@
 ========================================================= */
 
 const newsData = [
+	{
+        id: "2026曬被節開始啦-20261113",
+        title: "2026曬被節開始啦！你有沒有來？♥️🥳",
+        date: "2021-11-13",
+        category: "展覽活動",
+        image: "./2026111301.jpg",
+        description: "2026曬被節開始啦！你有沒有來？♥️🥳
+請看影片看看小編說的喔！
+尤其友好會會員及參加愛的零錢包的朋友更要看影片喔！
+總之，大家快來！",
+        content: `
+            2026曬被節開始啦！你有沒有來？♥️🥳
+請看影片看看小編說的喔！
+尤其友好會會員及參加愛的零錢包的朋友更要看影片喔！
+總之，大家快來！
+        `,
+        links: [
+            {
+                label: "活動詳情",
+                url: "https://www.facebook.com/share/v/1He8AbZYtE/"
+            },{
+                label: "市集攤位介紹1",
+                url: "https://www.facebook.com/share/v/1JEPCBVaRc/"
+            },{
+                label: "市集攤位介紹2",
+                url: "https://www.facebook.com/share/p/1CepPQ6HTg/"
+            },{
+                label: "市集攤位介紹3",
+                url: "https://www.facebook.com/share/p/1dtYZMNbAw/"
+            },{
+                label: "2026曬被節-拼布走進大稻埕",
+                url: "https://www.facebook.com/share/p/19nReY6C8P/"
+            }
+        ]
+    },
     {
         id: "2026 曬被節正式啟動募集 - 20260906",
         title: "【2026 曬被節正式啟動募集】",
