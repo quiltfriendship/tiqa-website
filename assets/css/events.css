@@ -428,3 +428,235 @@
     }
 
 }
+
+
+
+/* =========================================================
+   2019 / 2021 年度活動首頁專用版型
+   僅作用於 .event2019-* / .event2021-*，不改其他活動頁
+========================================================= */
+:is(.event2019-year-header, .event2021-year-header,
+    .event2019-overview, .event2021-overview,
+    .event2019-exhibition, .event2021-exhibition,
+    .event2019-archive, .event2021-archive) {
+    width: 100%;
+}
+:is(.event2019-year-header, .event2021-year-header,
+    .event2019-overview, .event2021-overview,
+    .event2019-exhibition, .event2021-exhibition,
+    .event2019-archive, .event2021-archive,
+    .event2019-footer-banner, .event-return-banner) > .content-container {
+    width: min(1120px, calc(100% - 48px));
+    max-width: 1120px;
+    margin-inline: auto;
+}
+:is(.event2019-year-header, .event2021-year-header) {
+    padding: 54px 0 50px;
+    background: #f8f5f5;
+    text-align: center;
+}
+:is(.event2019-year-header, .event2021-year-header) h1 {
+    margin: 0;
+    color: #343434;
+    font-size: clamp(27px, 3vw, 38px);
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: .08em;
+}
+:is(.event2019-year-subtitle, .event2021-year-subtitle) {
+    margin: 10px 0 0;
+    color: #8c7379;
+    font-size: 15px;
+    line-height: 1.8;
+}
+:is(.event2019-overview, .event2021-overview) { padding: 68px 0; background: #fff; }
+:is(.event2019-overview-card, .event2021-overview-card) {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    overflow: hidden;
+    border: 1px solid #e7dfdb;
+    background: #fff;
+}
+:is(.event2019-overview-image, .event2021-overview-image,
+    .event2019-exhibition-image, .event2021-exhibition-image) { min-width: 0; }
+:is(.event2019-overview-image, .event2021-overview-image) img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 340px;
+    object-fit: cover;
+}
+:is(.event2019-overview-content, .event2021-overview-content) {
+    padding: clamp(28px, 4vw, 55px);
+    align-self: center;
+    min-width: 0;
+}
+:is(.event2019-kicker, .event2021-kicker,
+    .event2019-section-label, .event2021-section-label,
+    .event2019-archive-label, .event2021-archive-label) {
+    margin: 0 0 12px;
+    color: #a47883;
+    font-size: 12px;
+    letter-spacing: .12em;
+    line-height: 1.6;
+}
+:is(.event2019-overview-content, .event2021-overview-content) h2 {
+    margin: 0 0 20px;
+    color: #333;
+    font-size: clamp(23px, 2.4vw, 31px);
+    font-weight: 500;
+    line-height: 1.5;
+}
+:is(.event2019-description, .event2021-description,
+    .event2019-exhibition-description, .event2021-exhibition-description) {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.95;
+    white-space: pre-line;
+}
+:is(.event2019-facts, .event2021-facts) {
+    list-style: none;
+    margin: 26px 0 0;
+    padding: 0;
+    border-top: 1px solid #ece5e2;
+}
+:is(.event2019-facts, .event2021-facts) li {
+    display: grid;
+    grid-template-columns: 90px minmax(0, 1fr);
+    gap: 14px;
+    padding: 12px 0;
+    border-bottom: 1px solid #ece5e2;
+    font-size: 14px;
+    line-height: 1.8;
+}
+:is(.event2019-facts-label, .event2021-facts-label) { color: #956f78; }
+:is(.event2019-facts-value, .event2021-facts-value) { color: #5f5f5f; }
+:is(.event2019-exhibition, .event2021-exhibition) {
+    padding: 72px 0 82px;
+    background: #faf8f7;
+}
+:is(.event2019-section-heading, .event2021-section-heading) {
+    margin-bottom: 32px;
+    text-align: center;
+}
+:is(.event2019-section-heading, .event2021-section-heading) h2 {
+    margin: 0;
+    color: #333;
+    font-size: clamp(25px, 2.7vw, 34px);
+    font-weight: 500;
+}
+:is(.event2019-exhibition-card, .event2021-exhibition-card) {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: stretch;
+    border: 1px solid #e7dfdb;
+    background: #fff;
+    overflow: hidden;
+}
+:is(.event2019-exhibition-content, .event2021-exhibition-content) {
+    align-self: center;
+    min-width: 0;
+    padding: clamp(28px, 4vw, 55px);
+}
+:is(.event2019-exhibition-image, .event2021-exhibition-image) img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 280px;
+    object-fit: cover;
+}
+:is(.event2019-button, .event2021-button) {
+    display: inline-block;
+    margin-top: 22px;
+    padding: 11px 22px;
+    background: #916b75;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+:is(.event2019-button, .event2021-button):hover { background: #754f5a; color: #fff; }
+:is(.event2019-archive, .event2021-archive) { padding: 74px 0 84px; background: #fff; }
+:is(.event2019-archive-grid, .event2021-archive-grid) {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+:is(.event2019-archive-card, .event2021-archive-card) {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    padding: 28px;
+    border: 1px solid #e7dfdb;
+    background: #fff;
+}
+:is(.event2019-archive-card, .event2021-archive-card) h3 {
+    margin: 0 0 13px;
+    color: #333;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+:is(.event2019-archive-description, .event2021-archive-description) {
+    margin: 0 0 18px;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.85;
+    white-space: pre-line;
+}
+:is(.event2019-archive-date, .event2021-archive-date) {
+    margin: auto 0 12px;
+    color: #8e777c;
+    font-size: 13px;
+}
+:is(.event2019-archive-link, .event2021-archive-link) {
+    display: inline-block;
+    align-self: flex-start;
+    margin-top: auto;
+    color: #916b75;
+    font-size: 14px;
+    text-decoration: none;
+}
+:is(.event2019-archive-link, .event2021-archive-link):hover { text-decoration: underline; }
+:is(.event2019-footer-banner, .event-return-banner) {
+    padding: 42px 0 55px;
+    background: #faf8f7;
+    text-align: center;
+}
+:is(.event2019-footer-banner-link, .event-return-banner-link) {
+    display: block;
+    max-width: 850px;
+    margin: 0 auto;
+}
+:is(.event2019-footer-banner-link, .event-return-banner-link) img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+:is(.event2019-footer-hint, .event-return-hint) {
+    margin: 12px 0 0;
+    color: #888;
+    font-size: 13px;
+}
+@media (max-width: 900px) {
+    :is(.event2019-archive-grid, .event2021-archive-grid) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 650px) {
+    :is(.event2019-year-header, .event2021-year-header,
+        .event2019-overview, .event2021-overview,
+        .event2019-exhibition, .event2021-exhibition,
+        .event2019-archive, .event2021-archive,
+        .event2019-footer-banner, .event-return-banner) > .content-container {
+        width: calc(100% - 32px);
+    }
+    :is(.event2019-overview-card, .event2021-overview-card,
+        .event2019-exhibition-card, .event2021-exhibition-card,
+        .event2019-archive-grid, .event2021-archive-grid) { grid-template-columns: 1fr; }
+    :is(.event2019-overview, .event2021-overview,
+        .event2019-exhibition, .event2021-exhibition,
+        .event2019-archive, .event2021-archive) { padding: 48px 0; }
+    :is(.event2019-overview-image, .event2021-overview-image) img { min-height: 0; aspect-ratio: 4 / 3; }
+    :is(.event2019-exhibition-image, .event2021-exhibition-image) img { min-height: 0; aspect-ratio: 4 / 3; }
+    :is(.event2019-overview-content, .event2021-overview-content,
+        .event2019-exhibition-content, .event2021-exhibition-content) { padding: 26px 22px; }
+    :is(.event2019-facts, .event2021-facts) li { grid-template-columns: 75px minmax(0, 1fr); }
+}
