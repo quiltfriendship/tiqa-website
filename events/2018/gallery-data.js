@@ -311,7 +311,7 @@ const eventGalleryData = {
         },
 
         {
-            image: "/events/2018/work-051.jpg",
+            image: "/events/2018/work-51.jpg",
             title: "",
             artist: ""
         },

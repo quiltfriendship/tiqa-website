@@ -125,7 +125,7 @@ const eventGalleryData = {
         },
 
         {
-            image: "/events/2023/exhibition/work-20.jpg",
+            image: "/events/2023/exhibition/work-20.jpeg",
             title: "",
             artist: ""
         },
