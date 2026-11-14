@@ -11,91 +11,91 @@ const eventGalleryData = {
     works: [
 
         {
-            image: "/events/2019/work-01.jpg",
+            image: "/events/2019/exhibition/work-01.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2019/work-02.jpg",
+            image: "/events/2019/exhibition/work-02.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2019/work-03.jpg",
+            image: "/events/2019/exhibition/work-03.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2019/work-04.jpg",
+            image: "/events/2019/exhibition/work-04.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2019/work-05.jpg",
+            image: "/events/2019/exhibition/work-05.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2019/work-06.jpg",
+            image: "/events/2019/exhibition/work-06.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2019/work-07.jpg",
+            image: "/events/2019/exhibition/work-07.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2019/work-08.jpg",
+            image: "/events/2019/exhibition/work-08.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2019/work-09.jpg",
+            image: "/events/2019/exhibition/work-09.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2019/work-10.jpg",
+            image: "/events/2019/exhibition/work-10.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2019/work-11.jpg",
+            image: "/events/2019/exhibition/work-11.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2019/work-12.jpg",
+            image: "/events/2019/exhibition/work-12.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2019/work-13.jpg",
+            image: "/events/2019/exhibition/work-13.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2019/work-14.jpg",
+            image: "/events/2019/exhibition/work-14.jpg",
             title: "",
             artist: ""
         },
 
         {
-            image: "/events/2019/work-15.jpg",
+            image: "/events/2019/exhibition/work-15.jpg",
             title: "",
             artist: ""
         }
