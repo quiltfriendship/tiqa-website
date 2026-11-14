@@ -1,0 +1,21 @@
+.event2026-photos-page { min-height: 55vh; }
+.event2026-photos-page .event2026-heading h1 { margin: 0; font-size: clamp(26px, 3vw, 36px); font-weight: 500; color: #333; }
+.event2026-photos-subtitle { margin: 12px 0 0; color: #777; font-size: 15px; }
+.event2026-photos-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.event2026-photos-item { display: block; width: 100%; padding: 0; border: 1px solid #e4dcda; background: #fff; text-align: left; cursor: pointer; overflow: hidden; }
+.event2026-photos-item img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.event2026-photos-item span { display: block; padding: 12px 14px; color: #555; font-size: 14px; }
+.event2026-photos-item:hover, .event2026-photos-item:focus-visible { outline: 2px solid #9b6f78; outline-offset: 2px; }
+.event2026-photos-empty { margin: 55px auto; text-align: center; color: #777; }
+.event2026-photos-back { margin-top: 35px; text-align: center; }
+.event2026-photos-back a { color: #8f656f; text-decoration: none; }
+.event2026-photos-lightbox[hidden] { display: none !important; }
+.event2026-photos-lightbox { position: fixed; inset: 0; z-index: 9999; display: flex; align-items: center; justify-content: center; gap: 15px; padding: 55px 20px 20px; background: rgba(0,0,0,.93); color: white; }
+.event2026-photos-lightbox figure { margin: 0; min-width: 0; text-align: center; }
+.event2026-photos-lightbox figure img { max-width: min(80vw, 1200px); max-height: 75vh; object-fit: contain; }
+.event2026-photos-lightbox figcaption { margin-top: 10px; }
+.event2026-photos-lightbox button { border: 0; background: transparent; color: white; font-size: 42px; cursor: pointer; }
+.event2026-photos-close { position: absolute; top: 12px; right: 24px; }
+.event2026-photos-modal-open { overflow: hidden; }
+@media (max-width: 800px) { .event2026-photos-grid { grid-template-columns: repeat(2, minmax(0,1fr)); } }
+@media (max-width: 550px) { .event2026-photos-grid { grid-template-columns: 1fr; } .event2026-photos-lightbox { gap: 3px; padding-left: 5px; padding-right: 5px; } .event2026-photos-lightbox figure img { max-width: 75vw; } }
