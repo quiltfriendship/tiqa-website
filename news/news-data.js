@@ -35,6 +35,27 @@ const newsData = [
             },{
                 label: "2026曬被節-拼布走進大稻埕",
                 url: "https://www.facebook.com/share/p/19nReY6C8P/"
+            },{
+                label: "踩街遊行",
+                url: "https://www.facebook.com/share/p/1Fq7Pf9Qun/"
+            },{
+                label: "漢聲電台路邊訪問-郭老師",
+                url: "https://www.facebook.com/share/p/1JReiW8Zf6/"
+            },{
+                label: "漢聲電台路邊訪問-華老師",
+                url: "https://www.facebook.com/share/p/195NFPn2C6/"
+            },{
+                label: "漢聲電台路邊訪問-徐老師",
+                url: "https://www.facebook.com/share/p/19i8c9rbQ6/"
+            },{
+                label: "漢聲電台路邊訪問-陳老師",
+                url: "https://www.facebook.com/share/p/1A9xkBArUZ/"
+            },{
+                label: "漢聲電台路邊訪問-王老師",
+                url: "https://www.facebook.com/share/p/1A4tqBJmNz/"
+            },{
+                label: "漢聲電台路邊訪問-賴老師",
+                url: "https://www.facebook.com/share/p/1Dew4BtU3d/"
             }
         ]
     },
